@@ -1,0 +1,13 @@
+./mail_t5-new-base.cmd
+./mail_t5-new-nebit3.cmd
+./mail_t5-new-nebit5.cmd
+./mail_t5-new-nebit6.cmd
+./mail_t5-new-size16.cmd
+./mail_t5-new-size64.cmd
+#./mail_t5-new-line32.cmd
+./mail_t5-LRU-base.cmd
+./mail_t5-LRU-assoc2.cmd
+./mail_t5-LRU-assoc8.cmd
+./mail_t5-LRU-size16.cmd
+./mail_t5-LRU-size64.cmd
+#./mail_t5-LRU-line32.cmd 
