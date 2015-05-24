@@ -1,0 +1,2402 @@
+Opening connection to 10.0.0.1, port 7654...
+Opening connection to 10.0.0.1, port 7654...
+Opening connection to 10.0.0.1, port 7654...
+Opening connection to 10.0.0.1, port 7654...
+Opening connection to 10.0.0.1, port 7654...
+Opening connection to 10.0.0.1, port 7654...
+Opening connection to 10.0.0.1, port 7654...
+Opening connection to 10.0.0.1, port 7654...
+Opening connection to 10.0.0.1, port 7654...
+Opening connection to 10.0.0.1, port 7654...
+Opening connection to 10.0.0.1, port 7654...
+Opening connection to 10.0.0.1, port 7654...
+Opening connection to 10.0.0.1, port 7654...
+Opening connection to 10.0.0.1, port 7654...
+Opening connection to 10.0.0.1, port 7654...
+Opening connection to 10.0.0.1, port 7654...
+Opening connection to 10.0.0.1, port 7654...
+Opening connection to 10.0.0.1, port 7654...
+Opening connection to 10.0.0.1, port 7654...
+Opening connection to 10.0.0.1, port 7654...
+Opening connection to 10.0.0.1, port 7654...
+Opening connection to 10.0.0.1, port 7654...
+Opening connection to 10.0.0.1, port 7654...
+Opening connection to 10.0.0.1, port 7654...
+Opening connection to 10.0.0.1, port 7654...
+Opening connection to 10.0.0.1, port 7654...
+Opening connection to 10.0.0.1, port 7654...
+Opening connection to 10.0.0.1, port 7654...
+Opening connection to 10.0.0.1, port 7654...
+Opening connection to 10.0.0.1, port 7654...
+...remote connection opened
+Sending request: OPTIONS rtsp://10.0.0.1:7654/2.mp3 RTSP/1.0
+CSeq: 2
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+
+
+...remote connection opened
+Sending request: OPTIONS rtsp://10.0.0.1:7654/3.mp3 RTSP/1.0
+CSeq: 2
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+
+
+...remote connection opened
+Sending request: OPTIONS rtsp://10.0.0.1:7654/1.mp3 RTSP/1.0
+CSeq: 2
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+
+
+...remote connection opened
+Sending request: OPTIONS rtsp://10.0.0.1:7654/2.mp3 RTSP/1.0
+CSeq: 2
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+
+
+...remote connection opened
+Sending request: OPTIONS rtsp://10.0.0.1:7654/1.mp3 RTSP/1.0
+CSeq: 2
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+
+
+Received 85 new bytes of response data.
+Received a complete OPTIONS response:
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+
+
+Sending request: DESCRIBE rtsp://10.0.0.1:7654/2.mp3 RTSP/1.0
+CSeq: 3
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Accept: application/sdp
+
+
+Received 85 new bytes of response data.
+Received a complete OPTIONS response:
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+
+
+Sending request: DESCRIBE rtsp://10.0.0.1:7654/1.mp3 RTSP/1.0
+CSeq: 3
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Accept: application/sdp
+
+
+Received 247 new bytes of response data.
+Received a complete DESCRIBE response:
+RTSP/1.0 200 OK
+CSeq: 3
+Date: Sun Jan  1 00:00:05 2012 GMT
+Content-Type: application/sdp
+Content-Length: 131
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:64
+a=control:streamid=0
+
+Opened URL "rtsp://10.0.0.1:7654/2.mp3", returning a SDP description:
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:64
+a=control:streamid=0
+
+Sending request: SETUP rtsp://10.0.0.1:7654/2.mp3/streamid=0 RTSP/1.0
+CSeq: 4
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Transport: RTP/AVP;unicast;client_port=6686-6687
+
+
+Received 248 new bytes of response data.
+Received a complete DESCRIBE response:
+RTSP/1.0 200 OK
+CSeq: 3
+Date: Sun Jan  1 00:00:05 2012 GMT
+Content-Type: application/sdp
+Content-Length: 132
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Opened URL "rtsp://10.0.0.1:7654/1.mp3", returning a SDP description:
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Sending request: SETUP rtsp://10.0.0.1:7654/1.mp3/streamid=0 RTSP/1.0
+CSeq: 4
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Transport: RTP/AVP;unicast;client_port=6696-6697
+
+
+...remote connection opened
+Sending request: OPTIONS rtsp://10.0.0.1:7654/3.mp3 RTSP/1.0
+CSeq: 2
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+
+
+...remote connection opened
+Sending request: OPTIONS rtsp://10.0.0.1:7654/2.mp3 RTSP/1.0
+CSeq: 2
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+
+
+...remote connection opened
+Sending request: OPTIONS rtsp://10.0.0.1:7654/3.mp3 RTSP/1.0
+CSeq: 2
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+
+
+...remote connection opened
+Sending request: OPTIONS rtsp://10.0.0.1:7654/1.mp3 RTSP/1.0
+CSeq: 2
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+
+
+...remote connection opened
+Sending request: OPTIONS rtsp://10.0.0.1:7654/3.mp3 RTSP/1.0
+CSeq: 2
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+
+
+...remote connection opened
+Sending request: OPTIONS rtsp://10.0.0.1:7654/1.mp3 RTSP/1.0
+CSeq: 2
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+
+
+...remote connection opened
+Sending request: OPTIONS rtsp://10.0.0.1:7654/1.mp3 RTSP/1.0
+CSeq: 2
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+
+
+...remote connection opened
+Sending request: OPTIONS rtsp://10.0.0.1:7654/3.mp3 RTSP/1.0
+CSeq: 2
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+
+
+...remote connection opened
+Sending request: OPTIONS rtsp://10.0.0.1:7654/2.mp3 RTSP/1.0
+CSeq: 2
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+
+
+...remote connection opened
+Sending request: OPTIONS rtsp://10.0.0.1:7654/1.mp3 RTSP/1.0
+CSeq: 2
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+
+
+...remote connection opened
+Sending request: OPTIONS rtsp://10.0.0.1:7654/2.mp3 RTSP/1.0
+CSeq: 2
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+
+
+Received 85 new bytes of response data.
+Received a complete OPTIONS response:
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+
+
+Sending request: DESCRIBE rtsp://10.0.0.1:7654/3.mp3 RTSP/1.0
+CSeq: 3
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Accept: application/sdp
+
+
+Received 85 new bytes of response data.
+Received a complete OPTIONS response:
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+
+
+Sending request: DESCRIBE rtsp://10.0.0.1:7654/1.mp3 RTSP/1.0
+CSeq: 3
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Accept: application/sdp
+
+
+Received 85 new bytes of response data.
+Received a complete OPTIONS response:
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+
+
+Sending request: DESCRIBE rtsp://10.0.0.1:7654/2.mp3 RTSP/1.0
+CSeq: 3
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Accept: application/sdp
+
+
+Received 169 new bytes of response data.
+Received a complete SETUP response:
+RTSP/1.0 200 OK
+CSeq: 4
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: aa816e272f708dab
+Transport: RTP/AVP/UDP;unicast;client_port=6686-6687;server_port=16083-16084
+
+
+Setup "audio/MPA" subsession (client ports 6686-6687)
+Sending request: PLAY rtsp://10.0.0.1:7654/2.mp3 RTSP/1.0
+CSeq: 5
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Session: aa816e272f708dab
+Range: npt=0.000-
+
+
+Received 248 new bytes of response data.
+Received a complete DESCRIBE response:
+RTSP/1.0 200 OK
+CSeq: 3
+Date: Sun Jan  1 00:00:05 2012 GMT
+Content-Type: application/sdp
+Content-Length: 132
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Opened URL "rtsp://10.0.0.1:7654/1.mp3", returning a SDP description:
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Sending request: SETUP rtsp://10.0.0.1:7654/1.mp3/streamid=0 RTSP/1.0
+CSeq: 4
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Transport: RTP/AVP;unicast;client_port=6684-6685
+
+
+Received 85 new bytes of response data.
+Received a complete OPTIONS response:
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+
+
+Sending request: DESCRIBE rtsp://10.0.0.1:7654/3.mp3 RTSP/1.0
+CSeq: 3
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Accept: application/sdp
+
+
+Received 85 new bytes of response data.
+Received a complete OPTIONS response:
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+
+
+Sending request: DESCRIBE rtsp://10.0.0.1:7654/1.mp3 RTSP/1.0
+CSeq: 3
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Accept: application/sdp
+
+
+Received 85 new bytes of response data.
+Received a complete OPTIONS response:
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+
+
+Sending request: DESCRIBE rtsp://10.0.0.1:7654/3.mp3 RTSP/1.0
+CSeq: 3
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Accept: application/sdp
+
+
+Received 85 new bytes of response data.
+Received a complete OPTIONS response:
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+
+
+Sending request: DESCRIBE rtsp://10.0.0.1:7654/1.mp3 RTSP/1.0
+CSeq: 3
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Accept: application/sdp
+
+
+Received 85 new bytes of response data.
+Received a complete OPTIONS response:
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+
+
+Sending request: DESCRIBE rtsp://10.0.0.1:7654/1.mp3 RTSP/1.0
+CSeq: 3
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Accept: application/sdp
+
+
+Received 85 new bytes of response data.
+Received a complete OPTIONS response:
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+
+
+Sending request: DESCRIBE rtsp://10.0.0.1:7654/3.mp3 RTSP/1.0
+CSeq: 3
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Accept: application/sdp
+
+
+Received 85 new bytes of response data.
+Received a complete OPTIONS response:
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+
+
+Sending request: DESCRIBE rtsp://10.0.0.1:7654/1.mp3 RTSP/1.0
+CSeq: 3
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Accept: application/sdp
+
+
+Received 85 new bytes of response data.
+Received a complete OPTIONS response:
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+
+
+Sending request: DESCRIBE rtsp://10.0.0.1:7654/3.mp3 RTSP/1.0
+CSeq: 3
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Accept: application/sdp
+
+
+Received 85 new bytes of response data.
+Received a complete OPTIONS response:
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+
+
+Sending request: DESCRIBE rtsp://10.0.0.1:7654/2.mp3 RTSP/1.0
+CSeq: 3
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Accept: application/sdp
+
+
+Received 85 new bytes of response data.
+Received a complete OPTIONS response:
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+
+
+Sending request: DESCRIBE rtsp://10.0.0.1:7654/2.mp3 RTSP/1.0
+CSeq: 3
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Accept: application/sdp
+
+
+Received 85 new bytes of response data.
+Received a complete OPTIONS response:
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+
+
+Sending request: DESCRIBE rtsp://10.0.0.1:7654/2.mp3 RTSP/1.0
+CSeq: 3
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Accept: application/sdp
+
+
+Received 247 new bytes of response data.
+Received a complete DESCRIBE response:
+RTSP/1.0 200 OK
+CSeq: 3
+Date: Sun Jan  1 00:00:05 2012 GMT
+Content-Type: application/sdp
+Content-Length: 131
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:64
+a=control:streamid=0
+
+Opened URL "rtsp://10.0.0.1:7654/2.mp3", returning a SDP description:
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:64
+a=control:streamid=0
+
+Sending request: SETUP rtsp://10.0.0.1:7654/2.mp3/streamid=0 RTSP/1.0
+CSeq: 4
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Transport: RTP/AVP;unicast;client_port=6680-6681
+
+
+Received 248 new bytes of response data.
+Received a complete DESCRIBE response:
+RTSP/1.0 200 OK
+CSeq: 3
+Date: Sun Jan  1 00:00:05 2012 GMT
+Content-Type: application/sdp
+Content-Length: 132
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Opened URL "rtsp://10.0.0.1:7654/3.mp3", returning a SDP description:
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Sending request: SETUP rtsp://10.0.0.1:7654/3.mp3/streamid=0 RTSP/1.0
+CSeq: 4
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Transport: RTP/AVP;unicast;client_port=6682-6683
+
+
+Received 169 new bytes of response data.
+Received a complete SETUP response:
+RTSP/1.0 200 OK
+CSeq: 4
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: fc5babf3d0241ffd
+Transport: RTP/AVP/UDP;unicast;client_port=6696-6697;server_port=54813-54814
+
+
+Setup "audio/MPA" subsession (client ports 6696-6697)
+Sending request: PLAY rtsp://10.0.0.1:7654/1.mp3 RTSP/1.0
+CSeq: 5
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Session: fc5babf3d0241ffd
+Range: npt=0.000-
+
+
+Received 91 new bytes of response data.
+Received a complete PLAY response:
+RTSP/1.0 200 OK
+CSeq: 5
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: aa816e272f708dab
+
+
+Started playing session
+Data is being streamed (signal with "kill -HUP 977" or "kill -USR1 977" to terminate)...
+Received 169 new bytes of response data.
+Received a complete SETUP response:
+RTSP/1.0 200 OK
+CSeq: 4
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: 4553bfd8c8cae688
+Transport: RTP/AVP/UDP;unicast;client_port=6684-6685;server_port=43939-43940
+
+
+Setup "audio/MPA" subsession (client ports 6684-6685)
+Sending request: PLAY rtsp://10.0.0.1:7654/1.mp3 RTSP/1.0
+CSeq: 5
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Session: 4553bfd8c8cae688
+Range: npt=0.000-
+
+
+Received 248 new bytes of response data.
+Received a complete DESCRIBE response:
+RTSP/1.0 200 OK
+CSeq: 3
+Date: Sun Jan  1 00:00:05 2012 GMT
+Content-Type: application/sdp
+Content-Length: 132
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Opened URL "rtsp://10.0.0.1:7654/1.mp3", returning a SDP description:
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Sending request: SETUP rtsp://10.0.0.1:7654/1.mp3/streamid=0 RTSP/1.0
+CSeq: 4
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Transport: RTP/AVP;unicast;client_port=6690-6691
+
+
+Received 91 new bytes of response data.
+Received a complete PLAY response:
+RTSP/1.0 200 OK
+CSeq: 5
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: 4553bfd8c8cae688
+
+
+Started playing session
+Data is being streamed (signal with "kill -HUP 976" or "kill -USR1 976" to terminate)...
+Received 248 new bytes of response data.
+Received a complete DESCRIBE response:
+RTSP/1.0 200 OK
+CSeq: 3
+Date: Sun Jan  1 00:00:05 2012 GMT
+Content-Type: application/sdp
+Content-Length: 132
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Opened URL "rtsp://10.0.0.1:7654/3.mp3", returning a SDP description:
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Sending request: SETUP rtsp://10.0.0.1:7654/3.mp3/streamid=0 RTSP/1.0
+CSeq: 4
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Transport: RTP/AVP;unicast;client_port=6688-6689
+
+
+Received 248 new bytes of response data.
+Received a complete DESCRIBE response:
+RTSP/1.0 200 OK
+CSeq: 3
+Date: Sun Jan  1 00:00:05 2012 GMT
+Content-Type: application/sdp
+Content-Length: 132
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Opened URL "rtsp://10.0.0.1:7654/1.mp3", returning a SDP description:
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Sending request: SETUP rtsp://10.0.0.1:7654/1.mp3/streamid=0 RTSP/1.0
+CSeq: 4
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Transport: RTP/AVP;unicast;client_port=6672-6673
+
+
+Received 248 new bytes of response data.
+Received a complete DESCRIBE response:
+RTSP/1.0 200 OK
+CSeq: 3
+Date: Sun Jan  1 00:00:05 2012 GMT
+Content-Type: application/sdp
+Content-Length: 132
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Opened URL "rtsp://10.0.0.1:7654/3.mp3", returning a SDP description:
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Sending request: SETUP rtsp://10.0.0.1:7654/3.mp3/streamid=0 RTSP/1.0
+CSeq: 4
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Transport: RTP/AVP;unicast;client_port=6670-6671
+
+
+Received 248 new bytes of response data.
+Received a complete DESCRIBE response:
+RTSP/1.0 200 OK
+CSeq: 3
+Date: Sun Jan  1 00:00:05 2012 GMT
+Content-Type: application/sdp
+Content-Length: 132
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Opened URL "rtsp://10.0.0.1:7654/1.mp3", returning a SDP description:
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Sending request: SETUP rtsp://10.0.0.1:7654/1.mp3/streamid=0 RTSP/1.0
+CSeq: 4
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Transport: RTP/AVP;unicast;client_port=6666-6667
+
+
+Received 247 new bytes of response data.
+Received a complete DESCRIBE response:
+RTSP/1.0 200 OK
+CSeq: 3
+Date: Sun Jan  1 00:00:05 2012 GMT
+Content-Type: application/sdp
+Content-Length: 131
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:64
+a=control:streamid=0
+
+Opened URL "rtsp://10.0.0.1:7654/2.mp3", returning a SDP description:
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:64
+a=control:streamid=0
+
+Sending request: SETUP rtsp://10.0.0.1:7654/2.mp3/streamid=0 RTSP/1.0
+CSeq: 4
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Transport: RTP/AVP;unicast;client_port=6668-6669
+
+
+Received 248 new bytes of response data.
+Received a complete DESCRIBE response:
+RTSP/1.0 200 OK
+CSeq: 3
+Date: Sun Jan  1 00:00:05 2012 GMT
+Content-Type: application/sdp
+Content-Length: 132
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Opened URL "rtsp://10.0.0.1:7654/3.mp3", returning a SDP description:
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Sending request: SETUP rtsp://10.0.0.1:7654/3.mp3/streamid=0 RTSP/1.0
+CSeq: 4
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Transport: RTP/AVP;unicast;client_port=6676-6677
+
+
+Received 248 new bytes of response data.
+Received a complete DESCRIBE response:
+RTSP/1.0 200 OK
+CSeq: 3
+Date: Sun Jan  1 00:00:05 2012 GMT
+Content-Type: application/sdp
+Content-Length: 132
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Opened URL "rtsp://10.0.0.1:7654/1.mp3", returning a SDP description:
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Sending request: SETUP rtsp://10.0.0.1:7654/1.mp3/streamid=0 RTSP/1.0
+CSeq: 4
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Transport: RTP/AVP;unicast;client_port=6678-6679
+
+
+Received 169 new bytes of response data.
+Received a complete SETUP response:
+RTSP/1.0 200 OK
+CSeq: 4
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: 4de0bef93fdbfa2a
+Transport: RTP/AVP/UDP;unicast;client_port=6690-6691;server_port=12243-12244
+
+
+Setup "audio/MPA" subsession (client ports 6690-6691)
+Sending request: PLAY rtsp://10.0.0.1:7654/1.mp3 RTSP/1.0
+CSeq: 5
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Session: 4de0bef93fdbfa2a
+Range: npt=0.000-
+
+
+Received 247 new bytes of response data.
+Received a complete DESCRIBE response:
+RTSP/1.0 200 OK
+CSeq: 3
+Date: Sun Jan  1 00:00:05 2012 GMT
+Content-Type: application/sdp
+Content-Length: 131
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:64
+a=control:streamid=0
+
+Opened URL "rtsp://10.0.0.1:7654/2.mp3", returning a SDP description:
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:64
+a=control:streamid=0
+
+Sending request: SETUP rtsp://10.0.0.1:7654/2.mp3/streamid=0 RTSP/1.0
+CSeq: 4
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Transport: RTP/AVP;unicast;client_port=6692-6693
+
+
+Received 248 new bytes of response data.
+Received a complete DESCRIBE response:
+RTSP/1.0 200 OK
+CSeq: 3
+Date: Sun Jan  1 00:00:05 2012 GMT
+Content-Type: application/sdp
+Content-Length: 132
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Opened URL "rtsp://10.0.0.1:7654/3.mp3", returning a SDP description:
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Sending request: SETUP rtsp://10.0.0.1:7654/3.mp3/streamid=0 RTSP/1.0
+CSeq: 4
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Transport: RTP/AVP;unicast;client_port=6694-6695
+
+
+Received 247 new bytes of response data.
+Received a complete DESCRIBE response:
+RTSP/1.0 200 OK
+CSeq: 3
+Date: Sun Jan  1 00:00:05 2012 GMT
+Content-Type: application/sdp
+Content-Length: 131
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:64
+a=control:streamid=0
+
+Opened URL "rtsp://10.0.0.1:7654/2.mp3", returning a SDP description:
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:64
+a=control:streamid=0
+
+Sending request: SETUP rtsp://10.0.0.1:7654/2.mp3/streamid=0 RTSP/1.0
+CSeq: 4
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Transport: RTP/AVP;unicast;client_port=6674-6675
+
+
+Received 169 new bytes of response data.
+Received a complete SETUP response:
+RTSP/1.0 200 OK
+CSeq: 4
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: c1c90e6644fa5816
+Transport: RTP/AVP/UDP;unicast;client_port=6680-6681;server_port=51137-51138
+
+
+Setup "audio/MPA" subsession (client ports 6680-6681)
+Sending request: PLAY rtsp://10.0.0.1:7654/2.mp3 RTSP/1.0
+CSeq: 5
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Session: c1c90e6644fa5816
+Range: npt=0.000-
+
+
+Received 169 new bytes of response data.
+Received a complete SETUP response:
+RTSP/1.0 200 OK
+CSeq: 4
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: 73b51defb64eca33
+Transport: RTP/AVP/UDP;unicast;client_port=6682-6683;server_port=23868-23869
+
+
+Setup "audio/MPA" subsession (client ports 6682-6683)
+Sending request: PLAY rtsp://10.0.0.1:7654/3.mp3 RTSP/1.0
+CSeq: 5
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Session: 73b51defb64eca33
+Range: npt=0.000-
+
+
+Received 91 new bytes of response data.
+Received a complete PLAY response:
+RTSP/1.0 200 OK
+CSeq: 5
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: fc5babf3d0241ffd
+
+
+Started playing session
+Data is being streamed (signal with "kill -HUP 982" or "kill -USR1 982" to terminate)...
+Received 169 new bytes of response data.
+Received a complete SETUP response:
+RTSP/1.0 200 OK
+CSeq: 4
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: f4f268a36bd8a9ab
+Transport: RTP/AVP/UDP;unicast;client_port=6688-6689;server_port=56926-56927
+
+
+Setup "audio/MPA" subsession (client ports 6688-6689)
+Sending request: PLAY rtsp://10.0.0.1:7654/3.mp3 RTSP/1.0
+CSeq: 5
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Session: f4f268a36bd8a9ab
+Range: npt=0.000-
+
+
+Received 167 new bytes of response data.
+Received a complete SETUP response:
+RTSP/1.0 200 OK
+CSeq: 4
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: 2e36cf77af5145c5
+Transport: RTP/AVP/UDP;unicast;client_port=6676-6677;server_port=5025-5026
+
+
+Setup "audio/MPA" subsession (client ports 6676-6677)
+Sending request: PLAY rtsp://10.0.0.1:7654/3.mp3 RTSP/1.0
+CSeq: 5
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Session: 2e36cf77af5145c5
+Range: npt=0.000-
+
+
+Received 169 new bytes of response data.
+Received a complete SETUP response:
+RTSP/1.0 200 OK
+CSeq: 4
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: 67c652919abffdfe
+Transport: RTP/AVP/UDP;unicast;client_port=6672-6673;server_port=15572-15573
+
+
+Setup "audio/MPA" subsession (client ports 6672-6673)
+Sending request: PLAY rtsp://10.0.0.1:7654/1.mp3 RTSP/1.0
+CSeq: 5
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Session: 67c652919abffdfe
+Range: npt=0.000-
+
+
+Received 169 new bytes of response data.
+Received a complete SETUP response:
+RTSP/1.0 200 OK
+CSeq: 4
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: 79437eda51db8680
+Transport: RTP/AVP/UDP;unicast;client_port=6674-6675;server_port=58706-58707
+
+
+Setup "audio/MPA" subsession (client ports 6674-6675)
+Sending request: PLAY rtsp://10.0.0.1:7654/2.mp3 RTSP/1.0
+CSeq: 5
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Session: 79437eda51db8680
+Range: npt=0.000-
+
+
+Received 91 new bytes of response data.
+Received a complete PLAY response:
+RTSP/1.0 200 OK
+CSeq: 5
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: 67c652919abffdfe
+
+
+Started playing session
+Data is being streamed (signal with "kill -HUP 970" or "kill -USR1 970" to terminate)...
+Received 91 new bytes of response data.
+Received a complete PLAY response:
+RTSP/1.0 200 OK
+CSeq: 5
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: 79437eda51db8680
+
+
+Started playing session
+Data is being streamed (signal with "kill -HUP 971" or "kill -USR1 971" to terminate)...
+Received 169 new bytes of response data.
+Received a complete SETUP response:
+RTSP/1.0 200 OK
+CSeq: 4
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: 373a105c7a89d579
+Transport: RTP/AVP/UDP;unicast;client_port=6666-6667;server_port=32294-32295
+
+
+Setup "audio/MPA" subsession (client ports 6666-6667)
+Sending request: PLAY rtsp://10.0.0.1:7654/1.mp3 RTSP/1.0
+CSeq: 5
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Session: 373a105c7a89d579
+Range: npt=0.000-
+
+
+Received 169 new bytes of response data.
+Received a complete SETUP response:
+RTSP/1.0 200 OK
+CSeq: 4
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: ba8731ca24215d7b
+Transport: RTP/AVP/UDP;unicast;client_port=6670-6671;server_port=58860-58861
+
+
+Setup "audio/MPA" subsession (client ports 6670-6671)
+Sending request: PLAY rtsp://10.0.0.1:7654/3.mp3 RTSP/1.0
+CSeq: 5
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Session: ba8731ca24215d7b
+Range: npt=0.000-
+
+
+Received 91 new bytes of response data.
+Received a complete PLAY response:
+RTSP/1.0 200 OK
+CSeq: 5
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: 373a105c7a89d579
+
+
+Started playing session
+Data is being streamed (signal with "kill -HUP 967" or "kill -USR1 967" to terminate)...
+Received 91 new bytes of response data.
+Received a complete PLAY response:
+RTSP/1.0 200 OK
+CSeq: 5
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: ba8731ca24215d7b
+
+
+Started playing session
+Data is being streamed (signal with "kill -HUP 969" or "kill -USR1 969" to terminate)...
+Received 169 new bytes of response data.
+Received a complete SETUP response:
+RTSP/1.0 200 OK
+CSeq: 4
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: 0c67a50dbcf5975d
+Transport: RTP/AVP/UDP;unicast;client_port=6692-6693;server_port=33280-33281
+
+
+Setup "audio/MPA" subsession (client ports 6692-6693)
+Sending request: PLAY rtsp://10.0.0.1:7654/2.mp3 RTSP/1.0
+CSeq: 5
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Session: 0c67a50dbcf5975d
+Range: npt=0.000-
+
+
+Received 167 new bytes of response data.
+Received a complete SETUP response:
+RTSP/1.0 200 OK
+CSeq: 4
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: 89d7517d0cf64236
+Transport: RTP/AVP/UDP;unicast;client_port=6694-6695;server_port=3161-3162
+
+
+Setup "audio/MPA" subsession (client ports 6694-6695)
+Sending request: PLAY rtsp://10.0.0.1:7654/3.mp3 RTSP/1.0
+CSeq: 5
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Session: 89d7517d0cf64236
+Range: npt=0.000-
+
+
+Received 91 new bytes of response data.
+Received a complete PLAY response:
+RTSP/1.0 200 OK
+CSeq: 5
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: 0c67a50dbcf5975d
+
+
+Started playing session
+Data is being streamed (signal with "kill -HUP 980" or "kill -USR1 980" to terminate)...
+Received 91 new bytes of response data.
+Received a complete PLAY response:
+RTSP/1.0 200 OK
+CSeq: 5
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: 89d7517d0cf64236
+
+
+Started playing session
+Data is being streamed (signal with "kill -HUP 981" or "kill -USR1 981" to terminate)...
+Received 167 new bytes of response data.
+Received a complete SETUP response:
+RTSP/1.0 200 OK
+CSeq: 4
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: 34ae2dc1dfb44236
+Transport: RTP/AVP/UDP;unicast;client_port=6678-6679;server_port=1695-1696
+
+
+Setup "audio/MPA" subsession (client ports 6678-6679)
+Sending request: PLAY rtsp://10.0.0.1:7654/1.mp3 RTSP/1.0
+CSeq: 5
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Session: 34ae2dc1dfb44236
+Range: npt=0.000-
+
+
+Received 169 new bytes of response data.
+Received a complete SETUP response:
+RTSP/1.0 200 OK
+CSeq: 4
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: c1e4a1348e494251
+Transport: RTP/AVP/UDP;unicast;client_port=6668-6669;server_port=40983-40984
+
+
+Setup "audio/MPA" subsession (client ports 6668-6669)
+Sending request: PLAY rtsp://10.0.0.1:7654/2.mp3 RTSP/1.0
+CSeq: 5
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Session: c1e4a1348e494251
+Range: npt=0.000-
+
+
+Received 91 new bytes of response data.
+Received a complete PLAY response:
+RTSP/1.0 200 OK
+CSeq: 5
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: 34ae2dc1dfb44236
+
+
+Started playing session
+Data is being streamed (signal with "kill -HUP 973" or "kill -USR1 973" to terminate)...
+Received 91 new bytes of response data.
+Received a complete PLAY response:
+RTSP/1.0 200 OK
+CSeq: 5
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: c1e4a1348e494251
+
+
+Started playing session
+Data is being streamed (signal with "kill -HUP 968" or "kill -USR1 968" to terminate)...
+Received 91 new bytes of response data.
+Received a complete PLAY response:
+RTSP/1.0 200 OK
+CSeq: 5
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: f4f268a36bd8a9ab
+
+
+Started playing session
+Data is being streamed (signal with "kill -HUP 978" or "kill -USR1 978" to terminate)...
+Received 91 new bytes of response data.
+Received a complete PLAY response:
+RTSP/1.0 200 OK
+CSeq: 5
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: c1c90e6644fa5816
+
+
+Started playing session
+Data is being streamed (signal with "kill -HUP 974" or "kill -USR1 974" to terminate)...
+Received 91 new bytes of response data.
+Received a complete PLAY response:
+RTSP/1.0 200 OK
+CSeq: 5
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: 2e36cf77af5145c5
+
+
+Started playing session
+Data is being streamed (signal with "kill -HUP 972" or "kill -USR1 972" to terminate)...
+Received 91 new bytes of response data.
+Received a complete PLAY response:
+RTSP/1.0 200 OK
+CSeq: 5
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: 73b51defb64eca33
+
+
+Started playing session
+Data is being streamed (signal with "kill -HUP 975" or "kill -USR1 975" to terminate)...
+Received 91 new bytes of response data.
+Received a complete PLAY response:
+RTSP/1.0 200 OK
+CSeq: 5
+Date: Sun Jan  1 00:00:05 2012 GMT
+Session: 4de0bef93fdbfa2a
+
+
+Started playing session
+Data is being streamed (signal with "kill -HUP 979" or "kill -USR1 979" to terminate)...
+...remote connection opened
+Sending request: OPTIONS rtsp://10.0.0.1:7654/2.mp3 RTSP/1.0
+CSeq: 2
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+
+
+Received 85 new bytes of response data.
+Received a complete OPTIONS response:
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+
+
+Sending request: DESCRIBE rtsp://10.0.0.1:7654/2.mp3 RTSP/1.0
+CSeq: 3
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Accept: application/sdp
+
+
+Received 247 new bytes of response data.
+Received a complete DESCRIBE response:
+RTSP/1.0 200 OK
+CSeq: 3
+Date: Sun Jan  1 00:00:07 2012 GMT
+Content-Type: application/sdp
+Content-Length: 131
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:64
+a=control:streamid=0
+
+Opened URL "rtsp://10.0.0.1:7654/2.mp3", returning a SDP description:
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:64
+a=control:streamid=0
+
+Sending request: SETUP rtsp://10.0.0.1:7654/2.mp3/streamid=0 RTSP/1.0
+CSeq: 4
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Transport: RTP/AVP;unicast;client_port=6698-6699
+
+
+...remote connection opened
+Sending request: OPTIONS rtsp://10.0.0.1:7654/1.mp3 RTSP/1.0
+CSeq: 2
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+
+
+...remote connection opened
+Sending request: OPTIONS rtsp://10.0.0.1:7654/3.mp3 RTSP/1.0
+CSeq: 2
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+
+
+Received 169 new bytes of response data.
+Received a complete SETUP response:
+RTSP/1.0 200 OK
+CSeq: 4
+Date: Sun Jan  1 00:00:07 2012 GMT
+Session: 7bd0f7e6f110fbff
+Transport: RTP/AVP/UDP;unicast;client_port=6698-6699;server_port=34377-34378
+
+
+Setup "audio/MPA" subsession (client ports 6698-6699)
+Sending request: PLAY rtsp://10.0.0.1:7654/2.mp3 RTSP/1.0
+CSeq: 5
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Session: 7bd0f7e6f110fbff
+Range: npt=0.000-
+
+
+Received 85 new bytes of response data.
+Received a complete OPTIONS response:
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+
+
+Sending request: DESCRIBE rtsp://10.0.0.1:7654/1.mp3 RTSP/1.0
+CSeq: 3
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Accept: application/sdp
+
+
+Received 85 new bytes of response data.
+Received a complete OPTIONS response:
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+
+
+Sending request: DESCRIBE rtsp://10.0.0.1:7654/3.mp3 RTSP/1.0
+CSeq: 3
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Accept: application/sdp
+
+
+Received 248 new bytes of response data.
+Received a complete DESCRIBE response:
+RTSP/1.0 200 OK
+CSeq: 3
+Date: Sun Jan  1 00:00:07 2012 GMT
+Content-Type: application/sdp
+Content-Length: 132
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Opened URL "rtsp://10.0.0.1:7654/1.mp3", returning a SDP description:
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Sending request: SETUP rtsp://10.0.0.1:7654/1.mp3/streamid=0 RTSP/1.0
+CSeq: 4
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Transport: RTP/AVP;unicast;client_port=6702-6703
+
+
+Received 248 new bytes of response data.
+Received a complete DESCRIBE response:
+RTSP/1.0 200 OK
+CSeq: 3
+Date: Sun Jan  1 00:00:07 2012 GMT
+Content-Type: application/sdp
+Content-Length: 132
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Opened URL "rtsp://10.0.0.1:7654/3.mp3", returning a SDP description:
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Sending request: SETUP rtsp://10.0.0.1:7654/3.mp3/streamid=0 RTSP/1.0
+CSeq: 4
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Transport: RTP/AVP;unicast;client_port=6700-6701
+
+
+Received 91 new bytes of response data.
+Received a complete PLAY response:
+RTSP/1.0 200 OK
+CSeq: 5
+Date: Sun Jan  1 00:00:07 2012 GMT
+Session: 7bd0f7e6f110fbff
+
+
+Started playing session
+Data is being streamed (signal with "kill -HUP 983" or "kill -USR1 983" to terminate)...
+...remote connection opened
+Sending request: OPTIONS rtsp://10.0.0.1:7654/1.mp3 RTSP/1.0
+CSeq: 2
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+
+
+...remote connection opened
+Sending request: OPTIONS rtsp://10.0.0.1:7654/2.mp3 RTSP/1.0
+CSeq: 2
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+
+
+...remote connection opened
+Sending request: OPTIONS rtsp://10.0.0.1:7654/3.mp3 RTSP/1.0
+CSeq: 2
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+
+
+Received 169 new bytes of response data.
+Received a complete SETUP response:
+RTSP/1.0 200 OK
+CSeq: 4
+Date: Sun Jan  1 00:00:07 2012 GMT
+Session: 2c5a7a2c82eb692d
+Transport: RTP/AVP/UDP;unicast;client_port=6702-6703;server_port=58214-58215
+
+
+Setup "audio/MPA" subsession (client ports 6702-6703)
+Sending request: PLAY rtsp://10.0.0.1:7654/1.mp3 RTSP/1.0
+CSeq: 5
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Session: 2c5a7a2c82eb692d
+Range: npt=0.000-
+
+
+...remote connection opened
+Sending request: OPTIONS rtsp://10.0.0.1:7654/3.mp3 RTSP/1.0
+CSeq: 2
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+
+
+...remote connection opened
+Sending request: OPTIONS rtsp://10.0.0.1:7654/2.mp3 RTSP/1.0
+CSeq: 2
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+
+
+Received 169 new bytes of response data.
+Received a complete SETUP response:
+RTSP/1.0 200 OK
+CSeq: 4
+Date: Sun Jan  1 00:00:07 2012 GMT
+Session: 0b82799e3f792ff6
+Transport: RTP/AVP/UDP;unicast;client_port=6700-6701;server_port=17403-17404
+
+
+Setup "audio/MPA" subsession (client ports 6700-6701)
+Sending request: PLAY rtsp://10.0.0.1:7654/3.mp3 RTSP/1.0
+CSeq: 5
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Session: 0b82799e3f792ff6
+Range: npt=0.000-
+
+
+Received 85 new bytes of response data.
+Received a complete OPTIONS response:
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+
+
+Sending request: DESCRIBE rtsp://10.0.0.1:7654/1.mp3 RTSP/1.0
+CSeq: 3
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Accept: application/sdp
+
+
+Received 85 new bytes of response data.
+Received a complete OPTIONS response:
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+
+
+Sending request: DESCRIBE rtsp://10.0.0.1:7654/3.mp3 RTSP/1.0
+CSeq: 3
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Accept: application/sdp
+
+
+Received 91 new bytes of response data.
+Received a complete PLAY response:
+RTSP/1.0 200 OK
+CSeq: 5
+Date: Sun Jan  1 00:00:07 2012 GMT
+Session: 0b82799e3f792ff6
+
+
+Started playing session
+Data is being streamed (signal with "kill -HUP 984" or "kill -USR1 984" to terminate)...
+Received 248 new bytes of response data.
+Received a complete DESCRIBE response:
+RTSP/1.0 200 OK
+CSeq: 3
+Date: Sun Jan  1 00:00:07 2012 GMT
+Content-Type: application/sdp
+Content-Length: 132
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Opened URL "rtsp://10.0.0.1:7654/3.mp3", returning a SDP description:
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Sending request: SETUP rtsp://10.0.0.1:7654/3.mp3/streamid=0 RTSP/1.0
+CSeq: 4
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Transport: RTP/AVP;unicast;client_port=6712-6713
+
+
+Received 85 new bytes of response data.
+Received a complete OPTIONS response:
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+
+
+Sending request: DESCRIBE rtsp://10.0.0.1:7654/2.mp3 RTSP/1.0
+CSeq: 3
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Accept: application/sdp
+
+
+Received 85 new bytes of response data.
+Received a complete OPTIONS response:
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+
+
+Sending request: DESCRIBE rtsp://10.0.0.1:7654/3.mp3 RTSP/1.0
+CSeq: 3
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Accept: application/sdp
+
+
+Received 85 new bytes of response data.
+Received a complete OPTIONS response:
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+
+
+Sending request: DESCRIBE rtsp://10.0.0.1:7654/2.mp3 RTSP/1.0
+CSeq: 3
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Accept: application/sdp
+
+
+Received 248 new bytes of response data.
+Received a complete DESCRIBE response:
+RTSP/1.0 200 OK
+CSeq: 3
+Date: Sun Jan  1 00:00:07 2012 GMT
+Content-Type: application/sdp
+Content-Length: 132
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Opened URL "rtsp://10.0.0.1:7654/1.mp3", returning a SDP description:
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Sending request: SETUP rtsp://10.0.0.1:7654/1.mp3/streamid=0 RTSP/1.0
+CSeq: 4
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Transport: RTP/AVP;unicast;client_port=6708-6709
+
+
+Received 91 new bytes of response data.
+Received a complete PLAY response:
+RTSP/1.0 200 OK
+CSeq: 5
+Date: Sun Jan  1 00:00:07 2012 GMT
+Session: 2c5a7a2c82eb692d
+
+
+Started playing session
+Data is being streamed (signal with "kill -HUP 985" or "kill -USR1 985" to terminate)...
+...remote connection opened
+Sending request: OPTIONS rtsp://10.0.0.1:7654/3.mp3 RTSP/1.0
+CSeq: 2
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+
+
+...remote connection opened
+Sending request: OPTIONS rtsp://10.0.0.1:7654/2.mp3 RTSP/1.0
+CSeq: 2
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+
+
+...remote connection opened
+Sending request: OPTIONS rtsp://10.0.0.1:7654/1.mp3 RTSP/1.0
+CSeq: 2
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+
+
+Received 167 new bytes of response data.
+Received a complete SETUP response:
+RTSP/1.0 200 OK
+CSeq: 4
+Date: Sun Jan  1 00:00:07 2012 GMT
+Session: 2dba29e97660035e
+Transport: RTP/AVP/UDP;unicast;client_port=6712-6713;server_port=2771-2772
+
+
+Setup "audio/MPA" subsession (client ports 6712-6713)
+Sending request: PLAY rtsp://10.0.0.1:7654/3.mp3 RTSP/1.0
+CSeq: 5
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Session: 2dba29e97660035e
+Range: npt=0.000-
+
+
+...remote connection opened
+Sending request: OPTIONS rtsp://10.0.0.1:7654/2.mp3 RTSP/1.0
+CSeq: 2
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+
+
+...remote connection opened
+Sending request: OPTIONS rtsp://10.0.0.1:7654/3.mp3 RTSP/1.0
+CSeq: 2
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+
+
+...remote connection opened
+Sending request: OPTIONS rtsp://10.0.0.1:7654/1.mp3 RTSP/1.0
+CSeq: 2
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+
+
+Received 247 new bytes of response data.
+Received a complete DESCRIBE response:
+RTSP/1.0 200 OK
+CSeq: 3
+Date: Sun Jan  1 00:00:07 2012 GMT
+Content-Type: application/sdp
+Content-Length: 131
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:64
+a=control:streamid=0
+
+Opened URL "rtsp://10.0.0.1:7654/2.mp3", returning a SDP description:
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:64
+a=control:streamid=0
+
+Sending request: SETUP rtsp://10.0.0.1:7654/2.mp3/streamid=0 RTSP/1.0
+CSeq: 4
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Transport: RTP/AVP;unicast;client_port=6710-6711
+
+
+Received 85 new bytes of response data.
+Received a complete OPTIONS response:
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+
+
+Sending request: DESCRIBE rtsp://10.0.0.1:7654/3.mp3 RTSP/1.0
+CSeq: 3
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Accept: application/sdp
+
+
+Received 85 new bytes of response data.
+Received a complete OPTIONS response:
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+
+
+Sending request: DESCRIBE rtsp://10.0.0.1:7654/2.mp3 RTSP/1.0
+CSeq: 3
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Accept: application/sdp
+
+
+Received 85 new bytes of response data.
+Received a complete OPTIONS response:
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+
+
+Sending request: DESCRIBE rtsp://10.0.0.1:7654/2.mp3 RTSP/1.0
+CSeq: 3
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Accept: application/sdp
+
+
+Received 85 new bytes of response data.
+Received a complete OPTIONS response:
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+
+
+Sending request: DESCRIBE rtsp://10.0.0.1:7654/1.mp3 RTSP/1.0
+CSeq: 3
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Accept: application/sdp
+
+
+Received 85 new bytes of response data.
+Received a complete OPTIONS response:
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+
+
+Sending request: DESCRIBE rtsp://10.0.0.1:7654/1.mp3 RTSP/1.0
+CSeq: 3
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Accept: application/sdp
+
+
+Received 248 new bytes of response data.
+Received a complete DESCRIBE response:
+RTSP/1.0 200 OK
+CSeq: 3
+Date: Sun Jan  1 00:00:07 2012 GMT
+Content-Type: application/sdp
+Content-Length: 132
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Opened URL "rtsp://10.0.0.1:7654/3.mp3", returning a SDP description:
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Sending request: SETUP rtsp://10.0.0.1:7654/3.mp3/streamid=0 RTSP/1.0
+CSeq: 4
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Transport: RTP/AVP;unicast;client_port=6706-6707
+
+
+Received 247 new bytes of response data.
+Received a complete DESCRIBE response:
+RTSP/1.0 200 OK
+CSeq: 3
+Date: Sun Jan  1 00:00:07 2012 GMT
+Content-Type: application/sdp
+Content-Length: 131
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:64
+a=control:streamid=0
+
+Opened URL "rtsp://10.0.0.1:7654/2.mp3", returning a SDP description:
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:64
+a=control:streamid=0
+
+Sending request: SETUP rtsp://10.0.0.1:7654/2.mp3/streamid=0 RTSP/1.0
+CSeq: 4
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Transport: RTP/AVP;unicast;client_port=6704-6705
+
+
+Received 167 new bytes of response data.
+Received a complete SETUP response:
+RTSP/1.0 200 OK
+CSeq: 4
+Date: Sun Jan  1 00:00:07 2012 GMT
+Session: 5c7b0cb18d31073b
+Transport: RTP/AVP/UDP;unicast;client_port=6708-6709;server_port=1999-2000
+
+
+Setup "audio/MPA" subsession (client ports 6708-6709)
+Sending request: PLAY rtsp://10.0.0.1:7654/1.mp3 RTSP/1.0
+CSeq: 5
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Session: 5c7b0cb18d31073b
+Range: npt=0.000-
+
+
+Received 91 new bytes of response data.
+Received a complete PLAY response:
+RTSP/1.0 200 OK
+CSeq: 5
+Date: Sun Jan  1 00:00:07 2012 GMT
+Session: 2dba29e97660035e
+
+
+Started playing session
+Data is being streamed (signal with "kill -HUP 990" or "kill -USR1 990" to terminate)...
+Received 85 new bytes of response data.
+Received a complete OPTIONS response:
+RTSP/1.0 200 OK
+CSeq: 2
+Public: OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE
+
+
+Sending request: DESCRIBE rtsp://10.0.0.1:7654/3.mp3 RTSP/1.0
+CSeq: 3
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Accept: application/sdp
+
+
+Received 169 new bytes of response data.
+Received a complete SETUP response:
+RTSP/1.0 200 OK
+CSeq: 4
+Date: Sun Jan  1 00:00:07 2012 GMT
+Session: ab42f22e3764686b
+Transport: RTP/AVP/UDP;unicast;client_port=6710-6711;server_port=13707-13708
+
+
+Setup "audio/MPA" subsession (client ports 6710-6711)
+Sending request: PLAY rtsp://10.0.0.1:7654/2.mp3 RTSP/1.0
+CSeq: 5
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Session: ab42f22e3764686b
+Range: npt=0.000-
+
+
+Received 247 new bytes of response data.
+Received a complete DESCRIBE response:
+RTSP/1.0 200 OK
+CSeq: 3
+Date: Sun Jan  1 00:00:07 2012 GMT
+Content-Type: application/sdp
+Content-Length: 131
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:64
+a=control:streamid=0
+
+Opened URL "rtsp://10.0.0.1:7654/2.mp3", returning a SDP description:
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:64
+a=control:streamid=0
+
+Sending request: SETUP rtsp://10.0.0.1:7654/2.mp3/streamid=0 RTSP/1.0
+CSeq: 4
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Transport: RTP/AVP;unicast;client_port=6722-6723
+
+
+Received 91 new bytes of response data.
+Received a complete PLAY response:
+RTSP/1.0 200 OK
+CSeq: 5
+Date: Sun Jan  1 00:00:07 2012 GMT
+Session: ab42f22e3764686b
+
+
+Started playing session
+Data is being streamed (signal with "kill -HUP 989" or "kill -USR1 989" to terminate)...
+Received 248 new bytes of response data.
+Received a complete DESCRIBE response:
+RTSP/1.0 200 OK
+CSeq: 3
+Date: Sun Jan  1 00:00:07 2012 GMT
+Content-Type: application/sdp
+Content-Length: 132
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Opened URL "rtsp://10.0.0.1:7654/3.mp3", returning a SDP description:
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Sending request: SETUP rtsp://10.0.0.1:7654/3.mp3/streamid=0 RTSP/1.0
+CSeq: 4
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Transport: RTP/AVP;unicast;client_port=6718-6719
+
+
+Received 248 new bytes of response data.
+Received a complete DESCRIBE response:
+RTSP/1.0 200 OK
+CSeq: 3
+Date: Sun Jan  1 00:00:07 2012 GMT
+Content-Type: application/sdp
+Content-Length: 132
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Opened URL "rtsp://10.0.0.1:7654/3.mp3", returning a SDP description:
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Sending request: SETUP rtsp://10.0.0.1:7654/3.mp3/streamid=0 RTSP/1.0
+CSeq: 4
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Transport: RTP/AVP;unicast;client_port=6724-6725
+
+
+Received 247 new bytes of response data.
+Received a complete DESCRIBE response:
+RTSP/1.0 200 OK
+CSeq: 3
+Date: Sun Jan  1 00:00:07 2012 GMT
+Content-Type: application/sdp
+Content-Length: 131
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:64
+a=control:streamid=0
+
+Opened URL "rtsp://10.0.0.1:7654/2.mp3", returning a SDP description:
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:64
+a=control:streamid=0
+
+Sending request: SETUP rtsp://10.0.0.1:7654/2.mp3/streamid=0 RTSP/1.0
+CSeq: 4
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Transport: RTP/AVP;unicast;client_port=6716-6717
+
+
+Received 248 new bytes of response data.
+Received a complete DESCRIBE response:
+RTSP/1.0 200 OK
+CSeq: 3
+Date: Sun Jan  1 00:00:07 2012 GMT
+Content-Type: application/sdp
+Content-Length: 132
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Opened URL "rtsp://10.0.0.1:7654/1.mp3", returning a SDP description:
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Sending request: SETUP rtsp://10.0.0.1:7654/1.mp3/streamid=0 RTSP/1.0
+CSeq: 4
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Transport: RTP/AVP;unicast;client_port=6720-6721
+
+
+Received 248 new bytes of response data.
+Received a complete DESCRIBE response:
+RTSP/1.0 200 OK
+CSeq: 3
+Date: Sun Jan  1 00:00:07 2012 GMT
+Content-Type: application/sdp
+Content-Length: 132
+
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Opened URL "rtsp://10.0.0.1:7654/1.mp3", returning a SDP description:
+v=0
+o=- 0 0 IN IP4 127.0.0.1
+t=0 0
+s=No Title
+a=tool:libavformat 52.18.0
+m=audio 0 RTP/AVP 14
+b=AS:128
+a=control:streamid=0
+
+Sending request: SETUP rtsp://10.0.0.1:7654/1.mp3/streamid=0 RTSP/1.0
+CSeq: 4
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Transport: RTP/AVP;unicast;client_port=6714-6715
+
+
+Received 169 new bytes of response data.
+Received a complete SETUP response:
+RTSP/1.0 200 OK
+CSeq: 4
+Date: Sun Jan  1 00:00:07 2012 GMT
+Session: 469f389c340d1e71
+Transport: RTP/AVP/UDP;unicast;client_port=6704-6705;server_port=58188-58189
+
+
+Setup "audio/MPA" subsession (client ports 6704-6705)
+Sending request: PLAY rtsp://10.0.0.1:7654/2.mp3 RTSP/1.0
+CSeq: 5
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Session: 469f389c340d1e71
+Range: npt=0.000-
+
+
+Received 169 new bytes of response data.
+Received a complete SETUP response:
+RTSP/1.0 200 OK
+CSeq: 4
+Date: Sun Jan  1 00:00:07 2012 GMT
+Session: 483cc462e6fd56c8
+Transport: RTP/AVP/UDP;unicast;client_port=6706-6707;server_port=12209-12210
+
+
+Setup "audio/MPA" subsession (client ports 6706-6707)
+Sending request: PLAY rtsp://10.0.0.1:7654/3.mp3 RTSP/1.0
+CSeq: 5
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Session: 483cc462e6fd56c8
+Range: npt=0.000-
+
+
+Received 91 new bytes of response data.
+Received a complete PLAY response:
+RTSP/1.0 200 OK
+CSeq: 5
+Date: Sun Jan  1 00:00:07 2012 GMT
+Session: 5c7b0cb18d31073b
+
+
+Started playing session
+Data is being streamed (signal with "kill -HUP 988" or "kill -USR1 988" to terminate)...
+Received 169 new bytes of response data.
+Received a complete SETUP response:
+RTSP/1.0 200 OK
+CSeq: 4
+Date: Sun Jan  1 00:00:07 2012 GMT
+Session: 20dbd000a3cfd430
+Transport: RTP/AVP/UDP;unicast;client_port=6722-6723;server_port=40315-40316
+
+
+Setup "audio/MPA" subsession (client ports 6722-6723)
+Sending request: PLAY rtsp://10.0.0.1:7654/2.mp3 RTSP/1.0
+CSeq: 5
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Session: 20dbd000a3cfd430
+Range: npt=0.000-
+
+
+Received 169 new bytes of response data.
+Received a complete SETUP response:
+RTSP/1.0 200 OK
+CSeq: 4
+Date: Sun Jan  1 00:00:07 2012 GMT
+Session: 63daafa73f3cee9e
+Transport: RTP/AVP/UDP;unicast;client_port=6724-6725;server_port=38252-38253
+
+
+Setup "audio/MPA" subsession (client ports 6724-6725)
+Sending request: PLAY rtsp://10.0.0.1:7654/3.mp3 RTSP/1.0
+CSeq: 5
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Session: 63daafa73f3cee9e
+Range: npt=0.000-
+
+
+Received 91 new bytes of response data.
+Received a complete PLAY response:
+RTSP/1.0 200 OK
+CSeq: 5
+Date: Sun Jan  1 00:00:07 2012 GMT
+Session: 20dbd000a3cfd430
+
+
+Started playing session
+Data is being streamed (signal with "kill -HUP 995" or "kill -USR1 995" to terminate)...
+Received 169 new bytes of response data.
+Received a complete SETUP response:
+RTSP/1.0 200 OK
+CSeq: 4
+Date: Sun Jan  1 00:00:07 2012 GMT
+Session: bd2b59b83b9b9592
+Transport: RTP/AVP/UDP;unicast;client_port=6718-6719;server_port=20772-20773
+
+
+Setup "audio/MPA" subsession (client ports 6718-6719)
+Sending request: PLAY rtsp://10.0.0.1:7654/3.mp3 RTSP/1.0
+CSeq: 5
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Session: bd2b59b83b9b9592
+Range: npt=0.000-
+
+
+Received 91 new bytes of response data.
+Received a complete PLAY response:
+RTSP/1.0 200 OK
+CSeq: 5
+Date: Sun Jan  1 00:00:07 2012 GMT
+Session: 63daafa73f3cee9e
+
+
+Started playing session
+Data is being streamed (signal with "kill -HUP 996" or "kill -USR1 996" to terminate)...
+Received 167 new bytes of response data.
+Received a complete SETUP response:
+RTSP/1.0 200 OK
+CSeq: 4
+Date: Sun Jan  1 00:00:07 2012 GMT
+Session: ca1ce28994081610
+Transport: RTP/AVP/UDP;unicast;client_port=6716-6717;server_port=5555-5556
+
+
+Setup "audio/MPA" subsession (client ports 6716-6717)
+Sending request: PLAY rtsp://10.0.0.1:7654/2.mp3 RTSP/1.0
+CSeq: 5
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Session: ca1ce28994081610
+Range: npt=0.000-
+
+
+Received 91 new bytes of response data.
+Received a complete PLAY response:
+RTSP/1.0 200 OK
+CSeq: 5
+Date: Sun Jan  1 00:00:07 2012 GMT
+Session: bd2b59b83b9b9592
+
+
+Started playing session
+Data is being streamed (signal with "kill -HUP 993" or "kill -USR1 993" to terminate)...
+Received 169 new bytes of response data.
+Received a complete SETUP response:
+RTSP/1.0 200 OK
+CSeq: 4
+Date: Sun Jan  1 00:00:07 2012 GMT
+Session: 48d0de7c9fff1c0a
+Transport: RTP/AVP/UDP;unicast;client_port=6720-6721;server_port=40863-40864
+
+
+Setup "audio/MPA" subsession (client ports 6720-6721)
+Sending request: PLAY rtsp://10.0.0.1:7654/1.mp3 RTSP/1.0
+CSeq: 5
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Session: 48d0de7c9fff1c0a
+Range: npt=0.000-
+
+
+Received 91 new bytes of response data.
+Received a complete PLAY response:
+RTSP/1.0 200 OK
+CSeq: 5
+Date: Sun Jan  1 00:00:07 2012 GMT
+Session: ca1ce28994081610
+
+
+Started playing session
+Data is being streamed (signal with "kill -HUP 992" or "kill -USR1 992" to terminate)...
+Received 169 new bytes of response data.
+Received a complete SETUP response:
+RTSP/1.0 200 OK
+CSeq: 4
+Date: Sun Jan  1 00:00:07 2012 GMT
+Session: 1b3cf3a34392158f
+Transport: RTP/AVP/UDP;unicast;client_port=6714-6715;server_port=59599-59600
+
+
+Setup "audio/MPA" subsession (client ports 6714-6715)
+Sending request: PLAY rtsp://10.0.0.1:7654/1.mp3 RTSP/1.0
+CSeq: 5
+User-Agent: ./openRTSP (LIVE555 Streaming Media v2013.09.07)
+Session: 1b3cf3a34392158f
+Range: npt=0.000-
+
+
+Received 91 new bytes of response data.
+Received a complete PLAY response:
+RTSP/1.0 200 OK
+CSeq: 5
+Date: Sun Jan  1 00:00:07 2012 GMT
+Session: 48d0de7c9fff1c0a
+
+
+Started playing session
+Data is being streamed (signal with "kill -HUP 994" or "kill -USR1 994" to terminate)...
+Received 91 new bytes of response data.
+Received a complete PLAY response:
+RTSP/1.0 200 OK
+CSeq: 5
+Date: Sun Jan  1 00:00:07 2012 GMT
+Session: 483cc462e6fd56c8
+
+
+Started playing session
+Data is being streamed (signal with "kill -HUP 987" or "kill -USR1 987" to terminate)...
+Received 91 new bytes of response data.
+Received a complete PLAY response:
+RTSP/1.0 200 OK
+CSeq: 5
+Date: Sun Jan  1 00:00:07 2012 GMT
+Session: 1b3cf3a34392158f
+
+
+Started playing session
+Data is being streamed (signal with "kill -HUP 991" or "kill -USR1 991" to terminate)...
+Received 91 new bytes of response data.
+Received a complete PLAY response:
+RTSP/1.0 200 OK
+CSeq: 5
+Date: Sun Jan  1 00:00:07 2012 GMT
+Session: 469f389c340d1e71
+
+
+Started playing session
+Data is being streamed (signal with "kill -HUP 986" or "kill -USR1 986" to terminate)...
+done.
+halting machine

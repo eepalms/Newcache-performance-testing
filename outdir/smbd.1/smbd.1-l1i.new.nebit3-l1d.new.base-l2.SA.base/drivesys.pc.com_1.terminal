@@ -1,0 +1,21 @@
+dbench version 4.00 - Copyright Andrew Tridgell 1999-2004
+
+dos charset 'CP850' unavailable - using ASCII
+no talloc stackframe around, leaking memory
+Running for 600 seconds with load 'smb-readfiles.txt' and minimum warmup 120 secs
+failed to create barrier semaphore 
+3 of 3 processes prepared for launch   0 sec
+releasing clients
+dos charset 'CP850' unavailable - using ASCII
+dos charset 'CP850' unavailable - using ASCII
+dos charset 'CP850' unavailable - using ASCII
+
+ Operation                Count    AvgLat    MaxLat
+ --------------------------------------------------
+ CLOSE                       15     0.657     5.570
+ OPEN                        15     6.963    52.664
+ READ                        30     0.870     3.471
+
+Throughput 0 MB/sec  3 clients  3 procs  max_latency=0.000 ms
+done.
+halting machine

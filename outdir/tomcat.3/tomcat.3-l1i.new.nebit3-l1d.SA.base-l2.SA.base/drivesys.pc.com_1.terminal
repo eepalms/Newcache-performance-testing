@@ -1,0 +1,45 @@
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.0.0.1 (be patient).....done
+
+
+Server Software:        
+Server Hostname:        10.0.0.1
+Server Port:            8080
+
+Document Path:          /examples/jsp/jsp2/el/basic-arithmetic.jsp
+Document Length:        0 bytes
+
+Concurrency Level:      2
+Time taken for tests:   0.995 seconds
+Complete requests:      10
+Failed requests:        0
+Write errors:           0
+Total transferred:      0 bytes
+HTML transferred:       0 bytes
+Requests per second:    10.05 [#/sec] (mean)
+Time per request:       199.009 [ms] (mean)
+Time per request:       99.504 [ms] (mean, across all concurrent requests)
+Transfer rate:          0.00 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     9  197 375.5     19     914
+Waiting:        0    0   0.0      0       0
+Total:         10  198 375.5     19     915
+
+Percentage of the requests served within a certain time (ms)
+  50%     19
+  66%     24
+  75%     28
+  80%    905
+  90%    915
+  95%    915
+  98%    915
+  99%    915
+ 100%    915 (longest request)
+done.
+halting machine

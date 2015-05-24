@@ -1,0 +1,3 @@
+bash-4.2# Sun Jan  1 00:00:05 2012 10.0.0.2:6668 - - "PLAY 2.mp3/streamid=0 RTP/UDP"
+Sun Jan  1 00:00:05 2012 10.0.0.2:6670 - - "PLAY 3.mp3/streamid=0 RTP/UDP"
+Sun Jan  1 00:00:05 2012 10.0.0.2:6666 - - "PLAY 1.mp3/streamid=0 RTP/UDP"

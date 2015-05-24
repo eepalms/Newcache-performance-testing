@@ -1,0 +1,1 @@
+bash-4.2# bhm[963]: segfault at fef8 ip 00007fe6c22fb57c sp 00007fffcb1ebc38 error 4 in libc-2.15.so[7fe6c2278000+1b5000]

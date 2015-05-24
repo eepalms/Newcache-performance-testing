@@ -1,0 +1,3705 @@
+{
+    "etherlink": {
+        "name": "etherlink", 
+        "delay": 0.0, 
+        "delay_var": 0.0, 
+        "int1": {
+            "peer": "drivesys.ethernet.interface", 
+            "role": "SLAVE"
+        }, 
+        "int0": {
+            "peer": "testsys.ethernet.interface", 
+            "role": "SLAVE"
+        }, 
+        "cxx_class": "EtherLink", 
+        "path": "etherlink", 
+        "type": "EtherLink"
+    }, 
+    "name": null, 
+    "testsys": {
+        "bridge": {
+            "slave": {
+                "peer": "testsys.membus.master[1]", 
+                "role": "SLAVE"
+            }, 
+            "name": "bridge", 
+            "clock": 1, 
+            "req_size": 16, 
+            "delay": 5.0000000000000004e-08, 
+            "master": {
+                "peer": "testsys.iobus.slave[0]", 
+                "role": "MASTER"
+            }, 
+            "cxx_class": "Bridge", 
+            "path": "testsys.bridge", 
+            "resp_size": 16, 
+            "type": "Bridge"
+        }, 
+        "acpi_description_table_pointer": {
+            "name": "acpi_description_table_pointer", 
+            "xsdt": {
+                "name": "xsdt", 
+                "creator_revision": 0, 
+                "cxx_class": "X86ISA::ACPI::XSDT", 
+                "path": "testsys.acpi_description_table_pointer.xsdt", 
+                "oem_revision": 0, 
+                "type": "X86ACPIXSDT"
+            }, 
+            "cxx_class": "X86ISA::ACPI::RSDP", 
+            "path": "testsys.acpi_description_table_pointer", 
+            "type": "X86ACPIRSDP", 
+            "revision": 2
+        }, 
+        "membus": {
+            "slave": {
+                "peer": [
+                    "testsys.apicbridge.master", 
+                    "testsys.system_port", 
+                    "testsys.iocache.mem_side", 
+                    "testsys.l3.mem_side", 
+                    "testsys.cpu.interrupts.int_master"
+                ], 
+                "role": "SLAVE"
+            }, 
+            "name": "membus", 
+            "badaddr_responder": {
+                "ret_data8": 255, 
+                "name": "badaddr_responder", 
+                "clock": 1, 
+                "ret_bad_addr": true, 
+                "pio": {
+                    "peer": "testsys.membus.default", 
+                    "role": "SLAVE"
+                }, 
+                "pio_latency": 1.0000000000000001e-07, 
+                "fake_mem": false, 
+                "pio_size": 8, 
+                "ret_data32": 4294967295, 
+                "update_data": false, 
+                "ret_data64": 18446744073709551615, 
+                "cxx_class": "IsaFake", 
+                "path": "testsys.membus.badaddr_responder", 
+                "pio_addr": 0, 
+                "type": "IsaFake", 
+                "ret_data16": 65535
+            }, 
+            "clock": 1e-09, 
+            "default": {
+                "peer": "testsys.membus.badaddr_responder.pio", 
+                "role": "MASTER"
+            }, 
+            "header_cycles": 1, 
+            "width": 8, 
+            "use_default_range": false, 
+            "master": {
+                "peer": [
+                    "testsys.physmem.port", 
+                    "testsys.bridge.slave", 
+                    "testsys.cpu.interrupts.pio", 
+                    "testsys.cpu.interrupts.int_slave"
+                ], 
+                "role": "MASTER"
+            }, 
+            "cxx_class": "CoherentBus", 
+            "path": "testsys.membus", 
+            "block_size": 64, 
+            "type": "CoherentBus"
+        }, 
+        "iobus": {
+            "slave": {
+                "peer": [
+                    "testsys.bridge.master", 
+                    "testsys.ethernet.dma", 
+                    "testsys.pc.south_bridge.ide.dma", 
+                    "testsys.pc.south_bridge.io_apic.int_master"
+                ], 
+                "role": "SLAVE"
+            }, 
+            "name": "iobus", 
+            "clock": 1e-09, 
+            "default": {
+                "peer": "testsys.pc.pciconfig.pio", 
+                "role": "MASTER"
+            }, 
+            "header_cycles": 1, 
+            "width": 8, 
+            "use_default_range": true, 
+            "master": {
+                "peer": [
+                    "testsys.ethernet.pio", 
+                    "testsys.ethernet.config", 
+                    "testsys.apicbridge.slave", 
+                    "testsys.pc.south_bridge.cmos.pio", 
+                    "testsys.pc.south_bridge.dma1.pio", 
+                    "testsys.pc.south_bridge.ide.pio", 
+                    "testsys.pc.south_bridge.ide.config", 
+                    "testsys.pc.south_bridge.keyboard.pio", 
+                    "testsys.pc.south_bridge.pic1.pio", 
+                    "testsys.pc.south_bridge.pic2.pio", 
+                    "testsys.pc.south_bridge.pit.pio", 
+                    "testsys.pc.south_bridge.speaker.pio", 
+                    "testsys.pc.south_bridge.io_apic.pio", 
+                    "testsys.pc.i_dont_exist.pio", 
+                    "testsys.pc.behind_pci.pio", 
+                    "testsys.pc.com_1.pio", 
+                    "testsys.pc.fake_com_2.pio", 
+                    "testsys.pc.fake_com_3.pio", 
+                    "testsys.pc.fake_com_4.pio", 
+                    "testsys.pc.fake_floppy.pio", 
+                    "testsys.iocache.cpu_side"
+                ], 
+                "role": "MASTER"
+            }, 
+            "cxx_class": "NoncoherentBus", 
+            "path": "testsys.iobus", 
+            "block_size": 64, 
+            "type": "NoncoherentBus"
+        }, 
+        "physmem": {
+            "latency": 6.670000000000001e-08, 
+            "name": "physmem", 
+            "clock": 1, 
+            "latency_var": 0.0, 
+            "zero": false, 
+            "conf_table_reported": false, 
+            "cxx_class": "SimpleMemory", 
+            "path": "testsys.physmem", 
+            "null": false, 
+            "type": "SimpleMemory", 
+            "port": {
+                "peer": "testsys.membus.master[0]", 
+                "role": "SLAVE"
+            }, 
+            "in_addr_map": true
+        }, 
+        "apicbridge": {
+            "slave": {
+                "peer": "testsys.iobus.master[2]", 
+                "role": "SLAVE"
+            }, 
+            "name": "apicbridge", 
+            "clock": 1, 
+            "req_size": 16, 
+            "delay": 5.0000000000000004e-08, 
+            "master": {
+                "peer": "testsys.membus.slave[0]", 
+                "role": "MASTER"
+            }, 
+            "cxx_class": "Bridge", 
+            "path": "testsys.apicbridge", 
+            "resp_size": 16, 
+            "type": "Bridge"
+        }, 
+        "intel_mp_table": {
+            "oem_table_addr": 0, 
+            "name": "intel_mp_table", 
+            "ext_entries": [
+                {
+                    "parent_bus": 0, 
+                    "name": "ext_entries", 
+                    "type": "X86IntelMPBusHierarchy", 
+                    "subtractive_decode": true, 
+                    "cxx_class": "X86ISA::IntelMP::BusHierarchy", 
+                    "path": "testsys.intel_mp_table.ext_entries", 
+                    "bus_id": 1
+                }
+            ], 
+            "spec_rev": 4, 
+            "base_entries": [
+                {
+                    "enable": true, 
+                    "local_apic_version": 20, 
+                    "name": "base_entries00", 
+                    "family": 0, 
+                    "local_apic_id": 0, 
+                    "bootstrap": true, 
+                    "feature_flags": 0, 
+                    "stepping": 0, 
+                    "cxx_class": "X86ISA::IntelMP::Processor", 
+                    "path": "testsys.intel_mp_table.base_entries00", 
+                    "model": 0, 
+                    "type": "X86IntelMPProcessor"
+                }, 
+                {
+                    "enable": true, 
+                    "name": "base_entries01", 
+                    "cxx_class": "X86ISA::IntelMP::IOAPIC", 
+                    "version": 17, 
+                    "address": 4273995776, 
+                    "path": "testsys.intel_mp_table.base_entries01", 
+                    "type": "X86IntelMPIOAPIC", 
+                    "id": 1
+                }, 
+                {
+                    "path": "testsys.intel_mp_table.base_entries02", 
+                    "bus_id": 0, 
+                    "type": "X86IntelMPBus", 
+                    "name": "base_entries02", 
+                    "cxx_class": "X86ISA::IntelMP::Bus"
+                }, 
+                {
+                    "path": "testsys.intel_mp_table.base_entries03", 
+                    "bus_id": 1, 
+                    "type": "X86IntelMPBus", 
+                    "name": "base_entries03", 
+                    "cxx_class": "X86ISA::IntelMP::Bus"
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries04", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 0, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 16, 
+                    "path": "testsys.intel_mp_table.base_entries04", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 16
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries05", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 0, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 17, 
+                    "path": "testsys.intel_mp_table.base_entries05", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 4
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries06", 
+                    "interrupt_type": "ExtInt", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 0, 
+                    "path": "testsys.intel_mp_table.base_entries06", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 0
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries07", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 2, 
+                    "path": "testsys.intel_mp_table.base_entries07", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 0
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries08", 
+                    "interrupt_type": "ExtInt", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 0, 
+                    "path": "testsys.intel_mp_table.base_entries08", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 1
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries09", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 1, 
+                    "path": "testsys.intel_mp_table.base_entries09", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 1
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries10", 
+                    "interrupt_type": "ExtInt", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 0, 
+                    "path": "testsys.intel_mp_table.base_entries10", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 3
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries11", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 3, 
+                    "path": "testsys.intel_mp_table.base_entries11", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 3
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries12", 
+                    "interrupt_type": "ExtInt", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 0, 
+                    "path": "testsys.intel_mp_table.base_entries12", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 4
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries13", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 4, 
+                    "path": "testsys.intel_mp_table.base_entries13", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 4
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries14", 
+                    "interrupt_type": "ExtInt", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 0, 
+                    "path": "testsys.intel_mp_table.base_entries14", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 5
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries15", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 5, 
+                    "path": "testsys.intel_mp_table.base_entries15", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 5
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries16", 
+                    "interrupt_type": "ExtInt", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 0, 
+                    "path": "testsys.intel_mp_table.base_entries16", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 6
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries17", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 6, 
+                    "path": "testsys.intel_mp_table.base_entries17", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 6
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries18", 
+                    "interrupt_type": "ExtInt", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 0, 
+                    "path": "testsys.intel_mp_table.base_entries18", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 7
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries19", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 7, 
+                    "path": "testsys.intel_mp_table.base_entries19", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 7
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries20", 
+                    "interrupt_type": "ExtInt", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 0, 
+                    "path": "testsys.intel_mp_table.base_entries20", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 8
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries21", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 8, 
+                    "path": "testsys.intel_mp_table.base_entries21", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 8
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries22", 
+                    "interrupt_type": "ExtInt", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 0, 
+                    "path": "testsys.intel_mp_table.base_entries22", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 9
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries23", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 9, 
+                    "path": "testsys.intel_mp_table.base_entries23", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 9
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries24", 
+                    "interrupt_type": "ExtInt", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 0, 
+                    "path": "testsys.intel_mp_table.base_entries24", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 10
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries25", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 10, 
+                    "path": "testsys.intel_mp_table.base_entries25", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 10
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries26", 
+                    "interrupt_type": "ExtInt", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 0, 
+                    "path": "testsys.intel_mp_table.base_entries26", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 11
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries27", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 11, 
+                    "path": "testsys.intel_mp_table.base_entries27", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 11
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries28", 
+                    "interrupt_type": "ExtInt", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 0, 
+                    "path": "testsys.intel_mp_table.base_entries28", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 12
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries29", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 12, 
+                    "path": "testsys.intel_mp_table.base_entries29", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 12
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries30", 
+                    "interrupt_type": "ExtInt", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 0, 
+                    "path": "testsys.intel_mp_table.base_entries30", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 13
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries31", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 13, 
+                    "path": "testsys.intel_mp_table.base_entries31", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 13
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries32", 
+                    "interrupt_type": "ExtInt", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 0, 
+                    "path": "testsys.intel_mp_table.base_entries32", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 14
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries33", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 14, 
+                    "path": "testsys.intel_mp_table.base_entries33", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 14
+                }
+            ], 
+            "cxx_class": "X86ISA::IntelMP::ConfigTable", 
+            "path": "testsys.intel_mp_table", 
+            "type": "X86IntelMPConfigTable", 
+            "local_apic": 4276092928, 
+            "oem_table_size": 0
+        }, 
+        "cxx_class": "LinuxX86System", 
+        "tol3bus": {
+            "slave": {
+                "peer": [
+                    "testsys.l2.mem_side"
+                ], 
+                "role": "SLAVE"
+            }, 
+            "name": "tol3bus", 
+            "clock": 1e-09, 
+            "header_cycles": 1, 
+            "width": 8, 
+            "use_default_range": false, 
+            "master": {
+                "peer": [
+                    "testsys.l3.cpu_side"
+                ], 
+                "role": "MASTER"
+            }, 
+            "cxx_class": "CoherentBus", 
+            "path": "testsys.tol3bus", 
+            "block_size": 64, 
+            "type": "CoherentBus"
+        }, 
+        "work_end_ckpt_count": 0, 
+        "clock": 1, 
+        "work_begin_ckpt_count": 0, 
+        "pc": {
+            "fake_com_4": {
+                "ret_data8": 255, 
+                "name": "fake_com_4", 
+                "clock": 1, 
+                "ret_bad_addr": false, 
+                "pio": {
+                    "peer": "testsys.iobus.master[18]", 
+                    "role": "SLAVE"
+                }, 
+                "pio_latency": 1.0000000000000001e-07, 
+                "fake_mem": false, 
+                "pio_size": 8, 
+                "ret_data32": 4294967295, 
+                "update_data": false, 
+                "ret_data64": 18446744073709551615, 
+                "cxx_class": "IsaFake", 
+                "path": "testsys.pc.fake_com_4", 
+                "pio_addr": 9223372036854776552, 
+                "type": "IsaFake", 
+                "ret_data16": 65535
+            }, 
+            "pciconfig": {
+                "name": "pciconfig", 
+                "clock": 1, 
+                "bus": 0, 
+                "pio": {
+                    "peer": "testsys.iobus.default", 
+                    "role": "SLAVE"
+                }, 
+                "pio_latency": 3.0000000000000004e-08, 
+                "cxx_class": "PciConfigAll", 
+                "path": "testsys.pc.pciconfig", 
+                "type": "PciConfigAll", 
+                "size": 16777216
+            }, 
+            "fake_com_2": {
+                "ret_data8": 255, 
+                "name": "fake_com_2", 
+                "clock": 1, 
+                "ret_bad_addr": false, 
+                "pio": {
+                    "peer": "testsys.iobus.master[16]", 
+                    "role": "SLAVE"
+                }, 
+                "pio_latency": 1.0000000000000001e-07, 
+                "fake_mem": false, 
+                "pio_size": 8, 
+                "ret_data32": 4294967295, 
+                "update_data": false, 
+                "ret_data64": 18446744073709551615, 
+                "cxx_class": "IsaFake", 
+                "path": "testsys.pc.fake_com_2", 
+                "pio_addr": 9223372036854776568, 
+                "type": "IsaFake", 
+                "ret_data16": 65535
+            }, 
+            "name": "pc", 
+            "south_bridge": {
+                "int_lines": [
+                    {
+                        "path": "testsys.pc.south_bridge.int_lines0", 
+                        "sink": {
+                            "path": "testsys.pc.south_bridge.int_lines0.sink", 
+                            "number": 0, 
+                            "type": "X86IntSinkPin", 
+                            "name": "sink", 
+                            "cxx_class": "X86ISA::IntSinkPin"
+                        }, 
+                        "type": "X86IntLine", 
+                        "name": "int_lines0", 
+                        "cxx_class": "X86ISA::IntLine"
+                    }, 
+                    {
+                        "path": "testsys.pc.south_bridge.int_lines1", 
+                        "sink": {
+                            "path": "testsys.pc.south_bridge.int_lines1.sink", 
+                            "number": 2, 
+                            "type": "X86IntSinkPin", 
+                            "name": "sink", 
+                            "cxx_class": "X86ISA::IntSinkPin"
+                        }, 
+                        "type": "X86IntLine", 
+                        "name": "int_lines1", 
+                        "cxx_class": "X86ISA::IntLine"
+                    }, 
+                    {
+                        "path": "testsys.pc.south_bridge.int_lines2", 
+                        "sink": {
+                            "path": "testsys.pc.south_bridge.int_lines2.sink", 
+                            "number": 0, 
+                            "type": "X86IntSinkPin", 
+                            "name": "sink", 
+                            "cxx_class": "X86ISA::IntSinkPin"
+                        }, 
+                        "type": "X86IntLine", 
+                        "name": "int_lines2", 
+                        "cxx_class": "X86ISA::IntLine"
+                    }, 
+                    {
+                        "path": "testsys.pc.south_bridge.int_lines3", 
+                        "sink": {
+                            "path": "testsys.pc.south_bridge.int_lines3.sink", 
+                            "number": 0, 
+                            "type": "X86IntSinkPin", 
+                            "name": "sink", 
+                            "cxx_class": "X86ISA::IntSinkPin"
+                        }, 
+                        "type": "X86IntLine", 
+                        "name": "int_lines3", 
+                        "cxx_class": "X86ISA::IntLine"
+                    }, 
+                    {
+                        "path": "testsys.pc.south_bridge.int_lines4", 
+                        "sink": {
+                            "path": "testsys.pc.south_bridge.int_lines4.sink", 
+                            "number": 2, 
+                            "type": "X86IntSinkPin", 
+                            "name": "sink", 
+                            "cxx_class": "X86ISA::IntSinkPin"
+                        }, 
+                        "type": "X86IntLine", 
+                        "name": "int_lines4", 
+                        "cxx_class": "X86ISA::IntLine"
+                    }, 
+                    {
+                        "path": "testsys.pc.south_bridge.int_lines5", 
+                        "sink": {
+                            "path": "testsys.pc.south_bridge.int_lines5.sink", 
+                            "number": 1, 
+                            "type": "X86IntSinkPin", 
+                            "name": "sink", 
+                            "cxx_class": "X86ISA::IntSinkPin"
+                        }, 
+                        "type": "X86IntLine", 
+                        "name": "int_lines5", 
+                        "cxx_class": "X86ISA::IntLine"
+                    }, 
+                    {
+                        "path": "testsys.pc.south_bridge.int_lines6", 
+                        "sink": {
+                            "path": "testsys.pc.south_bridge.int_lines6.sink", 
+                            "number": 12, 
+                            "type": "X86IntSinkPin", 
+                            "name": "sink", 
+                            "cxx_class": "X86ISA::IntSinkPin"
+                        }, 
+                        "type": "X86IntLine", 
+                        "name": "int_lines6", 
+                        "cxx_class": "X86ISA::IntLine"
+                    }
+                ], 
+                "name": "south_bridge", 
+                "keyboard": {
+                    "command_port": 9223372036854775908, 
+                    "name": "keyboard", 
+                    "clock": 1, 
+                    "mouse_int_pin": {
+                        "path": "testsys.pc.south_bridge.keyboard.mouse_int_pin", 
+                        "type": "X86IntSourcePin", 
+                        "name": "mouse_int_pin", 
+                        "cxx_class": "X86ISA::IntSourcePin"
+                    }, 
+                    "pio": {
+                        "peer": "testsys.iobus.master[7]", 
+                        "role": "SLAVE"
+                    }, 
+                    "pio_latency": 1.0000000000000001e-07, 
+                    "keyboard_int_pin": {
+                        "path": "testsys.pc.south_bridge.keyboard.keyboard_int_pin", 
+                        "type": "X86IntSourcePin", 
+                        "name": "keyboard_int_pin", 
+                        "cxx_class": "X86ISA::IntSourcePin"
+                    }, 
+                    "cxx_class": "X86ISA::I8042", 
+                    "path": "testsys.pc.south_bridge.keyboard", 
+                    "pio_addr": 0, 
+                    "data_port": 9223372036854775904, 
+                    "type": "I8042"
+                }, 
+                "pit": {
+                    "name": "pit", 
+                    "clock": 1, 
+                    "int_pin": {
+                        "path": "testsys.pc.south_bridge.pit.int_pin", 
+                        "type": "X86IntSourcePin", 
+                        "name": "int_pin", 
+                        "cxx_class": "X86ISA::IntSourcePin"
+                    }, 
+                    "pio": {
+                        "peer": "testsys.iobus.master[10]", 
+                        "role": "SLAVE"
+                    }, 
+                    "pio_latency": 1.0000000000000001e-07, 
+                    "cxx_class": "X86ISA::I8254", 
+                    "path": "testsys.pc.south_bridge.pit", 
+                    "pio_addr": 9223372036854775872, 
+                    "type": "I8254"
+                }, 
+                "io_apic": {
+                    "int_master": {
+                        "peer": "testsys.iobus.slave[3]", 
+                        "role": "MASTER"
+                    }, 
+                    "name": "io_apic", 
+                    "clock": 1, 
+                    "pio": {
+                        "peer": "testsys.iobus.master[12]", 
+                        "role": "SLAVE"
+                    }, 
+                    "pio_latency": 1.0000000000000001e-07, 
+                    "apic_id": 1, 
+                    "int_latency": 1e-09, 
+                    "cxx_class": "X86ISA::I82094AA", 
+                    "path": "testsys.pc.south_bridge.io_apic", 
+                    "pio_addr": 4273995776, 
+                    "type": "I82094AA"
+                }, 
+                "pic1": {
+                    "name": "pic1", 
+                    "clock": 1, 
+                    "pio": {
+                        "peer": "testsys.iobus.master[8]", 
+                        "role": "SLAVE"
+                    }, 
+                    "pio_latency": 1.0000000000000001e-07, 
+                    "output": {
+                        "path": "testsys.pc.south_bridge.pic1.output", 
+                        "type": "X86IntSourcePin", 
+                        "name": "output", 
+                        "cxx_class": "X86ISA::IntSourcePin"
+                    }, 
+                    "mode": "I8259Master", 
+                    "cxx_class": "X86ISA::I8259", 
+                    "path": "testsys.pc.south_bridge.pic1", 
+                    "pio_addr": 9223372036854775840, 
+                    "type": "I8259"
+                }, 
+                "pic2": {
+                    "name": "pic2", 
+                    "clock": 1, 
+                    "pio": {
+                        "peer": "testsys.iobus.master[9]", 
+                        "role": "SLAVE"
+                    }, 
+                    "pio_latency": 1.0000000000000001e-07, 
+                    "output": {
+                        "path": "testsys.pc.south_bridge.pic2.output", 
+                        "type": "X86IntSourcePin", 
+                        "name": "output", 
+                        "cxx_class": "X86ISA::IntSourcePin"
+                    }, 
+                    "mode": "I8259Slave", 
+                    "cxx_class": "X86ISA::I8259", 
+                    "path": "testsys.pc.south_bridge.pic2", 
+                    "pio_addr": 9223372036854775968, 
+                    "type": "I8259"
+                }, 
+                "dma1": {
+                    "name": "dma1", 
+                    "clock": 1, 
+                    "pio": {
+                        "peer": "testsys.iobus.master[4]", 
+                        "role": "SLAVE"
+                    }, 
+                    "pio_latency": 1.0000000000000001e-07, 
+                    "cxx_class": "X86ISA::I8237", 
+                    "path": "testsys.pc.south_bridge.dma1", 
+                    "pio_addr": 9223372036854775808, 
+                    "type": "I8237"
+                }, 
+                "speaker": {
+                    "name": "speaker", 
+                    "clock": 1, 
+                    "pio": {
+                        "peer": "testsys.iobus.master[11]", 
+                        "role": "SLAVE"
+                    }, 
+                    "pio_latency": 1.0000000000000001e-07, 
+                    "cxx_class": "X86ISA::Speaker", 
+                    "path": "testsys.pc.south_bridge.speaker", 
+                    "pio_addr": 9223372036854775905, 
+                    "type": "PcSpeaker"
+                }, 
+                "cxx_class": "SouthBridge", 
+                "path": "testsys.pc.south_bridge", 
+                "ide": {
+                    "VendorID": 32902, 
+                    "InterruptPin": 1, 
+                    "HeaderType": 0, 
+                    "pio": {
+                        "peer": "testsys.iobus.master[5]", 
+                        "role": "SLAVE"
+                    }, 
+                    "pci_dev": 4, 
+                    "ctrl_offset": 0, 
+                    "BAR3LegacyIO": true, 
+                    "cxx_class": "IdeController", 
+                    "SubClassCode": 1, 
+                    "CardbusCIS": 0, 
+                    "MinimumGrant": 0, 
+                    "Revision": 0, 
+                    "Status": 640, 
+                    "MaximumLatency": 0, 
+                    "SubsystemID": 0, 
+                    "BAR2LegacyIO": true, 
+                    "clock": 1, 
+                    "BAR0Size": 8, 
+                    "pio_latency": 3.0000000000000004e-08, 
+                    "LatencyTimer": 0, 
+                    "pci_func": 0, 
+                    "BAR4LegacyIO": false, 
+                    "CacheLineSize": 0, 
+                    "dma": {
+                        "peer": "testsys.iobus.slave[2]", 
+                        "role": "MASTER"
+                    }, 
+                    "type": "IdeController", 
+                    "io_shift": 0, 
+                    "SubsystemVendorID": 0, 
+                    "BAR3Size": 3, 
+                    "BAR5LegacyIO": false, 
+                    "BAR0LegacyIO": true, 
+                    "Command": 0, 
+                    "DeviceID": 28945, 
+                    "ProgIF": 128, 
+                    "path": "testsys.pc.south_bridge.ide", 
+                    "BAR1LegacyIO": true, 
+                    "BAR4Size": 16, 
+                    "BAR4": 1, 
+                    "BAR1": 1012, 
+                    "BAR0": 496, 
+                    "BAR3": 884, 
+                    "BAR2": 368, 
+                    "BAR5": 1, 
+                    "name": "ide", 
+                    "ClassCode": 1, 
+                    "config": {
+                        "peer": "testsys.iobus.master[6]", 
+                        "role": "SLAVE"
+                    }, 
+                    "BIST": 0, 
+                    "disks": [
+                        {
+                            "driveID": "master", 
+                            "name": "disks0", 
+                            "image": {
+                                "read_only": false, 
+                                "name": "image", 
+                                "child": {
+                                    "read_only": true, 
+                                    "path": "testsys.pc.south_bridge.ide.disks0.image.child", 
+                                    "type": "RawDiskImage", 
+                                    "name": "child", 
+                                    "cxx_class": "RawDiskImage"
+                                }, 
+                                "cxx_class": "CowDiskImage", 
+                                "path": "testsys.pc.south_bridge.ide.disks0.image", 
+                                "table_size": 65536, 
+                                "type": "CowDiskImage"
+                            }, 
+                            "delay": 1e-06, 
+                            "cxx_class": "IdeDisk", 
+                            "path": "testsys.pc.south_bridge.ide.disks0", 
+                            "type": "IdeDisk"
+                        }, 
+                        {
+                            "driveID": "master", 
+                            "name": "disks1", 
+                            "image": {
+                                "read_only": false, 
+                                "name": "image", 
+                                "child": {
+                                    "read_only": true, 
+                                    "path": "testsys.pc.south_bridge.ide.disks1.image.child", 
+                                    "type": "RawDiskImage", 
+                                    "name": "child", 
+                                    "cxx_class": "RawDiskImage"
+                                }, 
+                                "cxx_class": "CowDiskImage", 
+                                "path": "testsys.pc.south_bridge.ide.disks1.image", 
+                                "table_size": 65536, 
+                                "type": "CowDiskImage"
+                            }, 
+                            "delay": 1e-06, 
+                            "cxx_class": "IdeDisk", 
+                            "path": "testsys.pc.south_bridge.ide.disks1", 
+                            "type": "IdeDisk"
+                        }
+                    ], 
+                    "BAR2Size": 8, 
+                    "ExpansionROM": 0, 
+                    "BAR5Size": 0, 
+                    "config_latency": 2e-08, 
+                    "pci_bus": 0, 
+                    "InterruptLine": 14, 
+                    "BAR1Size": 3
+                }, 
+                "type": "SouthBridge", 
+                "cmos": {
+                    "name": "cmos", 
+                    "clock": 1, 
+                    "int_pin": {
+                        "path": "testsys.pc.south_bridge.cmos.int_pin", 
+                        "type": "X86IntSourcePin", 
+                        "name": "int_pin", 
+                        "cxx_class": "X86ISA::IntSourcePin"
+                    }, 
+                    "time": "Sun Jan  1 00:00:00 2012", 
+                    "pio_latency": 1.0000000000000001e-07, 
+                    "pio": {
+                        "peer": "testsys.iobus.master[3]", 
+                        "role": "SLAVE"
+                    }, 
+                    "cxx_class": "X86ISA::Cmos", 
+                    "path": "testsys.pc.south_bridge.cmos", 
+                    "pio_addr": 9223372036854775920, 
+                    "type": "Cmos"
+                }
+            }, 
+            "fake_floppy": {
+                "ret_data8": 255, 
+                "name": "fake_floppy", 
+                "clock": 1, 
+                "ret_bad_addr": false, 
+                "pio": {
+                    "peer": "testsys.iobus.master[19]", 
+                    "role": "SLAVE"
+                }, 
+                "pio_latency": 1.0000000000000001e-07, 
+                "fake_mem": false, 
+                "pio_size": 2, 
+                "ret_data32": 4294967295, 
+                "update_data": false, 
+                "ret_data64": 18446744073709551615, 
+                "cxx_class": "IsaFake", 
+                "path": "testsys.pc.fake_floppy", 
+                "pio_addr": 9223372036854776818, 
+                "type": "IsaFake", 
+                "ret_data16": 65535
+            }, 
+            "terminal": {
+                "name": "terminal", 
+                "cxx_class": "Terminal", 
+                "number": 0, 
+                "output": true, 
+                "path": "testsys.pc.com_1.terminal", 
+                "type": "Terminal", 
+                "port": 3456
+            }, 
+            "com_1": {
+                "name": "com_1", 
+                "clock": 1, 
+                "pio": {
+                    "peer": "testsys.iobus.master[15]", 
+                    "role": "SLAVE"
+                }, 
+                "pio_latency": 1.0000000000000001e-07, 
+                "terminal": {
+                    "name": "terminal", 
+                    "cxx_class": "Terminal", 
+                    "number": 0, 
+                    "output": true, 
+                    "path": "testsys.pc.com_1.terminal", 
+                    "type": "Terminal", 
+                    "port": 3456
+                }, 
+                "cxx_class": "Uart8250", 
+                "path": "testsys.pc.com_1", 
+                "pio_addr": 9223372036854776824, 
+                "type": "Uart8250"
+            }, 
+            "cxx_class": "Pc", 
+            "path": "testsys.pc", 
+            "behind_pci": {
+                "ret_data8": 255, 
+                "name": "behind_pci", 
+                "clock": 1, 
+                "ret_bad_addr": false, 
+                "pio": {
+                    "peer": "testsys.iobus.master[14]", 
+                    "role": "SLAVE"
+                }, 
+                "pio_latency": 1.0000000000000001e-07, 
+                "fake_mem": false, 
+                "pio_size": 8, 
+                "ret_data32": 4294967295, 
+                "update_data": false, 
+                "ret_data64": 18446744073709551615, 
+                "cxx_class": "IsaFake", 
+                "path": "testsys.pc.behind_pci", 
+                "pio_addr": 9223372036854779128, 
+                "type": "IsaFake", 
+                "ret_data16": 65535
+            }, 
+            "type": "Pc", 
+            "i_dont_exist": {
+                "ret_data8": 255, 
+                "name": "i_dont_exist", 
+                "clock": 1, 
+                "ret_bad_addr": false, 
+                "pio": {
+                    "peer": "testsys.iobus.master[13]", 
+                    "role": "SLAVE"
+                }, 
+                "pio_latency": 1.0000000000000001e-07, 
+                "fake_mem": false, 
+                "pio_size": 1, 
+                "ret_data32": 4294967295, 
+                "update_data": false, 
+                "ret_data64": 18446744073709551615, 
+                "cxx_class": "IsaFake", 
+                "path": "testsys.pc.i_dont_exist", 
+                "pio_addr": 9223372036854775936, 
+                "type": "IsaFake", 
+                "ret_data16": 65535
+            }, 
+            "fake_com_3": {
+                "ret_data8": 255, 
+                "name": "fake_com_3", 
+                "clock": 1, 
+                "ret_bad_addr": false, 
+                "pio": {
+                    "peer": "testsys.iobus.master[17]", 
+                    "role": "SLAVE"
+                }, 
+                "pio_latency": 1.0000000000000001e-07, 
+                "fake_mem": false, 
+                "pio_size": 8, 
+                "ret_data32": 4294967295, 
+                "update_data": false, 
+                "ret_data64": 18446744073709551615, 
+                "cxx_class": "IsaFake", 
+                "path": "testsys.pc.fake_com_3", 
+                "pio_addr": 9223372036854776808, 
+                "type": "IsaFake", 
+                "ret_data16": 65535
+            }
+        }, 
+        "smbios_table": {
+            "name": "smbios_table", 
+            "structures": [
+                {
+                    "major": 0, 
+                    "name": "structures", 
+                    "emb_cont_firmware_major": 0, 
+                    "rom_size": 0, 
+                    "starting_addr_segment": 0, 
+                    "emb_cont_firmware_minor": 0, 
+                    "cxx_class": "X86ISA::SMBios::BiosInformation", 
+                    "path": "testsys.smbios_table.structures", 
+                    "type": "X86SMBiosBiosInformation", 
+                    "minor": 0
+                }
+            ], 
+            "major_version": 2, 
+            "minor_version": 5, 
+            "cxx_class": "X86ISA::SMBios::SMBiosTable", 
+            "path": "testsys.smbios_table", 
+            "type": "X86SMBiosSMBiosTable"
+        }, 
+        "e820_table": {
+            "path": "testsys.e820_table", 
+            "entries": [
+                {
+                    "addr": 0, 
+                    "range_type": 2, 
+                    "cxx_class": "X86ISA::E820Entry", 
+                    "path": "testsys.e820_table.entries0", 
+                    "size": 1048576, 
+                    "type": "X86E820Entry", 
+                    "name": "entries0"
+                }, 
+                {
+                    "addr": 1048576, 
+                    "range_type": 1, 
+                    "cxx_class": "X86ISA::E820Entry", 
+                    "path": "testsys.e820_table.entries1", 
+                    "size": 2146435072, 
+                    "type": "X86E820Entry", 
+                    "name": "entries1"
+                }
+            ], 
+            "type": "X86E820Table", 
+            "name": "e820_table", 
+            "cxx_class": "X86ISA::E820Table"
+        }, 
+        "tol2bus": {
+            "slave": {
+                "peer": [
+                    "testsys.cpu.icache.mem_side", 
+                    "testsys.cpu.dcache.mem_side", 
+                    "testsys.cpu.itb_walker_cache.mem_side", 
+                    "testsys.cpu.dtb_walker_cache.mem_side"
+                ], 
+                "role": "SLAVE"
+            }, 
+            "name": "tol2bus", 
+            "clock": 1e-09, 
+            "header_cycles": 1, 
+            "width": 8, 
+            "use_default_range": false, 
+            "master": {
+                "peer": [
+                    "testsys.l2.cpu_side"
+                ], 
+                "role": "MASTER"
+            }, 
+            "cxx_class": "CoherentBus", 
+            "path": "testsys.tol2bus", 
+            "block_size": 64, 
+            "type": "CoherentBus"
+        }, 
+        "work_end_exit_count": 0, 
+        "type": "LinuxX86System", 
+        "intel_mp_pointer": {
+            "imcr_present": true, 
+            "name": "intel_mp_pointer", 
+            "spec_rev": 4, 
+            "cxx_class": "X86ISA::IntelMP::FloatingPointer", 
+            "path": "testsys.intel_mp_pointer", 
+            "type": "X86IntelMPFloatingPointer", 
+            "default_config": 0
+        }, 
+        "system_port": {
+            "peer": "testsys.membus.slave[1]", 
+            "role": "MASTER"
+        }, 
+        "work_cpus_ckpt_count": 0, 
+        "work_begin_exit_count": 0, 
+        "path": "testsys", 
+        "iocache": {
+            "is_top_level": true, 
+            "write_buffers": 8, 
+            "response_latency": 1e-08, 
+            "cxx_class": "BaseCache", 
+            "block_size": 64, 
+            "nebit": 4, 
+            "size": 1024, 
+            "clock": 1, 
+            "trace_addr": 0, 
+            "max_miss_count": 0, 
+            "mem_side": {
+                "peer": "testsys.membus.slave[2]", 
+                "role": "MASTER"
+            }, 
+            "mshrs": 20, 
+            "forward_snoops": false, 
+            "set_mask": 0, 
+            "hit_latency": 1e-08, 
+            "tgts_per_mshr": 12, 
+            "assoc": 8, 
+            "prefetch_on_access": false, 
+            "path": "testsys.iocache", 
+            "prioritizeRequests": false, 
+            "name": "iocache", 
+            "type": "BaseCache", 
+            "hash_delay": 1, 
+            "subblock_size": 0, 
+            "cpu_side": {
+                "peer": "testsys.iobus.master[20]", 
+                "role": "SLAVE"
+            }, 
+            "two_queue": false
+        }, 
+        "mem_mode": "atomic", 
+        "name": "testsys", 
+        "init_param": 0, 
+        "switch_cpus": [
+            {
+                "SQEntries": 32, 
+                "smtLSQThreshold": 100, 
+                "fetchWidth": 8, 
+                "do_statistics_insts": true, 
+                "dispatchWidth": 8, 
+                "iewToRenameDelay": 1, 
+                "itb": {
+                    "name": "itb", 
+                    "numThreads": 16, 
+                    "cxx_class": "X86ISA::TLB", 
+                    "walker": {
+                        "path": "testsys.switch_cpus.itb.walker", 
+                        "clock": 1, 
+                        "type": "X86PagetableWalker", 
+                        "name": "walker", 
+                        "cxx_class": "X86ISA::Walker"
+                    }, 
+                    "path": "testsys.switch_cpus.itb", 
+                    "type": "X86TLB", 
+                    "size": 64
+                }, 
+                "wbWidth": 8, 
+                "squashWidth": 8, 
+                "commitToFetchDelay": 1, 
+                "function_trace": false, 
+                "do_checkpoint_insts": true, 
+                "BTBEntries": 4096, 
+                "cxx_class": "DerivO3CPU", 
+                "backComSize": 5, 
+                "max_loads_all_threads": 0, 
+                "numROBEntries": 192, 
+                "commitToIEWDelay": 1, 
+                "commitToDecodeDelay": 1, 
+                "decodeToRenameDelay": 1, 
+                "fetchToDecodeDelay": 1, 
+                "issueWidth": 8, 
+                "LSQCheckLoads": true, 
+                "clock": 3.333333333333333e-10, 
+                "commitToRenameDelay": 1, 
+                "instShiftAmt": 2, 
+                "wbDepth": 1, 
+                "choicePredictorSize": 8192, 
+                "cachePorts": 200, 
+                "function_trace_start": 0, 
+                "cpu_id": 0, 
+                "store_set_clear_period": 250000, 
+                "numPhysFloatRegs": 256, 
+                "numPhysIntRegs": 256, 
+                "smtNumFetchingThreads": 1, 
+                "localHistoryTableSize": 2048, 
+                "do_quiesce": true, 
+                "type": "DerivO3CPU", 
+                "numRobs": 1, 
+                "smtROBThreshold": 100, 
+                "profile": 0.0, 
+                "renameToROBDelay": 1, 
+                "choiceCtrBits": 2, 
+                "fetchTrapLatency": 1, 
+                "progress_interval": 0.0, 
+                "defer_registration": true, 
+                "commitWidth": 8, 
+                "numThreads": 1, 
+                "decodeToFetchDelay": 1, 
+                "renameToFetchDelay": 1, 
+                "LSQDepCheckShift": 4, 
+                "decodeWidth": 8, 
+                "localCtrBits": 2, 
+                "globalHistoryBits": 13, 
+                "needsTSO": true, 
+                "renameWidth": 8, 
+                "path": "testsys.switch_cpus", 
+                "localPredictorSize": 2048, 
+                "max_insts_all_threads": 0, 
+                "max_loads_any_thread": 0, 
+                "RASSize": 16, 
+                "globalPredictorSize": 8192, 
+                "localHistoryBits": 11, 
+                "iewToDecodeDelay": 1, 
+                "max_insts_any_thread": 2000000000, 
+                "issueToExecuteDelay": 1, 
+                "name": "switch_cpus", 
+                "dtb": {
+                    "name": "dtb", 
+                    "numThreads": 16, 
+                    "cxx_class": "X86ISA::TLB", 
+                    "walker": {
+                        "path": "testsys.switch_cpus.dtb.walker", 
+                        "clock": 1, 
+                        "type": "X86PagetableWalker", 
+                        "name": "walker", 
+                        "cxx_class": "X86ISA::Walker"
+                    }, 
+                    "path": "testsys.switch_cpus.dtb", 
+                    "type": "X86TLB", 
+                    "size": 64
+                }, 
+                "globalCtrBits": 2, 
+                "trapLatency": 13, 
+                "SSITSize": 1024, 
+                "renameToDecodeDelay": 1, 
+                "fuPool": {
+                    "path": "testsys.switch_cpus.fuPool", 
+                    "FUList": [
+                        {
+                            "count": 6, 
+                            "opList": [
+                                {
+                                    "issueLat": 1, 
+                                    "opLat": 1, 
+                                    "name": "opList", 
+                                    "opClass": "IntAlu", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList0.opList", 
+                                    "type": "OpDesc"
+                                }
+                            ], 
+                            "name": "FUList0", 
+                            "cxx_class": "FUDesc", 
+                            "path": "testsys.switch_cpus.fuPool.FUList0", 
+                            "type": "FUDesc"
+                        }, 
+                        {
+                            "count": 2, 
+                            "opList": [
+                                {
+                                    "issueLat": 1, 
+                                    "opLat": 3, 
+                                    "name": "opList0", 
+                                    "opClass": "IntMult", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList1.opList0", 
+                                    "type": "OpDesc"
+                                }, 
+                                {
+                                    "issueLat": 19, 
+                                    "opLat": 20, 
+                                    "name": "opList1", 
+                                    "opClass": "IntDiv", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList1.opList1", 
+                                    "type": "OpDesc"
+                                }
+                            ], 
+                            "name": "FUList1", 
+                            "cxx_class": "FUDesc", 
+                            "path": "testsys.switch_cpus.fuPool.FUList1", 
+                            "type": "FUDesc"
+                        }, 
+                        {
+                            "count": 4, 
+                            "opList": [
+                                {
+                                    "issueLat": 1, 
+                                    "opLat": 2, 
+                                    "name": "opList0", 
+                                    "opClass": "FloatAdd", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList2.opList0", 
+                                    "type": "OpDesc"
+                                }, 
+                                {
+                                    "issueLat": 1, 
+                                    "opLat": 2, 
+                                    "name": "opList1", 
+                                    "opClass": "FloatCmp", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList2.opList1", 
+                                    "type": "OpDesc"
+                                }, 
+                                {
+                                    "issueLat": 1, 
+                                    "opLat": 2, 
+                                    "name": "opList2", 
+                                    "opClass": "FloatCvt", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList2.opList2", 
+                                    "type": "OpDesc"
+                                }
+                            ], 
+                            "name": "FUList2", 
+                            "cxx_class": "FUDesc", 
+                            "path": "testsys.switch_cpus.fuPool.FUList2", 
+                            "type": "FUDesc"
+                        }, 
+                        {
+                            "count": 2, 
+                            "opList": [
+                                {
+                                    "issueLat": 1, 
+                                    "opLat": 4, 
+                                    "name": "opList0", 
+                                    "opClass": "FloatMult", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList3.opList0", 
+                                    "type": "OpDesc"
+                                }, 
+                                {
+                                    "issueLat": 12, 
+                                    "opLat": 12, 
+                                    "name": "opList1", 
+                                    "opClass": "FloatDiv", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList3.opList1", 
+                                    "type": "OpDesc"
+                                }, 
+                                {
+                                    "issueLat": 24, 
+                                    "opLat": 24, 
+                                    "name": "opList2", 
+                                    "opClass": "FloatSqrt", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList3.opList2", 
+                                    "type": "OpDesc"
+                                }
+                            ], 
+                            "name": "FUList3", 
+                            "cxx_class": "FUDesc", 
+                            "path": "testsys.switch_cpus.fuPool.FUList3", 
+                            "type": "FUDesc"
+                        }, 
+                        {
+                            "count": 0, 
+                            "opList": [
+                                {
+                                    "issueLat": 1, 
+                                    "opLat": 1, 
+                                    "name": "opList", 
+                                    "opClass": "MemRead", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList4.opList", 
+                                    "type": "OpDesc"
+                                }
+                            ], 
+                            "name": "FUList4", 
+                            "cxx_class": "FUDesc", 
+                            "path": "testsys.switch_cpus.fuPool.FUList4", 
+                            "type": "FUDesc"
+                        }, 
+                        {
+                            "count": 4, 
+                            "opList": [
+                                {
+                                    "issueLat": 1, 
+                                    "opLat": 1, 
+                                    "name": "opList00", 
+                                    "opClass": "SimdAdd", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList5.opList00", 
+                                    "type": "OpDesc"
+                                }, 
+                                {
+                                    "issueLat": 1, 
+                                    "opLat": 1, 
+                                    "name": "opList01", 
+                                    "opClass": "SimdAddAcc", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList5.opList01", 
+                                    "type": "OpDesc"
+                                }, 
+                                {
+                                    "issueLat": 1, 
+                                    "opLat": 1, 
+                                    "name": "opList02", 
+                                    "opClass": "SimdAlu", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList5.opList02", 
+                                    "type": "OpDesc"
+                                }, 
+                                {
+                                    "issueLat": 1, 
+                                    "opLat": 1, 
+                                    "name": "opList03", 
+                                    "opClass": "SimdCmp", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList5.opList03", 
+                                    "type": "OpDesc"
+                                }, 
+                                {
+                                    "issueLat": 1, 
+                                    "opLat": 1, 
+                                    "name": "opList04", 
+                                    "opClass": "SimdCvt", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList5.opList04", 
+                                    "type": "OpDesc"
+                                }, 
+                                {
+                                    "issueLat": 1, 
+                                    "opLat": 1, 
+                                    "name": "opList05", 
+                                    "opClass": "SimdMisc", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList5.opList05", 
+                                    "type": "OpDesc"
+                                }, 
+                                {
+                                    "issueLat": 1, 
+                                    "opLat": 1, 
+                                    "name": "opList06", 
+                                    "opClass": "SimdMult", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList5.opList06", 
+                                    "type": "OpDesc"
+                                }, 
+                                {
+                                    "issueLat": 1, 
+                                    "opLat": 1, 
+                                    "name": "opList07", 
+                                    "opClass": "SimdMultAcc", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList5.opList07", 
+                                    "type": "OpDesc"
+                                }, 
+                                {
+                                    "issueLat": 1, 
+                                    "opLat": 1, 
+                                    "name": "opList08", 
+                                    "opClass": "SimdShift", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList5.opList08", 
+                                    "type": "OpDesc"
+                                }, 
+                                {
+                                    "issueLat": 1, 
+                                    "opLat": 1, 
+                                    "name": "opList09", 
+                                    "opClass": "SimdShiftAcc", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList5.opList09", 
+                                    "type": "OpDesc"
+                                }, 
+                                {
+                                    "issueLat": 1, 
+                                    "opLat": 1, 
+                                    "name": "opList10", 
+                                    "opClass": "SimdSqrt", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList5.opList10", 
+                                    "type": "OpDesc"
+                                }, 
+                                {
+                                    "issueLat": 1, 
+                                    "opLat": 1, 
+                                    "name": "opList11", 
+                                    "opClass": "SimdFloatAdd", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList5.opList11", 
+                                    "type": "OpDesc"
+                                }, 
+                                {
+                                    "issueLat": 1, 
+                                    "opLat": 1, 
+                                    "name": "opList12", 
+                                    "opClass": "SimdFloatAlu", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList5.opList12", 
+                                    "type": "OpDesc"
+                                }, 
+                                {
+                                    "issueLat": 1, 
+                                    "opLat": 1, 
+                                    "name": "opList13", 
+                                    "opClass": "SimdFloatCmp", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList5.opList13", 
+                                    "type": "OpDesc"
+                                }, 
+                                {
+                                    "issueLat": 1, 
+                                    "opLat": 1, 
+                                    "name": "opList14", 
+                                    "opClass": "SimdFloatCvt", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList5.opList14", 
+                                    "type": "OpDesc"
+                                }, 
+                                {
+                                    "issueLat": 1, 
+                                    "opLat": 1, 
+                                    "name": "opList15", 
+                                    "opClass": "SimdFloatDiv", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList5.opList15", 
+                                    "type": "OpDesc"
+                                }, 
+                                {
+                                    "issueLat": 1, 
+                                    "opLat": 1, 
+                                    "name": "opList16", 
+                                    "opClass": "SimdFloatMisc", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList5.opList16", 
+                                    "type": "OpDesc"
+                                }, 
+                                {
+                                    "issueLat": 1, 
+                                    "opLat": 1, 
+                                    "name": "opList17", 
+                                    "opClass": "SimdFloatMult", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList5.opList17", 
+                                    "type": "OpDesc"
+                                }, 
+                                {
+                                    "issueLat": 1, 
+                                    "opLat": 1, 
+                                    "name": "opList18", 
+                                    "opClass": "SimdFloatMultAcc", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList5.opList18", 
+                                    "type": "OpDesc"
+                                }, 
+                                {
+                                    "issueLat": 1, 
+                                    "opLat": 1, 
+                                    "name": "opList19", 
+                                    "opClass": "SimdFloatSqrt", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList5.opList19", 
+                                    "type": "OpDesc"
+                                }
+                            ], 
+                            "name": "FUList5", 
+                            "cxx_class": "FUDesc", 
+                            "path": "testsys.switch_cpus.fuPool.FUList5", 
+                            "type": "FUDesc"
+                        }, 
+                        {
+                            "count": 0, 
+                            "opList": [
+                                {
+                                    "issueLat": 1, 
+                                    "opLat": 1, 
+                                    "name": "opList", 
+                                    "opClass": "MemWrite", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList6.opList", 
+                                    "type": "OpDesc"
+                                }
+                            ], 
+                            "name": "FUList6", 
+                            "cxx_class": "FUDesc", 
+                            "path": "testsys.switch_cpus.fuPool.FUList6", 
+                            "type": "FUDesc"
+                        }, 
+                        {
+                            "count": 4, 
+                            "opList": [
+                                {
+                                    "issueLat": 1, 
+                                    "opLat": 1, 
+                                    "name": "opList0", 
+                                    "opClass": "MemRead", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList7.opList0", 
+                                    "type": "OpDesc"
+                                }, 
+                                {
+                                    "issueLat": 1, 
+                                    "opLat": 1, 
+                                    "name": "opList1", 
+                                    "opClass": "MemWrite", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList7.opList1", 
+                                    "type": "OpDesc"
+                                }
+                            ], 
+                            "name": "FUList7", 
+                            "cxx_class": "FUDesc", 
+                            "path": "testsys.switch_cpus.fuPool.FUList7", 
+                            "type": "FUDesc"
+                        }, 
+                        {
+                            "count": 1, 
+                            "opList": [
+                                {
+                                    "issueLat": 3, 
+                                    "opLat": 3, 
+                                    "name": "opList", 
+                                    "opClass": "IprAccess", 
+                                    "cxx_class": "OpDesc", 
+                                    "path": "testsys.switch_cpus.fuPool.FUList8.opList", 
+                                    "type": "OpDesc"
+                                }
+                            ], 
+                            "name": "FUList8", 
+                            "cxx_class": "FUDesc", 
+                            "path": "testsys.switch_cpus.fuPool.FUList8", 
+                            "type": "FUDesc"
+                        }
+                    ], 
+                    "type": "FUPool", 
+                    "name": "fuPool", 
+                    "cxx_class": "FUPool"
+                }, 
+                "forwardComSize": 5, 
+                "BTBTagSize": 16, 
+                "numIQEntries": 64, 
+                "activity": 0, 
+                "LFSTSize": 1024, 
+                "iewToCommitDelay": 1, 
+                "renameToIEWDelay": 2, 
+                "iewToFetchDelay": 1, 
+                "tracer": {
+                    "path": "testsys.switch_cpus.tracer", 
+                    "type": "ExeTracer", 
+                    "name": "tracer", 
+                    "cxx_class": "Trace::ExeTracer"
+                }, 
+                "LQEntries": 32, 
+                "smtIQThreshold": 100
+            }
+        ], 
+        "load_addr_mask": 18446744073709551615, 
+        "work_item_id": -1, 
+        "intrctrl": {
+            "path": "testsys.intrctrl", 
+            "type": "IntrControl", 
+            "name": "intrctrl", 
+            "cxx_class": "IntrControl"
+        }, 
+        "l2": {
+            "is_top_level": false, 
+            "write_buffers": 8, 
+            "response_latency": 3.3e-09, 
+            "cxx_class": "BaseCache", 
+            "block_size": 64, 
+            "nebit": 4, 
+            "size": 262144, 
+            "clock": 1, 
+            "trace_addr": 0, 
+            "max_miss_count": 0, 
+            "mem_side": {
+                "peer": "testsys.tol3bus.slave[0]", 
+                "role": "MASTER"
+            }, 
+            "mshrs": 20, 
+            "forward_snoops": true, 
+            "set_mask": 0, 
+            "hit_latency": 3.3e-09, 
+            "tgts_per_mshr": 12, 
+            "assoc": 8, 
+            "prefetch_on_access": false, 
+            "path": "testsys.l2", 
+            "prioritizeRequests": false, 
+            "name": "l2", 
+            "type": "BaseCache", 
+            "hash_delay": 1, 
+            "subblock_size": 0, 
+            "cpu_side": {
+                "peer": "testsys.tol2bus.master[0]", 
+                "role": "SLAVE"
+            }, 
+            "two_queue": false
+        }, 
+        "l3": {
+            "is_top_level": false, 
+            "write_buffers": 8, 
+            "response_latency": 1.17e-08, 
+            "cxx_class": "BaseCache", 
+            "block_size": 64, 
+            "nebit": 4, 
+            "size": 2097152, 
+            "clock": 1, 
+            "trace_addr": 0, 
+            "max_miss_count": 0, 
+            "mem_side": {
+                "peer": "testsys.membus.slave[3]", 
+                "role": "MASTER"
+            }, 
+            "mshrs": 32, 
+            "forward_snoops": true, 
+            "set_mask": 0, 
+            "hit_latency": 1.17e-08, 
+            "tgts_per_mshr": 12, 
+            "assoc": 16, 
+            "prefetch_on_access": false, 
+            "path": "testsys.l3", 
+            "prioritizeRequests": false, 
+            "name": "l3", 
+            "type": "BaseCache", 
+            "hash_delay": 1, 
+            "subblock_size": 0, 
+            "cpu_side": {
+                "peer": "testsys.tol3bus.master[0]", 
+                "role": "SLAVE"
+            }, 
+            "two_queue": false
+        }, 
+        "ethernet": {
+            "VendorID": 32902, 
+            "InterruptPin": 1, 
+            "fetch_delay": 1e-08, 
+            "HeaderType": 0, 
+            "pio": {
+                "peer": "testsys.iobus.master[0]", 
+                "role": "SLAVE"
+            }, 
+            "rx_write_delay": 0.0, 
+            "pci_dev": 1, 
+            "interface": {
+                "peer": "etherlink.int0", 
+                "role": "MASTER"
+            }, 
+            "BAR3LegacyIO": false, 
+            "cxx_class": "IGbE", 
+            "SubClassCode": 0, 
+            "CardbusCIS": 0, 
+            "MinimumGrant": 255, 
+            "config": {
+                "peer": "testsys.iobus.master[1]", 
+                "role": "SLAVE"
+            }, 
+            "phy_epid": 896, 
+            "Revision": 0, 
+            "Status": 0, 
+            "hardware_address": "00:90:00:00:00:01", 
+            "MaximumLatency": 0, 
+            "wb_delay": 1e-08, 
+            "SubsystemID": 4104, 
+            "BAR2LegacyIO": false, 
+            "clock": 2e-09, 
+            "BAR0Size": 131072, 
+            "pio_latency": 3.0000000000000004e-08, 
+            "LatencyTimer": 0, 
+            "pci_func": 0, 
+            "tx_desc_cache_size": 64, 
+            "BAR4LegacyIO": false, 
+            "CacheLineSize": 0, 
+            "dma": {
+                "peer": "testsys.iobus.slave[1]", 
+                "role": "MASTER"
+            }, 
+            "tx_read_delay": 0.0, 
+            "type": "IGbE", 
+            "SubsystemVendorID": 32902, 
+            "BAR3Size": 0, 
+            "tx_fifo_size": 393216, 
+            "BAR5LegacyIO": false, 
+            "rx_desc_cache_size": 64, 
+            "BAR0LegacyIO": false, 
+            "use_flow_control": false, 
+            "Command": 0, 
+            "DeviceID": 4213, 
+            "ProgIF": 0, 
+            "wb_comp_delay": 1e-08, 
+            "path": "testsys.ethernet", 
+            "BAR1LegacyIO": false, 
+            "BAR4Size": 0, 
+            "BAR4": 0, 
+            "BAR1": 0, 
+            "BAR0": 0, 
+            "BAR3": 0, 
+            "BAR2": 0, 
+            "BAR5": 0, 
+            "name": "ethernet", 
+            "ClassCode": 2, 
+            "phy_pid": 680, 
+            "BIST": 0, 
+            "BAR2Size": 0, 
+            "ExpansionROM": 0, 
+            "rx_fifo_size": 393216, 
+            "BAR5Size": 0, 
+            "config_latency": 2e-08, 
+            "pci_bus": 0, 
+            "fetch_comp_delay": 1e-08, 
+            "InterruptLine": 17, 
+            "BAR1Size": 0
+        }, 
+        "num_work_ids": 16, 
+        "cpu": [
+            {
+                "do_statistics_insts": true, 
+                "numThreads": 1, 
+                "itb": {
+                    "name": "itb", 
+                    "numThreads": 16, 
+                    "cxx_class": "X86ISA::TLB", 
+                    "walker": {
+                        "name": "walker", 
+                        "clock": 1, 
+                        "cxx_class": "X86ISA::Walker", 
+                        "path": "testsys.cpu.itb.walker", 
+                        "type": "X86PagetableWalker", 
+                        "port": {
+                            "peer": "testsys.cpu.itb_walker_cache.cpu_side", 
+                            "role": "MASTER"
+                        }
+                    }, 
+                    "path": "testsys.cpu.itb", 
+                    "type": "X86TLB", 
+                    "size": 64
+                }, 
+                "dtb_walker_cache": {
+                    "is_top_level": true, 
+                    "write_buffers": 8, 
+                    "response_latency": 1e-09, 
+                    "cxx_class": "BaseCache", 
+                    "block_size": 64, 
+                    "nebit": 4, 
+                    "size": 1024, 
+                    "clock": 1, 
+                    "trace_addr": 0, 
+                    "max_miss_count": 0, 
+                    "mem_side": {
+                        "peer": "testsys.tol2bus.slave[3]", 
+                        "role": "MASTER"
+                    }, 
+                    "mshrs": 10, 
+                    "forward_snoops": true, 
+                    "set_mask": 0, 
+                    "hit_latency": 1e-09, 
+                    "tgts_per_mshr": 12, 
+                    "assoc": 2, 
+                    "prefetch_on_access": false, 
+                    "path": "testsys.cpu.dtb_walker_cache", 
+                    "prioritizeRequests": false, 
+                    "name": "dtb_walker_cache", 
+                    "type": "BaseCache", 
+                    "hash_delay": 1, 
+                    "subblock_size": 0, 
+                    "cpu_side": {
+                        "peer": "testsys.cpu.dtb.walker.port", 
+                        "role": "SLAVE"
+                    }, 
+                    "two_queue": false
+                }, 
+                "function_trace": false, 
+                "do_checkpoint_insts": true, 
+                "cxx_class": "AtomicSimpleCPU", 
+                "max_loads_all_threads": 0, 
+                "clock": 3.333333333333333e-10, 
+                "itb_walker_cache": {
+                    "is_top_level": true, 
+                    "write_buffers": 8, 
+                    "response_latency": 1e-09, 
+                    "cxx_class": "BaseCache", 
+                    "block_size": 64, 
+                    "nebit": 4, 
+                    "size": 1024, 
+                    "clock": 1, 
+                    "trace_addr": 0, 
+                    "max_miss_count": 0, 
+                    "mem_side": {
+                        "peer": "testsys.tol2bus.slave[2]", 
+                        "role": "MASTER"
+                    }, 
+                    "mshrs": 10, 
+                    "forward_snoops": true, 
+                    "set_mask": 0, 
+                    "hit_latency": 1e-09, 
+                    "tgts_per_mshr": 12, 
+                    "assoc": 2, 
+                    "prefetch_on_access": false, 
+                    "path": "testsys.cpu.itb_walker_cache", 
+                    "prioritizeRequests": false, 
+                    "name": "itb_walker_cache", 
+                    "type": "BaseCache", 
+                    "hash_delay": 1, 
+                    "subblock_size": 0, 
+                    "cpu_side": {
+                        "peer": "testsys.cpu.itb.walker.port", 
+                        "role": "SLAVE"
+                    }, 
+                    "two_queue": false
+                }, 
+                "simulate_data_stalls": false, 
+                "function_trace_start": 0, 
+                "cpu_id": 0, 
+                "width": 1, 
+                "do_quiesce": true, 
+                "type": "AtomicSimpleCPU", 
+                "fastmem": false, 
+                "profile": 0.0, 
+                "icache_port": {
+                    "peer": "testsys.cpu.icache.cpu_side", 
+                    "role": "MASTER"
+                }, 
+                "icache": {
+                    "is_top_level": true, 
+                    "write_buffers": 8, 
+                    "response_latency": 1.3e-09, 
+                    "cxx_class": "BaseCache", 
+                    "block_size": 64, 
+                    "nebit": 5, 
+                    "size": 32768, 
+                    "clock": 1, 
+                    "trace_addr": 0, 
+                    "max_miss_count": 0, 
+                    "mem_side": {
+                        "peer": "testsys.tol2bus.slave[0]", 
+                        "role": "MASTER"
+                    }, 
+                    "mshrs": 10, 
+                    "forward_snoops": true, 
+                    "set_mask": 0, 
+                    "hit_latency": 1.3e-09, 
+                    "tgts_per_mshr": 20, 
+                    "assoc": 512, 
+                    "prefetch_on_access": false, 
+                    "path": "testsys.cpu.icache", 
+                    "prioritizeRequests": false, 
+                    "name": "icache", 
+                    "type": "BaseCache", 
+                    "hash_delay": 1, 
+                    "subblock_size": 0, 
+                    "cpu_side": {
+                        "peer": "testsys.cpu.icache_port", 
+                        "role": "SLAVE"
+                    }, 
+                    "two_queue": false
+                }, 
+                "defer_registration": false, 
+                "interrupts": {
+                    "int_master": {
+                        "peer": "testsys.membus.slave[4]", 
+                        "role": "MASTER"
+                    }, 
+                    "name": "interrupts", 
+                    "clock": 1, 
+                    "pio": {
+                        "peer": "testsys.membus.master[2]", 
+                        "role": "SLAVE"
+                    }, 
+                    "pio_latency": 1.0000000000000001e-07, 
+                    "int_slave": {
+                        "peer": "testsys.membus.master[3]", 
+                        "role": "SLAVE"
+                    }, 
+                    "int_latency": 1e-09, 
+                    "cxx_class": "X86ISA::Interrupts", 
+                    "path": "testsys.cpu.interrupts", 
+                    "pio_addr": 2305843009213693952, 
+                    "type": "X86LocalApic"
+                }, 
+                "max_insts_all_threads": 0, 
+                "path": "testsys.cpu", 
+                "name": "cpu", 
+                "dtb": {
+                    "name": "dtb", 
+                    "numThreads": 16, 
+                    "cxx_class": "X86ISA::TLB", 
+                    "walker": {
+                        "name": "walker", 
+                        "clock": 1, 
+                        "cxx_class": "X86ISA::Walker", 
+                        "path": "testsys.cpu.dtb.walker", 
+                        "type": "X86PagetableWalker", 
+                        "port": {
+                            "peer": "testsys.cpu.dtb_walker_cache.cpu_side", 
+                            "role": "MASTER"
+                        }
+                    }, 
+                    "path": "testsys.cpu.dtb", 
+                    "type": "X86TLB", 
+                    "size": 64
+                }, 
+                "max_insts_any_thread": 2000000000, 
+                "simulate_inst_stalls": false, 
+                "progress_interval": 0.0, 
+                "dcache_port": {
+                    "peer": "testsys.cpu.dcache.cpu_side", 
+                    "role": "MASTER"
+                }, 
+                "dcache": {
+                    "is_top_level": true, 
+                    "write_buffers": 8, 
+                    "response_latency": 1.3e-09, 
+                    "cxx_class": "BaseCache", 
+                    "block_size": 64, 
+                    "nebit": 4, 
+                    "size": 32768, 
+                    "clock": 1, 
+                    "trace_addr": 0, 
+                    "max_miss_count": 0, 
+                    "mem_side": {
+                        "peer": "testsys.tol2bus.slave[1]", 
+                        "role": "MASTER"
+                    }, 
+                    "mshrs": 10, 
+                    "forward_snoops": true, 
+                    "set_mask": 0, 
+                    "hit_latency": 1.3e-09, 
+                    "tgts_per_mshr": 20, 
+                    "assoc": 8, 
+                    "prefetch_on_access": false, 
+                    "path": "testsys.cpu.dcache", 
+                    "prioritizeRequests": false, 
+                    "name": "dcache", 
+                    "type": "BaseCache", 
+                    "hash_delay": 1, 
+                    "subblock_size": 0, 
+                    "cpu_side": {
+                        "peer": "testsys.cpu.dcache_port", 
+                        "role": "SLAVE"
+                    }, 
+                    "two_queue": false
+                }, 
+                "max_loads_any_thread": 0, 
+                "tracer": {
+                    "path": "testsys.cpu.tracer", 
+                    "type": "ExeTracer", 
+                    "name": "tracer", 
+                    "cxx_class": "Trace::ExeTracer"
+                }
+            }
+        ], 
+        "work_begin_cpu_id_exit": -1
+    }, 
+    "time_sync_period": 0.1, 
+    "drivesys": {
+        "bridge": {
+            "slave": {
+                "peer": "drivesys.membus.master[1]", 
+                "role": "SLAVE"
+            }, 
+            "name": "bridge", 
+            "clock": 1, 
+            "req_size": 16, 
+            "delay": 5.0000000000000004e-08, 
+            "master": {
+                "peer": "drivesys.iobus.slave[0]", 
+                "role": "MASTER"
+            }, 
+            "cxx_class": "Bridge", 
+            "path": "drivesys.bridge", 
+            "resp_size": 16, 
+            "type": "Bridge"
+        }, 
+        "acpi_description_table_pointer": {
+            "name": "acpi_description_table_pointer", 
+            "xsdt": {
+                "name": "xsdt", 
+                "creator_revision": 0, 
+                "cxx_class": "X86ISA::ACPI::XSDT", 
+                "path": "drivesys.acpi_description_table_pointer.xsdt", 
+                "oem_revision": 0, 
+                "type": "X86ACPIXSDT"
+            }, 
+            "cxx_class": "X86ISA::ACPI::RSDP", 
+            "path": "drivesys.acpi_description_table_pointer", 
+            "type": "X86ACPIRSDP", 
+            "revision": 2
+        }, 
+        "membus": {
+            "slave": {
+                "peer": [
+                    "drivesys.apicbridge.master", 
+                    "drivesys.system_port", 
+                    "drivesys.cpu.icache_port", 
+                    "drivesys.cpu.dcache_port", 
+                    "drivesys.cpu.itb.walker.port", 
+                    "drivesys.cpu.dtb.walker.port", 
+                    "drivesys.cpu.interrupts.int_master", 
+                    "drivesys.iobridge.master"
+                ], 
+                "role": "SLAVE"
+            }, 
+            "name": "membus", 
+            "badaddr_responder": {
+                "ret_data8": 255, 
+                "name": "badaddr_responder", 
+                "clock": 1, 
+                "ret_bad_addr": true, 
+                "pio": {
+                    "peer": "drivesys.membus.default", 
+                    "role": "SLAVE"
+                }, 
+                "pio_latency": 1.0000000000000001e-07, 
+                "fake_mem": false, 
+                "pio_size": 8, 
+                "ret_data32": 4294967295, 
+                "update_data": false, 
+                "ret_data64": 18446744073709551615, 
+                "cxx_class": "IsaFake", 
+                "path": "drivesys.membus.badaddr_responder", 
+                "pio_addr": 0, 
+                "type": "IsaFake", 
+                "ret_data16": 65535
+            }, 
+            "clock": 1e-09, 
+            "default": {
+                "peer": "drivesys.membus.badaddr_responder.pio", 
+                "role": "MASTER"
+            }, 
+            "header_cycles": 1, 
+            "width": 8, 
+            "use_default_range": false, 
+            "master": {
+                "peer": [
+                    "drivesys.physmem.port", 
+                    "drivesys.bridge.slave", 
+                    "drivesys.cpu.interrupts.pio", 
+                    "drivesys.cpu.interrupts.int_slave"
+                ], 
+                "role": "MASTER"
+            }, 
+            "cxx_class": "CoherentBus", 
+            "path": "drivesys.membus", 
+            "block_size": 64, 
+            "type": "CoherentBus"
+        }, 
+        "iobus": {
+            "slave": {
+                "peer": [
+                    "drivesys.bridge.master", 
+                    "drivesys.ethernet.dma", 
+                    "drivesys.pc.south_bridge.ide.dma", 
+                    "drivesys.pc.south_bridge.io_apic.int_master"
+                ], 
+                "role": "SLAVE"
+            }, 
+            "name": "iobus", 
+            "clock": 1e-09, 
+            "default": {
+                "peer": "drivesys.pc.pciconfig.pio", 
+                "role": "MASTER"
+            }, 
+            "header_cycles": 1, 
+            "width": 8, 
+            "use_default_range": true, 
+            "master": {
+                "peer": [
+                    "drivesys.ethernet.pio", 
+                    "drivesys.ethernet.config", 
+                    "drivesys.apicbridge.slave", 
+                    "drivesys.pc.south_bridge.cmos.pio", 
+                    "drivesys.pc.south_bridge.dma1.pio", 
+                    "drivesys.pc.south_bridge.ide.pio", 
+                    "drivesys.pc.south_bridge.ide.config", 
+                    "drivesys.pc.south_bridge.keyboard.pio", 
+                    "drivesys.pc.south_bridge.pic1.pio", 
+                    "drivesys.pc.south_bridge.pic2.pio", 
+                    "drivesys.pc.south_bridge.pit.pio", 
+                    "drivesys.pc.south_bridge.speaker.pio", 
+                    "drivesys.pc.south_bridge.io_apic.pio", 
+                    "drivesys.pc.i_dont_exist.pio", 
+                    "drivesys.pc.behind_pci.pio", 
+                    "drivesys.pc.com_1.pio", 
+                    "drivesys.pc.fake_com_2.pio", 
+                    "drivesys.pc.fake_com_3.pio", 
+                    "drivesys.pc.fake_com_4.pio", 
+                    "drivesys.pc.fake_floppy.pio", 
+                    "drivesys.iobridge.slave"
+                ], 
+                "role": "MASTER"
+            }, 
+            "cxx_class": "NoncoherentBus", 
+            "path": "drivesys.iobus", 
+            "block_size": 64, 
+            "type": "NoncoherentBus"
+        }, 
+        "iobridge": {
+            "slave": {
+                "peer": "drivesys.iobus.master[20]", 
+                "role": "SLAVE"
+            }, 
+            "name": "iobridge", 
+            "clock": 1, 
+            "req_size": 16, 
+            "delay": 5.0000000000000004e-08, 
+            "master": {
+                "peer": "drivesys.membus.slave[7]", 
+                "role": "MASTER"
+            }, 
+            "cxx_class": "Bridge", 
+            "path": "drivesys.iobridge", 
+            "resp_size": 16, 
+            "type": "Bridge"
+        }, 
+        "physmem": {
+            "latency": 6.670000000000001e-08, 
+            "name": "physmem", 
+            "clock": 1, 
+            "latency_var": 0.0, 
+            "zero": false, 
+            "conf_table_reported": false, 
+            "cxx_class": "SimpleMemory", 
+            "path": "drivesys.physmem", 
+            "null": false, 
+            "type": "SimpleMemory", 
+            "port": {
+                "peer": "drivesys.membus.master[0]", 
+                "role": "SLAVE"
+            }, 
+            "in_addr_map": true
+        }, 
+        "apicbridge": {
+            "slave": {
+                "peer": "drivesys.iobus.master[2]", 
+                "role": "SLAVE"
+            }, 
+            "name": "apicbridge", 
+            "clock": 1, 
+            "req_size": 16, 
+            "delay": 5.0000000000000004e-08, 
+            "master": {
+                "peer": "drivesys.membus.slave[0]", 
+                "role": "MASTER"
+            }, 
+            "cxx_class": "Bridge", 
+            "path": "drivesys.apicbridge", 
+            "resp_size": 16, 
+            "type": "Bridge"
+        }, 
+        "intel_mp_table": {
+            "oem_table_addr": 0, 
+            "name": "intel_mp_table", 
+            "ext_entries": [
+                {
+                    "parent_bus": 0, 
+                    "name": "ext_entries", 
+                    "type": "X86IntelMPBusHierarchy", 
+                    "subtractive_decode": true, 
+                    "cxx_class": "X86ISA::IntelMP::BusHierarchy", 
+                    "path": "drivesys.intel_mp_table.ext_entries", 
+                    "bus_id": 1
+                }
+            ], 
+            "spec_rev": 4, 
+            "base_entries": [
+                {
+                    "enable": true, 
+                    "local_apic_version": 20, 
+                    "name": "base_entries00", 
+                    "family": 0, 
+                    "local_apic_id": 0, 
+                    "bootstrap": true, 
+                    "feature_flags": 0, 
+                    "stepping": 0, 
+                    "cxx_class": "X86ISA::IntelMP::Processor", 
+                    "path": "drivesys.intel_mp_table.base_entries00", 
+                    "model": 0, 
+                    "type": "X86IntelMPProcessor"
+                }, 
+                {
+                    "enable": true, 
+                    "name": "base_entries01", 
+                    "cxx_class": "X86ISA::IntelMP::IOAPIC", 
+                    "version": 17, 
+                    "address": 4273995776, 
+                    "path": "drivesys.intel_mp_table.base_entries01", 
+                    "type": "X86IntelMPIOAPIC", 
+                    "id": 1
+                }, 
+                {
+                    "path": "drivesys.intel_mp_table.base_entries02", 
+                    "bus_id": 0, 
+                    "type": "X86IntelMPBus", 
+                    "name": "base_entries02", 
+                    "cxx_class": "X86ISA::IntelMP::Bus"
+                }, 
+                {
+                    "path": "drivesys.intel_mp_table.base_entries03", 
+                    "bus_id": 1, 
+                    "type": "X86IntelMPBus", 
+                    "name": "base_entries03", 
+                    "cxx_class": "X86ISA::IntelMP::Bus"
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries04", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 0, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 16, 
+                    "path": "drivesys.intel_mp_table.base_entries04", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 16
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries05", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 0, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 17, 
+                    "path": "drivesys.intel_mp_table.base_entries05", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 4
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries06", 
+                    "interrupt_type": "ExtInt", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 0, 
+                    "path": "drivesys.intel_mp_table.base_entries06", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 0
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries07", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 2, 
+                    "path": "drivesys.intel_mp_table.base_entries07", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 0
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries08", 
+                    "interrupt_type": "ExtInt", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 0, 
+                    "path": "drivesys.intel_mp_table.base_entries08", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 1
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries09", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 1, 
+                    "path": "drivesys.intel_mp_table.base_entries09", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 1
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries10", 
+                    "interrupt_type": "ExtInt", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 0, 
+                    "path": "drivesys.intel_mp_table.base_entries10", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 3
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries11", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 3, 
+                    "path": "drivesys.intel_mp_table.base_entries11", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 3
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries12", 
+                    "interrupt_type": "ExtInt", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 0, 
+                    "path": "drivesys.intel_mp_table.base_entries12", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 4
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries13", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 4, 
+                    "path": "drivesys.intel_mp_table.base_entries13", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 4
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries14", 
+                    "interrupt_type": "ExtInt", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 0, 
+                    "path": "drivesys.intel_mp_table.base_entries14", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 5
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries15", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 5, 
+                    "path": "drivesys.intel_mp_table.base_entries15", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 5
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries16", 
+                    "interrupt_type": "ExtInt", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 0, 
+                    "path": "drivesys.intel_mp_table.base_entries16", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 6
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries17", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 6, 
+                    "path": "drivesys.intel_mp_table.base_entries17", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 6
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries18", 
+                    "interrupt_type": "ExtInt", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 0, 
+                    "path": "drivesys.intel_mp_table.base_entries18", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 7
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries19", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 7, 
+                    "path": "drivesys.intel_mp_table.base_entries19", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 7
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries20", 
+                    "interrupt_type": "ExtInt", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 0, 
+                    "path": "drivesys.intel_mp_table.base_entries20", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 8
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries21", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 8, 
+                    "path": "drivesys.intel_mp_table.base_entries21", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 8
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries22", 
+                    "interrupt_type": "ExtInt", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 0, 
+                    "path": "drivesys.intel_mp_table.base_entries22", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 9
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries23", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 9, 
+                    "path": "drivesys.intel_mp_table.base_entries23", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 9
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries24", 
+                    "interrupt_type": "ExtInt", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 0, 
+                    "path": "drivesys.intel_mp_table.base_entries24", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 10
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries25", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 10, 
+                    "path": "drivesys.intel_mp_table.base_entries25", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 10
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries26", 
+                    "interrupt_type": "ExtInt", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 0, 
+                    "path": "drivesys.intel_mp_table.base_entries26", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 11
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries27", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 11, 
+                    "path": "drivesys.intel_mp_table.base_entries27", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 11
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries28", 
+                    "interrupt_type": "ExtInt", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 0, 
+                    "path": "drivesys.intel_mp_table.base_entries28", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 12
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries29", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 12, 
+                    "path": "drivesys.intel_mp_table.base_entries29", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 12
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries30", 
+                    "interrupt_type": "ExtInt", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 0, 
+                    "path": "drivesys.intel_mp_table.base_entries30", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 13
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries31", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 13, 
+                    "path": "drivesys.intel_mp_table.base_entries31", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 13
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries32", 
+                    "interrupt_type": "ExtInt", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 0, 
+                    "path": "drivesys.intel_mp_table.base_entries32", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 14
+                }, 
+                {
+                    "polarity": "ConformPolarity", 
+                    "dest_io_apic_id": 1, 
+                    "name": "base_entries33", 
+                    "interrupt_type": "INT", 
+                    "trigger": "ConformTrigger", 
+                    "source_bus_id": 1, 
+                    "cxx_class": "X86ISA::IntelMP::IOIntAssignment", 
+                    "dest_io_apic_intin": 14, 
+                    "path": "drivesys.intel_mp_table.base_entries33", 
+                    "type": "X86IntelMPIOIntAssignment", 
+                    "source_bus_irq": 14
+                }
+            ], 
+            "cxx_class": "X86ISA::IntelMP::ConfigTable", 
+            "path": "drivesys.intel_mp_table", 
+            "type": "X86IntelMPConfigTable", 
+            "local_apic": 4276092928, 
+            "oem_table_size": 0
+        }, 
+        "cxx_class": "LinuxX86System", 
+        "work_end_ckpt_count": 0, 
+        "clock": 1, 
+        "work_begin_ckpt_count": 0, 
+        "pc": {
+            "fake_com_4": {
+                "ret_data8": 255, 
+                "name": "fake_com_4", 
+                "clock": 1, 
+                "ret_bad_addr": false, 
+                "pio": {
+                    "peer": "drivesys.iobus.master[18]", 
+                    "role": "SLAVE"
+                }, 
+                "pio_latency": 1.0000000000000001e-07, 
+                "fake_mem": false, 
+                "pio_size": 8, 
+                "ret_data32": 4294967295, 
+                "update_data": false, 
+                "ret_data64": 18446744073709551615, 
+                "cxx_class": "IsaFake", 
+                "path": "drivesys.pc.fake_com_4", 
+                "pio_addr": 9223372036854776552, 
+                "type": "IsaFake", 
+                "ret_data16": 65535
+            }, 
+            "pciconfig": {
+                "name": "pciconfig", 
+                "clock": 1, 
+                "bus": 0, 
+                "pio": {
+                    "peer": "drivesys.iobus.default", 
+                    "role": "SLAVE"
+                }, 
+                "pio_latency": 3.0000000000000004e-08, 
+                "cxx_class": "PciConfigAll", 
+                "path": "drivesys.pc.pciconfig", 
+                "type": "PciConfigAll", 
+                "size": 16777216
+            }, 
+            "fake_com_2": {
+                "ret_data8": 255, 
+                "name": "fake_com_2", 
+                "clock": 1, 
+                "ret_bad_addr": false, 
+                "pio": {
+                    "peer": "drivesys.iobus.master[16]", 
+                    "role": "SLAVE"
+                }, 
+                "pio_latency": 1.0000000000000001e-07, 
+                "fake_mem": false, 
+                "pio_size": 8, 
+                "ret_data32": 4294967295, 
+                "update_data": false, 
+                "ret_data64": 18446744073709551615, 
+                "cxx_class": "IsaFake", 
+                "path": "drivesys.pc.fake_com_2", 
+                "pio_addr": 9223372036854776568, 
+                "type": "IsaFake", 
+                "ret_data16": 65535
+            }, 
+            "name": "pc", 
+            "south_bridge": {
+                "int_lines": [
+                    {
+                        "path": "drivesys.pc.south_bridge.int_lines0", 
+                        "sink": {
+                            "path": "drivesys.pc.south_bridge.int_lines0.sink", 
+                            "number": 0, 
+                            "type": "X86IntSinkPin", 
+                            "name": "sink", 
+                            "cxx_class": "X86ISA::IntSinkPin"
+                        }, 
+                        "type": "X86IntLine", 
+                        "name": "int_lines0", 
+                        "cxx_class": "X86ISA::IntLine"
+                    }, 
+                    {
+                        "path": "drivesys.pc.south_bridge.int_lines1", 
+                        "sink": {
+                            "path": "drivesys.pc.south_bridge.int_lines1.sink", 
+                            "number": 2, 
+                            "type": "X86IntSinkPin", 
+                            "name": "sink", 
+                            "cxx_class": "X86ISA::IntSinkPin"
+                        }, 
+                        "type": "X86IntLine", 
+                        "name": "int_lines1", 
+                        "cxx_class": "X86ISA::IntLine"
+                    }, 
+                    {
+                        "path": "drivesys.pc.south_bridge.int_lines2", 
+                        "sink": {
+                            "path": "drivesys.pc.south_bridge.int_lines2.sink", 
+                            "number": 0, 
+                            "type": "X86IntSinkPin", 
+                            "name": "sink", 
+                            "cxx_class": "X86ISA::IntSinkPin"
+                        }, 
+                        "type": "X86IntLine", 
+                        "name": "int_lines2", 
+                        "cxx_class": "X86ISA::IntLine"
+                    }, 
+                    {
+                        "path": "drivesys.pc.south_bridge.int_lines3", 
+                        "sink": {
+                            "path": "drivesys.pc.south_bridge.int_lines3.sink", 
+                            "number": 0, 
+                            "type": "X86IntSinkPin", 
+                            "name": "sink", 
+                            "cxx_class": "X86ISA::IntSinkPin"
+                        }, 
+                        "type": "X86IntLine", 
+                        "name": "int_lines3", 
+                        "cxx_class": "X86ISA::IntLine"
+                    }, 
+                    {
+                        "path": "drivesys.pc.south_bridge.int_lines4", 
+                        "sink": {
+                            "path": "drivesys.pc.south_bridge.int_lines4.sink", 
+                            "number": 2, 
+                            "type": "X86IntSinkPin", 
+                            "name": "sink", 
+                            "cxx_class": "X86ISA::IntSinkPin"
+                        }, 
+                        "type": "X86IntLine", 
+                        "name": "int_lines4", 
+                        "cxx_class": "X86ISA::IntLine"
+                    }, 
+                    {
+                        "path": "drivesys.pc.south_bridge.int_lines5", 
+                        "sink": {
+                            "path": "drivesys.pc.south_bridge.int_lines5.sink", 
+                            "number": 1, 
+                            "type": "X86IntSinkPin", 
+                            "name": "sink", 
+                            "cxx_class": "X86ISA::IntSinkPin"
+                        }, 
+                        "type": "X86IntLine", 
+                        "name": "int_lines5", 
+                        "cxx_class": "X86ISA::IntLine"
+                    }, 
+                    {
+                        "path": "drivesys.pc.south_bridge.int_lines6", 
+                        "sink": {
+                            "path": "drivesys.pc.south_bridge.int_lines6.sink", 
+                            "number": 12, 
+                            "type": "X86IntSinkPin", 
+                            "name": "sink", 
+                            "cxx_class": "X86ISA::IntSinkPin"
+                        }, 
+                        "type": "X86IntLine", 
+                        "name": "int_lines6", 
+                        "cxx_class": "X86ISA::IntLine"
+                    }
+                ], 
+                "name": "south_bridge", 
+                "keyboard": {
+                    "command_port": 9223372036854775908, 
+                    "name": "keyboard", 
+                    "clock": 1, 
+                    "mouse_int_pin": {
+                        "path": "drivesys.pc.south_bridge.keyboard.mouse_int_pin", 
+                        "type": "X86IntSourcePin", 
+                        "name": "mouse_int_pin", 
+                        "cxx_class": "X86ISA::IntSourcePin"
+                    }, 
+                    "pio": {
+                        "peer": "drivesys.iobus.master[7]", 
+                        "role": "SLAVE"
+                    }, 
+                    "pio_latency": 1.0000000000000001e-07, 
+                    "keyboard_int_pin": {
+                        "path": "drivesys.pc.south_bridge.keyboard.keyboard_int_pin", 
+                        "type": "X86IntSourcePin", 
+                        "name": "keyboard_int_pin", 
+                        "cxx_class": "X86ISA::IntSourcePin"
+                    }, 
+                    "cxx_class": "X86ISA::I8042", 
+                    "path": "drivesys.pc.south_bridge.keyboard", 
+                    "pio_addr": 0, 
+                    "data_port": 9223372036854775904, 
+                    "type": "I8042"
+                }, 
+                "pit": {
+                    "name": "pit", 
+                    "clock": 1, 
+                    "int_pin": {
+                        "path": "drivesys.pc.south_bridge.pit.int_pin", 
+                        "type": "X86IntSourcePin", 
+                        "name": "int_pin", 
+                        "cxx_class": "X86ISA::IntSourcePin"
+                    }, 
+                    "pio": {
+                        "peer": "drivesys.iobus.master[10]", 
+                        "role": "SLAVE"
+                    }, 
+                    "pio_latency": 1.0000000000000001e-07, 
+                    "cxx_class": "X86ISA::I8254", 
+                    "path": "drivesys.pc.south_bridge.pit", 
+                    "pio_addr": 9223372036854775872, 
+                    "type": "I8254"
+                }, 
+                "io_apic": {
+                    "int_master": {
+                        "peer": "drivesys.iobus.slave[3]", 
+                        "role": "MASTER"
+                    }, 
+                    "name": "io_apic", 
+                    "clock": 1, 
+                    "pio": {
+                        "peer": "drivesys.iobus.master[12]", 
+                        "role": "SLAVE"
+                    }, 
+                    "pio_latency": 1.0000000000000001e-07, 
+                    "apic_id": 1, 
+                    "int_latency": 1e-09, 
+                    "cxx_class": "X86ISA::I82094AA", 
+                    "path": "drivesys.pc.south_bridge.io_apic", 
+                    "pio_addr": 4273995776, 
+                    "type": "I82094AA"
+                }, 
+                "pic1": {
+                    "name": "pic1", 
+                    "clock": 1, 
+                    "pio": {
+                        "peer": "drivesys.iobus.master[8]", 
+                        "role": "SLAVE"
+                    }, 
+                    "pio_latency": 1.0000000000000001e-07, 
+                    "output": {
+                        "path": "drivesys.pc.south_bridge.pic1.output", 
+                        "type": "X86IntSourcePin", 
+                        "name": "output", 
+                        "cxx_class": "X86ISA::IntSourcePin"
+                    }, 
+                    "mode": "I8259Master", 
+                    "cxx_class": "X86ISA::I8259", 
+                    "path": "drivesys.pc.south_bridge.pic1", 
+                    "pio_addr": 9223372036854775840, 
+                    "type": "I8259"
+                }, 
+                "pic2": {
+                    "name": "pic2", 
+                    "clock": 1, 
+                    "pio": {
+                        "peer": "drivesys.iobus.master[9]", 
+                        "role": "SLAVE"
+                    }, 
+                    "pio_latency": 1.0000000000000001e-07, 
+                    "output": {
+                        "path": "drivesys.pc.south_bridge.pic2.output", 
+                        "type": "X86IntSourcePin", 
+                        "name": "output", 
+                        "cxx_class": "X86ISA::IntSourcePin"
+                    }, 
+                    "mode": "I8259Slave", 
+                    "cxx_class": "X86ISA::I8259", 
+                    "path": "drivesys.pc.south_bridge.pic2", 
+                    "pio_addr": 9223372036854775968, 
+                    "type": "I8259"
+                }, 
+                "dma1": {
+                    "name": "dma1", 
+                    "clock": 1, 
+                    "pio": {
+                        "peer": "drivesys.iobus.master[4]", 
+                        "role": "SLAVE"
+                    }, 
+                    "pio_latency": 1.0000000000000001e-07, 
+                    "cxx_class": "X86ISA::I8237", 
+                    "path": "drivesys.pc.south_bridge.dma1", 
+                    "pio_addr": 9223372036854775808, 
+                    "type": "I8237"
+                }, 
+                "speaker": {
+                    "name": "speaker", 
+                    "clock": 1, 
+                    "pio": {
+                        "peer": "drivesys.iobus.master[11]", 
+                        "role": "SLAVE"
+                    }, 
+                    "pio_latency": 1.0000000000000001e-07, 
+                    "cxx_class": "X86ISA::Speaker", 
+                    "path": "drivesys.pc.south_bridge.speaker", 
+                    "pio_addr": 9223372036854775905, 
+                    "type": "PcSpeaker"
+                }, 
+                "cxx_class": "SouthBridge", 
+                "path": "drivesys.pc.south_bridge", 
+                "ide": {
+                    "VendorID": 32902, 
+                    "InterruptPin": 1, 
+                    "HeaderType": 0, 
+                    "pio": {
+                        "peer": "drivesys.iobus.master[5]", 
+                        "role": "SLAVE"
+                    }, 
+                    "pci_dev": 4, 
+                    "ctrl_offset": 0, 
+                    "BAR3LegacyIO": true, 
+                    "cxx_class": "IdeController", 
+                    "SubClassCode": 1, 
+                    "CardbusCIS": 0, 
+                    "MinimumGrant": 0, 
+                    "Revision": 0, 
+                    "Status": 640, 
+                    "MaximumLatency": 0, 
+                    "SubsystemID": 0, 
+                    "BAR2LegacyIO": true, 
+                    "clock": 1, 
+                    "BAR0Size": 8, 
+                    "pio_latency": 3.0000000000000004e-08, 
+                    "LatencyTimer": 0, 
+                    "pci_func": 0, 
+                    "BAR4LegacyIO": false, 
+                    "CacheLineSize": 0, 
+                    "dma": {
+                        "peer": "drivesys.iobus.slave[2]", 
+                        "role": "MASTER"
+                    }, 
+                    "type": "IdeController", 
+                    "io_shift": 0, 
+                    "SubsystemVendorID": 0, 
+                    "BAR3Size": 3, 
+                    "BAR5LegacyIO": false, 
+                    "BAR0LegacyIO": true, 
+                    "Command": 0, 
+                    "DeviceID": 28945, 
+                    "ProgIF": 128, 
+                    "path": "drivesys.pc.south_bridge.ide", 
+                    "BAR1LegacyIO": true, 
+                    "BAR4Size": 16, 
+                    "BAR4": 1, 
+                    "BAR1": 1012, 
+                    "BAR0": 496, 
+                    "BAR3": 884, 
+                    "BAR2": 368, 
+                    "BAR5": 1, 
+                    "name": "ide", 
+                    "ClassCode": 1, 
+                    "config": {
+                        "peer": "drivesys.iobus.master[6]", 
+                        "role": "SLAVE"
+                    }, 
+                    "BIST": 0, 
+                    "disks": [
+                        {
+                            "driveID": "master", 
+                            "name": "disks0", 
+                            "image": {
+                                "read_only": false, 
+                                "name": "image", 
+                                "child": {
+                                    "read_only": true, 
+                                    "path": "drivesys.pc.south_bridge.ide.disks0.image.child", 
+                                    "type": "RawDiskImage", 
+                                    "name": "child", 
+                                    "cxx_class": "RawDiskImage"
+                                }, 
+                                "cxx_class": "CowDiskImage", 
+                                "path": "drivesys.pc.south_bridge.ide.disks0.image", 
+                                "table_size": 65536, 
+                                "type": "CowDiskImage"
+                            }, 
+                            "delay": 1e-06, 
+                            "cxx_class": "IdeDisk", 
+                            "path": "drivesys.pc.south_bridge.ide.disks0", 
+                            "type": "IdeDisk"
+                        }, 
+                        {
+                            "driveID": "master", 
+                            "name": "disks1", 
+                            "image": {
+                                "read_only": false, 
+                                "name": "image", 
+                                "child": {
+                                    "read_only": true, 
+                                    "path": "drivesys.pc.south_bridge.ide.disks1.image.child", 
+                                    "type": "RawDiskImage", 
+                                    "name": "child", 
+                                    "cxx_class": "RawDiskImage"
+                                }, 
+                                "cxx_class": "CowDiskImage", 
+                                "path": "drivesys.pc.south_bridge.ide.disks1.image", 
+                                "table_size": 65536, 
+                                "type": "CowDiskImage"
+                            }, 
+                            "delay": 1e-06, 
+                            "cxx_class": "IdeDisk", 
+                            "path": "drivesys.pc.south_bridge.ide.disks1", 
+                            "type": "IdeDisk"
+                        }
+                    ], 
+                    "BAR2Size": 8, 
+                    "ExpansionROM": 0, 
+                    "BAR5Size": 0, 
+                    "config_latency": 2e-08, 
+                    "pci_bus": 0, 
+                    "InterruptLine": 14, 
+                    "BAR1Size": 3
+                }, 
+                "type": "SouthBridge", 
+                "cmos": {
+                    "name": "cmos", 
+                    "clock": 1, 
+                    "int_pin": {
+                        "path": "drivesys.pc.south_bridge.cmos.int_pin", 
+                        "type": "X86IntSourcePin", 
+                        "name": "int_pin", 
+                        "cxx_class": "X86ISA::IntSourcePin"
+                    }, 
+                    "time": "Sun Jan  1 00:00:00 2012", 
+                    "pio_latency": 1.0000000000000001e-07, 
+                    "pio": {
+                        "peer": "drivesys.iobus.master[3]", 
+                        "role": "SLAVE"
+                    }, 
+                    "cxx_class": "X86ISA::Cmos", 
+                    "path": "drivesys.pc.south_bridge.cmos", 
+                    "pio_addr": 9223372036854775920, 
+                    "type": "Cmos"
+                }
+            }, 
+            "fake_floppy": {
+                "ret_data8": 255, 
+                "name": "fake_floppy", 
+                "clock": 1, 
+                "ret_bad_addr": false, 
+                "pio": {
+                    "peer": "drivesys.iobus.master[19]", 
+                    "role": "SLAVE"
+                }, 
+                "pio_latency": 1.0000000000000001e-07, 
+                "fake_mem": false, 
+                "pio_size": 2, 
+                "ret_data32": 4294967295, 
+                "update_data": false, 
+                "ret_data64": 18446744073709551615, 
+                "cxx_class": "IsaFake", 
+                "path": "drivesys.pc.fake_floppy", 
+                "pio_addr": 9223372036854776818, 
+                "type": "IsaFake", 
+                "ret_data16": 65535
+            }, 
+            "terminal": {
+                "name": "terminal", 
+                "cxx_class": "Terminal", 
+                "number": 0, 
+                "output": true, 
+                "path": "drivesys.pc.com_1.terminal", 
+                "type": "Terminal", 
+                "port": 3456
+            }, 
+            "com_1": {
+                "name": "com_1", 
+                "clock": 1, 
+                "pio": {
+                    "peer": "drivesys.iobus.master[15]", 
+                    "role": "SLAVE"
+                }, 
+                "pio_latency": 1.0000000000000001e-07, 
+                "terminal": {
+                    "name": "terminal", 
+                    "cxx_class": "Terminal", 
+                    "number": 0, 
+                    "output": true, 
+                    "path": "drivesys.pc.com_1.terminal", 
+                    "type": "Terminal", 
+                    "port": 3456
+                }, 
+                "cxx_class": "Uart8250", 
+                "path": "drivesys.pc.com_1", 
+                "pio_addr": 9223372036854776824, 
+                "type": "Uart8250"
+            }, 
+            "cxx_class": "Pc", 
+            "path": "drivesys.pc", 
+            "behind_pci": {
+                "ret_data8": 255, 
+                "name": "behind_pci", 
+                "clock": 1, 
+                "ret_bad_addr": false, 
+                "pio": {
+                    "peer": "drivesys.iobus.master[14]", 
+                    "role": "SLAVE"
+                }, 
+                "pio_latency": 1.0000000000000001e-07, 
+                "fake_mem": false, 
+                "pio_size": 8, 
+                "ret_data32": 4294967295, 
+                "update_data": false, 
+                "ret_data64": 18446744073709551615, 
+                "cxx_class": "IsaFake", 
+                "path": "drivesys.pc.behind_pci", 
+                "pio_addr": 9223372036854779128, 
+                "type": "IsaFake", 
+                "ret_data16": 65535
+            }, 
+            "type": "Pc", 
+            "i_dont_exist": {
+                "ret_data8": 255, 
+                "name": "i_dont_exist", 
+                "clock": 1, 
+                "ret_bad_addr": false, 
+                "pio": {
+                    "peer": "drivesys.iobus.master[13]", 
+                    "role": "SLAVE"
+                }, 
+                "pio_latency": 1.0000000000000001e-07, 
+                "fake_mem": false, 
+                "pio_size": 1, 
+                "ret_data32": 4294967295, 
+                "update_data": false, 
+                "ret_data64": 18446744073709551615, 
+                "cxx_class": "IsaFake", 
+                "path": "drivesys.pc.i_dont_exist", 
+                "pio_addr": 9223372036854775936, 
+                "type": "IsaFake", 
+                "ret_data16": 65535
+            }, 
+            "fake_com_3": {
+                "ret_data8": 255, 
+                "name": "fake_com_3", 
+                "clock": 1, 
+                "ret_bad_addr": false, 
+                "pio": {
+                    "peer": "drivesys.iobus.master[17]", 
+                    "role": "SLAVE"
+                }, 
+                "pio_latency": 1.0000000000000001e-07, 
+                "fake_mem": false, 
+                "pio_size": 8, 
+                "ret_data32": 4294967295, 
+                "update_data": false, 
+                "ret_data64": 18446744073709551615, 
+                "cxx_class": "IsaFake", 
+                "path": "drivesys.pc.fake_com_3", 
+                "pio_addr": 9223372036854776808, 
+                "type": "IsaFake", 
+                "ret_data16": 65535
+            }
+        }, 
+        "smbios_table": {
+            "name": "smbios_table", 
+            "structures": [
+                {
+                    "major": 0, 
+                    "name": "structures", 
+                    "emb_cont_firmware_major": 0, 
+                    "rom_size": 0, 
+                    "starting_addr_segment": 0, 
+                    "emb_cont_firmware_minor": 0, 
+                    "cxx_class": "X86ISA::SMBios::BiosInformation", 
+                    "path": "drivesys.smbios_table.structures", 
+                    "type": "X86SMBiosBiosInformation", 
+                    "minor": 0
+                }
+            ], 
+            "major_version": 2, 
+            "minor_version": 5, 
+            "cxx_class": "X86ISA::SMBios::SMBiosTable", 
+            "path": "drivesys.smbios_table", 
+            "type": "X86SMBiosSMBiosTable"
+        }, 
+        "e820_table": {
+            "path": "drivesys.e820_table", 
+            "entries": [
+                {
+                    "addr": 0, 
+                    "range_type": 2, 
+                    "cxx_class": "X86ISA::E820Entry", 
+                    "path": "drivesys.e820_table.entries0", 
+                    "size": 1048576, 
+                    "type": "X86E820Entry", 
+                    "name": "entries0"
+                }, 
+                {
+                    "addr": 1048576, 
+                    "range_type": 1, 
+                    "cxx_class": "X86ISA::E820Entry", 
+                    "path": "drivesys.e820_table.entries1", 
+                    "size": 2146435072, 
+                    "type": "X86E820Entry", 
+                    "name": "entries1"
+                }
+            ], 
+            "type": "X86E820Table", 
+            "name": "e820_table", 
+            "cxx_class": "X86ISA::E820Table"
+        }, 
+        "work_end_exit_count": 0, 
+        "type": "LinuxX86System", 
+        "intel_mp_pointer": {
+            "imcr_present": true, 
+            "name": "intel_mp_pointer", 
+            "spec_rev": 4, 
+            "cxx_class": "X86ISA::IntelMP::FloatingPointer", 
+            "path": "drivesys.intel_mp_pointer", 
+            "type": "X86IntelMPFloatingPointer", 
+            "default_config": 0
+        }, 
+        "work_cpus_ckpt_count": 0, 
+        "work_begin_exit_count": 0, 
+        "path": "drivesys", 
+        "mem_mode": "atomic", 
+        "name": "drivesys", 
+        "init_param": 0, 
+        "system_port": {
+            "peer": "drivesys.membus.slave[1]", 
+            "role": "MASTER"
+        }, 
+        "load_addr_mask": 18446744073709551615, 
+        "work_item_id": -1, 
+        "intrctrl": {
+            "path": "drivesys.intrctrl", 
+            "type": "IntrControl", 
+            "name": "intrctrl", 
+            "cxx_class": "IntrControl"
+        }, 
+        "ethernet": {
+            "VendorID": 32902, 
+            "InterruptPin": 1, 
+            "fetch_delay": 1e-08, 
+            "HeaderType": 0, 
+            "pio": {
+                "peer": "drivesys.iobus.master[0]", 
+                "role": "SLAVE"
+            }, 
+            "rx_write_delay": 0.0, 
+            "pci_dev": 1, 
+            "interface": {
+                "peer": "etherlink.int1", 
+                "role": "MASTER"
+            }, 
+            "BAR3LegacyIO": false, 
+            "cxx_class": "IGbE", 
+            "SubClassCode": 0, 
+            "CardbusCIS": 0, 
+            "MinimumGrant": 255, 
+            "config": {
+                "peer": "drivesys.iobus.master[1]", 
+                "role": "SLAVE"
+            }, 
+            "phy_epid": 896, 
+            "Revision": 0, 
+            "Status": 0, 
+            "hardware_address": "00:90:00:00:00:02", 
+            "MaximumLatency": 0, 
+            "wb_delay": 1e-08, 
+            "SubsystemID": 4104, 
+            "BAR2LegacyIO": false, 
+            "clock": 2e-09, 
+            "BAR0Size": 131072, 
+            "pio_latency": 3.0000000000000004e-08, 
+            "LatencyTimer": 0, 
+            "pci_func": 0, 
+            "tx_desc_cache_size": 64, 
+            "BAR4LegacyIO": false, 
+            "CacheLineSize": 0, 
+            "dma": {
+                "peer": "drivesys.iobus.slave[1]", 
+                "role": "MASTER"
+            }, 
+            "tx_read_delay": 0.0, 
+            "type": "IGbE", 
+            "SubsystemVendorID": 32902, 
+            "BAR3Size": 0, 
+            "tx_fifo_size": 393216, 
+            "BAR5LegacyIO": false, 
+            "rx_desc_cache_size": 64, 
+            "BAR0LegacyIO": false, 
+            "use_flow_control": false, 
+            "Command": 0, 
+            "DeviceID": 4213, 
+            "ProgIF": 0, 
+            "wb_comp_delay": 1e-08, 
+            "path": "drivesys.ethernet", 
+            "BAR1LegacyIO": false, 
+            "BAR4Size": 0, 
+            "BAR4": 0, 
+            "BAR1": 0, 
+            "BAR0": 0, 
+            "BAR3": 0, 
+            "BAR2": 0, 
+            "BAR5": 0, 
+            "name": "ethernet", 
+            "ClassCode": 2, 
+            "phy_pid": 680, 
+            "BIST": 0, 
+            "BAR2Size": 0, 
+            "ExpansionROM": 0, 
+            "rx_fifo_size": 393216, 
+            "BAR5Size": 0, 
+            "config_latency": 2e-08, 
+            "pci_bus": 0, 
+            "fetch_comp_delay": 1e-08, 
+            "InterruptLine": 17, 
+            "BAR1Size": 0
+        }, 
+        "num_work_ids": 16, 
+        "cpu": {
+            "do_statistics_insts": true, 
+            "numThreads": 1, 
+            "itb": {
+                "name": "itb", 
+                "numThreads": 16, 
+                "cxx_class": "X86ISA::TLB", 
+                "walker": {
+                    "name": "walker", 
+                    "clock": 1, 
+                    "cxx_class": "X86ISA::Walker", 
+                    "path": "drivesys.cpu.itb.walker", 
+                    "type": "X86PagetableWalker", 
+                    "port": {
+                        "peer": "drivesys.membus.slave[4]", 
+                        "role": "MASTER"
+                    }
+                }, 
+                "path": "drivesys.cpu.itb", 
+                "type": "X86TLB", 
+                "size": 64
+            }, 
+            "function_trace": false, 
+            "do_checkpoint_insts": true, 
+            "cxx_class": "AtomicSimpleCPU", 
+            "max_loads_all_threads": 0, 
+            "clock": 3.333333333333333e-10, 
+            "simulate_data_stalls": false, 
+            "function_trace_start": 0, 
+            "cpu_id": 0, 
+            "width": 1, 
+            "do_quiesce": true, 
+            "type": "AtomicSimpleCPU", 
+            "fastmem": false, 
+            "profile": 0.0, 
+            "icache_port": {
+                "peer": "drivesys.membus.slave[2]", 
+                "role": "MASTER"
+            }, 
+            "defer_registration": false, 
+            "interrupts": {
+                "int_master": {
+                    "peer": "drivesys.membus.slave[6]", 
+                    "role": "MASTER"
+                }, 
+                "name": "interrupts", 
+                "clock": 1, 
+                "pio": {
+                    "peer": "drivesys.membus.master[2]", 
+                    "role": "SLAVE"
+                }, 
+                "pio_latency": 1.0000000000000001e-07, 
+                "int_slave": {
+                    "peer": "drivesys.membus.master[3]", 
+                    "role": "SLAVE"
+                }, 
+                "int_latency": 1e-09, 
+                "cxx_class": "X86ISA::Interrupts", 
+                "path": "drivesys.cpu.interrupts", 
+                "pio_addr": 2305843009213693952, 
+                "type": "X86LocalApic"
+            }, 
+            "max_insts_all_threads": 0, 
+            "path": "drivesys.cpu", 
+            "name": "cpu", 
+            "dtb": {
+                "name": "dtb", 
+                "numThreads": 16, 
+                "cxx_class": "X86ISA::TLB", 
+                "walker": {
+                    "name": "walker", 
+                    "clock": 1, 
+                    "cxx_class": "X86ISA::Walker", 
+                    "path": "drivesys.cpu.dtb.walker", 
+                    "type": "X86PagetableWalker", 
+                    "port": {
+                        "peer": "drivesys.membus.slave[5]", 
+                        "role": "MASTER"
+                    }
+                }, 
+                "path": "drivesys.cpu.dtb", 
+                "type": "X86TLB", 
+                "size": 64
+            }, 
+            "max_insts_any_thread": 0, 
+            "simulate_inst_stalls": false, 
+            "progress_interval": 0.0, 
+            "dcache_port": {
+                "peer": "drivesys.membus.slave[3]", 
+                "role": "MASTER"
+            }, 
+            "max_loads_any_thread": 0, 
+            "tracer": {
+                "path": "drivesys.cpu.tracer", 
+                "type": "ExeTracer", 
+                "name": "tracer", 
+                "cxx_class": "Trace::ExeTracer"
+            }
+        }, 
+        "work_begin_cpu_id_exit": -1
+    }, 
+    "time_sync_spin_threshold": 9.999999999999999e-05, 
+    "cxx_class": "Root", 
+    "path": "root", 
+    "time_sync_enable": false, 
+    "type": "Root", 
+    "full_system": true
+}
