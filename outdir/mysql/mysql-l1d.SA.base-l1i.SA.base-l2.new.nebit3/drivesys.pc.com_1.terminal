@@ -13,3 +13,30 @@ Using auto_inc on the id column
 Maximum number of requests for OLTP test is limited to 200
 Using 1 test tables
 Threads started!
+Done.
+
+OLTP test statistics:
+    queries performed:
+        read:                            2800
+        write:                           1000
+        other:                           400
+        total:                           4200
+    transactions:                        200    (153.61 per sec.)
+    deadlocks:                           0      (0.00 per sec.)
+    read/write requests:                 3800   (2918.56 per sec.)
+    other operations:                    400    (307.22 per sec.)
+
+Test execution summary:
+    total time:                          1.3020s
+    total number of events:              200
+    total time taken by event execution: 1.3002
+    per-request statistics:
+         min:                                  4.65ms
+         avg:                                  6.50ms
+         max:                                190.30ms
+         approx.  95 percentile:               7.99ms
+
+Threads fairness:
+    events (avg/stddev):           200.0000/0.00
+    execution time (avg/stddev):   1.3002/0.00
+

@@ -808,3 +808,1528 @@ testsys.switch_cpus.kern.inst.arm                   0                       # nu
 testsys.switch_cpus.kern.inst.quiesce               0                       # number of quiesce instructions executed
 
 ---------- End Simulation Statistics   ----------
+
+---------- Begin Simulation Statistics ----------
+sim_seconds                                  1.346163                       # Number of seconds simulated
+sim_ticks                                1346163316839                       # Number of ticks simulated
+final_tick                               12307113718848                       # Number of ticks from beginning of simulation (restored from checkpoints and never reset)
+sim_freq                                 1000000000000                       # Frequency of simulated ticks
+host_inst_rate                                  27918                       # Simulator instruction rate (inst/s)
+host_op_rate                                    51939                       # Simulator op (including micro ops) rate (op/s)
+host_tick_rate                               39512838                       # Simulator tick rate (ticks/s)
+host_mem_usage                                4831260                       # Number of bytes of host memory used
+host_seconds                                 34069.01                       # Real time elapsed on the host
+sim_insts                                   951133189                       # Number of instructions simulated
+sim_ops                                    1769494147                       # Number of ops (including micro ops) simulated
+testsys.physmem.bytes_read::pc.south_bridge.ide     67541632                       # Number of bytes read from this memory
+testsys.physmem.bytes_read::ethernet           644672                       # Number of bytes read from this memory
+testsys.physmem.bytes_read::switch_cpus.dtb.walker       351296                       # Number of bytes read from this memory
+testsys.physmem.bytes_read::switch_cpus.itb.walker        31104                       # Number of bytes read from this memory
+testsys.physmem.bytes_read::switch_cpus.inst      3970624                       # Number of bytes read from this memory
+testsys.physmem.bytes_read::switch_cpus.data    129226496                       # Number of bytes read from this memory
+testsys.physmem.bytes_read::total           201765824                       # Number of bytes read from this memory
+testsys.physmem.bytes_inst_read::switch_cpus.inst      3970624                       # Number of instructions bytes read from this memory
+testsys.physmem.bytes_inst_read::total        3970624                       # Number of instructions bytes read from this memory
+testsys.physmem.bytes_written::writebacks     78035008                       # Number of bytes written to this memory
+testsys.physmem.bytes_written::total         78035008                       # Number of bytes written to this memory
+testsys.physmem.num_reads::pc.south_bridge.ide      1055338                       # Number of read requests responded to by this memory
+testsys.physmem.num_reads::ethernet             10073                       # Number of read requests responded to by this memory
+testsys.physmem.num_reads::switch_cpus.dtb.walker         5489                       # Number of read requests responded to by this memory
+testsys.physmem.num_reads::switch_cpus.itb.walker          486                       # Number of read requests responded to by this memory
+testsys.physmem.num_reads::switch_cpus.inst        62041                       # Number of read requests responded to by this memory
+testsys.physmem.num_reads::switch_cpus.data      2019164                       # Number of read requests responded to by this memory
+testsys.physmem.num_reads::total              3152591                       # Number of read requests responded to by this memory
+testsys.physmem.num_writes::writebacks        1219297                       # Number of write requests responded to by this memory
+testsys.physmem.num_writes::total             1219297                       # Number of write requests responded to by this memory
+testsys.physmem.bw_read::pc.south_bridge.ide     50173431                       # Total read bandwidth from this memory (bytes/s)
+testsys.physmem.bw_read::ethernet              478896                       # Total read bandwidth from this memory (bytes/s)
+testsys.physmem.bw_read::switch_cpus.dtb.walker       260961                       # Total read bandwidth from this memory (bytes/s)
+testsys.physmem.bw_read::switch_cpus.itb.walker        23106                       # Total read bandwidth from this memory (bytes/s)
+testsys.physmem.bw_read::switch_cpus.inst      2949586                       # Total read bandwidth from this memory (bytes/s)
+testsys.physmem.bw_read::switch_cpus.data     95996150                       # Total read bandwidth from this memory (bytes/s)
+testsys.physmem.bw_read::total              149882129                       # Total read bandwidth from this memory (bytes/s)
+testsys.physmem.bw_inst_read::switch_cpus.inst      2949586                       # Instruction read bandwidth from this memory (bytes/s)
+testsys.physmem.bw_inst_read::total           2949586                       # Instruction read bandwidth from this memory (bytes/s)
+testsys.physmem.bw_write::writebacks         57968455                       # Write bandwidth from this memory (bytes/s)
+testsys.physmem.bw_write::total              57968455                       # Write bandwidth from this memory (bytes/s)
+testsys.physmem.bw_total::writebacks         57968455                       # Total bandwidth to/from this memory (bytes/s)
+testsys.physmem.bw_total::pc.south_bridge.ide     50173431                       # Total bandwidth to/from this memory (bytes/s)
+testsys.physmem.bw_total::ethernet             478896                       # Total bandwidth to/from this memory (bytes/s)
+testsys.physmem.bw_total::switch_cpus.dtb.walker       260961                       # Total bandwidth to/from this memory (bytes/s)
+testsys.physmem.bw_total::switch_cpus.itb.walker        23106                       # Total bandwidth to/from this memory (bytes/s)
+testsys.physmem.bw_total::switch_cpus.inst      2949586                       # Total bandwidth to/from this memory (bytes/s)
+testsys.physmem.bw_total::switch_cpus.data     95996150                       # Total bandwidth to/from this memory (bytes/s)
+testsys.physmem.bw_total::total             207850584                       # Total bandwidth to/from this memory (bytes/s)
+testsys.iocache.replacements                  1104394                       # number of replacements
+testsys.iocache.tagsinuse                   15.120800                       # Cycle average of tags in use
+testsys.iocache.total_refs                       9485                       # Total number of references to valid blocks.
+testsys.iocache.sampled_refs                  1104409                       # Sample count of references to valid blocks.
+testsys.iocache.avg_refs                     0.008588                       # Average number of references to valid blocks.
+testsys.iocache.warmup_cycle             10970394476000                       # Cycle when the warmup percentage was hit.
+testsys.iocache.occ_blocks::pc.south_bridge.ide     2.281795                       # Average occupied blocks per requestor
+testsys.iocache.occ_blocks::ethernet        12.839005                       # Average occupied blocks per requestor
+testsys.iocache.occ_percent::pc.south_bridge.ide     0.142612                       # Average percentage of cache occupancy
+testsys.iocache.occ_percent::ethernet        0.802438                       # Average percentage of cache occupancy
+testsys.iocache.occ_percent::total           0.945050                       # Average percentage of cache occupancy
+testsys.iocache.ReadReq_hits::ethernet           3209                       # number of ReadReq hits
+testsys.iocache.ReadReq_hits::total              3209                       # number of ReadReq hits
+testsys.iocache.WriteReq_hits::ethernet           274                       # number of WriteReq hits
+testsys.iocache.WriteReq_hits::total              274                       # number of WriteReq hits
+testsys.iocache.demand_hits::ethernet            3483                       # number of demand (read+write) hits
+testsys.iocache.demand_hits::total               3483                       # number of demand (read+write) hits
+testsys.iocache.overall_hits::ethernet           3483                       # number of overall hits
+testsys.iocache.overall_hits::total              3483                       # number of overall hits
+testsys.iocache.ReadReq_misses::pc.south_bridge.ide      1069938                       # number of ReadReq misses
+testsys.iocache.ReadReq_misses::ethernet        37221                       # number of ReadReq misses
+testsys.iocache.ReadReq_misses::total         1107159                       # number of ReadReq misses
+testsys.iocache.WriteReq_misses::pc.south_bridge.ide          128                       # number of WriteReq misses
+testsys.iocache.WriteReq_misses::ethernet        21071                       # number of WriteReq misses
+testsys.iocache.WriteReq_misses::total          21199                       # number of WriteReq misses
+testsys.iocache.demand_misses::pc.south_bridge.ide      1070066                       # number of demand (read+write) misses
+testsys.iocache.demand_misses::ethernet         58292                       # number of demand (read+write) misses
+testsys.iocache.demand_misses::total          1128358                       # number of demand (read+write) misses
+testsys.iocache.overall_misses::pc.south_bridge.ide      1070066                       # number of overall misses
+testsys.iocache.overall_misses::ethernet        58292                       # number of overall misses
+testsys.iocache.overall_misses::total         1128358                       # number of overall misses
+testsys.iocache.ReadReq_miss_latency::pc.south_bridge.ide 199575724544                       # number of ReadReq miss cycles
+testsys.iocache.ReadReq_miss_latency::ethernet   2579772216                       # number of ReadReq miss cycles
+testsys.iocache.ReadReq_miss_latency::total 202155496760                       # number of ReadReq miss cycles
+testsys.iocache.WriteReq_miss_latency::pc.south_bridge.ide     20328984                       # number of WriteReq miss cycles
+testsys.iocache.WriteReq_miss_latency::ethernet   1319545000                       # number of WriteReq miss cycles
+testsys.iocache.WriteReq_miss_latency::total   1339873984                       # number of WriteReq miss cycles
+testsys.iocache.demand_miss_latency::pc.south_bridge.ide 199596053528                       # number of demand (read+write) miss cycles
+testsys.iocache.demand_miss_latency::ethernet   3899317216                       # number of demand (read+write) miss cycles
+testsys.iocache.demand_miss_latency::total 203495370744                       # number of demand (read+write) miss cycles
+testsys.iocache.overall_miss_latency::pc.south_bridge.ide 199596053528                       # number of overall miss cycles
+testsys.iocache.overall_miss_latency::ethernet   3899317216                       # number of overall miss cycles
+testsys.iocache.overall_miss_latency::total 203495370744                       # number of overall miss cycles
+testsys.iocache.ReadReq_accesses::pc.south_bridge.ide      1069938                       # number of ReadReq accesses(hits+misses)
+testsys.iocache.ReadReq_accesses::ethernet        40430                       # number of ReadReq accesses(hits+misses)
+testsys.iocache.ReadReq_accesses::total       1110368                       # number of ReadReq accesses(hits+misses)
+testsys.iocache.WriteReq_accesses::pc.south_bridge.ide          128                       # number of WriteReq accesses(hits+misses)
+testsys.iocache.WriteReq_accesses::ethernet        21345                       # number of WriteReq accesses(hits+misses)
+testsys.iocache.WriteReq_accesses::total        21473                       # number of WriteReq accesses(hits+misses)
+testsys.iocache.demand_accesses::pc.south_bridge.ide      1070066                       # number of demand (read+write) accesses
+testsys.iocache.demand_accesses::ethernet        61775                       # number of demand (read+write) accesses
+testsys.iocache.demand_accesses::total        1131841                       # number of demand (read+write) accesses
+testsys.iocache.overall_accesses::pc.south_bridge.ide      1070066                       # number of overall (read+write) accesses
+testsys.iocache.overall_accesses::ethernet        61775                       # number of overall (read+write) accesses
+testsys.iocache.overall_accesses::total       1131841                       # number of overall (read+write) accesses
+testsys.iocache.ReadReq_miss_rate::pc.south_bridge.ide            1                       # miss rate for ReadReq accesses
+testsys.iocache.ReadReq_miss_rate::ethernet     0.920628                       # miss rate for ReadReq accesses
+testsys.iocache.ReadReq_miss_rate::total     0.997110                       # miss rate for ReadReq accesses
+testsys.iocache.WriteReq_miss_rate::pc.south_bridge.ide            1                       # miss rate for WriteReq accesses
+testsys.iocache.WriteReq_miss_rate::ethernet     0.987163                       # miss rate for WriteReq accesses
+testsys.iocache.WriteReq_miss_rate::total     0.987240                       # miss rate for WriteReq accesses
+testsys.iocache.demand_miss_rate::pc.south_bridge.ide            1                       # miss rate for demand accesses
+testsys.iocache.demand_miss_rate::ethernet     0.943618                       # miss rate for demand accesses
+testsys.iocache.demand_miss_rate::total      0.996923                       # miss rate for demand accesses
+testsys.iocache.overall_miss_rate::pc.south_bridge.ide            1                       # miss rate for overall accesses
+testsys.iocache.overall_miss_rate::ethernet     0.943618                       # miss rate for overall accesses
+testsys.iocache.overall_miss_rate::total     0.996923                       # miss rate for overall accesses
+testsys.iocache.ReadReq_avg_miss_latency::pc.south_bridge.ide 186530.177023                       # average ReadReq miss latency
+testsys.iocache.ReadReq_avg_miss_latency::ethernet 69309.589103                       # average ReadReq miss latency
+testsys.iocache.ReadReq_avg_miss_latency::total 182589.399318                       # average ReadReq miss latency
+testsys.iocache.WriteReq_avg_miss_latency::pc.south_bridge.ide 158820.187500                       # average WriteReq miss latency
+testsys.iocache.WriteReq_avg_miss_latency::ethernet 62623.748280                       # average WriteReq miss latency
+testsys.iocache.WriteReq_avg_miss_latency::total 63204.584367                       # average WriteReq miss latency
+testsys.iocache.demand_avg_miss_latency::pc.south_bridge.ide 186526.862388                       # average overall miss latency
+testsys.iocache.demand_avg_miss_latency::ethernet 66892.836341                       # average overall miss latency
+testsys.iocache.demand_avg_miss_latency::total 180346.459851                       # average overall miss latency
+testsys.iocache.overall_avg_miss_latency::pc.south_bridge.ide 186526.862388                       # average overall miss latency
+testsys.iocache.overall_avg_miss_latency::ethernet 66892.836341                       # average overall miss latency
+testsys.iocache.overall_avg_miss_latency::total 180346.459851                       # average overall miss latency
+testsys.iocache.blocked_cycles::no_mshrs   7039671544                       # number of cycles access was blocked
+testsys.iocache.blocked_cycles::no_targets            0                       # number of cycles access was blocked
+testsys.iocache.blocked::no_mshrs              752128                       # number of cycles access was blocked
+testsys.iocache.blocked::no_targets                 0                       # number of cycles access was blocked
+testsys.iocache.avg_blocked_cycles::no_mshrs  9359.672215                       # average number of cycles each access was blocked
+testsys.iocache.avg_blocked_cycles::no_targets          nan                       # average number of cycles each access was blocked
+testsys.iocache.fast_writes                         0                       # number of fast writes performed
+testsys.iocache.cache_copies                        0                       # number of cache copies performed
+testsys.iocache.writebacks::writebacks           9800                       # number of writebacks
+testsys.iocache.writebacks::total                9800                       # number of writebacks
+testsys.iocache.ReadReq_mshr_misses::pc.south_bridge.ide      1069938                       # number of ReadReq MSHR misses
+testsys.iocache.ReadReq_mshr_misses::ethernet        37221                       # number of ReadReq MSHR misses
+testsys.iocache.ReadReq_mshr_misses::total      1107159                       # number of ReadReq MSHR misses
+testsys.iocache.WriteReq_mshr_misses::pc.south_bridge.ide          128                       # number of WriteReq MSHR misses
+testsys.iocache.WriteReq_mshr_misses::ethernet        21071                       # number of WriteReq MSHR misses
+testsys.iocache.WriteReq_mshr_misses::total        21199                       # number of WriteReq MSHR misses
+testsys.iocache.demand_mshr_misses::pc.south_bridge.ide      1070066                       # number of demand (read+write) MSHR misses
+testsys.iocache.demand_mshr_misses::ethernet        58292                       # number of demand (read+write) MSHR misses
+testsys.iocache.demand_mshr_misses::total      1128358                       # number of demand (read+write) MSHR misses
+testsys.iocache.overall_mshr_misses::pc.south_bridge.ide      1070066                       # number of overall MSHR misses
+testsys.iocache.overall_mshr_misses::ethernet        58292                       # number of overall MSHR misses
+testsys.iocache.overall_mshr_misses::total      1128358                       # number of overall MSHR misses
+testsys.iocache.ReadReq_mshr_miss_latency::pc.south_bridge.ide 186730866588                       # number of ReadReq MSHR miss cycles
+testsys.iocache.ReadReq_mshr_miss_latency::ethernet   2123667700                       # number of ReadReq MSHR miss cycles
+testsys.iocache.ReadReq_mshr_miss_latency::total 188854534288                       # number of ReadReq MSHR miss cycles
+testsys.iocache.WriteReq_mshr_miss_latency::pc.south_bridge.ide     18787300                       # number of WriteReq MSHR miss cycles
+testsys.iocache.WriteReq_mshr_miss_latency::ethernet   1059481300                       # number of WriteReq MSHR miss cycles
+testsys.iocache.WriteReq_mshr_miss_latency::total   1078268600                       # number of WriteReq MSHR miss cycles
+testsys.iocache.demand_mshr_miss_latency::pc.south_bridge.ide 186749653888                       # number of demand (read+write) MSHR miss cycles
+testsys.iocache.demand_mshr_miss_latency::ethernet   3183149000                       # number of demand (read+write) MSHR miss cycles
+testsys.iocache.demand_mshr_miss_latency::total 189932802888                       # number of demand (read+write) MSHR miss cycles
+testsys.iocache.overall_mshr_miss_latency::pc.south_bridge.ide 186749653888                       # number of overall MSHR miss cycles
+testsys.iocache.overall_mshr_miss_latency::ethernet   3183149000                       # number of overall MSHR miss cycles
+testsys.iocache.overall_mshr_miss_latency::total 189932802888                       # number of overall MSHR miss cycles
+testsys.iocache.ReadReq_mshr_miss_rate::pc.south_bridge.ide            1                       # mshr miss rate for ReadReq accesses
+testsys.iocache.ReadReq_mshr_miss_rate::ethernet     0.920628                       # mshr miss rate for ReadReq accesses
+testsys.iocache.ReadReq_mshr_miss_rate::total     0.997110                       # mshr miss rate for ReadReq accesses
+testsys.iocache.WriteReq_mshr_miss_rate::pc.south_bridge.ide            1                       # mshr miss rate for WriteReq accesses
+testsys.iocache.WriteReq_mshr_miss_rate::ethernet     0.987163                       # mshr miss rate for WriteReq accesses
+testsys.iocache.WriteReq_mshr_miss_rate::total     0.987240                       # mshr miss rate for WriteReq accesses
+testsys.iocache.demand_mshr_miss_rate::pc.south_bridge.ide            1                       # mshr miss rate for demand accesses
+testsys.iocache.demand_mshr_miss_rate::ethernet     0.943618                       # mshr miss rate for demand accesses
+testsys.iocache.demand_mshr_miss_rate::total     0.996923                       # mshr miss rate for demand accesses
+testsys.iocache.overall_mshr_miss_rate::pc.south_bridge.ide            1                       # mshr miss rate for overall accesses
+testsys.iocache.overall_mshr_miss_rate::ethernet     0.943618                       # mshr miss rate for overall accesses
+testsys.iocache.overall_mshr_miss_rate::total     0.996923                       # mshr miss rate for overall accesses
+testsys.iocache.ReadReq_avg_mshr_miss_latency::pc.south_bridge.ide 174524.941247                       # average ReadReq mshr miss latency
+testsys.iocache.ReadReq_avg_mshr_miss_latency::ethernet 57055.632573                       # average ReadReq mshr miss latency
+testsys.iocache.ReadReq_avg_mshr_miss_latency::total 170575.801929                       # average ReadReq mshr miss latency
+testsys.iocache.WriteReq_avg_mshr_miss_latency::pc.south_bridge.ide 146775.781250                       # average WriteReq mshr miss latency
+testsys.iocache.WriteReq_avg_mshr_miss_latency::ethernet 50281.491149                       # average WriteReq mshr miss latency
+testsys.iocache.WriteReq_avg_mshr_miss_latency::total 50864.125666                       # average WriteReq mshr miss latency
+testsys.iocache.demand_avg_mshr_miss_latency::pc.south_bridge.ide 174521.621926                       # average overall mshr miss latency
+testsys.iocache.demand_avg_mshr_miss_latency::ethernet 54606.961504                       # average overall mshr miss latency
+testsys.iocache.demand_avg_mshr_miss_latency::total 168326.721562                       # average overall mshr miss latency
+testsys.iocache.overall_avg_mshr_miss_latency::pc.south_bridge.ide 174521.621926                       # average overall mshr miss latency
+testsys.iocache.overall_avg_mshr_miss_latency::ethernet 54606.961504                       # average overall mshr miss latency
+testsys.iocache.overall_avg_mshr_miss_latency::total 168326.721562                       # average overall mshr miss latency
+testsys.iocache.no_allocate_misses                  0                       # Number of misses that were no-allocate
+testsys.pc.south_bridge.ide.disks0.dma_read_full_pages        16682                       # Number of full page size DMA reads (not PRD).
+testsys.pc.south_bridge.ide.disks0.dma_read_bytes     68329472                       # Number of bytes transfered via DMA reads (not PRD).
+testsys.pc.south_bridge.ide.disks0.dma_read_txs        16682                       # Number of DMA read transactions (not PRD).
+testsys.pc.south_bridge.ide.disks0.dma_write_full_pages            2                       # Number of full page size DMA writes.
+testsys.pc.south_bridge.ide.disks0.dma_write_bytes         8192                       # Number of bytes transfered via DMA writes.
+testsys.pc.south_bridge.ide.disks0.dma_write_txs            2                       # Number of DMA write transactions.
+testsys.pc.south_bridge.ide.disks1.dma_read_full_pages            0                       # Number of full page size DMA reads (not PRD).
+testsys.pc.south_bridge.ide.disks1.dma_read_bytes            0                       # Number of bytes transfered via DMA reads (not PRD).
+testsys.pc.south_bridge.ide.disks1.dma_read_txs            0                       # Number of DMA read transactions (not PRD).
+testsys.pc.south_bridge.ide.disks1.dma_write_full_pages            0                       # Number of full page size DMA writes.
+testsys.pc.south_bridge.ide.disks1.dma_write_bytes            0                       # Number of bytes transfered via DMA writes.
+testsys.pc.south_bridge.ide.disks1.dma_write_txs            0                       # Number of DMA write transactions.
+testsys.l2.replacements                      22193466                       # number of replacements
+testsys.l2.tagsinuse                      4021.640221                       # Cycle average of tags in use
+testsys.l2.total_refs                        42587730                       # Total number of references to valid blocks.
+testsys.l2.sampled_refs                      22197529                       # Sample count of references to valid blocks.
+testsys.l2.avg_refs                          1.918580                       # Average number of references to valid blocks.
+testsys.l2.warmup_cycle                  11221213088600                       # Cycle when the warmup percentage was hit.
+testsys.l2.occ_blocks::writebacks          704.499315                       # Average occupied blocks per requestor
+testsys.l2.occ_blocks::switch_cpus.dtb.walker    92.007842                       # Average occupied blocks per requestor
+testsys.l2.occ_blocks::switch_cpus.itb.walker    81.767720                       # Average occupied blocks per requestor
+testsys.l2.occ_blocks::switch_cpus.inst   2362.166918                       # Average occupied blocks per requestor
+testsys.l2.occ_blocks::switch_cpus.data    781.198426                       # Average occupied blocks per requestor
+testsys.l2.occ_percent::writebacks           0.171997                       # Average percentage of cache occupancy
+testsys.l2.occ_percent::switch_cpus.dtb.walker     0.022463                       # Average percentage of cache occupancy
+testsys.l2.occ_percent::switch_cpus.itb.walker     0.019963                       # Average percentage of cache occupancy
+testsys.l2.occ_percent::switch_cpus.inst     0.576701                       # Average percentage of cache occupancy
+testsys.l2.occ_percent::switch_cpus.data     0.190722                       # Average percentage of cache occupancy
+testsys.l2.occ_percent::total                0.981846                       # Average percentage of cache occupancy
+testsys.l2.ReadReq_hits::switch_cpus.dtb.walker     11525372                       # number of ReadReq hits
+testsys.l2.ReadReq_hits::switch_cpus.itb.walker     10360659                       # number of ReadReq hits
+testsys.l2.ReadReq_hits::switch_cpus.inst      9000220                       # number of ReadReq hits
+testsys.l2.ReadReq_hits::switch_cpus.data      5774358                       # number of ReadReq hits
+testsys.l2.ReadReq_hits::total               36660609                       # number of ReadReq hits
+testsys.l2.Writeback_hits::writebacks         8345216                       # number of Writeback hits
+testsys.l2.Writeback_hits::total              8345216                       # number of Writeback hits
+testsys.l2.UpgradeReq_hits::switch_cpus.data       617644                       # number of UpgradeReq hits
+testsys.l2.UpgradeReq_hits::total              617644                       # number of UpgradeReq hits
+testsys.l2.ReadExReq_hits::switch_cpus.data      1747337                       # number of ReadExReq hits
+testsys.l2.ReadExReq_hits::total              1747337                       # number of ReadExReq hits
+testsys.l2.demand_hits::switch_cpus.dtb.walker     11525372                       # number of demand (read+write) hits
+testsys.l2.demand_hits::switch_cpus.itb.walker     10360659                       # number of demand (read+write) hits
+testsys.l2.demand_hits::switch_cpus.inst      9000220                       # number of demand (read+write) hits
+testsys.l2.demand_hits::switch_cpus.data      7521695                       # number of demand (read+write) hits
+testsys.l2.demand_hits::total                38407946                       # number of demand (read+write) hits
+testsys.l2.overall_hits::switch_cpus.dtb.walker     11525372                       # number of overall hits
+testsys.l2.overall_hits::switch_cpus.itb.walker     10360659                       # number of overall hits
+testsys.l2.overall_hits::switch_cpus.inst      9000220                       # number of overall hits
+testsys.l2.overall_hits::switch_cpus.data      7521695                       # number of overall hits
+testsys.l2.overall_hits::total               38407946                       # number of overall hits
+testsys.l2.ReadReq_misses::switch_cpus.dtb.walker       318511                       # number of ReadReq misses
+testsys.l2.ReadReq_misses::switch_cpus.itb.walker       308240                       # number of ReadReq misses
+testsys.l2.ReadReq_misses::switch_cpus.inst     14284339                       # number of ReadReq misses
+testsys.l2.ReadReq_misses::switch_cpus.data      4872972                       # number of ReadReq misses
+testsys.l2.ReadReq_misses::total             19784062                       # number of ReadReq misses
+testsys.l2.UpgradeReq_misses::switch_cpus.data        11864                       # number of UpgradeReq misses
+testsys.l2.UpgradeReq_misses::total             11864                       # number of UpgradeReq misses
+testsys.l2.ReadExReq_misses::switch_cpus.data      2220827                       # number of ReadExReq misses
+testsys.l2.ReadExReq_misses::total            2220827                       # number of ReadExReq misses
+testsys.l2.demand_misses::switch_cpus.dtb.walker       318511                       # number of demand (read+write) misses
+testsys.l2.demand_misses::switch_cpus.itb.walker       308240                       # number of demand (read+write) misses
+testsys.l2.demand_misses::switch_cpus.inst     14284339                       # number of demand (read+write) misses
+testsys.l2.demand_misses::switch_cpus.data      7093799                       # number of demand (read+write) misses
+testsys.l2.demand_misses::total              22004889                       # number of demand (read+write) misses
+testsys.l2.overall_misses::switch_cpus.dtb.walker       318511                       # number of overall misses
+testsys.l2.overall_misses::switch_cpus.itb.walker       308240                       # number of overall misses
+testsys.l2.overall_misses::switch_cpus.inst     14284339                       # number of overall misses
+testsys.l2.overall_misses::switch_cpus.data      7093799                       # number of overall misses
+testsys.l2.overall_misses::total             22004889                       # number of overall misses
+testsys.l2.ReadReq_miss_latency::switch_cpus.dtb.walker   7648037959                       # number of ReadReq miss cycles
+testsys.l2.ReadReq_miss_latency::switch_cpus.itb.walker   6542157448                       # number of ReadReq miss cycles
+testsys.l2.ReadReq_miss_latency::switch_cpus.inst 318375623825                       # number of ReadReq miss cycles
+testsys.l2.ReadReq_miss_latency::switch_cpus.data 186797816839                       # number of ReadReq miss cycles
+testsys.l2.ReadReq_miss_latency::total   519363636071                       # number of ReadReq miss cycles
+testsys.l2.UpgradeReq_miss_latency::switch_cpus.data    460855831                       # number of UpgradeReq miss cycles
+testsys.l2.UpgradeReq_miss_latency::total    460855831                       # number of UpgradeReq miss cycles
+testsys.l2.ReadExReq_miss_latency::switch_cpus.data 146787100547                       # number of ReadExReq miss cycles
+testsys.l2.ReadExReq_miss_latency::total 146787100547                       # number of ReadExReq miss cycles
+testsys.l2.demand_miss_latency::switch_cpus.dtb.walker   7648037959                       # number of demand (read+write) miss cycles
+testsys.l2.demand_miss_latency::switch_cpus.itb.walker   6542157448                       # number of demand (read+write) miss cycles
+testsys.l2.demand_miss_latency::switch_cpus.inst 318375623825                       # number of demand (read+write) miss cycles
+testsys.l2.demand_miss_latency::switch_cpus.data 333584917386                       # number of demand (read+write) miss cycles
+testsys.l2.demand_miss_latency::total    666150736618                       # number of demand (read+write) miss cycles
+testsys.l2.overall_miss_latency::switch_cpus.dtb.walker   7648037959                       # number of overall miss cycles
+testsys.l2.overall_miss_latency::switch_cpus.itb.walker   6542157448                       # number of overall miss cycles
+testsys.l2.overall_miss_latency::switch_cpus.inst 318375623825                       # number of overall miss cycles
+testsys.l2.overall_miss_latency::switch_cpus.data 333584917386                       # number of overall miss cycles
+testsys.l2.overall_miss_latency::total   666150736618                       # number of overall miss cycles
+testsys.l2.ReadReq_accesses::switch_cpus.dtb.walker     11843883                       # number of ReadReq accesses(hits+misses)
+testsys.l2.ReadReq_accesses::switch_cpus.itb.walker     10668899                       # number of ReadReq accesses(hits+misses)
+testsys.l2.ReadReq_accesses::switch_cpus.inst     23284559                       # number of ReadReq accesses(hits+misses)
+testsys.l2.ReadReq_accesses::switch_cpus.data     10647330                       # number of ReadReq accesses(hits+misses)
+testsys.l2.ReadReq_accesses::total           56444671                       # number of ReadReq accesses(hits+misses)
+testsys.l2.Writeback_accesses::writebacks      8345216                       # number of Writeback accesses(hits+misses)
+testsys.l2.Writeback_accesses::total          8345216                       # number of Writeback accesses(hits+misses)
+testsys.l2.UpgradeReq_accesses::switch_cpus.data       629508                       # number of UpgradeReq accesses(hits+misses)
+testsys.l2.UpgradeReq_accesses::total          629508                       # number of UpgradeReq accesses(hits+misses)
+testsys.l2.ReadExReq_accesses::switch_cpus.data      3968164                       # number of ReadExReq accesses(hits+misses)
+testsys.l2.ReadExReq_accesses::total          3968164                       # number of ReadExReq accesses(hits+misses)
+testsys.l2.demand_accesses::switch_cpus.dtb.walker     11843883                       # number of demand (read+write) accesses
+testsys.l2.demand_accesses::switch_cpus.itb.walker     10668899                       # number of demand (read+write) accesses
+testsys.l2.demand_accesses::switch_cpus.inst     23284559                       # number of demand (read+write) accesses
+testsys.l2.demand_accesses::switch_cpus.data     14615494                       # number of demand (read+write) accesses
+testsys.l2.demand_accesses::total            60412835                       # number of demand (read+write) accesses
+testsys.l2.overall_accesses::switch_cpus.dtb.walker     11843883                       # number of overall (read+write) accesses
+testsys.l2.overall_accesses::switch_cpus.itb.walker     10668899                       # number of overall (read+write) accesses
+testsys.l2.overall_accesses::switch_cpus.inst     23284559                       # number of overall (read+write) accesses
+testsys.l2.overall_accesses::switch_cpus.data     14615494                       # number of overall (read+write) accesses
+testsys.l2.overall_accesses::total           60412835                       # number of overall (read+write) accesses
+testsys.l2.ReadReq_miss_rate::switch_cpus.dtb.walker     0.026892                       # miss rate for ReadReq accesses
+testsys.l2.ReadReq_miss_rate::switch_cpus.itb.walker     0.028891                       # miss rate for ReadReq accesses
+testsys.l2.ReadReq_miss_rate::switch_cpus.inst     0.613468                       # miss rate for ReadReq accesses
+testsys.l2.ReadReq_miss_rate::switch_cpus.data     0.457671                       # miss rate for ReadReq accesses
+testsys.l2.ReadReq_miss_rate::total          0.350504                       # miss rate for ReadReq accesses
+testsys.l2.UpgradeReq_miss_rate::switch_cpus.data     0.018846                       # miss rate for UpgradeReq accesses
+testsys.l2.UpgradeReq_miss_rate::total       0.018846                       # miss rate for UpgradeReq accesses
+testsys.l2.ReadExReq_miss_rate::switch_cpus.data     0.559661                       # miss rate for ReadExReq accesses
+testsys.l2.ReadExReq_miss_rate::total        0.559661                       # miss rate for ReadExReq accesses
+testsys.l2.demand_miss_rate::switch_cpus.dtb.walker     0.026892                       # miss rate for demand accesses
+testsys.l2.demand_miss_rate::switch_cpus.itb.walker     0.028891                       # miss rate for demand accesses
+testsys.l2.demand_miss_rate::switch_cpus.inst     0.613468                       # miss rate for demand accesses
+testsys.l2.demand_miss_rate::switch_cpus.data     0.485362                       # miss rate for demand accesses
+testsys.l2.demand_miss_rate::total           0.364242                       # miss rate for demand accesses
+testsys.l2.overall_miss_rate::switch_cpus.dtb.walker     0.026892                       # miss rate for overall accesses
+testsys.l2.overall_miss_rate::switch_cpus.itb.walker     0.028891                       # miss rate for overall accesses
+testsys.l2.overall_miss_rate::switch_cpus.inst     0.613468                       # miss rate for overall accesses
+testsys.l2.overall_miss_rate::switch_cpus.data     0.485362                       # miss rate for overall accesses
+testsys.l2.overall_miss_rate::total          0.364242                       # miss rate for overall accesses
+testsys.l2.ReadReq_avg_miss_latency::switch_cpus.dtb.walker 24011.848756                       # average ReadReq miss latency
+testsys.l2.ReadReq_avg_miss_latency::switch_cpus.itb.walker 21224.232572                       # average ReadReq miss latency
+testsys.l2.ReadReq_avg_miss_latency::switch_cpus.inst 22288.439376                       # average ReadReq miss latency
+testsys.l2.ReadReq_avg_miss_latency::switch_cpus.data 38333.447604                       # average ReadReq miss latency
+testsys.l2.ReadReq_avg_miss_latency::total 26251.617897                       # average ReadReq miss latency
+testsys.l2.UpgradeReq_avg_miss_latency::switch_cpus.data 38844.894724                       # average UpgradeReq miss latency
+testsys.l2.UpgradeReq_avg_miss_latency::total 38844.894724                       # average UpgradeReq miss latency
+testsys.l2.ReadExReq_avg_miss_latency::switch_cpus.data 66095.693427                       # average ReadExReq miss latency
+testsys.l2.ReadExReq_avg_miss_latency::total 66095.693427                       # average ReadExReq miss latency
+testsys.l2.demand_avg_miss_latency::switch_cpus.dtb.walker 24011.848756                       # average overall miss latency
+testsys.l2.demand_avg_miss_latency::switch_cpus.itb.walker 21224.232572                       # average overall miss latency
+testsys.l2.demand_avg_miss_latency::switch_cpus.inst 22288.439376                       # average overall miss latency
+testsys.l2.demand_avg_miss_latency::switch_cpus.data 47024.861768                       # average overall miss latency
+testsys.l2.demand_avg_miss_latency::total 30272.851484                       # average overall miss latency
+testsys.l2.overall_avg_miss_latency::switch_cpus.dtb.walker 24011.848756                       # average overall miss latency
+testsys.l2.overall_avg_miss_latency::switch_cpus.itb.walker 21224.232572                       # average overall miss latency
+testsys.l2.overall_avg_miss_latency::switch_cpus.inst 22288.439376                       # average overall miss latency
+testsys.l2.overall_avg_miss_latency::switch_cpus.data 47024.861768                       # average overall miss latency
+testsys.l2.overall_avg_miss_latency::total 30272.851484                       # average overall miss latency
+testsys.l2.blocked_cycles::no_mshrs                 0                       # number of cycles access was blocked
+testsys.l2.blocked_cycles::no_targets               0                       # number of cycles access was blocked
+testsys.l2.blocked::no_mshrs                        0                       # number of cycles access was blocked
+testsys.l2.blocked::no_targets                      0                       # number of cycles access was blocked
+testsys.l2.avg_blocked_cycles::no_mshrs           nan                       # average number of cycles each access was blocked
+testsys.l2.avg_blocked_cycles::no_targets          nan                       # average number of cycles each access was blocked
+testsys.l2.fast_writes                              0                       # number of fast writes performed
+testsys.l2.cache_copies                             0                       # number of cache copies performed
+testsys.l2.writebacks::writebacks             3528806                       # number of writebacks
+testsys.l2.writebacks::total                  3528806                       # number of writebacks
+testsys.l2.ReadReq_mshr_hits::switch_cpus.dtb.walker           28                       # number of ReadReq MSHR hits
+testsys.l2.ReadReq_mshr_hits::switch_cpus.itb.walker           60                       # number of ReadReq MSHR hits
+testsys.l2.ReadReq_mshr_hits::switch_cpus.inst          285                       # number of ReadReq MSHR hits
+testsys.l2.ReadReq_mshr_hits::switch_cpus.data           10                       # number of ReadReq MSHR hits
+testsys.l2.ReadReq_mshr_hits::total               383                       # number of ReadReq MSHR hits
+testsys.l2.demand_mshr_hits::switch_cpus.dtb.walker           28                       # number of demand (read+write) MSHR hits
+testsys.l2.demand_mshr_hits::switch_cpus.itb.walker           60                       # number of demand (read+write) MSHR hits
+testsys.l2.demand_mshr_hits::switch_cpus.inst          285                       # number of demand (read+write) MSHR hits
+testsys.l2.demand_mshr_hits::switch_cpus.data           10                       # number of demand (read+write) MSHR hits
+testsys.l2.demand_mshr_hits::total                383                       # number of demand (read+write) MSHR hits
+testsys.l2.overall_mshr_hits::switch_cpus.dtb.walker           28                       # number of overall MSHR hits
+testsys.l2.overall_mshr_hits::switch_cpus.itb.walker           60                       # number of overall MSHR hits
+testsys.l2.overall_mshr_hits::switch_cpus.inst          285                       # number of overall MSHR hits
+testsys.l2.overall_mshr_hits::switch_cpus.data           10                       # number of overall MSHR hits
+testsys.l2.overall_mshr_hits::total               383                       # number of overall MSHR hits
+testsys.l2.ReadReq_mshr_misses::switch_cpus.dtb.walker       318483                       # number of ReadReq MSHR misses
+testsys.l2.ReadReq_mshr_misses::switch_cpus.itb.walker       308180                       # number of ReadReq MSHR misses
+testsys.l2.ReadReq_mshr_misses::switch_cpus.inst     14284054                       # number of ReadReq MSHR misses
+testsys.l2.ReadReq_mshr_misses::switch_cpus.data      4872962                       # number of ReadReq MSHR misses
+testsys.l2.ReadReq_mshr_misses::total        19783679                       # number of ReadReq MSHR misses
+testsys.l2.UpgradeReq_mshr_misses::switch_cpus.data        11864                       # number of UpgradeReq MSHR misses
+testsys.l2.UpgradeReq_mshr_misses::total        11864                       # number of UpgradeReq MSHR misses
+testsys.l2.ReadExReq_mshr_misses::switch_cpus.data      2220827                       # number of ReadExReq MSHR misses
+testsys.l2.ReadExReq_mshr_misses::total       2220827                       # number of ReadExReq MSHR misses
+testsys.l2.demand_mshr_misses::switch_cpus.dtb.walker       318483                       # number of demand (read+write) MSHR misses
+testsys.l2.demand_mshr_misses::switch_cpus.itb.walker       308180                       # number of demand (read+write) MSHR misses
+testsys.l2.demand_mshr_misses::switch_cpus.inst     14284054                       # number of demand (read+write) MSHR misses
+testsys.l2.demand_mshr_misses::switch_cpus.data      7093789                       # number of demand (read+write) MSHR misses
+testsys.l2.demand_mshr_misses::total         22004506                       # number of demand (read+write) MSHR misses
+testsys.l2.overall_mshr_misses::switch_cpus.dtb.walker       318483                       # number of overall MSHR misses
+testsys.l2.overall_mshr_misses::switch_cpus.itb.walker       308180                       # number of overall MSHR misses
+testsys.l2.overall_mshr_misses::switch_cpus.inst     14284054                       # number of overall MSHR misses
+testsys.l2.overall_mshr_misses::switch_cpus.data      7093789                       # number of overall MSHR misses
+testsys.l2.overall_mshr_misses::total        22004506                       # number of overall MSHR misses
+testsys.l2.ReadReq_mshr_miss_latency::switch_cpus.dtb.walker   5936999871                       # number of ReadReq MSHR miss cycles
+testsys.l2.ReadReq_mshr_miss_latency::switch_cpus.itb.walker   4904633344                       # number of ReadReq MSHR miss cycles
+testsys.l2.ReadReq_mshr_miss_latency::switch_cpus.inst 237089033898                       # number of ReadReq MSHR miss cycles
+testsys.l2.ReadReq_mshr_miss_latency::switch_cpus.data 159871571050                       # number of ReadReq MSHR miss cycles
+testsys.l2.ReadReq_mshr_miss_latency::total 407802238163                       # number of ReadReq MSHR miss cycles
+testsys.l2.UpgradeReq_mshr_miss_latency::switch_cpus.data    493577551                       # number of UpgradeReq MSHR miss cycles
+testsys.l2.UpgradeReq_mshr_miss_latency::total    493577551                       # number of UpgradeReq MSHR miss cycles
+testsys.l2.ReadExReq_mshr_miss_latency::switch_cpus.data 134513132347                       # number of ReadExReq MSHR miss cycles
+testsys.l2.ReadExReq_mshr_miss_latency::total 134513132347                       # number of ReadExReq MSHR miss cycles
+testsys.l2.demand_mshr_miss_latency::switch_cpus.dtb.walker   5936999871                       # number of demand (read+write) MSHR miss cycles
+testsys.l2.demand_mshr_miss_latency::switch_cpus.itb.walker   4904633344                       # number of demand (read+write) MSHR miss cycles
+testsys.l2.demand_mshr_miss_latency::switch_cpus.inst 237089033898                       # number of demand (read+write) MSHR miss cycles
+testsys.l2.demand_mshr_miss_latency::switch_cpus.data 294384703397                       # number of demand (read+write) MSHR miss cycles
+testsys.l2.demand_mshr_miss_latency::total 542315370510                       # number of demand (read+write) MSHR miss cycles
+testsys.l2.overall_mshr_miss_latency::switch_cpus.dtb.walker   5936999871                       # number of overall MSHR miss cycles
+testsys.l2.overall_mshr_miss_latency::switch_cpus.itb.walker   4904633344                       # number of overall MSHR miss cycles
+testsys.l2.overall_mshr_miss_latency::switch_cpus.inst 237089033898                       # number of overall MSHR miss cycles
+testsys.l2.overall_mshr_miss_latency::switch_cpus.data 294384703397                       # number of overall MSHR miss cycles
+testsys.l2.overall_mshr_miss_latency::total 542315370510                       # number of overall MSHR miss cycles
+testsys.l2.ReadReq_mshr_uncacheable_latency::switch_cpus.data   5229503585                       # number of ReadReq MSHR uncacheable cycles
+testsys.l2.ReadReq_mshr_uncacheable_latency::total   5229503585                       # number of ReadReq MSHR uncacheable cycles
+testsys.l2.WriteReq_mshr_uncacheable_latency::switch_cpus.data   7290552170                       # number of WriteReq MSHR uncacheable cycles
+testsys.l2.WriteReq_mshr_uncacheable_latency::total   7290552170                       # number of WriteReq MSHR uncacheable cycles
+testsys.l2.overall_mshr_uncacheable_latency::switch_cpus.data  12520055755                       # number of overall MSHR uncacheable cycles
+testsys.l2.overall_mshr_uncacheable_latency::total  12520055755                       # number of overall MSHR uncacheable cycles
+testsys.l2.ReadReq_mshr_miss_rate::switch_cpus.dtb.walker     0.026890                       # mshr miss rate for ReadReq accesses
+testsys.l2.ReadReq_mshr_miss_rate::switch_cpus.itb.walker     0.028886                       # mshr miss rate for ReadReq accesses
+testsys.l2.ReadReq_mshr_miss_rate::switch_cpus.inst     0.613456                       # mshr miss rate for ReadReq accesses
+testsys.l2.ReadReq_mshr_miss_rate::switch_cpus.data     0.457670                       # mshr miss rate for ReadReq accesses
+testsys.l2.ReadReq_mshr_miss_rate::total     0.350497                       # mshr miss rate for ReadReq accesses
+testsys.l2.UpgradeReq_mshr_miss_rate::switch_cpus.data     0.018846                       # mshr miss rate for UpgradeReq accesses
+testsys.l2.UpgradeReq_mshr_miss_rate::total     0.018846                       # mshr miss rate for UpgradeReq accesses
+testsys.l2.ReadExReq_mshr_miss_rate::switch_cpus.data     0.559661                       # mshr miss rate for ReadExReq accesses
+testsys.l2.ReadExReq_mshr_miss_rate::total     0.559661                       # mshr miss rate for ReadExReq accesses
+testsys.l2.demand_mshr_miss_rate::switch_cpus.dtb.walker     0.026890                       # mshr miss rate for demand accesses
+testsys.l2.demand_mshr_miss_rate::switch_cpus.itb.walker     0.028886                       # mshr miss rate for demand accesses
+testsys.l2.demand_mshr_miss_rate::switch_cpus.inst     0.613456                       # mshr miss rate for demand accesses
+testsys.l2.demand_mshr_miss_rate::switch_cpus.data     0.485361                       # mshr miss rate for demand accesses
+testsys.l2.demand_mshr_miss_rate::total      0.364236                       # mshr miss rate for demand accesses
+testsys.l2.overall_mshr_miss_rate::switch_cpus.dtb.walker     0.026890                       # mshr miss rate for overall accesses
+testsys.l2.overall_mshr_miss_rate::switch_cpus.itb.walker     0.028886                       # mshr miss rate for overall accesses
+testsys.l2.overall_mshr_miss_rate::switch_cpus.inst     0.613456                       # mshr miss rate for overall accesses
+testsys.l2.overall_mshr_miss_rate::switch_cpus.data     0.485361                       # mshr miss rate for overall accesses
+testsys.l2.overall_mshr_miss_rate::total     0.364236                       # mshr miss rate for overall accesses
+testsys.l2.ReadReq_avg_mshr_miss_latency::switch_cpus.dtb.walker 18641.496943                       # average ReadReq mshr miss latency
+testsys.l2.ReadReq_avg_mshr_miss_latency::switch_cpus.itb.walker 15914.833357                       # average ReadReq mshr miss latency
+testsys.l2.ReadReq_avg_mshr_miss_latency::switch_cpus.inst 16598.161411                       # average ReadReq mshr miss latency
+testsys.l2.ReadReq_avg_mshr_miss_latency::switch_cpus.data 32807.883798                       # average ReadReq mshr miss latency
+testsys.l2.ReadReq_avg_mshr_miss_latency::total 20613.063837                       # average ReadReq mshr miss latency
+testsys.l2.UpgradeReq_avg_mshr_miss_latency::switch_cpus.data 41602.962829                       # average UpgradeReq mshr miss latency
+testsys.l2.UpgradeReq_avg_mshr_miss_latency::total 41602.962829                       # average UpgradeReq mshr miss latency
+testsys.l2.ReadExReq_avg_mshr_miss_latency::switch_cpus.data 60568.937764                       # average ReadExReq mshr miss latency
+testsys.l2.ReadExReq_avg_mshr_miss_latency::total 60568.937764                       # average ReadExReq mshr miss latency
+testsys.l2.demand_avg_mshr_miss_latency::switch_cpus.dtb.walker 18641.496943                       # average overall mshr miss latency
+testsys.l2.demand_avg_mshr_miss_latency::switch_cpus.itb.walker 15914.833357                       # average overall mshr miss latency
+testsys.l2.demand_avg_mshr_miss_latency::switch_cpus.inst 16598.161411                       # average overall mshr miss latency
+testsys.l2.demand_avg_mshr_miss_latency::switch_cpus.data 41498.937084                       # average overall mshr miss latency
+testsys.l2.demand_avg_mshr_miss_latency::total 24645.650782                       # average overall mshr miss latency
+testsys.l2.overall_avg_mshr_miss_latency::switch_cpus.dtb.walker 18641.496943                       # average overall mshr miss latency
+testsys.l2.overall_avg_mshr_miss_latency::switch_cpus.itb.walker 15914.833357                       # average overall mshr miss latency
+testsys.l2.overall_avg_mshr_miss_latency::switch_cpus.inst 16598.161411                       # average overall mshr miss latency
+testsys.l2.overall_avg_mshr_miss_latency::switch_cpus.data 41498.937084                       # average overall mshr miss latency
+testsys.l2.overall_avg_mshr_miss_latency::total 24645.650782                       # average overall mshr miss latency
+testsys.l2.ReadReq_avg_mshr_uncacheable_latency::switch_cpus.data          inf                       # average ReadReq mshr uncacheable latency
+testsys.l2.ReadReq_avg_mshr_uncacheable_latency::total          inf                       # average ReadReq mshr uncacheable latency
+testsys.l2.WriteReq_avg_mshr_uncacheable_latency::switch_cpus.data          inf                       # average WriteReq mshr uncacheable latency
+testsys.l2.WriteReq_avg_mshr_uncacheable_latency::total          inf                       # average WriteReq mshr uncacheable latency
+testsys.l2.overall_avg_mshr_uncacheable_latency::switch_cpus.data          inf                       # average overall mshr uncacheable latency
+testsys.l2.overall_avg_mshr_uncacheable_latency::total          inf                       # average overall mshr uncacheable latency
+testsys.l2.no_allocate_misses                       0                       # Number of misses that were no-allocate
+testsys.l3.replacements                       2063091                       # number of replacements
+testsys.l3.tagsinuse                     31667.524241                       # Cycle average of tags in use
+testsys.l3.total_refs                        21184530                       # Total number of references to valid blocks.
+testsys.l3.sampled_refs                       2095710                       # Sample count of references to valid blocks.
+testsys.l3.avg_refs                         10.108522                       # Average number of references to valid blocks.
+testsys.l3.warmup_cycle                  11221279919000                       # Cycle when the warmup percentage was hit.
+testsys.l3.occ_blocks::writebacks         9928.415940                       # Average occupied blocks per requestor
+testsys.l3.occ_blocks::switch_cpus.dtb.walker   302.158359                       # Average occupied blocks per requestor
+testsys.l3.occ_blocks::switch_cpus.itb.walker   135.006902                       # Average occupied blocks per requestor
+testsys.l3.occ_blocks::switch_cpus.inst  11181.722032                       # Average occupied blocks per requestor
+testsys.l3.occ_blocks::switch_cpus.data  10120.221009                       # Average occupied blocks per requestor
+testsys.l3.occ_percent::writebacks           0.302991                       # Average percentage of cache occupancy
+testsys.l3.occ_percent::switch_cpus.dtb.walker     0.009221                       # Average percentage of cache occupancy
+testsys.l3.occ_percent::switch_cpus.itb.walker     0.004120                       # Average percentage of cache occupancy
+testsys.l3.occ_percent::switch_cpus.inst     0.341239                       # Average percentage of cache occupancy
+testsys.l3.occ_percent::switch_cpus.data     0.308845                       # Average percentage of cache occupancy
+testsys.l3.occ_percent::total                0.966416                       # Average percentage of cache occupancy
+testsys.l3.ReadReq_hits::switch_cpus.dtb.walker       312994                       # number of ReadReq hits
+testsys.l3.ReadReq_hits::switch_cpus.itb.walker       307694                       # number of ReadReq hits
+testsys.l3.ReadReq_hits::switch_cpus.inst     14222013                       # number of ReadReq hits
+testsys.l3.ReadReq_hits::switch_cpus.data      3998995                       # number of ReadReq hits
+testsys.l3.ReadReq_hits::total               18841696                       # number of ReadReq hits
+testsys.l3.Writeback_hits::writebacks         3528806                       # number of Writeback hits
+testsys.l3.Writeback_hits::total              3528806                       # number of Writeback hits
+testsys.l3.UpgradeReq_hits::switch_cpus.data         1580                       # number of UpgradeReq hits
+testsys.l3.UpgradeReq_hits::total                1580                       # number of UpgradeReq hits
+testsys.l3.ReadExReq_hits::switch_cpus.data      1024408                       # number of ReadExReq hits
+testsys.l3.ReadExReq_hits::total              1024408                       # number of ReadExReq hits
+testsys.l3.demand_hits::switch_cpus.dtb.walker       312994                       # number of demand (read+write) hits
+testsys.l3.demand_hits::switch_cpus.itb.walker       307694                       # number of demand (read+write) hits
+testsys.l3.demand_hits::switch_cpus.inst     14222013                       # number of demand (read+write) hits
+testsys.l3.demand_hits::switch_cpus.data      5023403                       # number of demand (read+write) hits
+testsys.l3.demand_hits::total                19866104                       # number of demand (read+write) hits
+testsys.l3.overall_hits::switch_cpus.dtb.walker       312994                       # number of overall hits
+testsys.l3.overall_hits::switch_cpus.itb.walker       307694                       # number of overall hits
+testsys.l3.overall_hits::switch_cpus.inst     14222013                       # number of overall hits
+testsys.l3.overall_hits::switch_cpus.data      5023403                       # number of overall hits
+testsys.l3.overall_hits::total               19866104                       # number of overall hits
+testsys.l3.ReadReq_misses::switch_cpus.dtb.walker         5489                       # number of ReadReq misses
+testsys.l3.ReadReq_misses::switch_cpus.itb.walker          486                       # number of ReadReq misses
+testsys.l3.ReadReq_misses::switch_cpus.inst        62041                       # number of ReadReq misses
+testsys.l3.ReadReq_misses::switch_cpus.data       873967                       # number of ReadReq misses
+testsys.l3.ReadReq_misses::total               941983                       # number of ReadReq misses
+testsys.l3.UpgradeReq_misses::switch_cpus.data        12975                       # number of UpgradeReq misses
+testsys.l3.UpgradeReq_misses::total             12975                       # number of UpgradeReq misses
+testsys.l3.ReadExReq_misses::switch_cpus.data      1193728                       # number of ReadExReq misses
+testsys.l3.ReadExReq_misses::total            1193728                       # number of ReadExReq misses
+testsys.l3.demand_misses::switch_cpus.dtb.walker         5489                       # number of demand (read+write) misses
+testsys.l3.demand_misses::switch_cpus.itb.walker          486                       # number of demand (read+write) misses
+testsys.l3.demand_misses::switch_cpus.inst        62041                       # number of demand (read+write) misses
+testsys.l3.demand_misses::switch_cpus.data      2067695                       # number of demand (read+write) misses
+testsys.l3.demand_misses::total               2135711                       # number of demand (read+write) misses
+testsys.l3.overall_misses::switch_cpus.dtb.walker         5489                       # number of overall misses
+testsys.l3.overall_misses::switch_cpus.itb.walker          486                       # number of overall misses
+testsys.l3.overall_misses::switch_cpus.inst        62041                       # number of overall misses
+testsys.l3.overall_misses::switch_cpus.data      2067695                       # number of overall misses
+testsys.l3.overall_misses::total              2135711                       # number of overall misses
+testsys.l3.ReadReq_miss_latency::switch_cpus.dtb.walker    514801705                       # number of ReadReq miss cycles
+testsys.l3.ReadReq_miss_latency::switch_cpus.itb.walker     45444141                       # number of ReadReq miss cycles
+testsys.l3.ReadReq_miss_latency::switch_cpus.inst   5823466494                       # number of ReadReq miss cycles
+testsys.l3.ReadReq_miss_latency::switch_cpus.data  83059676853                       # number of ReadReq miss cycles
+testsys.l3.ReadReq_miss_latency::total    89443389193                       # number of ReadReq miss cycles
+testsys.l3.UpgradeReq_miss_latency::switch_cpus.data    347279590                       # number of UpgradeReq miss cycles
+testsys.l3.UpgradeReq_miss_latency::total    347279590                       # number of UpgradeReq miss cycles
+testsys.l3.ReadExReq_miss_latency::switch_cpus.data 112657898786                       # number of ReadExReq miss cycles
+testsys.l3.ReadExReq_miss_latency::total 112657898786                       # number of ReadExReq miss cycles
+testsys.l3.demand_miss_latency::switch_cpus.dtb.walker    514801705                       # number of demand (read+write) miss cycles
+testsys.l3.demand_miss_latency::switch_cpus.itb.walker     45444141                       # number of demand (read+write) miss cycles
+testsys.l3.demand_miss_latency::switch_cpus.inst   5823466494                       # number of demand (read+write) miss cycles
+testsys.l3.demand_miss_latency::switch_cpus.data 195717575639                       # number of demand (read+write) miss cycles
+testsys.l3.demand_miss_latency::total    202101287979                       # number of demand (read+write) miss cycles
+testsys.l3.overall_miss_latency::switch_cpus.dtb.walker    514801705                       # number of overall miss cycles
+testsys.l3.overall_miss_latency::switch_cpus.itb.walker     45444141                       # number of overall miss cycles
+testsys.l3.overall_miss_latency::switch_cpus.inst   5823466494                       # number of overall miss cycles
+testsys.l3.overall_miss_latency::switch_cpus.data 195717575639                       # number of overall miss cycles
+testsys.l3.overall_miss_latency::total   202101287979                       # number of overall miss cycles
+testsys.l3.ReadReq_accesses::switch_cpus.dtb.walker       318483                       # number of ReadReq accesses(hits+misses)
+testsys.l3.ReadReq_accesses::switch_cpus.itb.walker       308180                       # number of ReadReq accesses(hits+misses)
+testsys.l3.ReadReq_accesses::switch_cpus.inst     14284054                       # number of ReadReq accesses(hits+misses)
+testsys.l3.ReadReq_accesses::switch_cpus.data      4872962                       # number of ReadReq accesses(hits+misses)
+testsys.l3.ReadReq_accesses::total           19783679                       # number of ReadReq accesses(hits+misses)
+testsys.l3.Writeback_accesses::writebacks      3528806                       # number of Writeback accesses(hits+misses)
+testsys.l3.Writeback_accesses::total          3528806                       # number of Writeback accesses(hits+misses)
+testsys.l3.UpgradeReq_accesses::switch_cpus.data        14555                       # number of UpgradeReq accesses(hits+misses)
+testsys.l3.UpgradeReq_accesses::total           14555                       # number of UpgradeReq accesses(hits+misses)
+testsys.l3.ReadExReq_accesses::switch_cpus.data      2218136                       # number of ReadExReq accesses(hits+misses)
+testsys.l3.ReadExReq_accesses::total          2218136                       # number of ReadExReq accesses(hits+misses)
+testsys.l3.demand_accesses::switch_cpus.dtb.walker       318483                       # number of demand (read+write) accesses
+testsys.l3.demand_accesses::switch_cpus.itb.walker       308180                       # number of demand (read+write) accesses
+testsys.l3.demand_accesses::switch_cpus.inst     14284054                       # number of demand (read+write) accesses
+testsys.l3.demand_accesses::switch_cpus.data      7091098                       # number of demand (read+write) accesses
+testsys.l3.demand_accesses::total            22001815                       # number of demand (read+write) accesses
+testsys.l3.overall_accesses::switch_cpus.dtb.walker       318483                       # number of overall (read+write) accesses
+testsys.l3.overall_accesses::switch_cpus.itb.walker       308180                       # number of overall (read+write) accesses
+testsys.l3.overall_accesses::switch_cpus.inst     14284054                       # number of overall (read+write) accesses
+testsys.l3.overall_accesses::switch_cpus.data      7091098                       # number of overall (read+write) accesses
+testsys.l3.overall_accesses::total           22001815                       # number of overall (read+write) accesses
+testsys.l3.ReadReq_miss_rate::switch_cpus.dtb.walker     0.017235                       # miss rate for ReadReq accesses
+testsys.l3.ReadReq_miss_rate::switch_cpus.itb.walker     0.001577                       # miss rate for ReadReq accesses
+testsys.l3.ReadReq_miss_rate::switch_cpus.inst     0.004343                       # miss rate for ReadReq accesses
+testsys.l3.ReadReq_miss_rate::switch_cpus.data     0.179350                       # miss rate for ReadReq accesses
+testsys.l3.ReadReq_miss_rate::total          0.047614                       # miss rate for ReadReq accesses
+testsys.l3.UpgradeReq_miss_rate::switch_cpus.data     0.891446                       # miss rate for UpgradeReq accesses
+testsys.l3.UpgradeReq_miss_rate::total       0.891446                       # miss rate for UpgradeReq accesses
+testsys.l3.ReadExReq_miss_rate::switch_cpus.data     0.538167                       # miss rate for ReadExReq accesses
+testsys.l3.ReadExReq_miss_rate::total        0.538167                       # miss rate for ReadExReq accesses
+testsys.l3.demand_miss_rate::switch_cpus.dtb.walker     0.017235                       # miss rate for demand accesses
+testsys.l3.demand_miss_rate::switch_cpus.itb.walker     0.001577                       # miss rate for demand accesses
+testsys.l3.demand_miss_rate::switch_cpus.inst     0.004343                       # miss rate for demand accesses
+testsys.l3.demand_miss_rate::switch_cpus.data     0.291590                       # miss rate for demand accesses
+testsys.l3.demand_miss_rate::total           0.097070                       # miss rate for demand accesses
+testsys.l3.overall_miss_rate::switch_cpus.dtb.walker     0.017235                       # miss rate for overall accesses
+testsys.l3.overall_miss_rate::switch_cpus.itb.walker     0.001577                       # miss rate for overall accesses
+testsys.l3.overall_miss_rate::switch_cpus.inst     0.004343                       # miss rate for overall accesses
+testsys.l3.overall_miss_rate::switch_cpus.data     0.291590                       # miss rate for overall accesses
+testsys.l3.overall_miss_rate::total          0.097070                       # miss rate for overall accesses
+testsys.l3.ReadReq_avg_miss_latency::switch_cpus.dtb.walker 93787.885772                       # average ReadReq miss latency
+testsys.l3.ReadReq_avg_miss_latency::switch_cpus.itb.walker 93506.462963                       # average ReadReq miss latency
+testsys.l3.ReadReq_avg_miss_latency::switch_cpus.inst 93864.807047                       # average ReadReq miss latency
+testsys.l3.ReadReq_avg_miss_latency::switch_cpus.data 95037.543583                       # average ReadReq miss latency
+testsys.l3.ReadReq_avg_miss_latency::total 94952.232888                       # average ReadReq miss latency
+testsys.l3.UpgradeReq_avg_miss_latency::switch_cpus.data 26765.286320                       # average UpgradeReq miss latency
+testsys.l3.UpgradeReq_avg_miss_latency::total 26765.286320                       # average UpgradeReq miss latency
+testsys.l3.ReadExReq_avg_miss_latency::switch_cpus.data 94374.848195                       # average ReadExReq miss latency
+testsys.l3.ReadExReq_avg_miss_latency::total 94374.848195                       # average ReadExReq miss latency
+testsys.l3.demand_avg_miss_latency::switch_cpus.dtb.walker 93787.885772                       # average overall miss latency
+testsys.l3.demand_avg_miss_latency::switch_cpus.itb.walker 93506.462963                       # average overall miss latency
+testsys.l3.demand_avg_miss_latency::switch_cpus.inst 93864.807047                       # average overall miss latency
+testsys.l3.demand_avg_miss_latency::switch_cpus.data 94654.954255                       # average overall miss latency
+testsys.l3.demand_avg_miss_latency::total 94629.511193                       # average overall miss latency
+testsys.l3.overall_avg_miss_latency::switch_cpus.dtb.walker 93787.885772                       # average overall miss latency
+testsys.l3.overall_avg_miss_latency::switch_cpus.itb.walker 93506.462963                       # average overall miss latency
+testsys.l3.overall_avg_miss_latency::switch_cpus.inst 93864.807047                       # average overall miss latency
+testsys.l3.overall_avg_miss_latency::switch_cpus.data 94654.954255                       # average overall miss latency
+testsys.l3.overall_avg_miss_latency::total 94629.511193                       # average overall miss latency
+testsys.l3.blocked_cycles::no_mshrs                 0                       # number of cycles access was blocked
+testsys.l3.blocked_cycles::no_targets               0                       # number of cycles access was blocked
+testsys.l3.blocked::no_mshrs                        0                       # number of cycles access was blocked
+testsys.l3.blocked::no_targets                      0                       # number of cycles access was blocked
+testsys.l3.avg_blocked_cycles::no_mshrs           nan                       # average number of cycles each access was blocked
+testsys.l3.avg_blocked_cycles::no_targets          nan                       # average number of cycles each access was blocked
+testsys.l3.fast_writes                              0                       # number of fast writes performed
+testsys.l3.cache_copies                             0                       # number of cache copies performed
+testsys.l3.writebacks::writebacks             1209497                       # number of writebacks
+testsys.l3.writebacks::total                  1209497                       # number of writebacks
+testsys.l3.ReadReq_mshr_misses::switch_cpus.dtb.walker         5489                       # number of ReadReq MSHR misses
+testsys.l3.ReadReq_mshr_misses::switch_cpus.itb.walker          486                       # number of ReadReq MSHR misses
+testsys.l3.ReadReq_mshr_misses::switch_cpus.inst        62041                       # number of ReadReq MSHR misses
+testsys.l3.ReadReq_mshr_misses::switch_cpus.data       873967                       # number of ReadReq MSHR misses
+testsys.l3.ReadReq_mshr_misses::total          941983                       # number of ReadReq MSHR misses
+testsys.l3.UpgradeReq_mshr_misses::switch_cpus.data        12975                       # number of UpgradeReq MSHR misses
+testsys.l3.UpgradeReq_mshr_misses::total        12975                       # number of UpgradeReq MSHR misses
+testsys.l3.ReadExReq_mshr_misses::switch_cpus.data      1193728                       # number of ReadExReq MSHR misses
+testsys.l3.ReadExReq_mshr_misses::total       1193728                       # number of ReadExReq MSHR misses
+testsys.l3.demand_mshr_misses::switch_cpus.dtb.walker         5489                       # number of demand (read+write) MSHR misses
+testsys.l3.demand_mshr_misses::switch_cpus.itb.walker          486                       # number of demand (read+write) MSHR misses
+testsys.l3.demand_mshr_misses::switch_cpus.inst        62041                       # number of demand (read+write) MSHR misses
+testsys.l3.demand_mshr_misses::switch_cpus.data      2067695                       # number of demand (read+write) MSHR misses
+testsys.l3.demand_mshr_misses::total          2135711                       # number of demand (read+write) MSHR misses
+testsys.l3.overall_mshr_misses::switch_cpus.dtb.walker         5489                       # number of overall MSHR misses
+testsys.l3.overall_mshr_misses::switch_cpus.itb.walker          486                       # number of overall MSHR misses
+testsys.l3.overall_mshr_misses::switch_cpus.inst        62041                       # number of overall MSHR misses
+testsys.l3.overall_mshr_misses::switch_cpus.data      2067695                       # number of overall MSHR misses
+testsys.l3.overall_mshr_misses::total         2135711                       # number of overall MSHR misses
+testsys.l3.ReadReq_mshr_miss_latency::switch_cpus.dtb.walker    437836016                       # number of ReadReq MSHR miss cycles
+testsys.l3.ReadReq_mshr_miss_latency::switch_cpus.itb.walker     38646944                       # number of ReadReq MSHR miss cycles
+testsys.l3.ReadReq_mshr_miss_latency::switch_cpus.inst   4948872106                       # number of ReadReq MSHR miss cycles
+testsys.l3.ReadReq_mshr_miss_latency::switch_cpus.data  70841896440                       # number of ReadReq MSHR miss cycles
+testsys.l3.ReadReq_mshr_miss_latency::total  76267251506                       # number of ReadReq MSHR miss cycles
+testsys.l3.UpgradeReq_mshr_miss_latency::switch_cpus.data    482513385                       # number of UpgradeReq MSHR miss cycles
+testsys.l3.UpgradeReq_mshr_miss_latency::total    482513385                       # number of UpgradeReq MSHR miss cycles
+testsys.l3.ReadExReq_mshr_miss_latency::switch_cpus.data  95793118390                       # number of ReadExReq MSHR miss cycles
+testsys.l3.ReadExReq_mshr_miss_latency::total  95793118390                       # number of ReadExReq MSHR miss cycles
+testsys.l3.demand_mshr_miss_latency::switch_cpus.dtb.walker    437836016                       # number of demand (read+write) MSHR miss cycles
+testsys.l3.demand_mshr_miss_latency::switch_cpus.itb.walker     38646944                       # number of demand (read+write) MSHR miss cycles
+testsys.l3.demand_mshr_miss_latency::switch_cpus.inst   4948872106                       # number of demand (read+write) MSHR miss cycles
+testsys.l3.demand_mshr_miss_latency::switch_cpus.data 166635014830                       # number of demand (read+write) MSHR miss cycles
+testsys.l3.demand_mshr_miss_latency::total 172060369896                       # number of demand (read+write) MSHR miss cycles
+testsys.l3.overall_mshr_miss_latency::switch_cpus.dtb.walker    437836016                       # number of overall MSHR miss cycles
+testsys.l3.overall_mshr_miss_latency::switch_cpus.itb.walker     38646944                       # number of overall MSHR miss cycles
+testsys.l3.overall_mshr_miss_latency::switch_cpus.inst   4948872106                       # number of overall MSHR miss cycles
+testsys.l3.overall_mshr_miss_latency::switch_cpus.data 166635014830                       # number of overall MSHR miss cycles
+testsys.l3.overall_mshr_miss_latency::total 172060369896                       # number of overall MSHR miss cycles
+testsys.l3.ReadReq_mshr_uncacheable_latency::switch_cpus.data   4660824066                       # number of ReadReq MSHR uncacheable cycles
+testsys.l3.ReadReq_mshr_uncacheable_latency::total   4660824066                       # number of ReadReq MSHR uncacheable cycles
+testsys.l3.WriteReq_mshr_uncacheable_latency::switch_cpus.data   6498372688                       # number of WriteReq MSHR uncacheable cycles
+testsys.l3.WriteReq_mshr_uncacheable_latency::total   6498372688                       # number of WriteReq MSHR uncacheable cycles
+testsys.l3.overall_mshr_uncacheable_latency::switch_cpus.data  11159196754                       # number of overall MSHR uncacheable cycles
+testsys.l3.overall_mshr_uncacheable_latency::total  11159196754                       # number of overall MSHR uncacheable cycles
+testsys.l3.ReadReq_mshr_miss_rate::switch_cpus.dtb.walker     0.017235                       # mshr miss rate for ReadReq accesses
+testsys.l3.ReadReq_mshr_miss_rate::switch_cpus.itb.walker     0.001577                       # mshr miss rate for ReadReq accesses
+testsys.l3.ReadReq_mshr_miss_rate::switch_cpus.inst     0.004343                       # mshr miss rate for ReadReq accesses
+testsys.l3.ReadReq_mshr_miss_rate::switch_cpus.data     0.179350                       # mshr miss rate for ReadReq accesses
+testsys.l3.ReadReq_mshr_miss_rate::total     0.047614                       # mshr miss rate for ReadReq accesses
+testsys.l3.UpgradeReq_mshr_miss_rate::switch_cpus.data     0.891446                       # mshr miss rate for UpgradeReq accesses
+testsys.l3.UpgradeReq_mshr_miss_rate::total     0.891446                       # mshr miss rate for UpgradeReq accesses
+testsys.l3.ReadExReq_mshr_miss_rate::switch_cpus.data     0.538167                       # mshr miss rate for ReadExReq accesses
+testsys.l3.ReadExReq_mshr_miss_rate::total     0.538167                       # mshr miss rate for ReadExReq accesses
+testsys.l3.demand_mshr_miss_rate::switch_cpus.dtb.walker     0.017235                       # mshr miss rate for demand accesses
+testsys.l3.demand_mshr_miss_rate::switch_cpus.itb.walker     0.001577                       # mshr miss rate for demand accesses
+testsys.l3.demand_mshr_miss_rate::switch_cpus.inst     0.004343                       # mshr miss rate for demand accesses
+testsys.l3.demand_mshr_miss_rate::switch_cpus.data     0.291590                       # mshr miss rate for demand accesses
+testsys.l3.demand_mshr_miss_rate::total      0.097070                       # mshr miss rate for demand accesses
+testsys.l3.overall_mshr_miss_rate::switch_cpus.dtb.walker     0.017235                       # mshr miss rate for overall accesses
+testsys.l3.overall_mshr_miss_rate::switch_cpus.itb.walker     0.001577                       # mshr miss rate for overall accesses
+testsys.l3.overall_mshr_miss_rate::switch_cpus.inst     0.004343                       # mshr miss rate for overall accesses
+testsys.l3.overall_mshr_miss_rate::switch_cpus.data     0.291590                       # mshr miss rate for overall accesses
+testsys.l3.overall_mshr_miss_rate::total     0.097070                       # mshr miss rate for overall accesses
+testsys.l3.ReadReq_avg_mshr_miss_latency::switch_cpus.dtb.walker 79766.080525                       # average ReadReq mshr miss latency
+testsys.l3.ReadReq_avg_mshr_miss_latency::switch_cpus.itb.walker 79520.460905                       # average ReadReq mshr miss latency
+testsys.l3.ReadReq_avg_mshr_miss_latency::switch_cpus.inst 79767.768186                       # average ReadReq mshr miss latency
+testsys.l3.ReadReq_avg_mshr_miss_latency::switch_cpus.data 81057.861956                       # average ReadReq mshr miss latency
+testsys.l3.ReadReq_avg_mshr_miss_latency::total 80964.573146                       # average ReadReq mshr miss latency
+testsys.l3.UpgradeReq_avg_mshr_miss_latency::switch_cpus.data 37187.929480                       # average UpgradeReq mshr miss latency
+testsys.l3.UpgradeReq_avg_mshr_miss_latency::total 37187.929480                       # average UpgradeReq mshr miss latency
+testsys.l3.ReadExReq_avg_mshr_miss_latency::switch_cpus.data 80247.023099                       # average ReadExReq mshr miss latency
+testsys.l3.ReadExReq_avg_mshr_miss_latency::total 80247.023099                       # average ReadExReq mshr miss latency
+testsys.l3.demand_avg_mshr_miss_latency::switch_cpus.dtb.walker 79766.080525                       # average overall mshr miss latency
+testsys.l3.demand_avg_mshr_miss_latency::switch_cpus.itb.walker 79520.460905                       # average overall mshr miss latency
+testsys.l3.demand_avg_mshr_miss_latency::switch_cpus.inst 79767.768186                       # average overall mshr miss latency
+testsys.l3.demand_avg_mshr_miss_latency::switch_cpus.data 80589.745988                       # average overall mshr miss latency
+testsys.l3.demand_avg_mshr_miss_latency::total 80563.507842                       # average overall mshr miss latency
+testsys.l3.overall_avg_mshr_miss_latency::switch_cpus.dtb.walker 79766.080525                       # average overall mshr miss latency
+testsys.l3.overall_avg_mshr_miss_latency::switch_cpus.itb.walker 79520.460905                       # average overall mshr miss latency
+testsys.l3.overall_avg_mshr_miss_latency::switch_cpus.inst 79767.768186                       # average overall mshr miss latency
+testsys.l3.overall_avg_mshr_miss_latency::switch_cpus.data 80589.745988                       # average overall mshr miss latency
+testsys.l3.overall_avg_mshr_miss_latency::total 80563.507842                       # average overall mshr miss latency
+testsys.l3.ReadReq_avg_mshr_uncacheable_latency::switch_cpus.data          inf                       # average ReadReq mshr uncacheable latency
+testsys.l3.ReadReq_avg_mshr_uncacheable_latency::total          inf                       # average ReadReq mshr uncacheable latency
+testsys.l3.WriteReq_avg_mshr_uncacheable_latency::switch_cpus.data          inf                       # average WriteReq mshr uncacheable latency
+testsys.l3.WriteReq_avg_mshr_uncacheable_latency::total          inf                       # average WriteReq mshr uncacheable latency
+testsys.l3.overall_avg_mshr_uncacheable_latency::switch_cpus.data          inf                       # average overall mshr uncacheable latency
+testsys.l3.overall_avg_mshr_uncacheable_latency::total          inf                       # average overall mshr uncacheable latency
+testsys.l3.no_allocate_misses                       0                       # Number of misses that were no-allocate
+testsys.ethernet.txBytes                      1503266                       # Bytes Transmitted
+testsys.ethernet.rxBytes                       356127                       # Bytes Received
+testsys.ethernet.txPackets                       4633                       # Number of Packets Transmitted
+testsys.ethernet.rxPackets                       4637                       # Number of Packets Received
+testsys.ethernet.txIpChecksums                      0                       # Number of tx IP Checksums done by device
+testsys.ethernet.rxIpChecksums                      0                       # Number of rx IP Checksums done by device
+testsys.ethernet.txTcpChecksums                  4623                       # Number of tx TCP Checksums done by device
+testsys.ethernet.rxTcpChecksums                  4637                       # Number of rx TCP Checksums done by device
+testsys.ethernet.txUdpChecksums                     0                       # Number of tx UDP Checksums done by device
+testsys.ethernet.rxUdpChecksums                     0                       # Number of rx UDP Checksums done by device
+testsys.ethernet.descDMAReads                       0                       # Number of descriptors the device read w/ DMA
+testsys.ethernet.descDMAWrites                      0                       # Number of descriptors the device wrote w/ DMA
+testsys.ethernet.descDmaReadBytes                   0                       # number of descriptor bytes read w/ DMA
+testsys.ethernet.descDmaWriteBytes                  0                       # number of descriptor bytes write w/ DMA
+testsys.ethernet.totBandwidth                11050029                       # Total Bandwidth (bits/s)
+testsys.ethernet.totPackets                      9270                       # Total Packets
+testsys.ethernet.totBytes                     1859393                       # Total Bytes
+testsys.ethernet.totPPS                          6886                       # Total Tranmission Rate (packets/s)
+testsys.ethernet.txBandwidth                  8933632                       # Transmit Bandwidth (bits/s)
+testsys.ethernet.rxBandwidth                  2116397                       # Receive Bandwidth (bits/s)
+testsys.ethernet.txPPS                           3442                       # Packet Tranmission Rate (packets/s)
+testsys.ethernet.rxPPS                           3445                       # Packet Reception Rate (packets/s)
+testsys.ethernet.postedSwi                          0                       # number of software interrupts posted to CPU
+testsys.ethernet.coalescedSwi                       0                       # average number of Swi's coalesced into each post
+testsys.ethernet.totalSwi                           0                       # total number of Swi written to ISR
+testsys.ethernet.postedRxIdle                       0                       # number of rxIdle interrupts posted to CPU
+testsys.ethernet.coalescedRxIdle                    0                       # average number of RxIdle's coalesced into each post
+testsys.ethernet.totalRxIdle                        0                       # total number of RxIdle written to ISR
+testsys.ethernet.postedRxOk                         0                       # number of RxOk interrupts posted to CPU
+testsys.ethernet.coalescedRxOk                      0                       # average number of RxOk's coalesced into each post
+testsys.ethernet.totalRxOk                          0                       # total number of RxOk written to ISR
+testsys.ethernet.postedRxDesc                       0                       # number of RxDesc interrupts posted to CPU
+testsys.ethernet.coalescedRxDesc                    0                       # average number of RxDesc's coalesced into each post
+testsys.ethernet.totalRxDesc                        0                       # total number of RxDesc written to ISR
+testsys.ethernet.postedTxOk                         0                       # number of TxOk interrupts posted to CPU
+testsys.ethernet.coalescedTxOk                      0                       # average number of TxOk's coalesced into each post
+testsys.ethernet.totalTxOk                          0                       # total number of TxOk written to ISR
+testsys.ethernet.postedTxIdle                       0                       # number of TxIdle interrupts posted to CPU
+testsys.ethernet.coalescedTxIdle                    0                       # average number of TxIdle's coalesced into each post
+testsys.ethernet.totalTxIdle                        0                       # total number of TxIdle written to ISR
+testsys.ethernet.postedTxDesc                       0                       # number of TxDesc interrupts posted to CPU
+testsys.ethernet.coalescedTxDesc                    0                       # average number of TxDesc's coalesced into each post
+testsys.ethernet.totalTxDesc                        0                       # total number of TxDesc written to ISR
+testsys.ethernet.postedRxOrn                        0                       # number of RxOrn posted to CPU
+testsys.ethernet.coalescedRxOrn                     0                       # average number of RxOrn's coalesced into each post
+testsys.ethernet.totalRxOrn                         0                       # total number of RxOrn written to ISR
+testsys.ethernet.coalescedTotal                     0                       # average number of interrupts coalesced into each post
+testsys.ethernet.postedInterrupts               12843                       # number of posts to CPU
+testsys.ethernet.droppedPackets                     0                       # number of packets dropped
+testsys.cpu.numCycles                               0                       # number of cpu cycles simulated
+testsys.cpu.numWorkItemsStarted                     0                       # number of work items this cpu started
+testsys.cpu.numWorkItemsCompleted                   0                       # number of work items this cpu completed
+testsys.cpu.committedInsts                          0                       # Number of instructions committed
+testsys.cpu.committedOps                            0                       # Number of ops (including micro ops) committed
+testsys.cpu.num_int_alu_accesses                    0                       # Number of integer alu accesses
+testsys.cpu.num_fp_alu_accesses                     0                       # Number of float alu accesses
+testsys.cpu.num_func_calls                          0                       # number of times a function call or return occured
+testsys.cpu.num_conditional_control_insts            0                       # number of instructions that are conditional controls
+testsys.cpu.num_int_insts                           0                       # number of integer instructions
+testsys.cpu.num_fp_insts                            0                       # number of float instructions
+testsys.cpu.num_int_register_reads                  0                       # number of times the integer registers were read
+testsys.cpu.num_int_register_writes                 0                       # number of times the integer registers were written
+testsys.cpu.num_fp_register_reads                   0                       # number of times the floating registers were read
+testsys.cpu.num_fp_register_writes                  0                       # number of times the floating registers were written
+testsys.cpu.num_mem_refs                            0                       # number of memory refs
+testsys.cpu.num_load_insts                          0                       # Number of load instructions
+testsys.cpu.num_store_insts                         0                       # Number of store instructions
+testsys.cpu.num_idle_cycles                         0                       # Number of idle cycles
+testsys.cpu.num_busy_cycles                         0                       # Number of busy cycles
+testsys.cpu.not_idle_fraction                       1                       # Percentage of non-idle cycles
+testsys.cpu.idle_fraction                           0                       # Percentage of idle cycles
+testsys.cpu.kern.inst.arm                           0                       # number of arm instructions executed
+testsys.cpu.kern.inst.quiesce                       0                       # number of quiesce instructions executed
+testsys.cpu.icache.replacements              23284049                       # number of replacements
+testsys.cpu.icache.tagsinuse               511.073940                       # Cycle average of tags in use
+testsys.cpu.icache.total_refs               143014470                       # Total number of references to valid blocks.
+testsys.cpu.icache.sampled_refs              23284561                       # Sample count of references to valid blocks.
+testsys.cpu.icache.avg_refs                  6.142030                       # Average number of references to valid blocks.
+testsys.cpu.icache.warmup_cycle          10965036361300                       # Cycle when the warmup percentage was hit.
+testsys.cpu.icache.occ_blocks::switch_cpus.inst   511.073940                       # Average occupied blocks per requestor
+testsys.cpu.icache.occ_percent::switch_cpus.inst     0.998191                       # Average percentage of cache occupancy
+testsys.cpu.icache.occ_percent::total        0.998191                       # Average percentage of cache occupancy
+testsys.cpu.icache.ReadReq_hits::switch_cpus.inst    143014470                       # number of ReadReq hits
+testsys.cpu.icache.ReadReq_hits::total      143014470                       # number of ReadReq hits
+testsys.cpu.icache.demand_hits::switch_cpus.inst    143014470                       # number of demand (read+write) hits
+testsys.cpu.icache.demand_hits::total       143014470                       # number of demand (read+write) hits
+testsys.cpu.icache.overall_hits::switch_cpus.inst    143014470                       # number of overall hits
+testsys.cpu.icache.overall_hits::total      143014470                       # number of overall hits
+testsys.cpu.icache.ReadReq_misses::switch_cpus.inst     25614222                       # number of ReadReq misses
+testsys.cpu.icache.ReadReq_misses::total     25614222                       # number of ReadReq misses
+testsys.cpu.icache.demand_misses::switch_cpus.inst     25614222                       # number of demand (read+write) misses
+testsys.cpu.icache.demand_misses::total      25614222                       # number of demand (read+write) misses
+testsys.cpu.icache.overall_misses::switch_cpus.inst     25614222                       # number of overall misses
+testsys.cpu.icache.overall_misses::total     25614222                       # number of overall misses
+testsys.cpu.icache.ReadReq_miss_latency::switch_cpus.inst 607541686704                       # number of ReadReq miss cycles
+testsys.cpu.icache.ReadReq_miss_latency::total 607541686704                       # number of ReadReq miss cycles
+testsys.cpu.icache.demand_miss_latency::switch_cpus.inst 607541686704                       # number of demand (read+write) miss cycles
+testsys.cpu.icache.demand_miss_latency::total 607541686704                       # number of demand (read+write) miss cycles
+testsys.cpu.icache.overall_miss_latency::switch_cpus.inst 607541686704                       # number of overall miss cycles
+testsys.cpu.icache.overall_miss_latency::total 607541686704                       # number of overall miss cycles
+testsys.cpu.icache.ReadReq_accesses::switch_cpus.inst    168628692                       # number of ReadReq accesses(hits+misses)
+testsys.cpu.icache.ReadReq_accesses::total    168628692                       # number of ReadReq accesses(hits+misses)
+testsys.cpu.icache.demand_accesses::switch_cpus.inst    168628692                       # number of demand (read+write) accesses
+testsys.cpu.icache.demand_accesses::total    168628692                       # number of demand (read+write) accesses
+testsys.cpu.icache.overall_accesses::switch_cpus.inst    168628692                       # number of overall (read+write) accesses
+testsys.cpu.icache.overall_accesses::total    168628692                       # number of overall (read+write) accesses
+testsys.cpu.icache.ReadReq_miss_rate::switch_cpus.inst     0.151897                       # miss rate for ReadReq accesses
+testsys.cpu.icache.ReadReq_miss_rate::total     0.151897                       # miss rate for ReadReq accesses
+testsys.cpu.icache.demand_miss_rate::switch_cpus.inst     0.151897                       # miss rate for demand accesses
+testsys.cpu.icache.demand_miss_rate::total     0.151897                       # miss rate for demand accesses
+testsys.cpu.icache.overall_miss_rate::switch_cpus.inst     0.151897                       # miss rate for overall accesses
+testsys.cpu.icache.overall_miss_rate::total     0.151897                       # miss rate for overall accesses
+testsys.cpu.icache.ReadReq_avg_miss_latency::switch_cpus.inst 23718.920165                       # average ReadReq miss latency
+testsys.cpu.icache.ReadReq_avg_miss_latency::total 23718.920165                       # average ReadReq miss latency
+testsys.cpu.icache.demand_avg_miss_latency::switch_cpus.inst 23718.920165                       # average overall miss latency
+testsys.cpu.icache.demand_avg_miss_latency::total 23718.920165                       # average overall miss latency
+testsys.cpu.icache.overall_avg_miss_latency::switch_cpus.inst 23718.920165                       # average overall miss latency
+testsys.cpu.icache.overall_avg_miss_latency::total 23718.920165                       # average overall miss latency
+testsys.cpu.icache.blocked_cycles::no_mshrs            0                       # number of cycles access was blocked
+testsys.cpu.icache.blocked_cycles::no_targets            0                       # number of cycles access was blocked
+testsys.cpu.icache.blocked::no_mshrs                0                       # number of cycles access was blocked
+testsys.cpu.icache.blocked::no_targets              0                       # number of cycles access was blocked
+testsys.cpu.icache.avg_blocked_cycles::no_mshrs          nan                       # average number of cycles each access was blocked
+testsys.cpu.icache.avg_blocked_cycles::no_targets          nan                       # average number of cycles each access was blocked
+testsys.cpu.icache.fast_writes                      0                       # number of fast writes performed
+testsys.cpu.icache.cache_copies                     0                       # number of cache copies performed
+testsys.cpu.icache.ReadReq_mshr_hits::switch_cpus.inst      2329510                       # number of ReadReq MSHR hits
+testsys.cpu.icache.ReadReq_mshr_hits::total      2329510                       # number of ReadReq MSHR hits
+testsys.cpu.icache.demand_mshr_hits::switch_cpus.inst      2329510                       # number of demand (read+write) MSHR hits
+testsys.cpu.icache.demand_mshr_hits::total      2329510                       # number of demand (read+write) MSHR hits
+testsys.cpu.icache.overall_mshr_hits::switch_cpus.inst      2329510                       # number of overall MSHR hits
+testsys.cpu.icache.overall_mshr_hits::total      2329510                       # number of overall MSHR hits
+testsys.cpu.icache.ReadReq_mshr_misses::switch_cpus.inst     23284712                       # number of ReadReq MSHR misses
+testsys.cpu.icache.ReadReq_mshr_misses::total     23284712                       # number of ReadReq MSHR misses
+testsys.cpu.icache.demand_mshr_misses::switch_cpus.inst     23284712                       # number of demand (read+write) MSHR misses
+testsys.cpu.icache.demand_mshr_misses::total     23284712                       # number of demand (read+write) MSHR misses
+testsys.cpu.icache.overall_mshr_misses::switch_cpus.inst     23284712                       # number of overall MSHR misses
+testsys.cpu.icache.overall_mshr_misses::total     23284712                       # number of overall MSHR misses
+testsys.cpu.icache.ReadReq_mshr_miss_latency::switch_cpus.inst 478741237712                       # number of ReadReq MSHR miss cycles
+testsys.cpu.icache.ReadReq_mshr_miss_latency::total 478741237712                       # number of ReadReq MSHR miss cycles
+testsys.cpu.icache.demand_mshr_miss_latency::switch_cpus.inst 478741237712                       # number of demand (read+write) MSHR miss cycles
+testsys.cpu.icache.demand_mshr_miss_latency::total 478741237712                       # number of demand (read+write) MSHR miss cycles
+testsys.cpu.icache.overall_mshr_miss_latency::switch_cpus.inst 478741237712                       # number of overall MSHR miss cycles
+testsys.cpu.icache.overall_mshr_miss_latency::total 478741237712                       # number of overall MSHR miss cycles
+testsys.cpu.icache.ReadReq_mshr_miss_rate::switch_cpus.inst     0.138083                       # mshr miss rate for ReadReq accesses
+testsys.cpu.icache.ReadReq_mshr_miss_rate::total     0.138083                       # mshr miss rate for ReadReq accesses
+testsys.cpu.icache.demand_mshr_miss_rate::switch_cpus.inst     0.138083                       # mshr miss rate for demand accesses
+testsys.cpu.icache.demand_mshr_miss_rate::total     0.138083                       # mshr miss rate for demand accesses
+testsys.cpu.icache.overall_mshr_miss_rate::switch_cpus.inst     0.138083                       # mshr miss rate for overall accesses
+testsys.cpu.icache.overall_mshr_miss_rate::total     0.138083                       # mshr miss rate for overall accesses
+testsys.cpu.icache.ReadReq_avg_mshr_miss_latency::switch_cpus.inst 20560.324633                       # average ReadReq mshr miss latency
+testsys.cpu.icache.ReadReq_avg_mshr_miss_latency::total 20560.324633                       # average ReadReq mshr miss latency
+testsys.cpu.icache.demand_avg_mshr_miss_latency::switch_cpus.inst 20560.324633                       # average overall mshr miss latency
+testsys.cpu.icache.demand_avg_mshr_miss_latency::total 20560.324633                       # average overall mshr miss latency
+testsys.cpu.icache.overall_avg_mshr_miss_latency::switch_cpus.inst 20560.324633                       # average overall mshr miss latency
+testsys.cpu.icache.overall_avg_mshr_miss_latency::total 20560.324633                       # average overall mshr miss latency
+testsys.cpu.icache.no_allocate_misses               0                       # Number of misses that were no-allocate
+testsys.cpu.itb_walker_cache.replacements     10670953                       # number of replacements
+testsys.cpu.itb_walker_cache.tagsinuse      15.963776                       # Cycle average of tags in use
+testsys.cpu.itb_walker_cache.total_refs       2102657                       # Total number of references to valid blocks.
+testsys.cpu.itb_walker_cache.sampled_refs     10670969                       # Sample count of references to valid blocks.
+testsys.cpu.itb_walker_cache.avg_refs        0.197045                       # Average number of references to valid blocks.
+testsys.cpu.itb_walker_cache.warmup_cycle 10965030118000                       # Cycle when the warmup percentage was hit.
+testsys.cpu.itb_walker_cache.occ_blocks::switch_cpus.itb.walker    15.963776                       # Average occupied blocks per requestor
+testsys.cpu.itb_walker_cache.occ_percent::switch_cpus.itb.walker     0.997736                       # Average percentage of cache occupancy
+testsys.cpu.itb_walker_cache.occ_percent::total     0.997736                       # Average percentage of cache occupancy
+testsys.cpu.itb_walker_cache.ReadReq_hits::switch_cpus.itb.walker      2102657                       # number of ReadReq hits
+testsys.cpu.itb_walker_cache.ReadReq_hits::total      2102657                       # number of ReadReq hits
+testsys.cpu.itb_walker_cache.demand_hits::switch_cpus.itb.walker      2102657                       # number of demand (read+write) hits
+testsys.cpu.itb_walker_cache.demand_hits::total      2102657                       # number of demand (read+write) hits
+testsys.cpu.itb_walker_cache.overall_hits::switch_cpus.itb.walker      2102657                       # number of overall hits
+testsys.cpu.itb_walker_cache.overall_hits::total      2102657                       # number of overall hits
+testsys.cpu.itb_walker_cache.ReadReq_misses::switch_cpus.itb.walker     10671132                       # number of ReadReq misses
+testsys.cpu.itb_walker_cache.ReadReq_misses::total     10671132                       # number of ReadReq misses
+testsys.cpu.itb_walker_cache.demand_misses::switch_cpus.itb.walker     10671132                       # number of demand (read+write) misses
+testsys.cpu.itb_walker_cache.demand_misses::total     10671132                       # number of demand (read+write) misses
+testsys.cpu.itb_walker_cache.overall_misses::switch_cpus.itb.walker     10671132                       # number of overall misses
+testsys.cpu.itb_walker_cache.overall_misses::total     10671132                       # number of overall misses
+testsys.cpu.itb_walker_cache.ReadReq_miss_latency::switch_cpus.itb.walker 153268153027                       # number of ReadReq miss cycles
+testsys.cpu.itb_walker_cache.ReadReq_miss_latency::total 153268153027                       # number of ReadReq miss cycles
+testsys.cpu.itb_walker_cache.demand_miss_latency::switch_cpus.itb.walker 153268153027                       # number of demand (read+write) miss cycles
+testsys.cpu.itb_walker_cache.demand_miss_latency::total 153268153027                       # number of demand (read+write) miss cycles
+testsys.cpu.itb_walker_cache.overall_miss_latency::switch_cpus.itb.walker 153268153027                       # number of overall miss cycles
+testsys.cpu.itb_walker_cache.overall_miss_latency::total 153268153027                       # number of overall miss cycles
+testsys.cpu.itb_walker_cache.ReadReq_accesses::switch_cpus.itb.walker     12773789                       # number of ReadReq accesses(hits+misses)
+testsys.cpu.itb_walker_cache.ReadReq_accesses::total     12773789                       # number of ReadReq accesses(hits+misses)
+testsys.cpu.itb_walker_cache.demand_accesses::switch_cpus.itb.walker     12773789                       # number of demand (read+write) accesses
+testsys.cpu.itb_walker_cache.demand_accesses::total     12773789                       # number of demand (read+write) accesses
+testsys.cpu.itb_walker_cache.overall_accesses::switch_cpus.itb.walker     12773789                       # number of overall (read+write) accesses
+testsys.cpu.itb_walker_cache.overall_accesses::total     12773789                       # number of overall (read+write) accesses
+testsys.cpu.itb_walker_cache.ReadReq_miss_rate::switch_cpus.itb.walker     0.835393                       # miss rate for ReadReq accesses
+testsys.cpu.itb_walker_cache.ReadReq_miss_rate::total     0.835393                       # miss rate for ReadReq accesses
+testsys.cpu.itb_walker_cache.demand_miss_rate::switch_cpus.itb.walker     0.835393                       # miss rate for demand accesses
+testsys.cpu.itb_walker_cache.demand_miss_rate::total     0.835393                       # miss rate for demand accesses
+testsys.cpu.itb_walker_cache.overall_miss_rate::switch_cpus.itb.walker     0.835393                       # miss rate for overall accesses
+testsys.cpu.itb_walker_cache.overall_miss_rate::total     0.835393                       # miss rate for overall accesses
+testsys.cpu.itb_walker_cache.ReadReq_avg_miss_latency::switch_cpus.itb.walker 14362.876687                       # average ReadReq miss latency
+testsys.cpu.itb_walker_cache.ReadReq_avg_miss_latency::total 14362.876687                       # average ReadReq miss latency
+testsys.cpu.itb_walker_cache.demand_avg_miss_latency::switch_cpus.itb.walker 14362.876687                       # average overall miss latency
+testsys.cpu.itb_walker_cache.demand_avg_miss_latency::total 14362.876687                       # average overall miss latency
+testsys.cpu.itb_walker_cache.overall_avg_miss_latency::switch_cpus.itb.walker 14362.876687                       # average overall miss latency
+testsys.cpu.itb_walker_cache.overall_avg_miss_latency::total 14362.876687                       # average overall miss latency
+testsys.cpu.itb_walker_cache.blocked_cycles::no_mshrs            0                       # number of cycles access was blocked
+testsys.cpu.itb_walker_cache.blocked_cycles::no_targets            0                       # number of cycles access was blocked
+testsys.cpu.itb_walker_cache.blocked::no_mshrs            0                       # number of cycles access was blocked
+testsys.cpu.itb_walker_cache.blocked::no_targets            0                       # number of cycles access was blocked
+testsys.cpu.itb_walker_cache.avg_blocked_cycles::no_mshrs          nan                       # average number of cycles each access was blocked
+testsys.cpu.itb_walker_cache.avg_blocked_cycles::no_targets          nan                       # average number of cycles each access was blocked
+testsys.cpu.itb_walker_cache.fast_writes            0                       # number of fast writes performed
+testsys.cpu.itb_walker_cache.cache_copies            0                       # number of cache copies performed
+testsys.cpu.itb_walker_cache.writebacks::writebacks       225243                       # number of writebacks
+testsys.cpu.itb_walker_cache.writebacks::total       225243                       # number of writebacks
+testsys.cpu.itb_walker_cache.ReadReq_mshr_misses::switch_cpus.itb.walker     10671132                       # number of ReadReq MSHR misses
+testsys.cpu.itb_walker_cache.ReadReq_mshr_misses::total     10671132                       # number of ReadReq MSHR misses
+testsys.cpu.itb_walker_cache.demand_mshr_misses::switch_cpus.itb.walker     10671132                       # number of demand (read+write) MSHR misses
+testsys.cpu.itb_walker_cache.demand_mshr_misses::total     10671132                       # number of demand (read+write) MSHR misses
+testsys.cpu.itb_walker_cache.overall_mshr_misses::switch_cpus.itb.walker     10671132                       # number of overall MSHR misses
+testsys.cpu.itb_walker_cache.overall_mshr_misses::total     10671132                       # number of overall MSHR misses
+testsys.cpu.itb_walker_cache.ReadReq_mshr_miss_latency::switch_cpus.itb.walker 120658211532                       # number of ReadReq MSHR miss cycles
+testsys.cpu.itb_walker_cache.ReadReq_mshr_miss_latency::total 120658211532                       # number of ReadReq MSHR miss cycles
+testsys.cpu.itb_walker_cache.demand_mshr_miss_latency::switch_cpus.itb.walker 120658211532                       # number of demand (read+write) MSHR miss cycles
+testsys.cpu.itb_walker_cache.demand_mshr_miss_latency::total 120658211532                       # number of demand (read+write) MSHR miss cycles
+testsys.cpu.itb_walker_cache.overall_mshr_miss_latency::switch_cpus.itb.walker 120658211532                       # number of overall MSHR miss cycles
+testsys.cpu.itb_walker_cache.overall_mshr_miss_latency::total 120658211532                       # number of overall MSHR miss cycles
+testsys.cpu.itb_walker_cache.ReadReq_mshr_miss_rate::switch_cpus.itb.walker     0.835393                       # mshr miss rate for ReadReq accesses
+testsys.cpu.itb_walker_cache.ReadReq_mshr_miss_rate::total     0.835393                       # mshr miss rate for ReadReq accesses
+testsys.cpu.itb_walker_cache.demand_mshr_miss_rate::switch_cpus.itb.walker     0.835393                       # mshr miss rate for demand accesses
+testsys.cpu.itb_walker_cache.demand_mshr_miss_rate::total     0.835393                       # mshr miss rate for demand accesses
+testsys.cpu.itb_walker_cache.overall_mshr_miss_rate::switch_cpus.itb.walker     0.835393                       # mshr miss rate for overall accesses
+testsys.cpu.itb_walker_cache.overall_mshr_miss_rate::total     0.835393                       # mshr miss rate for overall accesses
+testsys.cpu.itb_walker_cache.ReadReq_avg_mshr_miss_latency::switch_cpus.itb.walker 11306.973949                       # average ReadReq mshr miss latency
+testsys.cpu.itb_walker_cache.ReadReq_avg_mshr_miss_latency::total 11306.973949                       # average ReadReq mshr miss latency
+testsys.cpu.itb_walker_cache.demand_avg_mshr_miss_latency::switch_cpus.itb.walker 11306.973949                       # average overall mshr miss latency
+testsys.cpu.itb_walker_cache.demand_avg_mshr_miss_latency::total 11306.973949                       # average overall mshr miss latency
+testsys.cpu.itb_walker_cache.overall_avg_mshr_miss_latency::switch_cpus.itb.walker 11306.973949                       # average overall mshr miss latency
+testsys.cpu.itb_walker_cache.overall_avg_mshr_miss_latency::total 11306.973949                       # average overall mshr miss latency
+testsys.cpu.itb_walker_cache.no_allocate_misses            0                       # Number of misses that were no-allocate
+testsys.cpu.dtb_walker_cache.replacements     11848467                       # number of replacements
+testsys.cpu.dtb_walker_cache.tagsinuse      15.973844                       # Cycle average of tags in use
+testsys.cpu.dtb_walker_cache.total_refs       8141060                       # Total number of references to valid blocks.
+testsys.cpu.dtb_walker_cache.sampled_refs     11848483                       # Sample count of references to valid blocks.
+testsys.cpu.dtb_walker_cache.avg_refs        0.687097                       # Average number of references to valid blocks.
+testsys.cpu.dtb_walker_cache.warmup_cycle 10964998058000                       # Cycle when the warmup percentage was hit.
+testsys.cpu.dtb_walker_cache.occ_blocks::switch_cpus.dtb.walker    15.973844                       # Average occupied blocks per requestor
+testsys.cpu.dtb_walker_cache.occ_percent::switch_cpus.dtb.walker     0.998365                       # Average percentage of cache occupancy
+testsys.cpu.dtb_walker_cache.occ_percent::total     0.998365                       # Average percentage of cache occupancy
+testsys.cpu.dtb_walker_cache.ReadReq_hits::switch_cpus.dtb.walker      8141060                       # number of ReadReq hits
+testsys.cpu.dtb_walker_cache.ReadReq_hits::total      8141060                       # number of ReadReq hits
+testsys.cpu.dtb_walker_cache.demand_hits::switch_cpus.dtb.walker      8141060                       # number of demand (read+write) hits
+testsys.cpu.dtb_walker_cache.demand_hits::total      8141060                       # number of demand (read+write) hits
+testsys.cpu.dtb_walker_cache.overall_hits::switch_cpus.dtb.walker      8141060                       # number of overall hits
+testsys.cpu.dtb_walker_cache.overall_hits::total      8141060                       # number of overall hits
+testsys.cpu.dtb_walker_cache.ReadReq_misses::switch_cpus.dtb.walker     11850368                       # number of ReadReq misses
+testsys.cpu.dtb_walker_cache.ReadReq_misses::total     11850368                       # number of ReadReq misses
+testsys.cpu.dtb_walker_cache.demand_misses::switch_cpus.dtb.walker     11850368                       # number of demand (read+write) misses
+testsys.cpu.dtb_walker_cache.demand_misses::total     11850368                       # number of demand (read+write) misses
+testsys.cpu.dtb_walker_cache.overall_misses::switch_cpus.dtb.walker     11850368                       # number of overall misses
+testsys.cpu.dtb_walker_cache.overall_misses::total     11850368                       # number of overall misses
+testsys.cpu.dtb_walker_cache.ReadReq_miss_latency::switch_cpus.dtb.walker 183561446762                       # number of ReadReq miss cycles
+testsys.cpu.dtb_walker_cache.ReadReq_miss_latency::total 183561446762                       # number of ReadReq miss cycles
+testsys.cpu.dtb_walker_cache.demand_miss_latency::switch_cpus.dtb.walker 183561446762                       # number of demand (read+write) miss cycles
+testsys.cpu.dtb_walker_cache.demand_miss_latency::total 183561446762                       # number of demand (read+write) miss cycles
+testsys.cpu.dtb_walker_cache.overall_miss_latency::switch_cpus.dtb.walker 183561446762                       # number of overall miss cycles
+testsys.cpu.dtb_walker_cache.overall_miss_latency::total 183561446762                       # number of overall miss cycles
+testsys.cpu.dtb_walker_cache.ReadReq_accesses::switch_cpus.dtb.walker     19991428                       # number of ReadReq accesses(hits+misses)
+testsys.cpu.dtb_walker_cache.ReadReq_accesses::total     19991428                       # number of ReadReq accesses(hits+misses)
+testsys.cpu.dtb_walker_cache.demand_accesses::switch_cpus.dtb.walker     19991428                       # number of demand (read+write) accesses
+testsys.cpu.dtb_walker_cache.demand_accesses::total     19991428                       # number of demand (read+write) accesses
+testsys.cpu.dtb_walker_cache.overall_accesses::switch_cpus.dtb.walker     19991428                       # number of overall (read+write) accesses
+testsys.cpu.dtb_walker_cache.overall_accesses::total     19991428                       # number of overall (read+write) accesses
+testsys.cpu.dtb_walker_cache.ReadReq_miss_rate::switch_cpus.dtb.walker     0.592772                       # miss rate for ReadReq accesses
+testsys.cpu.dtb_walker_cache.ReadReq_miss_rate::total     0.592772                       # miss rate for ReadReq accesses
+testsys.cpu.dtb_walker_cache.demand_miss_rate::switch_cpus.dtb.walker     0.592772                       # miss rate for demand accesses
+testsys.cpu.dtb_walker_cache.demand_miss_rate::total     0.592772                       # miss rate for demand accesses
+testsys.cpu.dtb_walker_cache.overall_miss_rate::switch_cpus.dtb.walker     0.592772                       # miss rate for overall accesses
+testsys.cpu.dtb_walker_cache.overall_miss_rate::total     0.592772                       # miss rate for overall accesses
+testsys.cpu.dtb_walker_cache.ReadReq_avg_miss_latency::switch_cpus.dtb.walker 15489.936411                       # average ReadReq miss latency
+testsys.cpu.dtb_walker_cache.ReadReq_avg_miss_latency::total 15489.936411                       # average ReadReq miss latency
+testsys.cpu.dtb_walker_cache.demand_avg_miss_latency::switch_cpus.dtb.walker 15489.936411                       # average overall miss latency
+testsys.cpu.dtb_walker_cache.demand_avg_miss_latency::total 15489.936411                       # average overall miss latency
+testsys.cpu.dtb_walker_cache.overall_avg_miss_latency::switch_cpus.dtb.walker 15489.936411                       # average overall miss latency
+testsys.cpu.dtb_walker_cache.overall_avg_miss_latency::total 15489.936411                       # average overall miss latency
+testsys.cpu.dtb_walker_cache.blocked_cycles::no_mshrs            0                       # number of cycles access was blocked
+testsys.cpu.dtb_walker_cache.blocked_cycles::no_targets            0                       # number of cycles access was blocked
+testsys.cpu.dtb_walker_cache.blocked::no_mshrs            0                       # number of cycles access was blocked
+testsys.cpu.dtb_walker_cache.blocked::no_targets            0                       # number of cycles access was blocked
+testsys.cpu.dtb_walker_cache.avg_blocked_cycles::no_mshrs          nan                       # average number of cycles each access was blocked
+testsys.cpu.dtb_walker_cache.avg_blocked_cycles::no_targets          nan                       # average number of cycles each access was blocked
+testsys.cpu.dtb_walker_cache.fast_writes            0                       # number of fast writes performed
+testsys.cpu.dtb_walker_cache.cache_copies            0                       # number of cache copies performed
+testsys.cpu.dtb_walker_cache.writebacks::writebacks        66679                       # number of writebacks
+testsys.cpu.dtb_walker_cache.writebacks::total        66679                       # number of writebacks
+testsys.cpu.dtb_walker_cache.ReadReq_mshr_misses::switch_cpus.dtb.walker     11850368                       # number of ReadReq MSHR misses
+testsys.cpu.dtb_walker_cache.ReadReq_mshr_misses::total     11850368                       # number of ReadReq MSHR misses
+testsys.cpu.dtb_walker_cache.demand_mshr_misses::switch_cpus.dtb.walker     11850368                       # number of demand (read+write) MSHR misses
+testsys.cpu.dtb_walker_cache.demand_mshr_misses::total     11850368                       # number of demand (read+write) MSHR misses
+testsys.cpu.dtb_walker_cache.overall_mshr_misses::switch_cpus.dtb.walker     11850368                       # number of overall MSHR misses
+testsys.cpu.dtb_walker_cache.overall_mshr_misses::total     11850368                       # number of overall MSHR misses
+testsys.cpu.dtb_walker_cache.ReadReq_mshr_miss_latency::switch_cpus.dtb.walker 147182645714                       # number of ReadReq MSHR miss cycles
+testsys.cpu.dtb_walker_cache.ReadReq_mshr_miss_latency::total 147182645714                       # number of ReadReq MSHR miss cycles
+testsys.cpu.dtb_walker_cache.demand_mshr_miss_latency::switch_cpus.dtb.walker 147182645714                       # number of demand (read+write) MSHR miss cycles
+testsys.cpu.dtb_walker_cache.demand_mshr_miss_latency::total 147182645714                       # number of demand (read+write) MSHR miss cycles
+testsys.cpu.dtb_walker_cache.overall_mshr_miss_latency::switch_cpus.dtb.walker 147182645714                       # number of overall MSHR miss cycles
+testsys.cpu.dtb_walker_cache.overall_mshr_miss_latency::total 147182645714                       # number of overall MSHR miss cycles
+testsys.cpu.dtb_walker_cache.ReadReq_mshr_miss_rate::switch_cpus.dtb.walker     0.592772                       # mshr miss rate for ReadReq accesses
+testsys.cpu.dtb_walker_cache.ReadReq_mshr_miss_rate::total     0.592772                       # mshr miss rate for ReadReq accesses
+testsys.cpu.dtb_walker_cache.demand_mshr_miss_rate::switch_cpus.dtb.walker     0.592772                       # mshr miss rate for demand accesses
+testsys.cpu.dtb_walker_cache.demand_mshr_miss_rate::total     0.592772                       # mshr miss rate for demand accesses
+testsys.cpu.dtb_walker_cache.overall_mshr_miss_rate::switch_cpus.dtb.walker     0.592772                       # mshr miss rate for overall accesses
+testsys.cpu.dtb_walker_cache.overall_mshr_miss_rate::total     0.592772                       # mshr miss rate for overall accesses
+testsys.cpu.dtb_walker_cache.ReadReq_avg_mshr_miss_latency::switch_cpus.dtb.walker 12420.090727                       # average ReadReq mshr miss latency
+testsys.cpu.dtb_walker_cache.ReadReq_avg_mshr_miss_latency::total 12420.090727                       # average ReadReq mshr miss latency
+testsys.cpu.dtb_walker_cache.demand_avg_mshr_miss_latency::switch_cpus.dtb.walker 12420.090727                       # average overall mshr miss latency
+testsys.cpu.dtb_walker_cache.demand_avg_mshr_miss_latency::total 12420.090727                       # average overall mshr miss latency
+testsys.cpu.dtb_walker_cache.overall_avg_mshr_miss_latency::switch_cpus.dtb.walker 12420.090727                       # average overall mshr miss latency
+testsys.cpu.dtb_walker_cache.overall_avg_mshr_miss_latency::total 12420.090727                       # average overall mshr miss latency
+testsys.cpu.dtb_walker_cache.no_allocate_misses            0                       # Number of misses that were no-allocate
+testsys.cpu.dcache.replacements              14604496                       # number of replacements
+testsys.cpu.dcache.tagsinuse               510.181069                       # Cycle average of tags in use
+testsys.cpu.dcache.total_refs               349579227                       # Total number of references to valid blocks.
+testsys.cpu.dcache.sampled_refs              14605008                       # Sample count of references to valid blocks.
+testsys.cpu.dcache.avg_refs                 23.935572                       # Average number of references to valid blocks.
+testsys.cpu.dcache.warmup_cycle          10970580238300                       # Cycle when the warmup percentage was hit.
+testsys.cpu.dcache.occ_blocks::switch_cpus.data   510.181069                       # Average occupied blocks per requestor
+testsys.cpu.dcache.occ_percent::switch_cpus.data     0.996447                       # Average percentage of cache occupancy
+testsys.cpu.dcache.occ_percent::total        0.996447                       # Average percentage of cache occupancy
+testsys.cpu.dcache.ReadReq_hits::switch_cpus.data    226556218                       # number of ReadReq hits
+testsys.cpu.dcache.ReadReq_hits::total      226556218                       # number of ReadReq hits
+testsys.cpu.dcache.WriteReq_hits::switch_cpus.data    122355573                       # number of WriteReq hits
+testsys.cpu.dcache.WriteReq_hits::total     122355573                       # number of WriteReq hits
+testsys.cpu.dcache.demand_hits::switch_cpus.data    348911791                       # number of demand (read+write) hits
+testsys.cpu.dcache.demand_hits::total       348911791                       # number of demand (read+write) hits
+testsys.cpu.dcache.overall_hits::switch_cpus.data    348911791                       # number of overall hits
+testsys.cpu.dcache.overall_hits::total      348911791                       # number of overall hits
+testsys.cpu.dcache.ReadReq_misses::switch_cpus.data     23445832                       # number of ReadReq misses
+testsys.cpu.dcache.ReadReq_misses::total     23445832                       # number of ReadReq misses
+testsys.cpu.dcache.WriteReq_misses::switch_cpus.data      4622920                       # number of WriteReq misses
+testsys.cpu.dcache.WriteReq_misses::total      4622920                       # number of WriteReq misses
+testsys.cpu.dcache.demand_misses::switch_cpus.data     28068752                       # number of demand (read+write) misses
+testsys.cpu.dcache.demand_misses::total      28068752                       # number of demand (read+write) misses
+testsys.cpu.dcache.overall_misses::switch_cpus.data     28068752                       # number of overall misses
+testsys.cpu.dcache.overall_misses::total     28068752                       # number of overall misses
+testsys.cpu.dcache.ReadReq_miss_latency::switch_cpus.data 1081479522879                       # number of ReadReq miss cycles
+testsys.cpu.dcache.ReadReq_miss_latency::total 1081479522879                       # number of ReadReq miss cycles
+testsys.cpu.dcache.WriteReq_miss_latency::switch_cpus.data 197146481431                       # number of WriteReq miss cycles
+testsys.cpu.dcache.WriteReq_miss_latency::total 197146481431                       # number of WriteReq miss cycles
+testsys.cpu.dcache.demand_miss_latency::switch_cpus.data 1278626004310                       # number of demand (read+write) miss cycles
+testsys.cpu.dcache.demand_miss_latency::total 1278626004310                       # number of demand (read+write) miss cycles
+testsys.cpu.dcache.overall_miss_latency::switch_cpus.data 1278626004310                       # number of overall miss cycles
+testsys.cpu.dcache.overall_miss_latency::total 1278626004310                       # number of overall miss cycles
+testsys.cpu.dcache.ReadReq_accesses::switch_cpus.data    250002050                       # number of ReadReq accesses(hits+misses)
+testsys.cpu.dcache.ReadReq_accesses::total    250002050                       # number of ReadReq accesses(hits+misses)
+testsys.cpu.dcache.WriteReq_accesses::switch_cpus.data    126978493                       # number of WriteReq accesses(hits+misses)
+testsys.cpu.dcache.WriteReq_accesses::total    126978493                       # number of WriteReq accesses(hits+misses)
+testsys.cpu.dcache.demand_accesses::switch_cpus.data    376980543                       # number of demand (read+write) accesses
+testsys.cpu.dcache.demand_accesses::total    376980543                       # number of demand (read+write) accesses
+testsys.cpu.dcache.overall_accesses::switch_cpus.data    376980543                       # number of overall (read+write) accesses
+testsys.cpu.dcache.overall_accesses::total    376980543                       # number of overall (read+write) accesses
+testsys.cpu.dcache.ReadReq_miss_rate::switch_cpus.data     0.093783                       # miss rate for ReadReq accesses
+testsys.cpu.dcache.ReadReq_miss_rate::total     0.093783                       # miss rate for ReadReq accesses
+testsys.cpu.dcache.WriteReq_miss_rate::switch_cpus.data     0.036407                       # miss rate for WriteReq accesses
+testsys.cpu.dcache.WriteReq_miss_rate::total     0.036407                       # miss rate for WriteReq accesses
+testsys.cpu.dcache.demand_miss_rate::switch_cpus.data     0.074457                       # miss rate for demand accesses
+testsys.cpu.dcache.demand_miss_rate::total     0.074457                       # miss rate for demand accesses
+testsys.cpu.dcache.overall_miss_rate::switch_cpus.data     0.074457                       # miss rate for overall accesses
+testsys.cpu.dcache.overall_miss_rate::total     0.074457                       # miss rate for overall accesses
+testsys.cpu.dcache.ReadReq_avg_miss_latency::switch_cpus.data 46126.728319                       # average ReadReq miss latency
+testsys.cpu.dcache.ReadReq_avg_miss_latency::total 46126.728319                       # average ReadReq miss latency
+testsys.cpu.dcache.WriteReq_avg_miss_latency::switch_cpus.data 42645.445180                       # average WriteReq miss latency
+testsys.cpu.dcache.WriteReq_avg_miss_latency::total 42645.445180                       # average WriteReq miss latency
+testsys.cpu.dcache.demand_avg_miss_latency::switch_cpus.data 45553.361415                       # average overall miss latency
+testsys.cpu.dcache.demand_avg_miss_latency::total 45553.361415                       # average overall miss latency
+testsys.cpu.dcache.overall_avg_miss_latency::switch_cpus.data 45553.361415                       # average overall miss latency
+testsys.cpu.dcache.overall_avg_miss_latency::total 45553.361415                       # average overall miss latency
+testsys.cpu.dcache.blocked_cycles::no_mshrs            0                       # number of cycles access was blocked
+testsys.cpu.dcache.blocked_cycles::no_targets            0                       # number of cycles access was blocked
+testsys.cpu.dcache.blocked::no_mshrs                0                       # number of cycles access was blocked
+testsys.cpu.dcache.blocked::no_targets              0                       # number of cycles access was blocked
+testsys.cpu.dcache.avg_blocked_cycles::no_mshrs          nan                       # average number of cycles each access was blocked
+testsys.cpu.dcache.avg_blocked_cycles::no_targets          nan                       # average number of cycles each access was blocked
+testsys.cpu.dcache.fast_writes                      0                       # number of fast writes performed
+testsys.cpu.dcache.cache_copies                     0                       # number of cache copies performed
+testsys.cpu.dcache.writebacks::writebacks      8053294                       # number of writebacks
+testsys.cpu.dcache.writebacks::total          8053294                       # number of writebacks
+testsys.cpu.dcache.ReadReq_mshr_hits::switch_cpus.data     12786876                       # number of ReadReq MSHR hits
+testsys.cpu.dcache.ReadReq_mshr_hits::total     12786876                       # number of ReadReq MSHR hits
+testsys.cpu.dcache.WriteReq_mshr_hits::switch_cpus.data        51559                       # number of WriteReq MSHR hits
+testsys.cpu.dcache.WriteReq_mshr_hits::total        51559                       # number of WriteReq MSHR hits
+testsys.cpu.dcache.demand_mshr_hits::switch_cpus.data     12838435                       # number of demand (read+write) MSHR hits
+testsys.cpu.dcache.demand_mshr_hits::total     12838435                       # number of demand (read+write) MSHR hits
+testsys.cpu.dcache.overall_mshr_hits::switch_cpus.data     12838435                       # number of overall MSHR hits
+testsys.cpu.dcache.overall_mshr_hits::total     12838435                       # number of overall MSHR hits
+testsys.cpu.dcache.ReadReq_mshr_misses::switch_cpus.data     10658956                       # number of ReadReq MSHR misses
+testsys.cpu.dcache.ReadReq_mshr_misses::total     10658956                       # number of ReadReq MSHR misses
+testsys.cpu.dcache.WriteReq_mshr_misses::switch_cpus.data      4571361                       # number of WriteReq MSHR misses
+testsys.cpu.dcache.WriteReq_mshr_misses::total      4571361                       # number of WriteReq MSHR misses
+testsys.cpu.dcache.demand_mshr_misses::switch_cpus.data     15230317                       # number of demand (read+write) MSHR misses
+testsys.cpu.dcache.demand_mshr_misses::total     15230317                       # number of demand (read+write) MSHR misses
+testsys.cpu.dcache.overall_mshr_misses::switch_cpus.data     15230317                       # number of overall MSHR misses
+testsys.cpu.dcache.overall_mshr_misses::total     15230317                       # number of overall MSHR misses
+testsys.cpu.dcache.ReadReq_mshr_miss_latency::switch_cpus.data 287358705716                       # number of ReadReq MSHR miss cycles
+testsys.cpu.dcache.ReadReq_mshr_miss_latency::total 287358705716                       # number of ReadReq MSHR miss cycles
+testsys.cpu.dcache.WriteReq_mshr_miss_latency::switch_cpus.data 179645314099                       # number of WriteReq MSHR miss cycles
+testsys.cpu.dcache.WriteReq_mshr_miss_latency::total 179645314099                       # number of WriteReq MSHR miss cycles
+testsys.cpu.dcache.demand_mshr_miss_latency::switch_cpus.data 467004019815                       # number of demand (read+write) MSHR miss cycles
+testsys.cpu.dcache.demand_mshr_miss_latency::total 467004019815                       # number of demand (read+write) MSHR miss cycles
+testsys.cpu.dcache.overall_mshr_miss_latency::switch_cpus.data 467004019815                       # number of overall MSHR miss cycles
+testsys.cpu.dcache.overall_mshr_miss_latency::total 467004019815                       # number of overall MSHR miss cycles
+testsys.cpu.dcache.ReadReq_mshr_uncacheable_latency::switch_cpus.data   5458331620                       # number of ReadReq MSHR uncacheable cycles
+testsys.cpu.dcache.ReadReq_mshr_uncacheable_latency::total   5458331620                       # number of ReadReq MSHR uncacheable cycles
+testsys.cpu.dcache.WriteReq_mshr_uncacheable_latency::switch_cpus.data   7582703649                       # number of WriteReq MSHR uncacheable cycles
+testsys.cpu.dcache.WriteReq_mshr_uncacheable_latency::total   7582703649                       # number of WriteReq MSHR uncacheable cycles
+testsys.cpu.dcache.overall_mshr_uncacheable_latency::switch_cpus.data  13041035269                       # number of overall MSHR uncacheable cycles
+testsys.cpu.dcache.overall_mshr_uncacheable_latency::total  13041035269                       # number of overall MSHR uncacheable cycles
+testsys.cpu.dcache.ReadReq_mshr_miss_rate::switch_cpus.data     0.042635                       # mshr miss rate for ReadReq accesses
+testsys.cpu.dcache.ReadReq_mshr_miss_rate::total     0.042635                       # mshr miss rate for ReadReq accesses
+testsys.cpu.dcache.WriteReq_mshr_miss_rate::switch_cpus.data     0.036001                       # mshr miss rate for WriteReq accesses
+testsys.cpu.dcache.WriteReq_mshr_miss_rate::total     0.036001                       # mshr miss rate for WriteReq accesses
+testsys.cpu.dcache.demand_mshr_miss_rate::switch_cpus.data     0.040401                       # mshr miss rate for demand accesses
+testsys.cpu.dcache.demand_mshr_miss_rate::total     0.040401                       # mshr miss rate for demand accesses
+testsys.cpu.dcache.overall_mshr_miss_rate::switch_cpus.data     0.040401                       # mshr miss rate for overall accesses
+testsys.cpu.dcache.overall_mshr_miss_rate::total     0.040401                       # mshr miss rate for overall accesses
+testsys.cpu.dcache.ReadReq_avg_mshr_miss_latency::switch_cpus.data 26959.366913                       # average ReadReq mshr miss latency
+testsys.cpu.dcache.ReadReq_avg_mshr_miss_latency::total 26959.366913                       # average ReadReq mshr miss latency
+testsys.cpu.dcache.WriteReq_avg_mshr_miss_latency::switch_cpus.data 39297.993333                       # average WriteReq mshr miss latency
+testsys.cpu.dcache.WriteReq_avg_mshr_miss_latency::total 39297.993333                       # average WriteReq mshr miss latency
+testsys.cpu.dcache.demand_avg_mshr_miss_latency::switch_cpus.data 30662.790526                       # average overall mshr miss latency
+testsys.cpu.dcache.demand_avg_mshr_miss_latency::total 30662.790526                       # average overall mshr miss latency
+testsys.cpu.dcache.overall_avg_mshr_miss_latency::switch_cpus.data 30662.790526                       # average overall mshr miss latency
+testsys.cpu.dcache.overall_avg_mshr_miss_latency::total 30662.790526                       # average overall mshr miss latency
+testsys.cpu.dcache.ReadReq_avg_mshr_uncacheable_latency::switch_cpus.data          inf                       # average ReadReq mshr uncacheable latency
+testsys.cpu.dcache.ReadReq_avg_mshr_uncacheable_latency::total          inf                       # average ReadReq mshr uncacheable latency
+testsys.cpu.dcache.WriteReq_avg_mshr_uncacheable_latency::switch_cpus.data          inf                       # average WriteReq mshr uncacheable latency
+testsys.cpu.dcache.WriteReq_avg_mshr_uncacheable_latency::total          inf                       # average WriteReq mshr uncacheable latency
+testsys.cpu.dcache.overall_avg_mshr_uncacheable_latency::switch_cpus.data          inf                       # average overall mshr uncacheable latency
+testsys.cpu.dcache.overall_avg_mshr_uncacheable_latency::total          inf                       # average overall mshr uncacheable latency
+testsys.cpu.dcache.no_allocate_misses               0                       # Number of misses that were no-allocate
+testsys.switch_cpus.numCycles              3084338654                       # number of cpu cycles simulated
+testsys.switch_cpus.numWorkItemsStarted             0                       # number of work items this cpu started
+testsys.switch_cpus.numWorkItemsCompleted            0                       # number of work items this cpu completed
+testsys.switch_cpus.BPredUnit.lookups       217975341                       # Number of BP lookups
+testsys.switch_cpus.BPredUnit.condPredicted    217975341                       # Number of conditional branches predicted
+testsys.switch_cpus.BPredUnit.condIncorrect     25644011                       # Number of conditional branches incorrect
+testsys.switch_cpus.BPredUnit.BTBLookups    183628073                       # Number of BTB lookups
+testsys.switch_cpus.BPredUnit.BTBHits       111693260                       # Number of BTB hits
+testsys.switch_cpus.BPredUnit.BTBCorrect            0                       # Number of correct BTB predictions (this stat may not work properly.
+testsys.switch_cpus.BPredUnit.usedRAS               0                       # Number of times the RAS was used to get a target.
+testsys.switch_cpus.BPredUnit.RASInCorrect            0                       # Number of incorrect RAS predictions.
+testsys.switch_cpus.fetch.icacheStallCycles   1041264035                       # Number of cycles fetch is stalled on an Icache miss
+testsys.switch_cpus.fetch.Insts            1165990761                       # Number of instructions fetch has processed
+testsys.switch_cpus.fetch.Branches          217975341                       # Number of branches that fetch encountered
+testsys.switch_cpus.fetch.predictedBranches    111693260                       # Number of branches that fetch has predicted taken
+testsys.switch_cpus.fetch.Cycles            360878178                       # Number of cycles fetch has run and was not squashing or blocked
+testsys.switch_cpus.fetch.SquashCycles      101896372                       # Number of cycles fetch has spent squashing
+testsys.switch_cpus.fetch.TlbCycles         189385682                       # Number of cycles fetch has spent waiting for tlb
+testsys.switch_cpus.fetch.BlockedCycles     685557805                       # Number of cycles fetch has spent blocked
+testsys.switch_cpus.fetch.MiscStallCycles        94643                       # Number of cycles fetch has spent waiting on interrupts, or bad addresses, or out of MSHRs
+testsys.switch_cpus.fetch.PendingTrapStallCycles       590801                       # Number of stall cycles due to pending traps
+testsys.switch_cpus.fetch.CacheLines        168628692                       # Number of cache lines fetched
+testsys.switch_cpus.fetch.IcacheSquashes     17066432                       # Number of outstanding Icache misses that were squashed
+testsys.switch_cpus.fetch.ItlbSquashes        1348523                       # Number of outstanding ITLB misses that were squashed
+testsys.switch_cpus.fetch.rateDist::samples   2353239496                       # Number of instructions fetched each cycle (Total)
+testsys.switch_cpus.fetch.rateDist::mean     0.924971                       # Number of instructions fetched each cycle (Total)
+testsys.switch_cpus.fetch.rateDist::stdev     2.395768                       # Number of instructions fetched each cycle (Total)
+testsys.switch_cpus.fetch.rateDist::underflows            0      0.00%      0.00% # Number of instructions fetched each cycle (Total)
+testsys.switch_cpus.fetch.rateDist::0      2000415324     85.01%     85.01% # Number of instructions fetched each cycle (Total)
+testsys.switch_cpus.fetch.rateDist::1        28267436      1.20%     86.21% # Number of instructions fetched each cycle (Total)
+testsys.switch_cpus.fetch.rateDist::2        14747639      0.63%     86.83% # Number of instructions fetched each cycle (Total)
+testsys.switch_cpus.fetch.rateDist::3        27024040      1.15%     87.98% # Number of instructions fetched each cycle (Total)
+testsys.switch_cpus.fetch.rateDist::4        21409615      0.91%     88.89% # Number of instructions fetched each cycle (Total)
+testsys.switch_cpus.fetch.rateDist::5        27716506      1.18%     90.07% # Number of instructions fetched each cycle (Total)
+testsys.switch_cpus.fetch.rateDist::6        17437469      0.74%     90.81% # Number of instructions fetched each cycle (Total)
+testsys.switch_cpus.fetch.rateDist::7        20773521      0.88%     91.69% # Number of instructions fetched each cycle (Total)
+testsys.switch_cpus.fetch.rateDist::8       195447946      8.31%    100.00% # Number of instructions fetched each cycle (Total)
+testsys.switch_cpus.fetch.rateDist::overflows            0      0.00%    100.00% # Number of instructions fetched each cycle (Total)
+testsys.switch_cpus.fetch.rateDist::min_value            0                       # Number of instructions fetched each cycle (Total)
+testsys.switch_cpus.fetch.rateDist::max_value            8                       # Number of instructions fetched each cycle (Total)
+testsys.switch_cpus.fetch.rateDist::total   2353239496                       # Number of instructions fetched each cycle (Total)
+testsys.switch_cpus.fetch.branchRate         0.070672                       # Number of branch fetches per cycle
+testsys.switch_cpus.fetch.rate               0.378036                       # Number of inst fetches per cycle
+testsys.switch_cpus.decode.IdleCycles      1224963623                       # Number of cycles decode is idle
+testsys.switch_cpus.decode.BlockedCycles    706820811                       # Number of cycles decode is blocked
+testsys.switch_cpus.decode.RunCycles        334781546                       # Number of cycles decode is running
+testsys.switch_cpus.decode.UnblockCycles     11205163                       # Number of cycles decode is unblocking
+testsys.switch_cpus.decode.SquashCycles      75468352                       # Number of cycles decode is squashing
+testsys.switch_cpus.decode.DecodedInsts    2133834169                       # Number of instructions handled by decode
+testsys.switch_cpus.decode.SquashedInsts          349                       # Number of squashed instructions handled by decode
+testsys.switch_cpus.rename.SquashCycles      75468352                       # Number of cycles rename is squashing
+testsys.switch_cpus.rename.IdleCycles      1250986878                       # Number of cycles rename is idle
+testsys.switch_cpus.rename.BlockCycles      518408888                       # Number of cycles rename is blocking
+testsys.switch_cpus.rename.serializeStallCycles     95840273                       # count of cycles rename stalled for serializing inst
+testsys.switch_cpus.rename.RunCycles        318677461                       # Number of cycles rename is running
+testsys.switch_cpus.rename.UnblockCycles     93857643                       # Number of cycles rename is unblocking
+testsys.switch_cpus.rename.RenamedInsts    2085345636                       # Number of instructions processed by rename
+testsys.switch_cpus.rename.ROBFullEvents       674989                       # Number of times rename has blocked due to ROB full
+testsys.switch_cpus.rename.IQFullEvents      33847621                       # Number of times rename has blocked due to IQ full
+testsys.switch_cpus.rename.LSQFullEvents     50345499                       # Number of times rename has blocked due to LSQ full
+testsys.switch_cpus.rename.FullRegisterEvents       651949                       # Number of times there has been no free registers
+testsys.switch_cpus.rename.RenamedOperands   2371668436                       # Number of destination operands rename has renamed
+testsys.switch_cpus.rename.RenameLookups   5149075058                       # Number of register rename lookups that rename has made
+testsys.switch_cpus.rename.int_rename_lookups   5141002449                       # Number of integer rename lookups
+testsys.switch_cpus.rename.fp_rename_lookups      8072609                       # Number of floating rename lookups
+testsys.switch_cpus.rename.CommittedMaps   1822820327                       # Number of HB maps that are committed
+testsys.switch_cpus.rename.UndoneMaps       548848098                       # Number of HB maps that are undone due to squashing
+testsys.switch_cpus.rename.serializingInsts      2377944                       # count of serializing insts renamed
+testsys.switch_cpus.rename.tempSerializingInsts      2382836                       # count of temporary serializing insts renamed
+testsys.switch_cpus.rename.skidInsts        217172175                       # count of insts added to the skid buffer
+testsys.switch_cpus.memDep0.insertedLoads    319839973                       # Number of loads inserted to the mem dependence unit.
+testsys.switch_cpus.memDep0.insertedStores    165601304                       # Number of stores inserted to the mem dependence unit.
+testsys.switch_cpus.memDep0.conflictingLoads     32353712                       # Number of conflicting loads.
+testsys.switch_cpus.memDep0.conflictingStores     24816629                       # Number of conflicting stores.
+testsys.switch_cpus.iq.iqInstsAdded        2003317211                       # Number of instructions added to the IQ (excludes non-spec)
+testsys.switch_cpus.iq.iqNonSpecInstsAdded      5856665                       # Number of non-speculative instructions added to the IQ
+testsys.switch_cpus.iq.iqInstsIssued       1863946358                       # Number of instructions issued
+testsys.switch_cpus.iq.iqSquashedInstsIssued      4526446                       # Number of squashed instructions issued
+testsys.switch_cpus.iq.iqSquashedInstsExamined    411982810                       # Number of squashed instructions iterated over during squash; mainly for profiling
+testsys.switch_cpus.iq.iqSquashedOperandsExamined    582313132                       # Number of squashed operands that are examined and possibly removed from graph
+testsys.switch_cpus.iq.iqSquashedNonSpecRemoved      1929101                       # Number of squashed non-spec instructions that were removed
+testsys.switch_cpus.iq.issued_per_cycle::samples   2353239496                       # Number of insts issued each cycle
+testsys.switch_cpus.iq.issued_per_cycle::mean     0.792077                       # Number of insts issued each cycle
+testsys.switch_cpus.iq.issued_per_cycle::stdev     1.532700                       # Number of insts issued each cycle
+testsys.switch_cpus.iq.issued_per_cycle::underflows            0      0.00%      0.00% # Number of insts issued each cycle
+testsys.switch_cpus.iq.issued_per_cycle::0   1655987506     70.37%     70.37% # Number of insts issued each cycle
+testsys.switch_cpus.iq.issued_per_cycle::1    231723193      9.85%     80.22% # Number of insts issued each cycle
+testsys.switch_cpus.iq.issued_per_cycle::2    161817353      6.88%     87.09% # Number of insts issued each cycle
+testsys.switch_cpus.iq.issued_per_cycle::3    107312386      4.56%     91.65% # Number of insts issued each cycle
+testsys.switch_cpus.iq.issued_per_cycle::4     75707487      3.22%     94.87% # Number of insts issued each cycle
+testsys.switch_cpus.iq.issued_per_cycle::5     61285530      2.60%     97.48% # Number of insts issued each cycle
+testsys.switch_cpus.iq.issued_per_cycle::6     41060075      1.74%     99.22% # Number of insts issued each cycle
+testsys.switch_cpus.iq.issued_per_cycle::7     15734475      0.67%     99.89% # Number of insts issued each cycle
+testsys.switch_cpus.iq.issued_per_cycle::8      2611491      0.11%    100.00% # Number of insts issued each cycle
+testsys.switch_cpus.iq.issued_per_cycle::overflows            0      0.00%    100.00% # Number of insts issued each cycle
+testsys.switch_cpus.iq.issued_per_cycle::min_value            0                       # Number of insts issued each cycle
+testsys.switch_cpus.iq.issued_per_cycle::max_value            8                       # Number of insts issued each cycle
+testsys.switch_cpus.iq.issued_per_cycle::total   2353239496                       # Number of insts issued each cycle
+testsys.switch_cpus.iq.fu_full::No_OpClass            0      0.00%      0.00% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::IntAlu        6450904     47.32%     47.32% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::IntMult             0      0.00%     47.32% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::IntDiv              0      0.00%     47.32% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::FloatAdd        19229      0.14%     47.46% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::FloatCmp            0      0.00%     47.46% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::FloatCvt            0      0.00%     47.46% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::FloatMult            0      0.00%     47.46% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::FloatDiv            0      0.00%     47.46% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::FloatSqrt            0      0.00%     47.46% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::SimdAdd             0      0.00%     47.46% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::SimdAddAcc            0      0.00%     47.46% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::SimdAlu             0      0.00%     47.46% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::SimdCmp             0      0.00%     47.46% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::SimdCvt             0      0.00%     47.46% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::SimdMisc            0      0.00%     47.46% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::SimdMult            0      0.00%     47.46% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::SimdMultAcc            0      0.00%     47.46% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::SimdShift            0      0.00%     47.46% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::SimdShiftAcc            0      0.00%     47.46% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::SimdSqrt            0      0.00%     47.46% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::SimdFloatAdd            0      0.00%     47.46% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::SimdFloatAlu            0      0.00%     47.46% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::SimdFloatCmp            0      0.00%     47.46% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::SimdFloatCvt            0      0.00%     47.46% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::SimdFloatDiv            0      0.00%     47.46% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::SimdFloatMisc            0      0.00%     47.46% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::SimdFloatMult            0      0.00%     47.46% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::SimdFloatMultAcc            0      0.00%     47.46% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::SimdFloatSqrt            0      0.00%     47.46% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::MemRead       3897483     28.59%     76.06% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::MemWrite      3263869     23.94%    100.00% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::IprAccess            0      0.00%    100.00% # attempts to use FU when none available
+testsys.switch_cpus.iq.fu_full::InstPrefetch            0      0.00%    100.00% # attempts to use FU when none available
+testsys.switch_cpus.iq.FU_type_0::No_OpClass      8519568      0.46%      0.46% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::IntAlu   1409149400     75.60%     76.06% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::IntMult            0      0.00%     76.06% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::IntDiv            0      0.00%     76.06% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::FloatAdd      1506491      0.08%     76.14% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::FloatCmp            0      0.00%     76.14% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::FloatCvt            0      0.00%     76.14% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::FloatMult            0      0.00%     76.14% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::FloatDiv            0      0.00%     76.14% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::FloatSqrt            0      0.00%     76.14% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::SimdAdd            0      0.00%     76.14% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::SimdAddAcc            0      0.00%     76.14% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::SimdAlu            0      0.00%     76.14% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::SimdCmp            0      0.00%     76.14% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::SimdCvt            0      0.00%     76.14% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::SimdMisc            0      0.00%     76.14% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::SimdMult            0      0.00%     76.14% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::SimdMultAcc            0      0.00%     76.14% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::SimdShift            0      0.00%     76.14% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::SimdShiftAcc            0      0.00%     76.14% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::SimdSqrt            0      0.00%     76.14% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::SimdFloatAdd            0      0.00%     76.14% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::SimdFloatAlu            0      0.00%     76.14% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::SimdFloatCmp            0      0.00%     76.14% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::SimdFloatCvt            0      0.00%     76.14% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::SimdFloatDiv            0      0.00%     76.14% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::SimdFloatMisc            0      0.00%     76.14% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::SimdFloatMult            0      0.00%     76.14% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::SimdFloatMultAcc            0      0.00%     76.14% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::SimdFloatSqrt            0      0.00%     76.14% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::MemRead    294509781     15.80%     91.94% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::MemWrite    150261118      8.06%    100.00% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::IprAccess            0      0.00%    100.00% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::InstPrefetch            0      0.00%    100.00% # Type of FU issued
+testsys.switch_cpus.iq.FU_type_0::total    1863946358                       # Type of FU issued
+testsys.switch_cpus.iq.rate                  0.604326                       # Inst issue rate
+testsys.switch_cpus.iq.fu_busy_cnt           13631485                       # FU busy when requested
+testsys.switch_cpus.iq.fu_busy_rate          0.007313                       # FU busy rate (busy events/executed inst)
+testsys.switch_cpus.iq.int_inst_queue_reads   6100347937                       # Number of integer instruction queue reads
+testsys.switch_cpus.iq.int_inst_queue_writes   2417508386                       # Number of integer instruction queue writes
+testsys.switch_cpus.iq.int_inst_queue_wakeup_accesses   1815573202                       # Number of integer instruction queue wakeup accesses
+testsys.switch_cpus.iq.fp_inst_queue_reads      4698510                       # Number of floating instruction queue reads
+testsys.switch_cpus.iq.fp_inst_queue_writes      4075965                       # Number of floating instruction queue writes
+testsys.switch_cpus.iq.fp_inst_queue_wakeup_accesses      2101439                       # Number of floating instruction queue wakeup accesses
+testsys.switch_cpus.iq.int_alu_accesses    1866786608                       # Number of integer alu accesses
+testsys.switch_cpus.iq.fp_alu_accesses        2271667                       # Number of floating point alu accesses
+testsys.switch_cpus.iew.lsq.thread0.forwLoads     36519837                       # Number of loads that had data forwarded from stores
+testsys.switch_cpus.iew.lsq.thread0.invAddrLoads            0                       # Number of loads ignored due to an invalid address
+testsys.switch_cpus.iew.lsq.thread0.squashedLoads     75613103                       # Number of loads squashed
+testsys.switch_cpus.iew.lsq.thread0.ignoredResponses       249312                       # Number of memory responses ignored because the instruction is squashed
+testsys.switch_cpus.iew.lsq.thread0.memOrderViolation       442596                       # Number of memory ordering violations
+testsys.switch_cpus.iew.lsq.thread0.squashedStores     38606847                       # Number of stores squashed
+testsys.switch_cpus.iew.lsq.thread0.invAddrSwpfs            0                       # Number of software prefetches ignored due to an invalid address
+testsys.switch_cpus.iew.lsq.thread0.blockedLoads            0                       # Number of blocked loads due to partial load-store forwarding
+testsys.switch_cpus.iew.lsq.thread0.rescheduledLoads       217364                       # Number of loads that were rescheduled
+testsys.switch_cpus.iew.lsq.thread0.cacheBlocked            0                       # Number of times an access to memory failed due to the cache being blocked
+testsys.switch_cpus.iew.iewIdleCycles               0                       # Number of cycles IEW is idle
+testsys.switch_cpus.iew.iewSquashCycles      75468352                       # Number of cycles IEW is squashing
+testsys.switch_cpus.iew.iewBlockCycles      439066725                       # Number of cycles IEW is blocking
+testsys.switch_cpus.iew.iewUnblockCycles      4642982                       # Number of cycles IEW is unblocking
+testsys.switch_cpus.iew.iewDispatchedInsts   2009173876                       # Number of instructions dispatched to IQ
+testsys.switch_cpus.iew.iewDispSquashedInsts     14829871                       # Number of squashed instructions skipped by dispatch
+testsys.switch_cpus.iew.iewDispLoadInsts    319839973                       # Number of dispatched load instructions
+testsys.switch_cpus.iew.iewDispStoreInsts    165601304                       # Number of dispatched store instructions
+testsys.switch_cpus.iew.iewDispNonSpecInsts      2959347                       # Number of dispatched non-speculative instructions
+testsys.switch_cpus.iew.iewIQFullEvents       2433188                       # Number of times the IQ has become full, causing a stall
+testsys.switch_cpus.iew.iewLSQFullEvents       709852                       # Number of times the LSQ has become full, causing a stall
+testsys.switch_cpus.iew.memOrderViolationEvents       442596                       # Number of memory order violations
+testsys.switch_cpus.iew.predictedTakenIncorrect      9065521                       # Number of branches that were predicted taken incorrectly
+testsys.switch_cpus.iew.predictedNotTakenIncorrect     19064772                       # Number of branches that were predicted not taken incorrectly
+testsys.switch_cpus.iew.branchMispredicts     28130293                       # Number of branch mispredicts detected at execute
+testsys.switch_cpus.iew.iewExecutedInsts   1837815781                       # Number of executed instructions
+testsys.switch_cpus.iew.iewExecLoadInsts    286761099                       # Number of load instructions executed
+testsys.switch_cpus.iew.iewExecSquashedInsts     26130577                       # Number of squashed instructions skipped in execute
+testsys.switch_cpus.iew.exec_swp                    0                       # number of swp insts executed
+testsys.switch_cpus.iew.exec_nop                    0                       # number of nop insts executed
+testsys.switch_cpus.iew.exec_refs           433946793                       # number of memory reference insts executed
+testsys.switch_cpus.iew.exec_branches       174642462                       # Number of branches executed
+testsys.switch_cpus.iew.exec_stores         147185694                       # Number of stores executed
+testsys.switch_cpus.iew.exec_rate            0.595854                       # Inst execution rate
+testsys.switch_cpus.iew.wb_sent            1820453283                       # cumulative count of insts sent to commit
+testsys.switch_cpus.iew.wb_count           1817674641                       # cumulative count of insts written-back
+testsys.switch_cpus.iew.wb_producers       1232244241                       # num instructions producing a value
+testsys.switch_cpus.iew.wb_consumers       1896587210                       # num instructions consuming a value
+testsys.switch_cpus.iew.wb_penalized                0                       # number of instrctions required to write to 'other' IQ
+testsys.switch_cpus.iew.wb_rate              0.589324                       # insts written-back per cycle
+testsys.switch_cpus.iew.wb_fanout            0.649717                       # average fanout of values written-back
+testsys.switch_cpus.iew.wb_penalized_rate            0                       # fraction of instructions written-back that wrote to 'other' IQ
+testsys.switch_cpus.commit.commitSquashedInsts    446442473                       # The number of squashed insts skipped by commit
+testsys.switch_cpus.commit.commitNonSpecStalls      3927564                       # The number of times commit has been forced to stall to communicate backwards
+testsys.switch_cpus.commit.branchMispredicts     25706147                       # The number of times a branch was mispredicted
+testsys.switch_cpus.commit.committed_per_cycle::samples   2278092456                       # Number of insts commited each cycle
+testsys.switch_cpus.commit.committed_per_cycle::mean     0.685982                       # Number of insts commited each cycle
+testsys.switch_cpus.commit.committed_per_cycle::stdev     1.758582                       # Number of insts commited each cycle
+testsys.switch_cpus.commit.committed_per_cycle::underflows            0      0.00%      0.00% # Number of insts commited each cycle
+testsys.switch_cpus.commit.committed_per_cycle::0   1808756609     79.40%     79.40% # Number of insts commited each cycle
+testsys.switch_cpus.commit.committed_per_cycle::1    162738390      7.14%     86.54% # Number of insts commited each cycle
+testsys.switch_cpus.commit.committed_per_cycle::2     62564908      2.75%     89.29% # Number of insts commited each cycle
+testsys.switch_cpus.commit.committed_per_cycle::3     80592531      3.54%     92.83% # Number of insts commited each cycle
+testsys.switch_cpus.commit.committed_per_cycle::4     36891473      1.62%     94.44% # Number of insts commited each cycle
+testsys.switch_cpus.commit.committed_per_cycle::5     25745318      1.13%     95.58% # Number of insts commited each cycle
+testsys.switch_cpus.commit.committed_per_cycle::6     19066474      0.84%     96.41% # Number of insts commited each cycle
+testsys.switch_cpus.commit.committed_per_cycle::7     11501292      0.50%     96.92% # Number of insts commited each cycle
+testsys.switch_cpus.commit.committed_per_cycle::8     70235461      3.08%    100.00% # Number of insts commited each cycle
+testsys.switch_cpus.commit.committed_per_cycle::overflows            0      0.00%    100.00% # Number of insts commited each cycle
+testsys.switch_cpus.commit.committed_per_cycle::min_value            0                       # Number of insts commited each cycle
+testsys.switch_cpus.commit.committed_per_cycle::max_value            8                       # Number of insts commited each cycle
+testsys.switch_cpus.commit.committed_per_cycle::total   2278092456                       # Number of insts commited each cycle
+testsys.switch_cpus.commit.committedInsts    843228119                       # Number of instructions committed
+testsys.switch_cpus.commit.committedOps    1562729857                       # Number of ops (including micro ops) committed
+testsys.switch_cpus.commit.swp_count                0                       # Number of s/w prefetches committed
+testsys.switch_cpus.commit.refs             371221323                       # Number of memory references committed
+testsys.switch_cpus.commit.loads            244226867                       # Number of loads committed
+testsys.switch_cpus.commit.membars            2000196                       # Number of memory barriers committed
+testsys.switch_cpus.commit.branches         154815453                       # Number of branches committed
+testsys.switch_cpus.commit.fp_insts           1691608                       # Number of committed floating point instructions.
+testsys.switch_cpus.commit.int_insts       1552708149                       # Number of committed integer instructions.
+testsys.switch_cpus.commit.function_calls            0                       # Number of function calls committed.
+testsys.switch_cpus.commit.bw_lim_events     70235461                       # number cycles where commit BW limit reached
+testsys.switch_cpus.commit.bw_limited               0                       # number of insts not committed due to BW limits
+testsys.switch_cpus.rob.rob_reads          4216546618                       # The number of ROB reads
+testsys.switch_cpus.rob.rob_writes         4094084569                       # The number of ROB writes
+testsys.switch_cpus.timesIdled               16872618                       # Number of times that the entire CPU went into an idle state and unscheduled itself
+testsys.switch_cpus.idleCycles              731099158                       # Total number of cycles that the CPU has spent unscheduled due to idling
+testsys.switch_cpus.quiesceCycles           956252792                       # Total number of cycles that CPU has spent quiesced or waiting for an interrupt
+testsys.switch_cpus.committedInsts          843228119                       # Number of Instructions Simulated
+testsys.switch_cpus.committedOps           1562729857                       # Number of Ops (including micro ops) Simulated
+testsys.switch_cpus.committedInsts_total    843228119                       # Number of Instructions Simulated
+testsys.switch_cpus.cpi                      3.657775                       # CPI: Cycles Per Instruction
+testsys.switch_cpus.cpi_total                3.657775                       # CPI: Total CPI of All Threads
+testsys.switch_cpus.ipc                      0.273390                       # IPC: Instructions Per Cycle
+testsys.switch_cpus.ipc_total                0.273390                       # IPC: Total IPC of All Threads
+testsys.switch_cpus.int_regfile_reads      3631405944                       # number of integer regfile reads
+testsys.switch_cpus.int_regfile_writes     2073189258                       # number of integer regfile writes
+testsys.switch_cpus.fp_regfile_reads          3147023                       # number of floating regfile reads
+testsys.switch_cpus.fp_regfile_writes         1673003                       # number of floating regfile writes
+testsys.switch_cpus.misc_regfile_reads      800299477                       # number of misc regfile reads
+testsys.switch_cpus.misc_regfile_writes       2037072                       # number of misc regfile writes
+drivesys.physmem.bytes_read::pc.south_bridge.ide          528                       # Number of bytes read from this memory
+drivesys.physmem.bytes_read::ethernet          639919                       # Number of bytes read from this memory
+drivesys.physmem.bytes_read::cpu.dtb.walker       545912                       # Number of bytes read from this memory
+drivesys.physmem.bytes_read::cpu.itb.walker        59552                       # Number of bytes read from this memory
+drivesys.physmem.bytes_read::cpu.inst      1126527608                       # Number of bytes read from this memory
+drivesys.physmem.bytes_read::cpu.data       196027088                       # Number of bytes read from this memory
+drivesys.physmem.bytes_read::total         1323800607                       # Number of bytes read from this memory
+drivesys.physmem.bytes_inst_read::cpu.inst   1126527608                       # Number of instructions bytes read from this memory
+drivesys.physmem.bytes_inst_read::total    1126527608                       # Number of instructions bytes read from this memory
+drivesys.physmem.bytes_written::pc.south_bridge.ide       274432                       # Number of bytes written to this memory
+drivesys.physmem.bytes_written::ethernet      1787058                       # Number of bytes written to this memory
+drivesys.physmem.bytes_written::cpu.data    130778127                       # Number of bytes written to this memory
+drivesys.physmem.bytes_written::total       132839617                       # Number of bytes written to this memory
+drivesys.physmem.num_reads::pc.south_bridge.ide           66                       # Number of read requests responded to by this memory
+drivesys.physmem.num_reads::ethernet            22254                       # Number of read requests responded to by this memory
+drivesys.physmem.num_reads::cpu.dtb.walker        68239                       # Number of read requests responded to by this memory
+drivesys.physmem.num_reads::cpu.itb.walker         7444                       # Number of read requests responded to by this memory
+drivesys.physmem.num_reads::cpu.inst        140815951                       # Number of read requests responded to by this memory
+drivesys.physmem.num_reads::cpu.data         30485377                       # Number of read requests responded to by this memory
+drivesys.physmem.num_reads::total           171399331                       # Number of read requests responded to by this memory
+drivesys.physmem.num_writes::pc.south_bridge.ide         4288                       # Number of write requests responded to by this memory
+drivesys.physmem.num_writes::ethernet           38465                       # Number of write requests responded to by this memory
+drivesys.physmem.num_writes::cpu.data        19372136                       # Number of write requests responded to by this memory
+drivesys.physmem.num_writes::total           19414889                       # Number of write requests responded to by this memory
+drivesys.physmem.bw_read::pc.south_bridge.ide          392                       # Total read bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_read::ethernet             475365                       # Total read bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_read::cpu.dtb.walker       405532                       # Total read bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_read::cpu.itb.walker        44238                       # Total read bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_read::cpu.inst          836843193                       # Total read bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_read::cpu.data          145619098                       # Total read bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_read::total             983387818                       # Total read bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_inst_read::cpu.inst     836843193                       # Instruction read bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_inst_read::total        836843193                       # Instruction read bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_write::pc.south_bridge.ide       203862                       # Write bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_write::ethernet           1327519                       # Write bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_write::cpu.data          97148782                       # Write bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_write::total             98680164                       # Write bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_total::pc.south_bridge.ide       204255                       # Total bandwidth to/from this memory (bytes/s)
+drivesys.physmem.bw_total::ethernet           1802885                       # Total bandwidth to/from this memory (bytes/s)
+drivesys.physmem.bw_total::cpu.dtb.walker       405532                       # Total bandwidth to/from this memory (bytes/s)
+drivesys.physmem.bw_total::cpu.itb.walker        44238                       # Total bandwidth to/from this memory (bytes/s)
+drivesys.physmem.bw_total::cpu.inst         836843193                       # Total bandwidth to/from this memory (bytes/s)
+drivesys.physmem.bw_total::cpu.data         242767880                       # Total bandwidth to/from this memory (bytes/s)
+drivesys.physmem.bw_total::total           1082067982                       # Total bandwidth to/from this memory (bytes/s)
+drivesys.pc.south_bridge.ide.disks0.dma_read_full_pages            0                       # Number of full page size DMA reads (not PRD).
+drivesys.pc.south_bridge.ide.disks0.dma_read_bytes            0                       # Number of bytes transfered via DMA reads (not PRD).
+drivesys.pc.south_bridge.ide.disks0.dma_read_txs            0                       # Number of DMA read transactions (not PRD).
+drivesys.pc.south_bridge.ide.disks0.dma_write_full_pages           67                       # Number of full page size DMA writes.
+drivesys.pc.south_bridge.ide.disks0.dma_write_bytes       274432                       # Number of bytes transfered via DMA writes.
+drivesys.pc.south_bridge.ide.disks0.dma_write_txs           67                       # Number of DMA write transactions.
+drivesys.pc.south_bridge.ide.disks1.dma_read_full_pages            0                       # Number of full page size DMA reads (not PRD).
+drivesys.pc.south_bridge.ide.disks1.dma_read_bytes            0                       # Number of bytes transfered via DMA reads (not PRD).
+drivesys.pc.south_bridge.ide.disks1.dma_read_txs            0                       # Number of DMA read transactions (not PRD).
+drivesys.pc.south_bridge.ide.disks1.dma_write_full_pages            0                       # Number of full page size DMA writes.
+drivesys.pc.south_bridge.ide.disks1.dma_write_bytes            0                       # Number of bytes transfered via DMA writes.
+drivesys.pc.south_bridge.ide.disks1.dma_write_txs            0                       # Number of DMA write transactions.
+drivesys.ethernet.txBytes                      356127                       # Bytes Transmitted
+drivesys.ethernet.rxBytes                     1503266                       # Bytes Received
+drivesys.ethernet.txPackets                      4637                       # Number of Packets Transmitted
+drivesys.ethernet.rxPackets                      4633                       # Number of Packets Received
+drivesys.ethernet.txIpChecksums                     0                       # Number of tx IP Checksums done by device
+drivesys.ethernet.rxIpChecksums                     0                       # Number of rx IP Checksums done by device
+drivesys.ethernet.txTcpChecksums                 4221                       # Number of tx TCP Checksums done by device
+drivesys.ethernet.rxTcpChecksums                 4633                       # Number of rx TCP Checksums done by device
+drivesys.ethernet.txUdpChecksums                    0                       # Number of tx UDP Checksums done by device
+drivesys.ethernet.rxUdpChecksums                    0                       # Number of rx UDP Checksums done by device
+drivesys.ethernet.descDMAReads                      0                       # Number of descriptors the device read w/ DMA
+drivesys.ethernet.descDMAWrites                     0                       # Number of descriptors the device wrote w/ DMA
+drivesys.ethernet.descDmaReadBytes                  0                       # number of descriptor bytes read w/ DMA
+drivesys.ethernet.descDmaWriteBytes                 0                       # number of descriptor bytes write w/ DMA
+drivesys.ethernet.totBandwidth               11050029                       # Total Bandwidth (bits/s)
+drivesys.ethernet.totPackets                     9270                       # Total Packets
+drivesys.ethernet.totBytes                    1859393                       # Total Bytes
+drivesys.ethernet.totPPS                         6886                       # Total Tranmission Rate (packets/s)
+drivesys.ethernet.txBandwidth                 2116397                       # Transmit Bandwidth (bits/s)
+drivesys.ethernet.rxBandwidth                 8933632                       # Receive Bandwidth (bits/s)
+drivesys.ethernet.txPPS                          3445                       # Packet Tranmission Rate (packets/s)
+drivesys.ethernet.rxPPS                          3442                       # Packet Reception Rate (packets/s)
+drivesys.ethernet.postedSwi                         0                       # number of software interrupts posted to CPU
+drivesys.ethernet.coalescedSwi                      0                       # average number of Swi's coalesced into each post
+drivesys.ethernet.totalSwi                          0                       # total number of Swi written to ISR
+drivesys.ethernet.postedRxIdle                      0                       # number of rxIdle interrupts posted to CPU
+drivesys.ethernet.coalescedRxIdle                   0                       # average number of RxIdle's coalesced into each post
+drivesys.ethernet.totalRxIdle                       0                       # total number of RxIdle written to ISR
+drivesys.ethernet.postedRxOk                        0                       # number of RxOk interrupts posted to CPU
+drivesys.ethernet.coalescedRxOk                     0                       # average number of RxOk's coalesced into each post
+drivesys.ethernet.totalRxOk                         0                       # total number of RxOk written to ISR
+drivesys.ethernet.postedRxDesc                      0                       # number of RxDesc interrupts posted to CPU
+drivesys.ethernet.coalescedRxDesc                   0                       # average number of RxDesc's coalesced into each post
+drivesys.ethernet.totalRxDesc                       0                       # total number of RxDesc written to ISR
+drivesys.ethernet.postedTxOk                        0                       # number of TxOk interrupts posted to CPU
+drivesys.ethernet.coalescedTxOk                     0                       # average number of TxOk's coalesced into each post
+drivesys.ethernet.totalTxOk                         0                       # total number of TxOk written to ISR
+drivesys.ethernet.postedTxIdle                      0                       # number of TxIdle interrupts posted to CPU
+drivesys.ethernet.coalescedTxIdle                   0                       # average number of TxIdle's coalesced into each post
+drivesys.ethernet.totalTxIdle                       0                       # total number of TxIdle written to ISR
+drivesys.ethernet.postedTxDesc                      0                       # number of TxDesc interrupts posted to CPU
+drivesys.ethernet.coalescedTxDesc                   0                       # average number of TxDesc's coalesced into each post
+drivesys.ethernet.totalTxDesc                       0                       # total number of TxDesc written to ISR
+drivesys.ethernet.postedRxOrn                       0                       # number of RxOrn posted to CPU
+drivesys.ethernet.coalescedRxOrn                    0                       # average number of RxOrn's coalesced into each post
+drivesys.ethernet.totalRxOrn                        0                       # total number of RxOrn written to ISR
+drivesys.ethernet.coalescedTotal                    0                       # average number of interrupts coalesced into each post
+drivesys.ethernet.postedInterrupts               8829                       # number of posts to CPU
+drivesys.ethernet.droppedPackets                    0                       # number of packets dropped
+drivesys.cpu.numCycles                     4042826799                       # number of cpu cycles simulated
+drivesys.cpu.numWorkItemsStarted                    0                       # number of work items this cpu started
+drivesys.cpu.numWorkItemsCompleted                  0                       # number of work items this cpu completed
+drivesys.cpu.committedInsts                 106720112                       # Number of instructions committed
+drivesys.cpu.committedOps                   204640090                       # Number of ops (including micro ops) committed
+drivesys.cpu.num_int_alu_accesses           201847559                       # Number of integer alu accesses
+drivesys.cpu.num_fp_alu_accesses              2673497                       # Number of float alu accesses
+drivesys.cpu.num_func_calls                         0                       # number of times a function call or return occured
+drivesys.cpu.num_conditional_control_insts     13549410                       # number of instructions that are conditional controls
+drivesys.cpu.num_int_insts                  201847559                       # number of integer instructions
+drivesys.cpu.num_fp_insts                     2673497                       # number of float instructions
+drivesys.cpu.num_int_register_reads         513947547                       # number of times the integer registers were read
+drivesys.cpu.num_int_register_writes        223114074                       # number of times the integer registers were written
+drivesys.cpu.num_fp_register_reads            4894083                       # number of times the floating registers were read
+drivesys.cpu.num_fp_register_writes           2303892                       # number of times the floating registers were written
+drivesys.cpu.num_mem_refs                    49943790                       # number of memory refs
+drivesys.cpu.num_load_insts                  30522954                       # Number of load instructions
+drivesys.cpu.num_store_insts                 19420836                       # Number of store instructions
+drivesys.cpu.num_idle_cycles             3804360190.055005                       # Number of idle cycles
+drivesys.cpu.num_busy_cycles             238466608.944995                       # Number of busy cycles
+drivesys.cpu.not_idle_fraction               0.058985                       # Percentage of non-idle cycles
+drivesys.cpu.idle_fraction                   0.941015                       # Percentage of idle cycles
+drivesys.cpu.kern.inst.arm                          0                       # number of arm instructions executed
+drivesys.cpu.kern.inst.quiesce                      0                       # number of quiesce instructions executed
+testsys.switch_cpus.kern.inst.arm                   0                       # number of arm instructions executed
+testsys.switch_cpus.kern.inst.quiesce               0                       # number of quiesce instructions executed
+
+---------- End Simulation Statistics   ----------
