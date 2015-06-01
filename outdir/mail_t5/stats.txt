@@ -1,78 +1,78 @@
 
 ---------- Begin Simulation Statistics ----------
-sim_seconds                                  4.971214                       # Number of seconds simulated
-sim_ticks                                4971213842967                       # Number of ticks simulated
-final_tick                               4971213842967                       # Number of ticks from beginning of simulation (restored from checkpoints and never reset)
+sim_seconds                                  5.083179                       # Number of seconds simulated
+sim_ticks                                5083178723010                       # Number of ticks simulated
+final_tick                               5083178723010                       # Number of ticks from beginning of simulation (restored from checkpoints and never reset)
 sim_freq                                 1000000000000                       # Frequency of simulated ticks
-host_inst_rate                                1499795                       # Simulator instruction rate (inst/s)
-host_op_rate                                  3326229                       # Simulator op (including micro ops) rate (op/s)
-host_tick_rate                             7229472736                       # Simulator tick rate (ticks/s)
-host_mem_usage                                4524080                       # Number of bytes of host memory used
-host_seconds                                   687.63                       # Real time elapsed on the host
-sim_insts                                  1031306322                       # Number of instructions simulated
-sim_ops                                    2287219883                       # Number of ops (including micro ops) simulated
-testsys.physmem.bytes_read::pc.south_bridge.ide       139744                       # Number of bytes read from this memory
-testsys.physmem.bytes_read::ethernet             1671                       # Number of bytes read from this memory
-testsys.physmem.bytes_read::cpu.dtb.walker       372896                       # Number of bytes read from this memory
-testsys.physmem.bytes_read::cpu.itb.walker       186720                       # Number of bytes read from this memory
-testsys.physmem.bytes_read::cpu.inst       5361360304                       # Number of bytes read from this memory
-testsys.physmem.bytes_read::cpu.data        552857825                       # Number of bytes read from this memory
-testsys.physmem.bytes_read::total          5914919160                       # Number of bytes read from this memory
-testsys.physmem.bytes_inst_read::cpu.inst   5361360304                       # Number of instructions bytes read from this memory
-testsys.physmem.bytes_inst_read::total     5361360304                       # Number of instructions bytes read from this memory
-testsys.physmem.bytes_written::pc.south_bridge.ide      6700032                       # Number of bytes written to this memory
-testsys.physmem.bytes_written::ethernet           526                       # Number of bytes written to this memory
+host_inst_rate                                1365354                       # Simulator instruction rate (inst/s)
+host_op_rate                                  3025898                       # Simulator op (including micro ops) rate (op/s)
+host_tick_rate                             6609862104                       # Simulator tick rate (ticks/s)
+host_mem_usage                                4535036                       # Number of bytes of host memory used
+host_seconds                                   769.03                       # Real time elapsed on the host
+sim_insts                                  1049997598                       # Number of instructions simulated
+sim_ops                                    2327004684                       # Number of ops (including micro ops) simulated
+testsys.physmem.bytes_read::pc.south_bridge.ide       140440                       # Number of bytes read from this memory
+testsys.physmem.bytes_read::ethernet             1765                       # Number of bytes read from this memory
+testsys.physmem.bytes_read::cpu.dtb.walker       464920                       # Number of bytes read from this memory
+testsys.physmem.bytes_read::cpu.itb.walker       238408                       # Number of bytes read from this memory
+testsys.physmem.bytes_read::cpu.inst       5551005568                       # Number of bytes read from this memory
+testsys.physmem.bytes_read::cpu.data        595851178                       # Number of bytes read from this memory
+testsys.physmem.bytes_read::total          6147702279                       # Number of bytes read from this memory
+testsys.physmem.bytes_inst_read::cpu.inst   5551005568                       # Number of instructions bytes read from this memory
+testsys.physmem.bytes_inst_read::total     5551005568                       # Number of instructions bytes read from this memory
+testsys.physmem.bytes_written::pc.south_bridge.ide      7093248                       # Number of bytes written to this memory
+testsys.physmem.bytes_written::ethernet           542                       # Number of bytes written to this memory
 testsys.physmem.bytes_written::cpu.itb.walker           16                       # Number of bytes written to this memory
-testsys.physmem.bytes_written::cpu.data     231144577                       # Number of bytes written to this memory
-testsys.physmem.bytes_written::total        237845151                       # Number of bytes written to this memory
-testsys.physmem.num_reads::pc.south_bridge.ide         3580                       # Number of read requests responded to by this memory
-testsys.physmem.num_reads::ethernet                41                       # Number of read requests responded to by this memory
-testsys.physmem.num_reads::cpu.dtb.walker        46612                       # Number of read requests responded to by this memory
-testsys.physmem.num_reads::cpu.itb.walker        23340                       # Number of read requests responded to by this memory
-testsys.physmem.num_reads::cpu.inst         670170038                       # Number of read requests responded to by this memory
-testsys.physmem.num_reads::cpu.data         114528763                       # Number of read requests responded to by this memory
-testsys.physmem.num_reads::total            784772374                       # Number of read requests responded to by this memory
-testsys.physmem.num_writes::pc.south_bridge.ide       104688                       # Number of write requests responded to by this memory
-testsys.physmem.num_writes::ethernet               21                       # Number of write requests responded to by this memory
+testsys.physmem.bytes_written::cpu.data     242624572                       # Number of bytes written to this memory
+testsys.physmem.bytes_written::total        249718378                       # Number of bytes written to this memory
+testsys.physmem.num_reads::pc.south_bridge.ide         3667                       # Number of read requests responded to by this memory
+testsys.physmem.num_reads::ethernet                44                       # Number of read requests responded to by this memory
+testsys.physmem.num_reads::cpu.dtb.walker        58115                       # Number of read requests responded to by this memory
+testsys.physmem.num_reads::cpu.itb.walker        29801                       # Number of read requests responded to by this memory
+testsys.physmem.num_reads::cpu.inst         693875696                       # Number of read requests responded to by this memory
+testsys.physmem.num_reads::cpu.data         121261331                       # Number of read requests responded to by this memory
+testsys.physmem.num_reads::total            815228654                       # Number of read requests responded to by this memory
+testsys.physmem.num_writes::pc.south_bridge.ide       110832                       # Number of write requests responded to by this memory
+testsys.physmem.num_writes::ethernet               22                       # Number of write requests responded to by this memory
 testsys.physmem.num_writes::cpu.itb.walker            2                       # Number of write requests responded to by this memory
-testsys.physmem.num_writes::cpu.data         32852653                       # Number of write requests responded to by this memory
-testsys.physmem.num_writes::total            32957364                       # Number of write requests responded to by this memory
-testsys.physmem.bw_read::pc.south_bridge.ide        28111                       # Total read bandwidth from this memory (bytes/s)
-testsys.physmem.bw_read::ethernet                 336                       # Total read bandwidth from this memory (bytes/s)
-testsys.physmem.bw_read::cpu.dtb.walker         75011                       # Total read bandwidth from this memory (bytes/s)
-testsys.physmem.bw_read::cpu.itb.walker         37560                       # Total read bandwidth from this memory (bytes/s)
-testsys.physmem.bw_read::cpu.inst          1078481126                       # Total read bandwidth from this memory (bytes/s)
-testsys.physmem.bw_read::cpu.data           111211837                       # Total read bandwidth from this memory (bytes/s)
-testsys.physmem.bw_read::total             1189833982                       # Total read bandwidth from this memory (bytes/s)
-testsys.physmem.bw_inst_read::cpu.inst     1078481126                       # Instruction read bandwidth from this memory (bytes/s)
-testsys.physmem.bw_inst_read::total        1078481126                       # Instruction read bandwidth from this memory (bytes/s)
-testsys.physmem.bw_write::pc.south_bridge.ide      1347766                       # Write bandwidth from this memory (bytes/s)
-testsys.physmem.bw_write::ethernet                106                       # Write bandwidth from this memory (bytes/s)
+testsys.physmem.num_writes::cpu.data         34926238                       # Number of write requests responded to by this memory
+testsys.physmem.num_writes::total            35037094                       # Number of write requests responded to by this memory
+testsys.physmem.bw_read::pc.south_bridge.ide        27628                       # Total read bandwidth from this memory (bytes/s)
+testsys.physmem.bw_read::ethernet                 347                       # Total read bandwidth from this memory (bytes/s)
+testsys.physmem.bw_read::cpu.dtb.walker         91462                       # Total read bandwidth from this memory (bytes/s)
+testsys.physmem.bw_read::cpu.itb.walker         46901                       # Total read bandwidth from this memory (bytes/s)
+testsys.physmem.bw_read::cpu.inst          1092034310                       # Total read bandwidth from this memory (bytes/s)
+testsys.physmem.bw_read::cpu.data           117220190                       # Total read bandwidth from this memory (bytes/s)
+testsys.physmem.bw_read::total             1209420840                       # Total read bandwidth from this memory (bytes/s)
+testsys.physmem.bw_inst_read::cpu.inst     1092034310                       # Instruction read bandwidth from this memory (bytes/s)
+testsys.physmem.bw_inst_read::total        1092034310                       # Instruction read bandwidth from this memory (bytes/s)
+testsys.physmem.bw_write::pc.south_bridge.ide      1395435                       # Write bandwidth from this memory (bytes/s)
+testsys.physmem.bw_write::ethernet                107                       # Write bandwidth from this memory (bytes/s)
 testsys.physmem.bw_write::cpu.itb.walker            3                       # Write bandwidth from this memory (bytes/s)
-testsys.physmem.bw_write::cpu.data           46496607                       # Write bandwidth from this memory (bytes/s)
-testsys.physmem.bw_write::total              47844482                       # Write bandwidth from this memory (bytes/s)
-testsys.physmem.bw_total::pc.south_bridge.ide      1375876                       # Total bandwidth to/from this memory (bytes/s)
-testsys.physmem.bw_total::ethernet                442                       # Total bandwidth to/from this memory (bytes/s)
-testsys.physmem.bw_total::cpu.dtb.walker        75011                       # Total bandwidth to/from this memory (bytes/s)
-testsys.physmem.bw_total::cpu.itb.walker        37563                       # Total bandwidth to/from this memory (bytes/s)
-testsys.physmem.bw_total::cpu.inst         1078481126                       # Total bandwidth to/from this memory (bytes/s)
-testsys.physmem.bw_total::cpu.data          157708444                       # Total bandwidth to/from this memory (bytes/s)
-testsys.physmem.bw_total::total            1237678464                       # Total bandwidth to/from this memory (bytes/s)
+testsys.physmem.bw_write::cpu.data           47730876                       # Write bandwidth from this memory (bytes/s)
+testsys.physmem.bw_write::total              49126421                       # Write bandwidth from this memory (bytes/s)
+testsys.physmem.bw_total::pc.south_bridge.ide      1423064                       # Total bandwidth to/from this memory (bytes/s)
+testsys.physmem.bw_total::ethernet                454                       # Total bandwidth to/from this memory (bytes/s)
+testsys.physmem.bw_total::cpu.dtb.walker        91462                       # Total bandwidth to/from this memory (bytes/s)
+testsys.physmem.bw_total::cpu.itb.walker        46905                       # Total bandwidth to/from this memory (bytes/s)
+testsys.physmem.bw_total::cpu.inst         1092034310                       # Total bandwidth to/from this memory (bytes/s)
+testsys.physmem.bw_total::cpu.data          164951066                       # Total bandwidth to/from this memory (bytes/s)
+testsys.physmem.bw_total::total            1258547261                       # Total bandwidth to/from this memory (bytes/s)
 testsys.pc.south_bridge.ide.disks0.dma_read_full_pages           31                       # Number of full page size DMA reads (not PRD).
 testsys.pc.south_bridge.ide.disks0.dma_read_bytes       126976                       # Number of bytes transfered via DMA reads (not PRD).
 testsys.pc.south_bridge.ide.disks0.dma_read_txs           31                       # Number of DMA read transactions (not PRD).
-testsys.pc.south_bridge.ide.disks0.dma_write_full_pages         1634                       # Number of full page size DMA writes.
-testsys.pc.south_bridge.ide.disks0.dma_write_bytes      6695936                       # Number of bytes transfered via DMA writes.
-testsys.pc.south_bridge.ide.disks0.dma_write_txs         1638                       # Number of DMA write transactions.
+testsys.pc.south_bridge.ide.disks0.dma_write_full_pages         1730                       # Number of full page size DMA writes.
+testsys.pc.south_bridge.ide.disks0.dma_write_bytes      7089152                       # Number of bytes transfered via DMA writes.
+testsys.pc.south_bridge.ide.disks0.dma_write_txs         1734                       # Number of DMA write transactions.
 testsys.pc.south_bridge.ide.disks1.dma_read_full_pages            0                       # Number of full page size DMA reads (not PRD).
 testsys.pc.south_bridge.ide.disks1.dma_read_bytes            0                       # Number of bytes transfered via DMA reads (not PRD).
 testsys.pc.south_bridge.ide.disks1.dma_read_txs            0                       # Number of DMA read transactions (not PRD).
 testsys.pc.south_bridge.ide.disks1.dma_write_full_pages            1                       # Number of full page size DMA writes.
 testsys.pc.south_bridge.ide.disks1.dma_write_bytes         4096                       # Number of bytes transfered via DMA writes.
 testsys.pc.south_bridge.ide.disks1.dma_write_txs            1                       # Number of DMA write transactions.
-testsys.ethernet.txBytes                          423                       # Bytes Transmitted
+testsys.ethernet.txBytes                          501                       # Bytes Transmitted
 testsys.ethernet.rxBytes                          302                       # Bytes Received
-testsys.ethernet.txPackets                          7                       # Number of Packets Transmitted
+testsys.ethernet.txPackets                          8                       # Number of Packets Transmitted
 testsys.ethernet.rxPackets                          5                       # Number of Packets Received
 testsys.ethernet.txIpChecksums                      0                       # Number of tx IP Checksums done by device
 testsys.ethernet.rxIpChecksums                      0                       # Number of rx IP Checksums done by device
@@ -84,13 +84,13 @@ testsys.ethernet.descDMAReads                       0                       # Nu
 testsys.ethernet.descDMAWrites                      0                       # Number of descriptors the device wrote w/ DMA
 testsys.ethernet.descDmaReadBytes                   0                       # number of descriptor bytes read w/ DMA
 testsys.ethernet.descDmaWriteBytes                  0                       # number of descriptor bytes write w/ DMA
-testsys.ethernet.totBandwidth                    1167                       # Total Bandwidth (bits/s)
-testsys.ethernet.totPackets                        12                       # Total Packets
-testsys.ethernet.totBytes                         725                       # Total Bytes
-testsys.ethernet.totPPS                             2                       # Total Tranmission Rate (packets/s)
-testsys.ethernet.txBandwidth                      681                       # Transmit Bandwidth (bits/s)
-testsys.ethernet.rxBandwidth                      486                       # Receive Bandwidth (bits/s)
-testsys.ethernet.txPPS                              1                       # Packet Tranmission Rate (packets/s)
+testsys.ethernet.totBandwidth                    1264                       # Total Bandwidth (bits/s)
+testsys.ethernet.totPackets                        13                       # Total Packets
+testsys.ethernet.totBytes                         803                       # Total Bytes
+testsys.ethernet.totPPS                             3                       # Total Tranmission Rate (packets/s)
+testsys.ethernet.txBandwidth                      788                       # Transmit Bandwidth (bits/s)
+testsys.ethernet.rxBandwidth                      475                       # Receive Bandwidth (bits/s)
+testsys.ethernet.txPPS                              2                       # Packet Tranmission Rate (packets/s)
 testsys.ethernet.rxPPS                              1                       # Packet Reception Rate (packets/s)
 testsys.ethernet.postedSwi                          0                       # number of software interrupts posted to CPU
 testsys.ethernet.coalescedSwi                       0                       # average number of Swi's coalesced into each post
@@ -117,79 +117,79 @@ testsys.ethernet.postedRxOrn                        0                       # nu
 testsys.ethernet.coalescedRxOrn                     0                       # average number of RxOrn's coalesced into each post
 testsys.ethernet.totalRxOrn                         0                       # total number of RxOrn written to ISR
 testsys.ethernet.coalescedTotal                     0                       # average number of interrupts coalesced into each post
-testsys.ethernet.postedInterrupts                  11                       # number of posts to CPU
+testsys.ethernet.postedInterrupts                  17                       # number of posts to CPU
 testsys.ethernet.droppedPackets                     0                       # number of packets dropped
-testsys.cpu.numCycles                     14928570295                       # number of cpu cycles simulated
+testsys.cpu.numCycles                     15264801274                       # number of cpu cycles simulated
 testsys.cpu.numWorkItemsStarted                     0                       # number of work items this cpu started
 testsys.cpu.numWorkItemsCompleted                   0                       # number of work items this cpu completed
-testsys.cpu.committedInsts                  518488159                       # Number of instructions committed
-testsys.cpu.committedOps                   1148821655                       # Number of ops (including micro ops) committed
-testsys.cpu.num_int_alu_accesses           1058172038                       # Number of integer alu accesses
-testsys.cpu.num_fp_alu_accesses                129001                       # Number of float alu accesses
+testsys.cpu.committedInsts                  537118653                       # Number of instructions committed
+testsys.cpu.committedOps                   1188487176                       # Number of ops (including micro ops) committed
+testsys.cpu.num_int_alu_accesses           1097748690                       # Number of integer alu accesses
+testsys.cpu.num_fp_alu_accesses                192933                       # Number of float alu accesses
 testsys.cpu.num_func_calls                          0                       # number of times a function call or return occured
-testsys.cpu.num_conditional_control_insts    112932418                       # number of instructions that are conditional controls
-testsys.cpu.num_int_insts                  1058172038                       # number of integer instructions
-testsys.cpu.num_fp_insts                       129001                       # number of float instructions
-testsys.cpu.num_int_register_reads         2431587253                       # number of times the integer registers were read
-testsys.cpu.num_int_register_writes        1244788659                       # number of times the integer registers were written
-testsys.cpu.num_fp_register_reads              202375                       # number of times the floating registers were read
-testsys.cpu.num_fp_register_writes             104633                       # number of times the floating registers were written
-testsys.cpu.num_mem_refs                    152039059                       # number of memory refs
-testsys.cpu.num_load_insts                  119139402                       # Number of load instructions
-testsys.cpu.num_store_insts                  32899657                       # Number of store instructions
-testsys.cpu.num_idle_cycles              13628060218.075771                       # Number of idle cycles
-testsys.cpu.num_busy_cycles              1300510076.924229                       # Number of busy cycles
-testsys.cpu.not_idle_fraction                0.087116                       # Percentage of non-idle cycles
-testsys.cpu.idle_fraction                    0.912884                       # Percentage of idle cycles
+testsys.cpu.num_conditional_control_insts    117009544                       # number of instructions that are conditional controls
+testsys.cpu.num_int_insts                  1097748690                       # number of integer instructions
+testsys.cpu.num_fp_insts                       192933                       # number of float instructions
+testsys.cpu.num_int_register_reads         2525654350                       # number of times the integer registers were read
+testsys.cpu.num_int_register_writes        1294309306                       # number of times the integer registers were written
+testsys.cpu.num_fp_register_reads              305662                       # number of times the floating registers were read
+testsys.cpu.num_fp_register_writes             153985                       # number of times the floating registers were written
+testsys.cpu.num_mem_refs                    160847920                       # number of memory refs
+testsys.cpu.num_load_insts                  125873873                       # Number of load instructions
+testsys.cpu.num_store_insts                  34974047                       # Number of store instructions
+testsys.cpu.num_idle_cycles              13919549351.008240                       # Number of idle cycles
+testsys.cpu.num_busy_cycles              1345251922.991759                       # Number of busy cycles
+testsys.cpu.not_idle_fraction                0.088128                       # Percentage of non-idle cycles
+testsys.cpu.idle_fraction                    0.911872                       # Percentage of idle cycles
 testsys.cpu.kern.inst.arm                           0                       # number of arm instructions executed
 testsys.cpu.kern.inst.quiesce                       0                       # number of quiesce instructions executed
 drivesys.physmem.bytes_read::pc.south_bridge.ide       133816                       # Number of bytes read from this memory
-drivesys.physmem.bytes_read::ethernet            1518                       # Number of bytes read from this memory
-drivesys.physmem.bytes_read::cpu.dtb.walker       277304                       # Number of bytes read from this memory
+drivesys.physmem.bytes_read::ethernet            1534                       # Number of bytes read from this memory
+drivesys.physmem.bytes_read::cpu.dtb.walker       277128                       # Number of bytes read from this memory
 drivesys.physmem.bytes_read::cpu.itb.walker       152456                       # Number of bytes read from this memory
-drivesys.physmem.bytes_read::cpu.inst      5302156472                       # Number of bytes read from this memory
-drivesys.physmem.bytes_read::cpu.data       544472068                       # Number of bytes read from this memory
-drivesys.physmem.bytes_read::total         5847193634                       # Number of bytes read from this memory
-drivesys.physmem.bytes_inst_read::cpu.inst   5302156472                       # Number of instructions bytes read from this memory
-drivesys.physmem.bytes_inst_read::total    5302156472                       # Number of instructions bytes read from this memory
+drivesys.physmem.bytes_read::cpu.inst      5302793056                       # Number of bytes read from this memory
+drivesys.physmem.bytes_read::cpu.data       544589372                       # Number of bytes read from this memory
+drivesys.physmem.bytes_read::total         5847947362                       # Number of bytes read from this memory
+drivesys.physmem.bytes_inst_read::cpu.inst   5302793056                       # Number of instructions bytes read from this memory
+drivesys.physmem.bytes_inst_read::total    5302793056                       # Number of instructions bytes read from this memory
 drivesys.physmem.bytes_written::pc.south_bridge.ide      3656704                       # Number of bytes written to this memory
-drivesys.physmem.bytes_written::ethernet          615                       # Number of bytes written to this memory
+drivesys.physmem.bytes_written::ethernet          709                       # Number of bytes written to this memory
 drivesys.physmem.bytes_written::cpu.itb.walker           16                       # Number of bytes written to this memory
-drivesys.physmem.bytes_written::cpu.data    225742467                       # Number of bytes written to this memory
-drivesys.physmem.bytes_written::total       229399802                       # Number of bytes written to this memory
+drivesys.physmem.bytes_written::cpu.data    225821064                       # Number of bytes written to this memory
+drivesys.physmem.bytes_written::total       229478493                       # Number of bytes written to this memory
 drivesys.physmem.num_reads::pc.south_bridge.ide         2839                       # Number of read requests responded to by this memory
-drivesys.physmem.num_reads::ethernet               37                       # Number of read requests responded to by this memory
-drivesys.physmem.num_reads::cpu.dtb.walker        34663                       # Number of read requests responded to by this memory
+drivesys.physmem.num_reads::ethernet               38                       # Number of read requests responded to by this memory
+drivesys.physmem.num_reads::cpu.dtb.walker        34641                       # Number of read requests responded to by this memory
 drivesys.physmem.num_reads::cpu.itb.walker        19057                       # Number of read requests responded to by this memory
-drivesys.physmem.num_reads::cpu.inst        662769559                       # Number of read requests responded to by this memory
-drivesys.physmem.num_reads::cpu.data        113106414                       # Number of read requests responded to by this memory
-drivesys.physmem.num_reads::total           775932569                       # Number of read requests responded to by this memory
+drivesys.physmem.num_reads::cpu.inst        662849132                       # Number of read requests responded to by this memory
+drivesys.physmem.num_reads::cpu.data        113123885                       # Number of read requests responded to by this memory
+drivesys.physmem.num_reads::total           776029592                       # Number of read requests responded to by this memory
 drivesys.physmem.num_writes::pc.south_bridge.ide        57136                       # Number of write requests responded to by this memory
-drivesys.physmem.num_writes::ethernet              25                       # Number of write requests responded to by this memory
+drivesys.physmem.num_writes::ethernet              28                       # Number of write requests responded to by this memory
 drivesys.physmem.num_writes::cpu.itb.walker            2                       # Number of write requests responded to by this memory
-drivesys.physmem.num_writes::cpu.data        32109967                       # Number of write requests responded to by this memory
-drivesys.physmem.num_writes::total           32167130                       # Number of write requests responded to by this memory
-drivesys.physmem.bw_read::pc.south_bridge.ide        26918                       # Total read bandwidth from this memory (bytes/s)
-drivesys.physmem.bw_read::ethernet                305                       # Total read bandwidth from this memory (bytes/s)
-drivesys.physmem.bw_read::cpu.dtb.walker        55782                       # Total read bandwidth from this memory (bytes/s)
-drivesys.physmem.bw_read::cpu.itb.walker        30668                       # Total read bandwidth from this memory (bytes/s)
-drivesys.physmem.bw_read::cpu.inst         1066571795                       # Total read bandwidth from this memory (bytes/s)
-drivesys.physmem.bw_read::cpu.data          109524974                       # Total read bandwidth from this memory (bytes/s)
-drivesys.physmem.bw_read::total            1176210443                       # Total read bandwidth from this memory (bytes/s)
-drivesys.physmem.bw_inst_read::cpu.inst    1066571795                       # Instruction read bandwidth from this memory (bytes/s)
-drivesys.physmem.bw_inst_read::total       1066571795                       # Instruction read bandwidth from this memory (bytes/s)
-drivesys.physmem.bw_write::pc.south_bridge.ide       735576                       # Write bandwidth from this memory (bytes/s)
-drivesys.physmem.bw_write::ethernet               124                       # Write bandwidth from this memory (bytes/s)
+drivesys.physmem.num_writes::cpu.data        32120692                       # Number of write requests responded to by this memory
+drivesys.physmem.num_writes::total           32177858                       # Number of write requests responded to by this memory
+drivesys.physmem.bw_read::pc.south_bridge.ide        26325                       # Total read bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_read::ethernet                302                       # Total read bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_read::cpu.dtb.walker        54519                       # Total read bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_read::cpu.itb.walker        29992                       # Total read bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_read::cpu.inst         1043204134                       # Total read bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_read::cpu.data          107135594                       # Total read bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_read::total            1150450866                       # Total read bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_inst_read::cpu.inst    1043204134                       # Instruction read bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_inst_read::total       1043204134                       # Instruction read bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_write::pc.south_bridge.ide       719373                       # Write bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_write::ethernet               139                       # Write bandwidth from this memory (bytes/s)
 drivesys.physmem.bw_write::cpu.itb.walker            3                       # Write bandwidth from this memory (bytes/s)
-drivesys.physmem.bw_write::cpu.data          45409929                       # Write bandwidth from this memory (bytes/s)
-drivesys.physmem.bw_write::total             46145631                       # Write bandwidth from this memory (bytes/s)
-drivesys.physmem.bw_total::pc.south_bridge.ide       762494                       # Total bandwidth to/from this memory (bytes/s)
-drivesys.physmem.bw_total::ethernet               429                       # Total bandwidth to/from this memory (bytes/s)
-drivesys.physmem.bw_total::cpu.dtb.walker        55782                       # Total bandwidth to/from this memory (bytes/s)
-drivesys.physmem.bw_total::cpu.itb.walker        30671                       # Total bandwidth to/from this memory (bytes/s)
-drivesys.physmem.bw_total::cpu.inst        1066571795                       # Total bandwidth to/from this memory (bytes/s)
-drivesys.physmem.bw_total::cpu.data         154934903                       # Total bandwidth to/from this memory (bytes/s)
-drivesys.physmem.bw_total::total           1222356074                       # Total bandwidth to/from this memory (bytes/s)
+drivesys.physmem.bw_write::cpu.data          44425167                       # Write bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_write::total             45144683                       # Write bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_total::pc.south_bridge.ide       745699                       # Total bandwidth to/from this memory (bytes/s)
+drivesys.physmem.bw_total::ethernet               441                       # Total bandwidth to/from this memory (bytes/s)
+drivesys.physmem.bw_total::cpu.dtb.walker        54519                       # Total bandwidth to/from this memory (bytes/s)
+drivesys.physmem.bw_total::cpu.itb.walker        29995                       # Total bandwidth to/from this memory (bytes/s)
+drivesys.physmem.bw_total::cpu.inst        1043204134                       # Total bandwidth to/from this memory (bytes/s)
+drivesys.physmem.bw_total::cpu.data         151560761                       # Total bandwidth to/from this memory (bytes/s)
+drivesys.physmem.bw_total::total           1195595549                       # Total bandwidth to/from this memory (bytes/s)
 drivesys.pc.south_bridge.ide.disks0.dma_read_full_pages           31                       # Number of full page size DMA reads (not PRD).
 drivesys.pc.south_bridge.ide.disks0.dma_read_bytes       126976                       # Number of bytes transfered via DMA reads (not PRD).
 drivesys.pc.south_bridge.ide.disks0.dma_read_txs           31                       # Number of DMA read transactions (not PRD).
@@ -203,9 +203,9 @@ drivesys.pc.south_bridge.ide.disks1.dma_write_full_pages            1           
 drivesys.pc.south_bridge.ide.disks1.dma_write_bytes         4096                       # Number of bytes transfered via DMA writes.
 drivesys.pc.south_bridge.ide.disks1.dma_write_txs            1                       # Number of DMA write transactions.
 drivesys.ethernet.txBytes                         302                       # Bytes Transmitted
-drivesys.ethernet.rxBytes                         423                       # Bytes Received
+drivesys.ethernet.rxBytes                         501                       # Bytes Received
 drivesys.ethernet.txPackets                         5                       # Number of Packets Transmitted
-drivesys.ethernet.rxPackets                         7                       # Number of Packets Received
+drivesys.ethernet.rxPackets                         8                       # Number of Packets Received
 drivesys.ethernet.txIpChecksums                     0                       # Number of tx IP Checksums done by device
 drivesys.ethernet.rxIpChecksums                     0                       # Number of rx IP Checksums done by device
 drivesys.ethernet.txTcpChecksums                    0                       # Number of tx TCP Checksums done by device
@@ -216,14 +216,14 @@ drivesys.ethernet.descDMAReads                      0                       # Nu
 drivesys.ethernet.descDMAWrites                     0                       # Number of descriptors the device wrote w/ DMA
 drivesys.ethernet.descDmaReadBytes                  0                       # number of descriptor bytes read w/ DMA
 drivesys.ethernet.descDmaWriteBytes                 0                       # number of descriptor bytes write w/ DMA
-drivesys.ethernet.totBandwidth                   1167                       # Total Bandwidth (bits/s)
-drivesys.ethernet.totPackets                       12                       # Total Packets
-drivesys.ethernet.totBytes                        725                       # Total Bytes
-drivesys.ethernet.totPPS                            2                       # Total Tranmission Rate (packets/s)
-drivesys.ethernet.txBandwidth                     486                       # Transmit Bandwidth (bits/s)
-drivesys.ethernet.rxBandwidth                     681                       # Receive Bandwidth (bits/s)
+drivesys.ethernet.totBandwidth                   1264                       # Total Bandwidth (bits/s)
+drivesys.ethernet.totPackets                       13                       # Total Packets
+drivesys.ethernet.totBytes                        803                       # Total Bytes
+drivesys.ethernet.totPPS                            3                       # Total Tranmission Rate (packets/s)
+drivesys.ethernet.txBandwidth                     475                       # Transmit Bandwidth (bits/s)
+drivesys.ethernet.rxBandwidth                     788                       # Receive Bandwidth (bits/s)
 drivesys.ethernet.txPPS                             1                       # Packet Tranmission Rate (packets/s)
-drivesys.ethernet.rxPPS                             1                       # Packet Reception Rate (packets/s)
+drivesys.ethernet.rxPPS                             2                       # Packet Reception Rate (packets/s)
 drivesys.ethernet.postedSwi                         0                       # number of software interrupts posted to CPU
 drivesys.ethernet.coalescedSwi                      0                       # average number of Swi's coalesced into each post
 drivesys.ethernet.totalSwi                          0                       # total number of Swi written to ISR
@@ -249,125 +249,125 @@ drivesys.ethernet.postedRxOrn                       0                       # nu
 drivesys.ethernet.coalescedRxOrn                    0                       # average number of RxOrn's coalesced into each post
 drivesys.ethernet.totalRxOrn                        0                       # total number of RxOrn written to ISR
 drivesys.ethernet.coalescedTotal                    0                       # average number of interrupts coalesced into each post
-drivesys.ethernet.postedInterrupts                 11                       # number of posts to CPU
+drivesys.ethernet.postedInterrupts                 15                       # number of posts to CPU
 drivesys.ethernet.droppedPackets                    0                       # number of packets dropped
-drivesys.cpu.numCycles                    14928570220                       # number of cpu cycles simulated
+drivesys.cpu.numCycles                    15264801087                       # number of cpu cycles simulated
 drivesys.cpu.numWorkItemsStarted                    0                       # number of work items this cpu started
 drivesys.cpu.numWorkItemsCompleted                  0                       # number of work items this cpu completed
-drivesys.cpu.committedInsts                 512818163                       # Number of instructions committed
-drivesys.cpu.committedOps                  1138398228                       # Number of ops (including micro ops) committed
-drivesys.cpu.num_int_alu_accesses          1047838079                       # Number of integer alu accesses
+drivesys.cpu.committedInsts                 512878945                       # Number of instructions committed
+drivesys.cpu.committedOps                  1138517508                       # Number of ops (including micro ops) committed
+drivesys.cpu.num_int_alu_accesses          1047957068                       # Number of integer alu accesses
 drivesys.cpu.num_fp_alu_accesses                43129                       # Number of float alu accesses
 drivesys.cpu.num_func_calls                         0                       # number of times a function call or return occured
-drivesys.cpu.num_conditional_control_insts    112053322                       # number of instructions that are conditional controls
-drivesys.cpu.num_int_insts                 1047838079                       # number of integer instructions
+drivesys.cpu.num_conditional_control_insts    112059999                       # number of instructions that are conditional controls
+drivesys.cpu.num_int_insts                 1047957068                       # number of integer instructions
 drivesys.cpu.num_fp_insts                       43129                       # number of float instructions
-drivesys.cpu.num_int_register_reads        2404693625                       # number of times the integer registers were read
-drivesys.cpu.num_int_register_writes       1232455020                       # number of times the integer registers were written
+drivesys.cpu.num_int_register_reads        2404987294                       # number of times the integer registers were read
+drivesys.cpu.num_int_register_writes       1232594569                       # number of times the integer registers were written
 drivesys.cpu.num_fp_register_reads              71028                       # number of times the floating registers were read
 drivesys.cpu.num_fp_register_writes             35056                       # number of times the floating registers were written
-drivesys.cpu.num_mem_refs                   149871994                       # number of memory refs
-drivesys.cpu.num_load_insts                 117716197                       # Number of load instructions
-drivesys.cpu.num_store_insts                 32155797                       # Number of store instructions
-drivesys.cpu.num_idle_cycles             13640214750.272512                       # Number of idle cycles
-drivesys.cpu.num_busy_cycles             1288355469.727487                       # Number of busy cycles
-drivesys.cpu.not_idle_fraction               0.086301                       # Percentage of non-idle cycles
-drivesys.cpu.idle_fraction                   0.913699                       # Percentage of idle cycles
+drivesys.cpu.num_mem_refs                   149900245                       # number of memory refs
+drivesys.cpu.num_load_insts                 117733681                       # Number of load instructions
+drivesys.cpu.num_store_insts                 32166564                       # Number of store instructions
+drivesys.cpu.num_idle_cycles             13976307512.622845                       # Number of idle cycles
+drivesys.cpu.num_busy_cycles             1288493574.377155                       # Number of busy cycles
+drivesys.cpu.not_idle_fraction               0.084409                       # Percentage of non-idle cycles
+drivesys.cpu.idle_fraction                   0.915591                       # Percentage of idle cycles
 drivesys.cpu.kern.inst.arm                          0                       # number of arm instructions executed
 drivesys.cpu.kern.inst.quiesce                      0                       # number of quiesce instructions executed
 
 ---------- End Simulation Statistics   ----------
 
 ---------- Begin Simulation Statistics ----------
-sim_seconds                                 20.003772                       # Number of seconds simulated
-sim_ticks                                20003771516688                       # Number of ticks simulated
-final_tick                               24975274295097                       # Number of ticks from beginning of simulation (restored from checkpoints and never reset)
+sim_seconds                                 20.003784                       # Number of seconds simulated
+sim_ticks                                20003784066126                       # Number of ticks simulated
+final_tick                               25087255775856                       # Number of ticks from beginning of simulation (restored from checkpoints and never reset)
 sim_freq                                 1000000000000                       # Frequency of simulated ticks
-host_inst_rate                                4843893                       # Simulator instruction rate (inst/s)
-host_op_rate                                 10252028                       # Simulator op (including micro ops) rate (op/s)
-host_tick_rate                            65193558043                       # Simulator tick rate (ticks/s)
-host_mem_usage                                4546948                       # Number of bytes of host memory used
-host_seconds                                   306.84                       # Real time elapsed on the host
-sim_insts                                  1486283684                       # Number of instructions simulated
-sim_ops                                    3145697440                       # Number of ops (including micro ops) simulated
-testsys.physmem.bytes_read::pc.south_bridge.ide         1440                       # Number of bytes read from this memory
-testsys.physmem.bytes_read::ethernet          2137566                       # Number of bytes read from this memory
-testsys.physmem.bytes_read::cpu.dtb.walker      1400536                       # Number of bytes read from this memory
-testsys.physmem.bytes_read::cpu.itb.walker       559136                       # Number of bytes read from this memory
-testsys.physmem.bytes_read::cpu.inst       2160387352                       # Number of bytes read from this memory
-testsys.physmem.bytes_read::cpu.data        367444664                       # Number of bytes read from this memory
-testsys.physmem.bytes_read::total          2531930694                       # Number of bytes read from this memory
-testsys.physmem.bytes_inst_read::cpu.inst   2160387352                       # Number of instructions bytes read from this memory
-testsys.physmem.bytes_inst_read::total     2160387352                       # Number of instructions bytes read from this memory
-testsys.physmem.bytes_written::pc.south_bridge.ide       737280                       # Number of bytes written to this memory
-testsys.physmem.bytes_written::ethernet       2467518                       # Number of bytes written to this memory
-testsys.physmem.bytes_written::cpu.data     247055409                       # Number of bytes written to this memory
-testsys.physmem.bytes_written::total        250260207                       # Number of bytes written to this memory
-testsys.physmem.num_reads::pc.south_bridge.ide          180                       # Number of read requests responded to by this memory
-testsys.physmem.num_reads::ethernet             78842                       # Number of read requests responded to by this memory
-testsys.physmem.num_reads::cpu.dtb.walker       175067                       # Number of read requests responded to by this memory
-testsys.physmem.num_reads::cpu.itb.walker        69892                       # Number of read requests responded to by this memory
-testsys.physmem.num_reads::cpu.inst         270048419                       # Number of read requests responded to by this memory
-testsys.physmem.num_reads::cpu.data          59680665                       # Number of read requests responded to by this memory
-testsys.physmem.num_reads::total            330053065                       # Number of read requests responded to by this memory
-testsys.physmem.num_writes::pc.south_bridge.ide        11520                       # Number of write requests responded to by this memory
-testsys.physmem.num_writes::ethernet            78705                       # Number of write requests responded to by this memory
-testsys.physmem.num_writes::cpu.data         36962824                       # Number of write requests responded to by this memory
-testsys.physmem.num_writes::total            37053049                       # Number of write requests responded to by this memory
-testsys.physmem.bw_read::pc.south_bridge.ide           72                       # Total read bandwidth from this memory (bytes/s)
-testsys.physmem.bw_read::ethernet              106858                       # Total read bandwidth from this memory (bytes/s)
-testsys.physmem.bw_read::cpu.dtb.walker         70014                       # Total read bandwidth from this memory (bytes/s)
-testsys.physmem.bw_read::cpu.itb.walker         27952                       # Total read bandwidth from this memory (bytes/s)
-testsys.physmem.bw_read::cpu.inst           107999002                       # Total read bandwidth from this memory (bytes/s)
-testsys.physmem.bw_read::cpu.data            18368769                       # Total read bandwidth from this memory (bytes/s)
-testsys.physmem.bw_read::total              126572666                       # Total read bandwidth from this memory (bytes/s)
-testsys.physmem.bw_inst_read::cpu.inst      107999002                       # Instruction read bandwidth from this memory (bytes/s)
-testsys.physmem.bw_inst_read::total         107999002                       # Instruction read bandwidth from this memory (bytes/s)
-testsys.physmem.bw_write::pc.south_bridge.ide        36857                       # Write bandwidth from this memory (bytes/s)
-testsys.physmem.bw_write::ethernet             123353                       # Write bandwidth from this memory (bytes/s)
-testsys.physmem.bw_write::cpu.data           12350441                       # Write bandwidth from this memory (bytes/s)
-testsys.physmem.bw_write::total              12510651                       # Write bandwidth from this memory (bytes/s)
-testsys.physmem.bw_total::pc.south_bridge.ide        36929                       # Total bandwidth to/from this memory (bytes/s)
-testsys.physmem.bw_total::ethernet             230211                       # Total bandwidth to/from this memory (bytes/s)
-testsys.physmem.bw_total::cpu.dtb.walker        70014                       # Total bandwidth to/from this memory (bytes/s)
-testsys.physmem.bw_total::cpu.itb.walker        27952                       # Total bandwidth to/from this memory (bytes/s)
-testsys.physmem.bw_total::cpu.inst          107999002                       # Total bandwidth to/from this memory (bytes/s)
-testsys.physmem.bw_total::cpu.data           30719211                       # Total bandwidth to/from this memory (bytes/s)
-testsys.physmem.bw_total::total             139083317                       # Total bandwidth to/from this memory (bytes/s)
+host_inst_rate                                4109928                       # Simulator instruction rate (inst/s)
+host_op_rate                                  8703478                       # Simulator op (including micro ops) rate (op/s)
+host_tick_rate                            54854353177                       # Simulator tick rate (ticks/s)
+host_mem_usage                                4557296                       # Number of bytes of host memory used
+host_seconds                                   364.67                       # Real time elapsed on the host
+sim_insts                                  1498770934                       # Number of instructions simulated
+sim_ops                                    3173904752                       # Number of ops (including micro ops) simulated
+testsys.physmem.bytes_read::pc.south_bridge.ide         1040                       # Number of bytes read from this memory
+testsys.physmem.bytes_read::ethernet          2111202                       # Number of bytes read from this memory
+testsys.physmem.bytes_read::cpu.dtb.walker      1355248                       # Number of bytes read from this memory
+testsys.physmem.bytes_read::cpu.itb.walker       541368                       # Number of bytes read from this memory
+testsys.physmem.bytes_read::cpu.inst       2131653984                       # Number of bytes read from this memory
+testsys.physmem.bytes_read::cpu.data        362726902                       # Number of bytes read from this memory
+testsys.physmem.bytes_read::total          2498389744                       # Number of bytes read from this memory
+testsys.physmem.bytes_inst_read::cpu.inst   2131653984                       # Number of instructions bytes read from this memory
+testsys.physmem.bytes_inst_read::total     2131653984                       # Number of instructions bytes read from this memory
+testsys.physmem.bytes_written::pc.south_bridge.ide       532480                       # Number of bytes written to this memory
+testsys.physmem.bytes_written::ethernet       2431536                       # Number of bytes written to this memory
+testsys.physmem.bytes_written::cpu.data     243834053                       # Number of bytes written to this memory
+testsys.physmem.bytes_written::total        246798069                       # Number of bytes written to this memory
+testsys.physmem.num_reads::pc.south_bridge.ide          130                       # Number of read requests responded to by this memory
+testsys.physmem.num_reads::ethernet             77843                       # Number of read requests responded to by this memory
+testsys.physmem.num_reads::cpu.dtb.walker       169406                       # Number of read requests responded to by this memory
+testsys.physmem.num_reads::cpu.itb.walker        67671                       # Number of read requests responded to by this memory
+testsys.physmem.num_reads::cpu.inst         266456748                       # Number of read requests responded to by this memory
+testsys.physmem.num_reads::cpu.data          58899218                       # Number of read requests responded to by this memory
+testsys.physmem.num_reads::total            325671016                       # Number of read requests responded to by this memory
+testsys.physmem.num_writes::pc.south_bridge.ide         8320                       # Number of write requests responded to by this memory
+testsys.physmem.num_writes::ethernet            77597                       # Number of write requests responded to by this memory
+testsys.physmem.num_writes::cpu.data         36477743                       # Number of write requests responded to by this memory
+testsys.physmem.num_writes::total            36563660                       # Number of write requests responded to by this memory
+testsys.physmem.bw_read::pc.south_bridge.ide           52                       # Total read bandwidth from this memory (bytes/s)
+testsys.physmem.bw_read::ethernet              105540                       # Total read bandwidth from this memory (bytes/s)
+testsys.physmem.bw_read::cpu.dtb.walker         67750                       # Total read bandwidth from this memory (bytes/s)
+testsys.physmem.bw_read::cpu.itb.walker         27063                       # Total read bandwidth from this memory (bytes/s)
+testsys.physmem.bw_read::cpu.inst           106562537                       # Total read bandwidth from this memory (bytes/s)
+testsys.physmem.bw_read::cpu.data            18132914                       # Total read bandwidth from this memory (bytes/s)
+testsys.physmem.bw_read::total              124895856                       # Total read bandwidth from this memory (bytes/s)
+testsys.physmem.bw_inst_read::cpu.inst      106562537                       # Instruction read bandwidth from this memory (bytes/s)
+testsys.physmem.bw_inst_read::total         106562537                       # Instruction read bandwidth from this memory (bytes/s)
+testsys.physmem.bw_write::pc.south_bridge.ide        26619                       # Write bandwidth from this memory (bytes/s)
+testsys.physmem.bw_write::ethernet             121554                       # Write bandwidth from this memory (bytes/s)
+testsys.physmem.bw_write::cpu.data           12189396                       # Write bandwidth from this memory (bytes/s)
+testsys.physmem.bw_write::total              12337569                       # Write bandwidth from this memory (bytes/s)
+testsys.physmem.bw_total::pc.south_bridge.ide        26671                       # Total bandwidth to/from this memory (bytes/s)
+testsys.physmem.bw_total::ethernet             227094                       # Total bandwidth to/from this memory (bytes/s)
+testsys.physmem.bw_total::cpu.dtb.walker        67750                       # Total bandwidth to/from this memory (bytes/s)
+testsys.physmem.bw_total::cpu.itb.walker        27063                       # Total bandwidth to/from this memory (bytes/s)
+testsys.physmem.bw_total::cpu.inst          106562537                       # Total bandwidth to/from this memory (bytes/s)
+testsys.physmem.bw_total::cpu.data           30322311                       # Total bandwidth to/from this memory (bytes/s)
+testsys.physmem.bw_total::total             137233426                       # Total bandwidth to/from this memory (bytes/s)
 testsys.pc.south_bridge.ide.disks0.dma_read_full_pages            0                       # Number of full page size DMA reads (not PRD).
 testsys.pc.south_bridge.ide.disks0.dma_read_bytes            0                       # Number of bytes transfered via DMA reads (not PRD).
 testsys.pc.south_bridge.ide.disks0.dma_read_txs            0                       # Number of DMA read transactions (not PRD).
-testsys.pc.south_bridge.ide.disks0.dma_write_full_pages          180                       # Number of full page size DMA writes.
-testsys.pc.south_bridge.ide.disks0.dma_write_bytes       737280                       # Number of bytes transfered via DMA writes.
-testsys.pc.south_bridge.ide.disks0.dma_write_txs          180                       # Number of DMA write transactions.
+testsys.pc.south_bridge.ide.disks0.dma_write_full_pages          130                       # Number of full page size DMA writes.
+testsys.pc.south_bridge.ide.disks0.dma_write_bytes       532480                       # Number of bytes transfered via DMA writes.
+testsys.pc.south_bridge.ide.disks0.dma_write_txs          130                       # Number of DMA write transactions.
 testsys.pc.south_bridge.ide.disks1.dma_read_full_pages            0                       # Number of full page size DMA reads (not PRD).
 testsys.pc.south_bridge.ide.disks1.dma_read_bytes            0                       # Number of bytes transfered via DMA reads (not PRD).
 testsys.pc.south_bridge.ide.disks1.dma_read_txs            0                       # Number of DMA read transactions (not PRD).
 testsys.pc.south_bridge.ide.disks1.dma_write_full_pages            0                       # Number of full page size DMA writes.
 testsys.pc.south_bridge.ide.disks1.dma_write_bytes            0                       # Number of bytes transfered via DMA writes.
 testsys.pc.south_bridge.ide.disks1.dma_write_txs            0                       # Number of DMA write transactions.
-testsys.ethernet.txBytes                      1262062                       # Bytes Transmitted
-testsys.ethernet.rxBytes                      1592014                       # Bytes Received
-testsys.ethernet.txPackets                      18223                       # Number of Packets Transmitted
-testsys.ethernet.rxPackets                      15354                       # Number of Packets Received
+testsys.ethernet.txBytes                      1246962                       # Bytes Transmitted
+testsys.ethernet.rxBytes                      1567296                       # Bytes Received
+testsys.ethernet.txPackets                      18000                       # Number of Packets Transmitted
+testsys.ethernet.rxPackets                      15169                       # Number of Packets Received
 testsys.ethernet.txIpChecksums                      0                       # Number of tx IP Checksums done by device
 testsys.ethernet.rxIpChecksums                      0                       # Number of rx IP Checksums done by device
-testsys.ethernet.txTcpChecksums                 10571                       # Number of tx TCP Checksums done by device
-testsys.ethernet.rxTcpChecksums                 15349                       # Number of rx TCP Checksums done by device
+testsys.ethernet.txTcpChecksums                 10423                       # Number of tx TCP Checksums done by device
+testsys.ethernet.rxTcpChecksums                 15164                       # Number of rx TCP Checksums done by device
 testsys.ethernet.txUdpChecksums                     0                       # Number of tx UDP Checksums done by device
 testsys.ethernet.rxUdpChecksums                     0                       # Number of rx UDP Checksums done by device
 testsys.ethernet.descDMAReads                       0                       # Number of descriptors the device read w/ DMA
 testsys.ethernet.descDMAWrites                      0                       # Number of descriptors the device wrote w/ DMA
 testsys.ethernet.descDmaReadBytes                   0                       # number of descriptor bytes read w/ DMA
 testsys.ethernet.descDmaWriteBytes                  0                       # number of descriptor bytes write w/ DMA
-testsys.ethernet.totBandwidth                 1141415                       # Total Bandwidth (bits/s)
-testsys.ethernet.totPackets                     33577                       # Total Packets
-testsys.ethernet.totBytes                     2854076                       # Total Bytes
-testsys.ethernet.totPPS                          1679                       # Total Tranmission Rate (packets/s)
-testsys.ethernet.txBandwidth                   504730                       # Transmit Bandwidth (bits/s)
-testsys.ethernet.rxBandwidth                   636686                       # Receive Bandwidth (bits/s)
-testsys.ethernet.txPPS                            911                       # Packet Tranmission Rate (packets/s)
-testsys.ethernet.rxPPS                            768                       # Packet Reception Rate (packets/s)
+testsys.ethernet.totBandwidth                 1125490                       # Total Bandwidth (bits/s)
+testsys.ethernet.totPackets                     33169                       # Total Packets
+testsys.ethernet.totBytes                     2814258                       # Total Bytes
+testsys.ethernet.totPPS                          1658                       # Total Tranmission Rate (packets/s)
+testsys.ethernet.txBandwidth                   498690                       # Transmit Bandwidth (bits/s)
+testsys.ethernet.rxBandwidth                   626800                       # Receive Bandwidth (bits/s)
+testsys.ethernet.txPPS                            900                       # Packet Tranmission Rate (packets/s)
+testsys.ethernet.rxPPS                            758                       # Packet Reception Rate (packets/s)
 testsys.ethernet.postedSwi                          0                       # number of software interrupts posted to CPU
 testsys.ethernet.coalescedSwi                       0                       # average number of Swi's coalesced into each post
 testsys.ethernet.totalSwi                           0                       # total number of Swi written to ISR
@@ -393,76 +393,76 @@ testsys.ethernet.postedRxOrn                        0                       # nu
 testsys.ethernet.coalescedRxOrn                     0                       # average number of RxOrn's coalesced into each post
 testsys.ethernet.totalRxOrn                         0                       # total number of RxOrn written to ISR
 testsys.ethernet.coalescedTotal                     0                       # average number of interrupts coalesced into each post
-testsys.ethernet.postedInterrupts                9384                       # number of posts to CPU
+testsys.ethernet.postedInterrupts                9328                       # number of posts to CPU
 testsys.ethernet.droppedPackets                     0                       # number of packets dropped
-testsys.cpu.numCycles                     60070748887                       # number of cpu cycles simulated
+testsys.cpu.numCycles                     60070777346                       # number of cpu cycles simulated
 testsys.cpu.numWorkItemsStarted                     0                       # number of work items this cpu started
 testsys.cpu.numWorkItemsCompleted                   0                       # number of work items this cpu completed
-testsys.cpu.committedInsts                  202083942                       # Number of instructions committed
-testsys.cpu.committedOps                    380680096                       # Number of ops (including micro ops) committed
-testsys.cpu.num_int_alu_accesses            377042558                       # Number of integer alu accesses
-testsys.cpu.num_fp_alu_accesses               2557094                       # Number of float alu accesses
+testsys.cpu.committedInsts                  199394383                       # Number of instructions committed
+testsys.cpu.committedOps                    375656055                       # Number of ops (including micro ops) committed
+testsys.cpu.num_int_alu_accesses            372069234                       # Number of integer alu accesses
+testsys.cpu.num_fp_alu_accesses               2517815                       # Number of float alu accesses
 testsys.cpu.num_func_calls                          0                       # number of times a function call or return occured
-testsys.cpu.num_conditional_control_insts     25780376                       # number of instructions that are conditional controls
-testsys.cpu.num_int_insts                   377042558                       # number of integer instructions
-testsys.cpu.num_fp_insts                      2557094                       # number of float instructions
-testsys.cpu.num_int_register_reads          965331283                       # number of times the integer registers were read
-testsys.cpu.num_int_register_writes         420062111                       # number of times the integer registers were written
-testsys.cpu.num_fp_register_reads             4632416                       # number of times the floating registers were read
-testsys.cpu.num_fp_register_writes            2396707                       # number of times the floating registers were written
-testsys.cpu.num_mem_refs                     96764640                       # number of memory refs
-testsys.cpu.num_load_insts                   59711635                       # Number of load instructions
-testsys.cpu.num_store_insts                  37053005                       # Number of store instructions
-testsys.cpu.num_idle_cycles              59622668407.148140                       # Number of idle cycles
-testsys.cpu.num_busy_cycles              448080479.851861                       # Number of busy cycles
-testsys.cpu.not_idle_fraction                0.007459                       # Percentage of non-idle cycles
-testsys.cpu.idle_fraction                    0.992541                       # Percentage of idle cycles
+testsys.cpu.num_conditional_control_insts     25428142                       # number of instructions that are conditional controls
+testsys.cpu.num_int_insts                   372069234                       # number of integer instructions
+testsys.cpu.num_fp_insts                      2517815                       # number of float instructions
+testsys.cpu.num_int_register_reads          952553531                       # number of times the integer registers were read
+testsys.cpu.num_int_register_writes         414514147                       # number of times the integer registers were written
+testsys.cpu.num_fp_register_reads             4560873                       # number of times the floating registers were read
+testsys.cpu.num_fp_register_writes            2359600                       # number of times the floating registers were written
+testsys.cpu.num_mem_refs                     95496822                       # number of memory refs
+testsys.cpu.num_load_insts                   58930042                       # Number of load instructions
+testsys.cpu.num_store_insts                  36566780                       # Number of store instructions
+testsys.cpu.num_idle_cycles              59628615078.141319                       # Number of idle cycles
+testsys.cpu.num_busy_cycles              442162267.858682                       # Number of busy cycles
+testsys.cpu.not_idle_fraction                0.007361                       # Percentage of non-idle cycles
+testsys.cpu.idle_fraction                    0.992639                       # Percentage of idle cycles
 testsys.cpu.kern.inst.arm                           0                       # number of arm instructions executed
 testsys.cpu.kern.inst.quiesce                       0                       # number of quiesce instructions executed
-drivesys.physmem.bytes_read::pc.south_bridge.ide         5784                       # Number of bytes read from this memory
-drivesys.physmem.bytes_read::ethernet         2499006                       # Number of bytes read from this memory
-drivesys.physmem.bytes_read::cpu.dtb.walker      1247864                       # Number of bytes read from this memory
-drivesys.physmem.bytes_read::cpu.itb.walker        72080                       # Number of bytes read from this memory
-drivesys.physmem.bytes_read::cpu.inst      2699751616                       # Number of bytes read from this memory
-drivesys.physmem.bytes_read::cpu.data       446567884                       # Number of bytes read from this memory
-drivesys.physmem.bytes_read::total         3150144234                       # Number of bytes read from this memory
-drivesys.physmem.bytes_inst_read::cpu.inst   2699751616                       # Number of instructions bytes read from this memory
-drivesys.physmem.bytes_inst_read::total    2699751616                       # Number of instructions bytes read from this memory
+drivesys.physmem.bytes_read::pc.south_bridge.ide         5768                       # Number of bytes read from this memory
+drivesys.physmem.bytes_read::ethernet         2461840                       # Number of bytes read from this memory
+drivesys.physmem.bytes_read::cpu.dtb.walker      1220848                       # Number of bytes read from this memory
+drivesys.physmem.bytes_read::cpu.itb.walker        74000                       # Number of bytes read from this memory
+drivesys.physmem.bytes_read::cpu.inst      2661861680                       # Number of bytes read from this memory
+drivesys.physmem.bytes_read::cpu.data       440526007                       # Number of bytes read from this memory
+drivesys.physmem.bytes_read::total         3106150143                       # Number of bytes read from this memory
+drivesys.physmem.bytes_inst_read::cpu.inst   2661861680                       # Number of instructions bytes read from this memory
+drivesys.physmem.bytes_inst_read::total    2661861680                       # Number of instructions bytes read from this memory
 drivesys.physmem.bytes_written::pc.south_bridge.ide      2961408                       # Number of bytes written to this memory
-drivesys.physmem.bytes_written::ethernet      2169054                       # Number of bytes written to this memory
-drivesys.physmem.bytes_written::cpu.data    300655785                       # Number of bytes written to this memory
-drivesys.physmem.bytes_written::total       305786247                       # Number of bytes written to this memory
-drivesys.physmem.num_reads::pc.south_bridge.ide          723                       # Number of read requests responded to by this memory
-drivesys.physmem.num_reads::ethernet            81199                       # Number of read requests responded to by this memory
-drivesys.physmem.num_reads::cpu.dtb.walker       155983                       # Number of read requests responded to by this memory
-drivesys.physmem.num_reads::cpu.itb.walker         9010                       # Number of read requests responded to by this memory
-drivesys.physmem.num_reads::cpu.inst        337468952                       # Number of read requests responded to by this memory
-drivesys.physmem.num_reads::cpu.data         70766147                       # Number of read requests responded to by this memory
-drivesys.physmem.num_reads::total           408482014                       # Number of read requests responded to by this memory
+drivesys.physmem.bytes_written::ethernet      2141506                       # Number of bytes written to this memory
+drivesys.physmem.bytes_written::cpu.data    296529794                       # Number of bytes written to this memory
+drivesys.physmem.bytes_written::total       301632708                       # Number of bytes written to this memory
+drivesys.physmem.num_reads::pc.south_bridge.ide          721                       # Number of read requests responded to by this memory
+drivesys.physmem.num_reads::ethernet            80035                       # Number of read requests responded to by this memory
+drivesys.physmem.num_reads::cpu.dtb.walker       152606                       # Number of read requests responded to by this memory
+drivesys.physmem.num_reads::cpu.itb.walker         9250                       # Number of read requests responded to by this memory
+drivesys.physmem.num_reads::cpu.inst        332732710                       # Number of read requests responded to by this memory
+drivesys.physmem.num_reads::cpu.data         69815516                       # Number of read requests responded to by this memory
+drivesys.physmem.num_reads::total           402790838                       # Number of read requests responded to by this memory
 drivesys.physmem.num_writes::pc.south_bridge.ide        46272                       # Number of write requests responded to by this memory
-drivesys.physmem.num_writes::ethernet           76792                       # Number of write requests responded to by this memory
-drivesys.physmem.num_writes::cpu.data        44736736                       # Number of write requests responded to by this memory
-drivesys.physmem.num_writes::total           44859800                       # Number of write requests responded to by this memory
-drivesys.physmem.bw_read::pc.south_bridge.ide          289                       # Total read bandwidth from this memory (bytes/s)
-drivesys.physmem.bw_read::ethernet             124927                       # Total read bandwidth from this memory (bytes/s)
-drivesys.physmem.bw_read::cpu.dtb.walker        62381                       # Total read bandwidth from this memory (bytes/s)
-drivesys.physmem.bw_read::cpu.itb.walker         3603                       # Total read bandwidth from this memory (bytes/s)
-drivesys.physmem.bw_read::cpu.inst          134962130                       # Total read bandwidth from this memory (bytes/s)
-drivesys.physmem.bw_read::cpu.data           22324184                       # Total read bandwidth from this memory (bytes/s)
-drivesys.physmem.bw_read::total             157477515                       # Total read bandwidth from this memory (bytes/s)
-drivesys.physmem.bw_inst_read::cpu.inst     134962130                       # Instruction read bandwidth from this memory (bytes/s)
-drivesys.physmem.bw_inst_read::total        134962130                       # Instruction read bandwidth from this memory (bytes/s)
+drivesys.physmem.num_writes::ethernet           75817                       # Number of write requests responded to by this memory
+drivesys.physmem.num_writes::cpu.data        44120366                       # Number of write requests responded to by this memory
+drivesys.physmem.num_writes::total           44242455                       # Number of write requests responded to by this memory
+drivesys.physmem.bw_read::pc.south_bridge.ide          288                       # Total read bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_read::ethernet             123069                       # Total read bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_read::cpu.dtb.walker        61031                       # Total read bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_read::cpu.itb.walker         3699                       # Total read bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_read::cpu.inst          133067907                       # Total read bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_read::cpu.data           22022134                       # Total read bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_read::total             155278128                       # Total read bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_inst_read::cpu.inst     133067907                       # Instruction read bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_inst_read::total        133067907                       # Instruction read bandwidth from this memory (bytes/s)
 drivesys.physmem.bw_write::pc.south_bridge.ide       148042                       # Write bandwidth from this memory (bytes/s)
-drivesys.physmem.bw_write::ethernet            108432                       # Write bandwidth from this memory (bytes/s)
-drivesys.physmem.bw_write::cpu.data          15029955                       # Write bandwidth from this memory (bytes/s)
-drivesys.physmem.bw_write::total             15286430                       # Write bandwidth from this memory (bytes/s)
-drivesys.physmem.bw_total::pc.south_bridge.ide       148332                       # Total bandwidth to/from this memory (bytes/s)
-drivesys.physmem.bw_total::ethernet            233359                       # Total bandwidth to/from this memory (bytes/s)
-drivesys.physmem.bw_total::cpu.dtb.walker        62381                       # Total bandwidth to/from this memory (bytes/s)
-drivesys.physmem.bw_total::cpu.itb.walker         3603                       # Total bandwidth to/from this memory (bytes/s)
-drivesys.physmem.bw_total::cpu.inst         134962130                       # Total bandwidth to/from this memory (bytes/s)
-drivesys.physmem.bw_total::cpu.data          37354139                       # Total bandwidth to/from this memory (bytes/s)
-drivesys.physmem.bw_total::total            172763945                       # Total bandwidth to/from this memory (bytes/s)
+drivesys.physmem.bw_write::ethernet            107055                       # Write bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_write::cpu.data          14823685                       # Write bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_write::total             15078782                       # Write bandwidth from this memory (bytes/s)
+drivesys.physmem.bw_total::pc.south_bridge.ide       148331                       # Total bandwidth to/from this memory (bytes/s)
+drivesys.physmem.bw_total::ethernet            230124                       # Total bandwidth to/from this memory (bytes/s)
+drivesys.physmem.bw_total::cpu.dtb.walker        61031                       # Total bandwidth to/from this memory (bytes/s)
+drivesys.physmem.bw_total::cpu.itb.walker         3699                       # Total bandwidth to/from this memory (bytes/s)
+drivesys.physmem.bw_total::cpu.inst         133067907                       # Total bandwidth to/from this memory (bytes/s)
+drivesys.physmem.bw_total::cpu.data          36845819                       # Total bandwidth to/from this memory (bytes/s)
+drivesys.physmem.bw_total::total            170356910                       # Total bandwidth to/from this memory (bytes/s)
 drivesys.pc.south_bridge.ide.disks0.dma_read_full_pages            0                       # Number of full page size DMA reads (not PRD).
 drivesys.pc.south_bridge.ide.disks0.dma_read_bytes            0                       # Number of bytes transfered via DMA reads (not PRD).
 drivesys.pc.south_bridge.ide.disks0.dma_read_txs            0                       # Number of DMA read transactions (not PRD).
@@ -475,28 +475,28 @@ drivesys.pc.south_bridge.ide.disks1.dma_read_txs            0                   
 drivesys.pc.south_bridge.ide.disks1.dma_write_full_pages            0                       # Number of full page size DMA writes.
 drivesys.pc.south_bridge.ide.disks1.dma_write_bytes            0                       # Number of bytes transfered via DMA writes.
 drivesys.pc.south_bridge.ide.disks1.dma_write_txs            0                       # Number of DMA write transactions.
-drivesys.ethernet.txBytes                     1592014                       # Bytes Transmitted
-drivesys.ethernet.rxBytes                     1262062                       # Bytes Received
-drivesys.ethernet.txPackets                     15354                       # Number of Packets Transmitted
-drivesys.ethernet.rxPackets                     18223                       # Number of Packets Received
+drivesys.ethernet.txBytes                     1567296                       # Bytes Transmitted
+drivesys.ethernet.rxBytes                     1246962                       # Bytes Received
+drivesys.ethernet.txPackets                     15169                       # Number of Packets Transmitted
+drivesys.ethernet.rxPackets                     18000                       # Number of Packets Received
 drivesys.ethernet.txIpChecksums                     0                       # Number of tx IP Checksums done by device
 drivesys.ethernet.rxIpChecksums                     0                       # Number of rx IP Checksums done by device
-drivesys.ethernet.txTcpChecksums                11555                       # Number of tx TCP Checksums done by device
-drivesys.ethernet.rxTcpChecksums                18218                       # Number of rx TCP Checksums done by device
+drivesys.ethernet.txTcpChecksums                11370                       # Number of tx TCP Checksums done by device
+drivesys.ethernet.rxTcpChecksums                17996                       # Number of rx TCP Checksums done by device
 drivesys.ethernet.txUdpChecksums                    0                       # Number of tx UDP Checksums done by device
 drivesys.ethernet.rxUdpChecksums                    0                       # Number of rx UDP Checksums done by device
 drivesys.ethernet.descDMAReads                      0                       # Number of descriptors the device read w/ DMA
 drivesys.ethernet.descDMAWrites                     0                       # Number of descriptors the device wrote w/ DMA
 drivesys.ethernet.descDmaReadBytes                  0                       # number of descriptor bytes read w/ DMA
 drivesys.ethernet.descDmaWriteBytes                 0                       # number of descriptor bytes write w/ DMA
-drivesys.ethernet.totBandwidth                1141415                       # Total Bandwidth (bits/s)
-drivesys.ethernet.totPackets                    33577                       # Total Packets
-drivesys.ethernet.totBytes                    2854076                       # Total Bytes
-drivesys.ethernet.totPPS                         1679                       # Total Tranmission Rate (packets/s)
-drivesys.ethernet.txBandwidth                  636686                       # Transmit Bandwidth (bits/s)
-drivesys.ethernet.rxBandwidth                  504730                       # Receive Bandwidth (bits/s)
-drivesys.ethernet.txPPS                           768                       # Packet Tranmission Rate (packets/s)
-drivesys.ethernet.rxPPS                           911                       # Packet Reception Rate (packets/s)
+drivesys.ethernet.totBandwidth                1125490                       # Total Bandwidth (bits/s)
+drivesys.ethernet.totPackets                    33169                       # Total Packets
+drivesys.ethernet.totBytes                    2814258                       # Total Bytes
+drivesys.ethernet.totPPS                         1658                       # Total Tranmission Rate (packets/s)
+drivesys.ethernet.txBandwidth                  626800                       # Transmit Bandwidth (bits/s)
+drivesys.ethernet.rxBandwidth                  498690                       # Receive Bandwidth (bits/s)
+drivesys.ethernet.txPPS                           758                       # Packet Tranmission Rate (packets/s)
+drivesys.ethernet.rxPPS                           900                       # Packet Reception Rate (packets/s)
 drivesys.ethernet.postedSwi                         0                       # number of software interrupts posted to CPU
 drivesys.ethernet.coalescedSwi                      0                       # average number of Swi's coalesced into each post
 drivesys.ethernet.totalSwi                          0                       # total number of Swi written to ISR
@@ -522,30 +522,30 @@ drivesys.ethernet.postedRxOrn                       0                       # nu
 drivesys.ethernet.coalescedRxOrn                    0                       # average number of RxOrn's coalesced into each post
 drivesys.ethernet.totalRxOrn                        0                       # total number of RxOrn written to ISR
 drivesys.ethernet.coalescedTotal                    0                       # average number of interrupts coalesced into each post
-drivesys.ethernet.postedInterrupts               8481                       # number of posts to CPU
+drivesys.ethernet.postedInterrupts               8421                       # number of posts to CPU
 drivesys.ethernet.droppedPackets                    0                       # number of packets dropped
-drivesys.cpu.numCycles                    60073237047                       # number of cpu cycles simulated
+drivesys.cpu.numCycles                    60073245080                       # number of cpu cycles simulated
 drivesys.cpu.numWorkItemsStarted                    0                       # number of work items this cpu started
 drivesys.cpu.numWorkItemsCompleted                  0                       # number of work items this cpu completed
-drivesys.cpu.committedInsts                 252186702                       # Number of instructions committed
-drivesys.cpu.committedOps                   476543618                       # Number of ops (including micro ops) committed
-drivesys.cpu.num_int_alu_accesses           472216869                       # Number of integer alu accesses
-drivesys.cpu.num_fp_alu_accesses              2039456                       # Number of float alu accesses
+drivesys.cpu.committedInsts                 248661202                       # Number of instructions committed
+drivesys.cpu.committedOps                   469970884                       # Number of ops (including micro ops) committed
+drivesys.cpu.num_int_alu_accesses           465710490                       # Number of integer alu accesses
+drivesys.cpu.num_fp_alu_accesses              2000631                       # Number of float alu accesses
 drivesys.cpu.num_func_calls                         0                       # number of times a function call or return occured
-drivesys.cpu.num_conditional_control_insts     32707147                       # number of instructions that are conditional controls
-drivesys.cpu.num_int_insts                  472216869                       # number of integer instructions
-drivesys.cpu.num_fp_insts                     2039456                       # number of float instructions
-drivesys.cpu.num_int_register_reads        1206676065                       # number of times the integer registers were read
-drivesys.cpu.num_int_register_writes        530309347                       # number of times the integer registers were written
-drivesys.cpu.num_fp_register_reads            3404638                       # number of times the floating registers were read
-drivesys.cpu.num_fp_register_writes           1665859                       # number of times the floating registers were written
-drivesys.cpu.num_mem_refs                   115569881                       # number of memory refs
-drivesys.cpu.num_load_insts                  70782075                       # Number of load instructions
-drivesys.cpu.num_store_insts                 44787806                       # Number of store instructions
-drivesys.cpu.num_idle_cycles             59513233686.794296                       # Number of idle cycles
-drivesys.cpu.num_busy_cycles             560003360.205701                       # Number of busy cycles
-drivesys.cpu.not_idle_fraction               0.009322                       # Percentage of non-idle cycles
-drivesys.cpu.idle_fraction                   0.990678                       # Percentage of idle cycles
+drivesys.cpu.num_conditional_control_insts     32232027                       # number of instructions that are conditional controls
+drivesys.cpu.num_int_insts                  465710490                       # number of integer instructions
+drivesys.cpu.num_fp_insts                     2000631                       # number of float instructions
+drivesys.cpu.num_int_register_reads        1190024931                       # number of times the integer registers were read
+drivesys.cpu.num_int_register_writes        523001895                       # number of times the integer registers were written
+drivesys.cpu.num_fp_register_reads            3339767                       # number of times the floating registers were read
+drivesys.cpu.num_fp_register_writes           1634108                       # number of times the floating registers were written
+drivesys.cpu.num_mem_refs                   114003607                       # number of memory refs
+drivesys.cpu.num_load_insts                  69831969                       # Number of load instructions
+drivesys.cpu.num_store_insts                 44171638                       # Number of store instructions
+drivesys.cpu.num_idle_cycles             59520996093.534767                       # Number of idle cycles
+drivesys.cpu.num_busy_cycles             552248986.465237                       # Number of busy cycles
+drivesys.cpu.not_idle_fraction               0.009193                       # Percentage of non-idle cycles
+drivesys.cpu.idle_fraction                   0.990807                       # Percentage of idle cycles
 drivesys.cpu.kern.inst.arm                          0                       # number of arm instructions executed
 drivesys.cpu.kern.inst.quiesce                      0                       # number of quiesce instructions executed
 

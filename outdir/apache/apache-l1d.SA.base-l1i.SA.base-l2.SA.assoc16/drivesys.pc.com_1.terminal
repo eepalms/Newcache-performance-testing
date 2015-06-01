@@ -7,7 +7,50 @@ Completed 500 requests
 Completed 1000 requests
 Completed 1500 requests
 Completed 2000 requests
-apr_pollset_poll: The timeout specified has expired (70007)
-Total of 2128 requests completed
+Completed 2500 requests
+Completed 3000 requests
+Completed 3500 requests
+Completed 4000 requests
+Completed 4500 requests
+Completed 5000 requests
+Finished 5000 requests
+
+
+Server Software:        Apache/2.4.4
+Server Hostname:        10.0.0.1
+Server Port:            8080
+
+Document Path:          /
+Document Length:        45 bytes
+
+Concurrency Level:      10
+Time taken for tests:   1.059 seconds
+Complete requests:      5000
+Failed requests:        0
+Write errors:           0
+Total transferred:      1450000 bytes
+HTML transferred:       225000 bytes
+Requests per second:    4722.70 [#/sec] (mean)
+Time per request:       2.117 [ms] (mean)
+Time per request:       0.212 [ms] (mean, across all concurrent requests)
+Transfer rate:          1337.48 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     1    2   5.4      2     126
+Waiting:        1    2   5.4      2     126
+Total:          1    2   5.4      2     126
+
+Percentage of the requests served within a certain time (ms)
+  50%      2
+  66%      2
+  75%      2
+  80%      2
+  90%      2
+  95%      2
+  98%      2
+  99%      2
+ 100%    126 (longest request)
 done.
 halting machine

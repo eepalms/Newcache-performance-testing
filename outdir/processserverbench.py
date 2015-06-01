@@ -19,10 +19,14 @@ def process_raw_stats(file_name, keywords):
 
 ############## global variables ###########
 result_all = []
-fout = open('/home/haow/stats_mse3-1.dat', 'w')
+fout = open('/home/haow/CAL-icache.dat', 'w')
+#fout = open('/home/haow/stats_mse3-1.dat', 'w')
+#fout = open('/home/haow/stats_mse3-2.dat', 'w')
 
-keywords = ['testsys.switch_cpus.ipc_total','testsys.cpu.icache.overall_miss_rate::total','testsys.l2.overall_miss_rate::switch_cpus.inst',
-'testsys.l2.overall_misses::switch_cpus.inst', 'testsys.cpu.icache.overall_accesses::total']
+keywords = ['testsys.switch_cpus.ipc_total','testsys.cpu.icache.overall_miss_rate::total']
+
+#keywords = ['testsys.switch_cpus.ipc_total','testsys.cpu.icache.overall_miss_rate::total','testsys.l2.overall_miss_rate::switch_cpus.inst',
+#'testsys.l2.overall_misses::switch_cpus.inst', 'testsys.cpu.icache.overall_accesses::total']
 
 #keywords = ['testsys.switch_cpus.ipc_total', 'testsys.cpu.dcache.overall_miss_rate::total','testsys.cpu.dcache.overall_mshr_misses::total',
 #'testsys.switch_cpus.commit.committedInsts','testsys.l2.overall_misses::switch_cpus.data','testsys.cpu.dcache.overall_accesses::total']
@@ -32,7 +36,7 @@ keywords = ['testsys.switch_cpus.ipc_total','testsys.cpu.icache.overall_miss_rat
 
 #keywords = ['system.cpu.commit.committedInsts', 'system.cpu.dcache.overall_miss_rate::total', 'system.cpu.dcache.overall_mshr_misses::total', 'system.cpu.ipc_total', 'system.l2.demand_mshr_misses::total']
 
-prog_names = ['apache/apache-','mail_t1/mail_t1-','mail_t2/mail_t2-','mail_t5/mail_t5-','smbd.0/smbd.0-','smbd.1/smbd.1-', 'ffserver.x1/ffserver.x1-', 'ffserver.x3/ffserver.x3-', 'ffserver.x30/ffserver.x30-', 'tomcat.3/tomcat.3-', 'tomcat.4/tomcat.4-', 'tomcat.5/tomcat.5-']
+prog_names = ['apache/apache-','mysql/mysql-','mail_t1/mail_t1-','mail_t2/mail_t2-','mail_t5/mail_t5-','smbd.0/smbd.0-','smbd.1/smbd.1-', 'ffserver.x1/ffserver.x1-', 'ffserver.x3/ffserver.x3-', 'ffserver.x30/ffserver.x30-', 'tomcat.3/tomcat.3-', 'tomcat.4/tomcat.4-', 'tomcat.5/tomcat.5-']
 
 #prog_names = ['canvas_redraw-', 'drawarc-', 'drawcircle-', 'drawcircle2-', 'drawimage-', 'drawrect-', 'drawtext-', 'gc-', 'kubench-', 'lesson08-', 'lesson16-2b-', 'teapot-', 'scimark2-', 'linpack-']
 
@@ -40,7 +44,7 @@ prog_names = ['apache/apache-','mail_t1/mail_t1-','mail_t2/mail_t2-','mail_t5/ma
 
 base_dir = '/home/haow/testing/outdir/'
 
-configs = ['l1i.new.nebit3-l1d.SA.base-l2.SA.base','l1i.new.base-l1d.SA.base-l2.SA.base','l1i.new.nebit5-l1d.SA.base-l2.SA.base','l1i.new.nebit6-l1d.SA.base-l2.SA.base']
+configs = ['l1d.SA.base-l1i.SA.base-l2.SA.base','l1i.new.nebit3-l1d.SA.base-l2.SA.base','l1i.new.base-l1d.SA.base-l2.SA.base','l1i.new.nebit5-l1d.SA.base-l2.SA.base','l1i.new.nebit6-l1d.SA.base-l2.SA.base']
 
 #configs = ['l1i.new.nebit3-l1d.new.base-l2.SA.base','l1i.new.base-l1d.new.base-l2.SA.base','l1i.new.nebit5-l1d.new.base-l2.SA.base','l1i.new.nebit6-l1d.new.base-l2.SA.base','l1i.new.nebit3-l1d.new.nebit6-l2.SA.base','l1i.new.base-l1d.new.nebit6-l2.SA.base','l1i.new.nebit5-l1d.new.nebit6-l2.SA.base','l1i.new.nebit6-l1d.new.nebit6-l2.SA.base']
 

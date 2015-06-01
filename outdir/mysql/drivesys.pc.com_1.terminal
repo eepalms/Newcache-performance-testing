@@ -134,7 +134,7 @@ loop: module loaded
 Intel(R) PRO/1000 Network Driver - version 7.3.20-k3-NAPI
 Copyright (c) 1999-2006 Intel Corporation.
 e1000 0000:00:01.0: enabling device (0000 -> 0002)
-e1000: 0000:00:01.0: e1000_probe: (PCI:33MHz:32-bit) 00:90:00:00:00:01
+e1000: 0000:00:01.0: e1000_probe: (PCI:33MHz:32-bit) 00:90:00:00:00:02
 e1000: eth0: e1000_probe: Intel(R) PRO/1000 Network Connection
 e1000e: Intel(R) PRO/1000 Network Driver - 0.3.3.3-k6
 e1000e: Copyright (c) 1999-2008 Intel Corporation.
@@ -163,7 +163,7 @@ ide1 at 0x170-0x177,0x376 on irq 15
 ide_generic: please use "probe_mask=0x3f" module parameter for probing all legacy ISA IDE ports
 ide-gd driver 1.18
 hda: max request size: 128KiB
-hda: 16514064 sectors (8455 MB), CHS=16383/16/63
+hda: 16383024 sectors (8388 MB), CHS=16253/16/63
  hda: hda1
 hdb: max request size: 128KiB
 hdb: 4177920 sectors (2139 MB), CHS=4144/16/63
@@ -206,15 +206,54 @@ VFS: Mounted root (ext2 filesystem).
 Freeing unused kernel memory: 316k freed
 INIT: version 2.86 booting
 mounting filesystems...
-warning: failed to read mtab
 loading script...
 setting up network...ADDRCONF(NETDEV_UP): eth0: link is not ready
 e1000: eth0: e1000_watchdog: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
 ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
-/tmp/script: 23: /tmp/script: cannot create /proc/sys/net/ipv4/ip_conntrack_max: Directory nonexistent
+/tmp/script: line 15: /proc/sys/net/ipv4/ip_conntrack_max: No such file or directory
 done.
-starting bhm...no
-time,messages,data(K),errors,connections,SSL connections
-/tmp/script: 39: [: COMMAND: unexpected operator
-done
-bash-4.2# 
+waiting for server...
+server ready
+oltp prepare
+sysbench 0.4.13:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+Random number generator seed is 0 and will be ignored
+
+
+Doing OLTP test.
+Running mixed OLTP test
+Using Special distribution (12 iterations,  1 pct of values are returned in 75 pct cases)
+Using "BEGIN" for starting transactions
+Using auto_inc on the id column
+Maximum number of requests for OLTP test is limited to 200
+Using 1 test tables
+Threads started!
+Done.
+
+OLTP test statistics:
+    queries performed:
+        read:                            2800
+        write:                           1000
+        other:                           400
+        total:                           4200
+    transactions:                        200    (232.77 per sec.)
+    deadlocks:                           0      (0.00 per sec.)
+    read/write requests:                 3800   (4422.67 per sec.)
+    other operations:                    400    (465.54 per sec.)
+
+Test execution summary:
+    total time:                          0.8592s
+    total number of events:              200
+    total time taken by event execution: 0.8574
+    per-request statistics:
+         min:                                  3.67ms
+         avg:                                  4.29ms
+         max:                                 69.93ms
+         approx.  95 percentile:               4.10ms
+
+Threads fairness:
+    events (avg/stddev):           200.0000/0.00
+    execution time (avg/stddev):   0.8574/0.00
+

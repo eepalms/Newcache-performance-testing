@@ -1,1 +1,4 @@
 time,messages,data(K),errors,connections,SSL connections
+Can't write to socket.
+done
+halting machine

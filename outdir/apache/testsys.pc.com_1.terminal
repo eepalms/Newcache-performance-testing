@@ -163,7 +163,7 @@ ide1 at 0x170-0x177,0x376 on irq 15
 ide_generic: please use "probe_mask=0x3f" module parameter for probing all legacy ISA IDE ports
 ide-gd driver 1.18
 hda: max request size: 128KiB
-hda: 16514064 sectors (8455 MB), CHS=16383/16/63
+hda: 4095504 sectors (2096 MB), CHS=4063/16/63
  hda: hda1
 hdb: max request size: 128KiB
 hdb: 4177920 sectors (2139 MB), CHS=4144/16/63
@@ -206,15 +206,12 @@ VFS: Mounted root (ext2 filesystem).
 Freeing unused kernel memory: 316k freed
 INIT: version 2.86 booting
 mounting filesystems...
-warning: failed to read mtab
 loading script...
 setting up network...ADDRCONF(NETDEV_UP): eth0: link is not ready
 e1000: eth0: e1000_watchdog: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
 ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
-/tmp/script: 23: /tmp/script: cannot create /proc/sys/net/ipv4/ip_conntrack_max: Directory nonexistent
+/tmp/script: line 23: /proc/sys/net/ipv4/ip_conntrack_max: No such file or directory
 done.
-starting bhm...no
-time,messages,data(K),errors,connections,SSL connections
-/tmp/script: 39: [: COMMAND: unexpected operator
-done
-bash-4.2# 
+starting httpd.../tmp/script: line 45: [: too many arguments
+done.
+starting bash shell...[01;31m(none)[01;34m bin #[00m 

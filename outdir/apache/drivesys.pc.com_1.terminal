@@ -134,7 +134,7 @@ loop: module loaded
 Intel(R) PRO/1000 Network Driver - version 7.3.20-k3-NAPI
 Copyright (c) 1999-2006 Intel Corporation.
 e1000 0000:00:01.0: enabling device (0000 -> 0002)
-e1000: 0000:00:01.0: e1000_probe: (PCI:33MHz:32-bit) 00:90:00:00:00:01
+e1000: 0000:00:01.0: e1000_probe: (PCI:33MHz:32-bit) 00:90:00:00:00:02
 e1000: eth0: e1000_probe: Intel(R) PRO/1000 Network Connection
 e1000e: Intel(R) PRO/1000 Network Driver - 0.3.3.3-k6
 e1000e: Copyright (c) 1999-2008 Intel Corporation.
@@ -163,7 +163,7 @@ ide1 at 0x170-0x177,0x376 on irq 15
 ide_generic: please use "probe_mask=0x3f" module parameter for probing all legacy ISA IDE ports
 ide-gd driver 1.18
 hda: max request size: 128KiB
-hda: 16514064 sectors (8455 MB), CHS=16383/16/63
+hda: 4095504 sectors (2096 MB), CHS=4063/16/63
  hda: hda1
 hdb: max request size: 128KiB
 hdb: 4177920 sectors (2139 MB), CHS=4144/16/63
@@ -206,15 +206,67 @@ VFS: Mounted root (ext2 filesystem).
 Freeing unused kernel memory: 316k freed
 INIT: version 2.86 booting
 mounting filesystems...
-warning: failed to read mtab
 loading script...
 setting up network...ADDRCONF(NETDEV_UP): eth0: link is not ready
 e1000: eth0: e1000_watchdog: NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
 ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
-/tmp/script: 23: /tmp/script: cannot create /proc/sys/net/ipv4/ip_conntrack_max: Directory nonexistent
+/tmp/script: line 22: /proc/sys/net/ipv4/ip_conntrack_max: No such file or directory
 done.
-starting bhm...no
-time,messages,data(K),errors,connections,SSL connections
-/tmp/script: 39: [: COMMAND: unexpected operator
-done
-bash-4.2# 
+waiting for server...
+server ready
+running apache client...This is ApacheBench, Version 2.3 <$Revision: 1430300 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 10.0.0.1 (be patient)
+Completed 500 requests
+Completed 1000 requests
+Completed 1500 requests
+Completed 2000 requests
+Completed 2500 requests
+Completed 3000 requests
+Completed 3500 requests
+Completed 4000 requests
+Completed 4500 requests
+Completed 5000 requests
+Finished 5000 requests
+
+
+Server Software:        Apache/2.4.4
+Server Hostname:        10.0.0.1
+Server Port:            8080
+
+Document Path:          /
+Document Length:        45 bytes
+
+Concurrency Level:      10
+Time taken for tests:   0.403 seconds
+Complete requests:      5000
+Failed requests:        0
+Write errors:           0
+Total transferred:      1450000 bytes
+HTML transferred:       225000 bytes
+Requests per second:    12396.77 [#/sec] (mean)
+Time per request:       0.807 [ms] (mean)
+Time per request:       0.081 [ms] (mean, across all concurrent requests)
+Transfer rate:          3510.80 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     0    1   3.5      1     109
+Waiting:        0    1   3.5      1     109
+Total:          0    1   3.5      1     109
+
+Percentage of the requests served within a certain time (ms)
+  50%      1
+  66%      1
+  75%      1
+  80%      1
+  90%      1
+  95%      1
+  98%      1
+  99%      1
+ 100%    109 (longest request)
+done.
+halting machine
