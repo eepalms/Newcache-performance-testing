@@ -1,0 +1,18 @@
+#!/system/bin/sh
+
+# Author: Bijie Qiu Date: 6/25/2013 0xbench-D rendering-GL Teapot
+
+stop_m5() {
+    /sbin/m5 exit
+    return
+}
+
+run_zeroxbench_test() {
+    am start -a android.intent.action.MAIN -n org.zeroxlab.zeroxbenchmark/org.itri.teapot.TeapotES
+    return
+}
+sleep 10
+/sbin/m5 checkpoint
+/sbin/m5 dumpstats
+/sbin/m5 resetstats
+run_zeroxbench_test

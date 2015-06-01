@@ -1,0 +1,21 @@
+#!/system/bin/sh
+
+#Author: Anthony Gutierrez
+# run script for bbench on gingerbread
+
+stop_m5() {
+    /sbin/m5 exit
+
+    return
+}
+
+run_zeroxbench_test() {
+    am start -a android.intent.action.MAIN -n org.zeroxlab.zeroxbenchmark/org.zeroxlab.zeroxbenchmark.TesterGC
+    return
+}
+sleep 2
+/sbin/m5 checkpoint
+/sbin/m5 dumpstats 10000000000000 10000000000000
+/sbin/m5 resetstats 
+run_zeroxbench_test
+

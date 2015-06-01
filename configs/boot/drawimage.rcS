@@ -1,0 +1,22 @@
+#!/system/bin/sh
+
+# Author: Anthony Gutierrez
+# Modified: Bijie Qiu on 6/25/2013
+# 0xbench-2D rendering-DrawImage
+
+stop_m5() {
+    /sbin/m5 exit
+    return
+}
+
+run_zeroxbench_test() {
+    am start -a android.intent.action.MAIN -n org.zeroxlab.zeroxbenchmark/org.zeroxlab.graphics.DrawImage
+    return
+}
+
+sleep 2
+/sbin/m5 checkpoint
+/sbin/m5 dumpstats 10000000000000 10000000000000
+/sbin/m5 resetstats 
+run_zeroxbench_test
+

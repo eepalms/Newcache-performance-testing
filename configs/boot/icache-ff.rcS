@@ -1,0 +1,28 @@
+#!/bin/sh
+#
+# /etc/init.d/rcS
+#
+
+#echo -n "mounting swap..."
+#/sbin/swapon /dev/hdc
+#echo "done."
+
+#/sbin/m5 checkpoint
+#/sbin/m5 dumpstats
+#/sbin/m5 resetstats
+
+#echo -n "halting machine"
+#m5 exit
+
+#echo -n "starting bash shell..."
+#/bin/bash
+export LD_LIBRARY_PATH=/home/haow/ff-workspace/libgcrypt-1.5.3-install/lib:$LD_LIBRARY_PATH
+mount -t proc none /proc
+sh -c "echo 0 > /proc/sys/kernel/randomize_va_space"
+cat /proc/sys/kernel/randomize_va_space
+
+cd /home/haow/workspace/icache_primeprobe-2014.11.17
+./main.ff
+
+echo -n "halting machine"
+m5 exit
